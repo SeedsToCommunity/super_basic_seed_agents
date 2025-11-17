@@ -46,7 +46,6 @@ Guidelines:
 
 Southeast Michigan context:
 - Region includes Wayne, Oakland, Macomb, Washtenaw, Livingston, and surrounding counties
-- Hardiness zones 5b-6a
 
 Respond with ONLY the JSON object, no markdown, no explanations.`;
 
