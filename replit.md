@@ -2,52 +2,49 @@
 
 ## Overview
 
-The Seed and Species Aggregator is a data management platform designed to aggregate, validate, and synthesize botanical data from multiple Google Drive sources. The application provides a professional dashboard for managing seed and species information with features for data source synchronization, validation reporting, and data synthesis. Built as a full-stack web application, it combines a React frontend with an Express backend, emphasizing data clarity and efficient workflows for scientific/agricultural data management.
+The Seed and Species Aggregator is a Node.js backend project for processing and validating botanical data. The system uses Claude API for botanical validation and native status checking, with Google Sheets integration for structured data output. This is a collection of backend CLI scripts designed for data processing workflows.
+
+**Current Status:** Botanical name validation and Michigan native status checking are fully implemented with both single-plant and batch processing capabilities.
 
 ## User Preferences
 
-Preferred communication style: Simple, everyday language.
+- Preferred communication style: Simple, everyday language
+- Demands detailed, explicit task breakdowns before approval - values precision and transparency
+- Prefers simple, focused scripts over over-engineered solutions
 
 ## System Architecture
 
-### Frontend Architecture
+### CLI Scripts Architecture
 
-**Framework & Build System:**
-- React 18 with TypeScript for type-safe component development
-- Vite as the build tool and development server
-- Wouter for lightweight client-side routing
-- TanStack Query (React Query) for server state management and caching
+**Core Validators:**
+- `src/common/botanical-validator.js`: Validates botanical names using Claude API
+  - Returns status: current/updated/likely_misspelled/invalid
+  - Normalizes genus (capitalized) and species (lowercase)
+  - Provides family classification
+- `src/common/michigan-native-checker.js`: Determines SE Michigan native status
+  - Returns boolean isNative flag
+  - Provides confidence status and contextual notes
 
-**UI Component System:**
-- shadcn/ui component library built on Radix UI primitives
-- Tailwind CSS for utility-first styling with custom design tokens
-- Carbon Design System inspiration for data-heavy interfaces
-- IBM Plex Sans and IBM Plex Mono typography for professional credibility
+**Processing Pipeline:**
+- `src/output/plant-pipeline.js`: Shared pipeline functions (single source of truth)
+  - `getPlantRecord()`: Orchestrates validation and native checking
+  - `createPlantSheet()`: Creates timestamped Google Sheets with headers
+  - `appendPlantRows()`: Writes plant data rows
+  - `findFolderByName()`: Google Drive folder discovery with caching
+  - `PLANT_COLUMNS`: Centralized column definitions
 
-**Design Principles:**
-- Data dashboard approach prioritizing information hierarchy
-- Responsive data tables with clear scannability
-- Professional color scheme with primary green accent (142 76% 36%)
-- Dark mode support with theme toggle functionality
+**CLI Tools:**
+- `src/output/process-plant.js`: Single plant processor
+  - Validates one plant and creates individual Google Sheet
+- `src/output/batch-process-plants.js`: Batch processor
+  - Processes multiple plants into single Google Sheet
+  - Reports success/failure counts
+  - Skips non-current botanical names
 
-### Backend Architecture
-
-**Server Framework:**
-- Express.js HTTP server with TypeScript
-- RESTful API design (routes prefixed with `/api`)
-- Custom middleware for request logging and JSON response capture
-- Development-only Vite middleware integration for HMR
-
-**Data Storage Strategy:**
-- In-memory storage implementation (MemStorage) as current pattern
-- Interface-based storage abstraction (IStorage) for future database integration
-- Drizzle ORM configured for PostgreSQL (via Neon serverless driver)
-- Schema defined with users table as foundation for future expansion
-
-**Session & State Management:**
-- express-session configured (connect-pg-simple for PostgreSQL sessions)
-- In-memory user management with UUID-based identifiers
-- No authentication currently implemented (placeholder User schema exists)
+**Test Scripts:**
+- `test-botanical-validator.js`: Tests botanical validation
+- `test-michigan-native.js`: Tests native status checking
+- `test-batch-process.js`: Tests batch processing with 4 spring ephemerals
 
 ### Data Processing Pipeline
 
@@ -67,46 +64,98 @@ Preferred communication style: Simple, everyday language.
 - API key managed via environment variables
 - Test harness provided for API connectivity verification
 
-### Application Pages
+## Key Workflows & Usage
 
-**Dashboard (`/`):**
-- Overview statistics (total species, data sources, validation errors, last sync)
-- Quick action panel (sync, synthesis, export, validation)
-- Data source status cards with sync indicators
-- Recent activity table with filterable records
+### Botanical Name Validation Test
+```bash
+node test-botanical-validator.js
+```
+Tests validation logic with sample plants (Quercus alba, Acer rubrum, etc.)
 
-**Data Sources (`/data-sources`):**
-- Connected sources management interface
-- Search functionality for filtering sources
-- Individual source cards with sync status badges
-- Add new data source capability
+### Michigan Native Status Test
+```bash
+node test-michigan-native.js
+```
+Tests native status checking with sample SE Michigan plants
 
-**Synthesis Tools (`/synthesis`):**
-- Data aggregation process controls
-- Progress tracking for synthesis operations
-- Configuration for merge strategies
+### Single Plant Processing
+```bash
+node src/output/process-plant.js <genus> <species>
+```
+**Example:**
+```bash
+node src/output/process-plant.js Quercus alba
+```
+**Output:** Creates timestamped Google Sheet in "SpeciesAppDataFiles_DoNotTouch" folder with:
+- Genus, Species, Family
+- SE MI Native (Yes/No)
+- Botanical Name Notes
+- Native Check Notes
 
-**Validation Center (`/validation`):**
-- Error reporting with severity levels (high/medium/low)
-- Searchable validation error table
-- Field-level error descriptions
+### Batch Plant Processing
+```bash
+node src/output/batch-process-plants.js <genus1> <species1> <genus2> <species2> ...
+```
+**Example:**
+```bash
+node src/output/batch-process-plants.js Quercus alba Acer rubrum Carya ovata
+```
+**Behavior:**
+- Validates all plants before writing
+- Skips plants that are not current botanical names
+- Creates single timestamped sheet with all valid plants
+- Reports success/failure counts
+
+**Test batch processing:**
+```bash
+node test-batch-process.js
+```
+Processes 4 SE Michigan spring ephemerals (Trillium grandiflorum, Sanguinaria canadensis, Claytonia virginica, Erythronium americanum)
+
+## Configuration & Environment
+
+### Required Environment Variables
+- `ANTHROPIC_API_KEY`: Claude API key for botanical validation and native status checking
+- `REPL_IDENTITY` or `WEB_REPL_RENEWAL`: Replit authentication tokens (auto-configured in Replit environment)
+- `REPLIT_CONNECTORS_HOSTNAME`: Replit connectors API hostname (auto-configured)
+
+### Google Drive Setup
+- Connected via Replit Google Drive connector
+- Target folder: "SpeciesAppDataFiles_DoNotTouch"
+- Folder ID cached after first lookup to reduce API calls
+
+### Configuration File (`config/config.json`)
+Currently stores:
+- Google Drive folder IDs for data sources
+- Synthesis output format preferences
+- Validation rules and merge strategies
+
+## File Reference
+
+| File | Purpose |
+|------|---------|
+| `src/common/botanical-validator.js` | Validates botanical names using Claude API |
+| `src/common/michigan-native-checker.js` | Checks SE Michigan native status using Claude API |
+| `src/output/plant-pipeline.js` | Shared pipeline functions for data gathering and Google Sheets operations |
+| `src/output/process-plant.js` | CLI tool for single plant processing |
+| `src/output/batch-process-plants.js` | CLI tool for batch plant processing |
+| `test-botanical-validator.js` | Test harness for botanical validation |
+| `test-michigan-native.js` | Test harness for native status checking |
+| `test-batch-process.js` | Test harness for batch processing with 4 sample plants |
+| `config/config.json` | Configuration for data sources and processing rules |
 
 ## External Dependencies
 
 **Third-Party Services:**
-- Google Drive API (for data source synchronization)
-- Anthropic Claude API (for AI-powered data processing)
+- Google Drive API (for data source synchronization and sheet creation)
+- Anthropic Claude API (for AI-powered botanical validation and native status checking)
 - Neon Database (PostgreSQL serverless, configured but not yet actively used)
 
 **Key NPM Packages:**
 - `@anthropic-ai/sdk`: Claude API integration
-- `@neondatabase/serverless`: Serverless PostgreSQL driver
-- `drizzle-orm` & `drizzle-kit`: TypeScript ORM and migration tools
-- `@radix-ui/*`: Headless UI component primitives (17+ packages)
-- `@tanstack/react-query`: Asynchronous state management
-- `wouter`: Lightweight routing library
-- `date-fns`: Date manipulation and formatting
-- `zod`: Schema validation and type inference
+- `@octokit/rest`: GitHub API integration (for future features)
+- `googleapis`: Google Drive and Sheets API integration
+- `@types/node`: TypeScript type definitions for Node.js
 
 **Development Tools:**
 - Replit-specific plugins for development environment
@@ -118,3 +167,20 @@ Preferred communication style: Simple, everyday language.
 - GitHub repository: `ScaleNature/super_basic_seed_agents`
 - Google Drive for data storage
 - GitHub Projects for task management
+
+## Maintenance Notes / Future Enhancements
+
+### Current Architecture Benefits
+- **No code duplication**: Single source of truth in `plant-pipeline.js`
+- **Easy column additions**: Update `PLANT_COLUMNS` and `getPlantRecord()` to add new data fields
+- **Scalable**: Batch processor handles multiple plants efficiently
+- **Cached lookups**: Folder discovery cached to reduce Google Drive API calls
+- **Unique sheet names**: Timestamps guarantee no naming collisions
+
+### Future Enhancement Opportunities
+1. **Additional validation columns**: Habitat, bloom time, growth habit via Claude API
+2. **Database integration**: Move from Google Sheets to PostgreSQL for faster queries
+3. **CSV/JSON import**: Accept plant lists from files instead of command-line args
+4. **Error recovery**: Retry logic for failed Claude API calls
+5. **Regional native checkers**: Expand beyond SE Michigan to other regions
+6. **Automated PDF extraction**: Extract plant data from PDFs using Claude vision API
