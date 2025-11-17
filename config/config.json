@@ -1,0 +1,17 @@
+{
+  "googleDrive": {
+    "folders": {
+      "seedDatabase": "FOLDER_ID_PLACEHOLDER_1",
+      "speciesCollection": "FOLDER_ID_PLACEHOLDER_2",
+      "botanicalArchive": "FOLDER_ID_PLACEHOLDER_3"
+    }
+  },
+  "synthesis": {
+    "outputFormat": "json",
+    "mergeStrategy": "latest"
+  },
+  "validation": {
+    "strictMode": true,
+    "requiredFields": ["scientific_name", "common_name"]
+  }
+}
