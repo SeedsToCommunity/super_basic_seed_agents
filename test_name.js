@@ -1,1 +1,0 @@
-validateBotanicalName('Quercus robur')
