@@ -88,6 +88,11 @@ Respond with ONLY the JSON object, no markdown, no explanations.`;
       result.genus = result.genus.charAt(0).toUpperCase() + result.genus.slice(1).toLowerCase();
     }
     
+    // Ensure species is all lowercase
+    if (result.species && typeof result.species === 'string') {
+      result.species = result.species.toLowerCase();
+    }
+    
     return result;
     
   } catch (error) {
