@@ -71,9 +71,32 @@ The project uses the **Anthropic Claude API** for botanical validation and nativ
 - ✅ Can run locally by setting the environment variable
 - No Replit-specific dependencies for Claude API access
 
+### SerpApi Authentication
+
+The project uses **SerpApi** for discovering external reference URLs for botanical species.
+
+**How it works:**
+- API key is stored in `SERPAPI_API_KEY` environment variable
+- Managed through Replit Secrets for security
+- Used by URL discovery module in `src/synthesis/process-external-reference-urls.js`
+- Free tier includes 100 searches/month (no credit card required)
+- Results are cached locally to minimize API usage
+
+**Getting your API key:**
+1. Sign up at https://serpapi.com/users/sign_up
+2. Get your key from https://serpapi.com/manage-api-key
+3. Add it to Replit Secrets as `SERPAPI_API_KEY`
+
+**Portability:**
+- ✅ Works in any environment with `SERPAPI_API_KEY` set
+- ✅ Can run locally by setting the environment variable
+- No Replit-specific dependencies for SerpApi access
+
 ## Configuration
 
-Edit `config/config.json` to configure the system:
+The system uses separate configuration files for different features:
+
+### Main Configuration (`config/config.json`)
 
 **Google Drive Settings:**
 - `outputFolder`: Target folder for generated Google Sheets (default: "SpeciesAppDataFiles_DoNotTouch")
@@ -90,6 +113,23 @@ Edit `config/config.json` to configure the system:
 **Validation Settings:**
 - `strictMode`: Enable strict validation (default: true)
 - `requiredFields`: Required fields for data validation
+
+### External Reference URLs Configuration (`config/external-reference-urls.json`)
+
+**Purpose:** Separate config file for URL discovery synthesis module to maintain clean separation of concerns for future synthesis modules.
+
+**Sites Array:**
+List of reference websites to search for species information:
+- Michigan Flora, Go Botany, Illinois Wildflowers
+- Lady Bird Johnson Wildflower Center, Prairie Moon Nursery
+- USDA PLANTS, Tropicos, Minnesota Wildflowers, Google Images
+
+**Retry Settings:**
+- `startDelayMs`: Initial delay between searches (default: 100ms)
+- `maxDelayMs`: Maximum delay for exponential backoff (default: 2000ms)
+- Delay doubles on each retry until exceeding maxDelay, then gives up
+
+**Why separate configs?** Each synthesis module (botanical validation, native checking, URL discovery, future modules) gets its own input configuration file. This prevents config bloat and makes it easy to add new synthesis topics without affecting existing ones.
 
 ## Features
 
@@ -122,6 +162,36 @@ Returns:
 - **Status**: confidence level of the assessment
 - **Notes**: Additional context about the plant's nativity
 
+### External Reference URL Discovery
+
+Discovers URLs for botanical species across trusted reference websites:
+
+```bash
+node test-url-discovery.js
+```
+
+**Features:**
+- Searches 9 reference sites (Michigan Flora, Go Botany, USDA PLANTS, etc.)
+- Smart caching: Results saved to `cache/external-reference-urls.json`
+- Cached lookups are instant and don't consume API credits
+- Exponential backoff retry logic for rate limiting
+- Returns JSON object: `{siteName: url}`
+
+**Output Format:**
+```json
+{
+  "Go Botany": "https://gobotany.nativeplanttrust.org/species/trillium/grandiflorum/",
+  "USDA PLANTS": "https://plants.usda.gov/plant-profile/TRGR4",
+  ...
+}
+```
+
+**Cache Management:**
+- First lookup performs web searches
+- Subsequent lookups use cached data
+- Cache persists across runs
+- Edit `cache/external-reference-urls.json` to clear specific species
+
 ### Single Plant Processing
 
 Process a single plant through the complete pipeline (validation → native check → Google Sheets):
@@ -140,6 +210,7 @@ Creates a new timestamped Google Sheet with:
 - SE MI Native (Yes/No)
 - Botanical Name Notes
 - Native Check Notes
+- External Reference URLs (JSON format)
 
 ### Batch Plant Processing
 
@@ -171,24 +242,27 @@ node test-batch-process.js
 
 All data gathering and Google Sheets operations are centralized in the pipeline module to avoid code duplication:
 
-- **`getPlantRecord(genus, species)`**: Validates botanical name and checks native status
+- **`getPlantRecord(genus, species)`**: Validates botanical name, checks native status, discovers URLs
 - **`createPlantSheet(folderId, prefix)`**: Creates timestamped Google Sheet with headers
 - **`appendPlantRows(spreadsheetId, plantRecords)`**: Writes plant data rows
 - **`findFolderByName(folderName)`**: Finds Google Drive folders (with caching)
 - **`PLANT_COLUMNS`**: Single source of truth for column definitions
 
-**Core Validators (in `src/synthesis/`):**
+**Core Validators/Synthesis Modules (in `src/synthesis/`):**
 - `process-botanical-name.js`: Validates botanical names using Claude API
-- `process-native-checker.js`: Checks native status for specified region
+- `process-native-checker.js`: Checks native status for specified region (configurable)
+- `process-external-reference-urls.js`: Discovers URLs across reference websites with caching
 
 **Adding new data columns:**
-1. Update `PLANT_COLUMNS` with new column headers
-2. Modify `getPlantRecord()` to gather new data (call additional validators if needed)
-3. Update the row mapping in `appendPlantRows()`
+1. Create new synthesis module in `src/synthesis/` with its own config file in `config/`
+2. Update `PLANT_COLUMNS` with new column headers
+3. Import and call the new module in `getPlantRecord()`
+4. Update the row mapping in `appendPlantRows()`
 
 Both single and batch processors automatically inherit new columns.
 
 **Configuration Integration:**
-- Folder names read from `config/config.json` instead of being hardcoded
-- File prefixes configurable via config
-- Native check region configurable for future expansion
+- Main config (`config/config.json`): Google Drive folders, output settings, validation rules
+- Synthesis configs (e.g., `config/external-reference-urls.json`): Each synthesis module has its own config
+- Folder names and file prefixes read from config instead of hardcoding
+- Cache directory (`cache/`): Stores discovered URLs to minimize API usage

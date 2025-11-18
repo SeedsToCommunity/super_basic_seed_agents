@@ -16,7 +16,7 @@ The Seed and Species Aggregator is a Node.js backend project for processing and 
 
 ### CLI Scripts Architecture
 
-**Core Validators (in `src/synthesis/`):**
+**Core Validators and Synthesis Modules (in `src/synthesis/`):**
 - `process-botanical-name.js`: Validates botanical names using Claude API
   - Returns status: current/updated/likely_misspelled/invalid
   - Normalizes genus (capitalized) and species (lowercase)
@@ -25,15 +25,21 @@ The Seed and Species Aggregator is a Node.js backend project for processing and 
   - Returns boolean isNative flag
   - Provides confidence status and contextual notes
   - Region configurable via `config.json` (default: SE Michigan)
+- `process-external-reference-urls.js`: Discovers URLs for species across reference websites
+  - Searches 9 reference sites (Michigan Flora, Go Botany, USDA PLANTS, etc.)
+  - Uses SerpApi for web searches with exponential backoff retry logic
+  - Caches results in `cache/external-reference-urls.json` to minimize API usage
+  - Config: `config/external-reference-urls.json` with sites array and retry settings
+  - Returns JSON object: `{siteName: url}`
 
 **Processing Pipeline:**
 - `src/output/plant-pipeline.js`: Shared pipeline functions (single source of truth)
-  - `getPlantRecord()`: Orchestrates validation and native checking
+  - `getPlantRecord()`: Orchestrates validation, native checking, and URL discovery
   - `createPlantSheet()`: Creates timestamped Google Sheets with headers (uses config for file prefix)
-  - `appendPlantRows()`: Writes plant data rows
+  - `appendPlantRows()`: Writes plant data rows with JSON-stringified URLs
   - `findFolderByName()`: Google Drive folder discovery with caching
   - `getOutputFolderName()`: Returns output folder name from config
-  - `PLANT_COLUMNS`: Centralized column definitions
+  - `PLANT_COLUMNS`: Centralized column definitions (7 columns including External Reference URLs)
   - Reads configuration from `config/config.json` for folder names and file prefixes
 
 **CLI Tools:**
@@ -47,6 +53,7 @@ The Seed and Species Aggregator is a Node.js backend project for processing and 
 **Test Scripts:**
 - `test-botanical-validator.js`: Tests botanical validation
 - `test-michigan-native.js`: Tests native status checking
+- `test-url-discovery.js`: Tests external reference URL discovery and caching
 - `test-batch-process.js`: Tests batch processing with 4 spring ephemerals
 
 ### Data Processing Pipeline
@@ -81,6 +88,12 @@ node test-michigan-native.js
 ```
 Tests native status checking with sample SE Michigan plants
 
+### External Reference URL Discovery Test
+```bash
+node test-url-discovery.js
+```
+Tests URL discovery with Trillium grandiflorum and Quercus alba. First run performs web searches and caches results. Subsequent runs use cache (instant, no API credits consumed).
+
 ### Single Plant Processing
 ```bash
 node src/output/process-plant.js <genus> <species>
@@ -94,6 +107,7 @@ node src/output/process-plant.js Quercus alba
 - SE MI Native (Yes/No)
 - Botanical Name Notes
 - Native Check Notes
+- External Reference URLs (JSON format)
 
 ### Batch Plant Processing
 ```bash
@@ -119,6 +133,7 @@ Processes 4 SE Michigan spring ephemerals (Trillium grandiflorum, Sanguinaria ca
 
 ### Required Environment Variables
 - `ANTHROPIC_API_KEY`: Claude API key for botanical validation and native status checking
+- `SERPAPI_API_KEY`: SerpApi key for external reference URL discovery (100 free searches/month)
 - `REPL_IDENTITY` or `WEB_REPL_RENEWAL`: Replit authentication tokens (auto-configured in Replit environment)
 - `REPLIT_CONNECTORS_HOSTNAME`: Replit connectors API hostname (auto-configured)
 
@@ -127,14 +142,27 @@ Processes 4 SE Michigan spring ephemerals (Trillium grandiflorum, Sanguinaria ca
 - Target folder: "SpeciesAppDataFiles_DoNotTouch"
 - Folder ID cached after first lookup to reduce API calls
 
-### Configuration File (`config/config.json`)
-Centralized configuration for all system settings:
+### Configuration Files
+
+**Main Configuration (`config/config.json`):**
+Centralized configuration for system-wide settings:
 - **Google Drive**: Output folder name, Seeds To Community spreadsheet reference, data source folder IDs
 - **Output**: File prefix for generated Google Sheets
 - **Synthesis**: Native check region (default: SE Michigan), output format, merge strategy
 - **Validation**: Strict mode, required fields
 
-Configuration is loaded by `plant-pipeline.js` at startup and used throughout the processing pipeline.
+**Synthesis Module Configurations:**
+Each synthesis module has its own configuration file to maintain separation of concerns:
+- `config/external-reference-urls.json`: Sites array and retry settings for URL discovery
+  - Sites: Michigan Flora, Go Botany, Illinois Wildflowers, Lady Bird Johnson, Prairie Moon, USDA PLANTS, Tropicos, Minnesota Wildflowers, Google Images
+  - Retry settings: startDelayMs (100), maxDelayMs (2000) for exponential backoff
+
+**Cache Directory (`cache/`):**
+- `cache/external-reference-urls.json`: Cached URL discovery results keyed by species name
+- Persists across runs to minimize API usage
+- Edit manually to clear specific species cache entries
+
+Configuration is loaded by `plant-pipeline.js` and individual synthesis modules at startup.
 
 ## File Reference
 
@@ -142,13 +170,17 @@ Configuration is loaded by `plant-pipeline.js` at startup and used throughout th
 |------|---------|
 | `src/synthesis/process-botanical-name.js` | Validates botanical names using Claude API |
 | `src/synthesis/process-native-checker.js` | Checks native status using Claude API (region configurable) |
+| `src/synthesis/process-external-reference-urls.js` | Discovers URLs across reference websites with caching |
 | `src/output/plant-pipeline.js` | Shared pipeline functions for data gathering and Google Sheets operations |
 | `src/output/process-plant.js` | CLI tool for single plant processing |
 | `src/output/batch-process-plants.js` | CLI tool for batch plant processing |
 | `test-botanical-validator.js` | Test harness for botanical validation |
 | `test-michigan-native.js` | Test harness for native status checking |
+| `test-url-discovery.js` | Test harness for URL discovery and caching |
 | `test-batch-process.js` | Test harness for batch processing with 4 sample plants |
-| `config/config.json` | Centralized configuration for all system settings |
+| `config/config.json` | Main configuration for system-wide settings |
+| `config/external-reference-urls.json` | Configuration for URL discovery synthesis module |
+| `cache/external-reference-urls.json` | Cached URL discovery results |
 
 ## External Dependencies
 
@@ -179,9 +211,11 @@ Configuration is loaded by `plant-pipeline.js` at startup and used throughout th
 ### Current Architecture Benefits
 - **No code duplication**: Single source of truth in `plant-pipeline.js`
 - **Easy column additions**: Update `PLANT_COLUMNS` and `getPlantRecord()` to add new data fields
+- **Modular synthesis**: Each synthesis module (validators, URL discovery) has its own config file
 - **Scalable**: Batch processor handles multiple plants efficiently
-- **Cached lookups**: Folder discovery cached to reduce Google Drive API calls
+- **Smart caching**: Folder discovery and URL discovery cached to reduce API calls
 - **Unique sheet names**: Timestamps guarantee no naming collisions
+- **Separation of concerns**: Main config vs. synthesis configs prevents config bloat
 
 ### Future Enhancement Opportunities
 1. **Additional validation columns**: Habitat, bloom time, growth habit via Claude API

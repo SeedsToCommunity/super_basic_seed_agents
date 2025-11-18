@@ -1,6 +1,7 @@
 import { google } from 'googleapis';
 import { validateBotanicalName } from '../synthesis/process-botanical-name.js';
 import { checkMichiganNative } from '../synthesis/process-native-checker.js';
+import { discoverAllUrls } from '../synthesis/process-external-reference-urls.js';
 import { readFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
@@ -17,13 +18,14 @@ let folderCache = {}; // Cache for folder IDs to avoid repeated Drive API calls
 
 // Column definitions - single source of truth for all plant data columns
 export const PLANT_COLUMNS = {
-  HEADERS: ['Genus', 'Species', 'Family', 'SE MI Native', 'Botanical Name Notes', 'Native Check Notes'],
+  HEADERS: ['Genus', 'Species', 'Family', 'SE MI Native', 'Botanical Name Notes', 'Native Check Notes', 'External Reference URLs'],
   GENUS: 0,
   SPECIES: 1,
   FAMILY: 2,
   SE_MI_NATIVE: 3,
   BOTANICAL_NOTES: 4,
-  NATIVE_NOTES: 5
+  NATIVE_NOTES: 5,
+  EXTERNAL_URLS: 6
 };
 
 async function getAccessToken() {
@@ -112,7 +114,7 @@ export async function findFolderByName(folderName) {
 }
 
 /**
- * Gather all plant data (validation + native check)
+ * Gather all plant data (validation + native check + URL discovery)
  * Returns null if validation fails (status !== 'current')
  * @param {string} genus - The genus name
  * @param {string} species - The species name
@@ -140,6 +142,15 @@ export async function getPlantRecord(genus, species) {
     throw new Error(`Native check failed for ${genus} ${species}: ${error.message}`);
   }
   
+  // Step 3: Discover external reference URLs
+  let externalUrls;
+  try {
+    externalUrls = await discoverAllUrls(genus, species);
+  } catch (error) {
+    console.error(`URL discovery failed for ${genus} ${species}:`, error.message);
+    externalUrls = {}; // Continue with empty URLs on failure
+  }
+  
   // Return the complete plant record
   return {
     genus: validationResult.genus,
@@ -148,6 +159,7 @@ export async function getPlantRecord(genus, species) {
     isNative: nativeResult.isNative,
     validationNotes: validationResult.error || '',
     nativeCheckNotes: nativeResult.notes || '',
+    externalUrls: externalUrls,
     // Include validation status for reference
     validationStatus: validationResult.status,
     nativeStatus: nativeResult.status
@@ -245,7 +257,8 @@ export async function appendPlantRows(spreadsheetId, plantRecords) {
     record.family,
     record.isNative ? 'Yes' : 'No',
     record.validationNotes || '',
-    record.nativeCheckNotes || ''
+    record.nativeCheckNotes || '',
+    JSON.stringify(record.externalUrls || {})
   ]);
   
   // Append rows

@@ -115,8 +115,16 @@ export async function discoverAllUrls(genus, species) {
     return currentCache[speciesKey];
   }
   
+  const apiKey = process.env.SERPAPI_API_KEY;
+  if (!apiKey) {
+    console.error('\n⚠️  SERPAPI_API_KEY not set - skipping URL discovery');
+    console.error('   URLs will not be cached. Set the API key to enable discovery.');
+    return {};
+  }
+  
   console.log(`\nDiscovering URLs for ${speciesKey}...`);
   const urls = {};
+  let successfulSearches = 0;
   
   for (const site of cfg.sites) {
     const searchQuery = `site:${site.baseUrl} ${genus} ${species}`;
@@ -126,14 +134,20 @@ export async function discoverAllUrls(genus, species) {
     
     if (url) {
       urls[site.name] = url;
+      successfulSearches++;
     }
   }
   
-  currentCache[speciesKey] = urls;
-  cache = currentCache;
-  saveCache();
+  if (successfulSearches > 0) {
+    currentCache[speciesKey] = urls;
+    cache = currentCache;
+    saveCache();
+    console.log(`\nDiscovered ${Object.keys(urls).length}/${cfg.sites.length} URLs for ${speciesKey}`);
+  } else {
+    console.log(`\n⚠️  No URLs discovered for ${speciesKey} - not caching empty result`);
+    console.log('   This allows retry on next run if issues are resolved');
+  }
   
-  console.log(`\nDiscovered ${Object.keys(urls).length}/${cfg.sites.length} URLs for ${speciesKey}`);
   return urls;
 }
 
