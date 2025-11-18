@@ -18,5 +18,8 @@
     "Tropicos": "http://legacy.tropicos.org/Name/50164680?projectid=27&langid=66",
     "Minnesota Wildflowers": "https://www.minnesotawildflowers.info/tree/white-oak",
     "Google Images": "https://www.google.com/search?tbm=isch&q=Quercus%20alba"
+  },
+  "Carex grayi": {
+    "Google Images": "https://www.google.com/search?tbm=isch&q=Carex%20grayi"
   }
 }
