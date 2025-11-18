@@ -18,18 +18,23 @@ export const metadata = {
  * @param {string} genus - The genus name
  * @param {string} species - The species name
  * @param {Object} priorResults - Results from previously executed modules (empty for this module)
- * @returns {Promise<Object>} Validation result with status, genus, species, family, and notes
+ * @returns {Promise<Object>} Object with: status, genus, species, and columnValues array matching metadata.columns
  */
 export async function run(genus, species, priorResults) {
   const botanicalName = `${genus} ${species}`;
   const result = await validateBotanicalName(botanicalName);
   
   return {
+    // Internal fields for pipeline logic
     status: result.status,
     genus: result.genus,
     species: result.species,
-    family: result.family,
-    notes: result.error || ''
+    
+    // Column values array (maps 1:1 to metadata.columns: ['Family', 'Botanical Name Notes'])
+    columnValues: [
+      result.family,           // Family
+      result.error || ''       // Botanical Name Notes
+    ]
   };
 }
 

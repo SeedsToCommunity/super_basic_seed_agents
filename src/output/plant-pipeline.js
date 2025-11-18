@@ -254,28 +254,36 @@ export async function getPlantRecord(genus, species) {
   }
   
   // Build final plant record from all module results
-  return buildPlantRecord(results);
+  return buildPlantRecord(genus, species, results);
 }
 
 /**
  * Build final plant record object from module results
+ * Stores both genus/species and all module results for dynamic row construction
+ * @param {string} genus - The genus name
+ * @param {string} species - The species name
  * @param {Object} moduleResults - Results from all executed modules
- * @returns {Object} Formatted plant record
+ * @returns {Object} Plant record with genus, species, moduleResults, and legacy fields for compatibility
  */
-function buildPlantRecord(moduleResults) {
+function buildPlantRecord(genus, species, moduleResults) {
   const botanicalResult = moduleResults['botanical-name'] || {};
   const nativeResult = moduleResults['native-checker'] || {};
   const urlResult = moduleResults['external-reference-urls'] || {};
   
   return {
-    genus: botanicalResult.genus || '',
-    species: botanicalResult.species || '',
+    // Base fields (always present)
+    genus: botanicalResult.genus || genus,
+    species: botanicalResult.species || species,
+    
+    // Store all module results for dynamic row construction
+    moduleResults,
+    
+    // Legacy fields for backward compatibility and debugging
     family: botanicalResult.family || '',
     isNative: nativeResult.isNative || false,
     validationNotes: botanicalResult.notes || '',
     nativeCheckNotes: nativeResult.nativeCheckNotes || '',
     externalUrls: urlResult.externalUrls || {},
-    // Include status fields for reference
     validationStatus: botanicalResult.status || '',
     nativeStatus: nativeResult.status || ''
   };
@@ -355,6 +363,7 @@ export async function createPlantSheet(folderId, prefix = config.output.filePref
 
 /**
  * Append plant data rows to an existing Google Sheet
+ * Dynamically constructs rows based on module metadata and results
  * @param {string} spreadsheetId - The ID of the spreadsheet
  * @param {Array<Object>} plantRecords - Array of plant record objects from getPlantRecord()
  */
@@ -364,17 +373,46 @@ export async function appendPlantRows(spreadsheetId, plantRecords) {
   }
   
   const sheets = await getUncachableGoogleSheetsClient();
+  const modules = await loadSynthesisModules();
   
-  // Convert plant records to rows
-  const rows = plantRecords.map(record => [
-    record.genus,
-    record.species,
-    record.family,
-    record.isNative ? 'Yes' : 'No',
-    record.validationNotes || '',
-    record.nativeCheckNotes || '',
-    JSON.stringify(record.externalUrls || {})
-  ]);
+  // Convert plant records to rows dynamically
+  const rows = plantRecords.map(record => {
+    const row = [];
+    
+    // Base columns: Genus, Species (always first)
+    row.push(record.genus);
+    row.push(record.species);
+    
+    // Dynamically add module columns in order
+    for (const module of modules) {
+      const moduleResult = record.moduleResults[module.metadata.id] || {};
+      
+      // Special handling for botanical-name module (family and notes)
+      if (module.metadata.id === 'botanical-name') {
+        row.push(moduleResult.family || '');
+        row.push(moduleResult.notes || '');
+      }
+      // Native checker module
+      else if (module.metadata.id === 'native-checker') {
+        row.push(moduleResult.isNative ? 'Yes' : 'No');
+        row.push(moduleResult.nativeCheckNotes || '');
+      }
+      // External reference URLs module
+      else if (module.metadata.id === 'external-reference-urls') {
+        row.push(JSON.stringify(moduleResult.externalUrls || {}));
+      }
+      // Generic fallback for future modules
+      else {
+        for (const columnName of module.metadata.columns) {
+          // Try to find matching field in module result
+          const fieldValue = Object.values(moduleResult)[module.metadata.columns.indexOf(columnName)] || '';
+          row.push(typeof fieldValue === 'object' ? JSON.stringify(fieldValue) : fieldValue);
+        }
+      }
+    }
+    
+    return row;
+  });
   
   // Append rows
   await sheets.spreadsheets.values.append({

@@ -18,14 +18,17 @@ export const metadata = {
  * @param {string} genus - The genus name
  * @param {string} species - The species name
  * @param {Object} priorResults - Results from previously executed modules
- * @returns {Promise<Object>} Native status with isNative boolean and notes
+ * @returns {Promise<Object>} Object with columnValues array matching metadata.columns
  */
 export async function run(genus, species, priorResults) {
   const result = await checkMichiganNative(genus, species);
   
   return {
-    isNative: result.isNative,
-    nativeCheckNotes: result.notes || ''
+    // Column values array (maps 1:1 to metadata.columns: ['SE MI Native', 'Native Check Notes'])
+    columnValues: [
+      result.isNative ? 'Yes' : 'No',   // SE MI Native
+      result.notes || ''                 // Native Check Notes
+    ]
   };
 }
 
