@@ -4,6 +4,39 @@ const client = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY,
 });
 
+// Module metadata for registry system
+export const metadata = {
+  id: 'botanical-name',
+  name: 'Botanical Name Validator',
+  columns: ['Genus', 'Species', 'Family', 'Botanical Name Notes'],
+  dependencies: [], // No dependencies - runs first
+  description: 'Validates botanical names and returns current nomenclature status, family classification'
+};
+
+/**
+ * Module runner function for registry system
+ * @param {string} genus - The genus name
+ * @param {string} species - The species name
+ * @param {Object} priorResults - Results from previously executed modules (empty for this module)
+ * @returns {Promise<Object|null>} Plant record with genus, species, family, botanicalNotes or null if invalid
+ */
+export async function run(genus, species, priorResults) {
+  const botanicalName = `${genus} ${species}`;
+  const result = await validateBotanicalName(botanicalName);
+  
+  // If not current, return null to stop pipeline
+  if (result.status !== 'current') {
+    return null;
+  }
+  
+  return {
+    genus: result.genus,
+    species: result.species,
+    family: result.family,
+    botanicalNotes: result.error || ''
+  };
+}
+
 /**
  * Validates a botanical name and returns its current nomenclature status
  * @param {string} botanicalName - The botanical name to validate (e.g., "Quercus robur")
