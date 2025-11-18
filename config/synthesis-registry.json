@@ -17,12 +17,6 @@
       "path": "../synthesis/process-external-reference-urls.js",
       "enabled": true,
       "description": "Discovers URLs for plant species across botanical reference websites"
-    },
-    {
-      "id": "test-flower-color",
-      "path": "../synthesis/test-flower-color.js",
-      "enabled": true,
-      "description": "Test module demonstrating plug-and-play architecture"
     }
   ],
   "config": {
