@@ -17,6 +17,12 @@
       "path": "../synthesis/process-external-reference-urls.js",
       "enabled": true,
       "description": "Discovers URLs for plant species across botanical reference websites"
+    },
+    {
+      "id": "common-names",
+      "path": "../synthesis/process-common-names.js",
+      "enabled": true,
+      "description": "Identifies all common/vernacular names used in Southeast Michigan and adjacent regions"
     }
   ],
   "config": {
