@@ -53,6 +53,7 @@ All synthesis modules must export:
 -   **`process-native-checker.js`**: Determines if plant is native to Southeast Michigan using Claude API, dependent on botanical name validation.
 -   **`process-external-reference-urls.js`**: Discovers and caches URLs from botanical reference websites using SerpApi, based on validated botanical name.
 -   **`process-common-names.js`**: Identifies all common/vernacular names used in Southeast Michigan and adjacent regions using Claude API. Excludes botanical synonyms and historical scientific names.
+-   **`process-previous-botanical.js`**: Retrieves botanical synonyms (legacy binomial names) from GBIF Backbone Taxonomy for cross-reference purposes. Returns comma-separated species-level synonyms only, excluding varieties and subspecies. No authentication required.
 
 ### Processing Pipeline (`src/output/plant-pipeline.js`)
 The pipeline dynamically loads, validates, and executes enabled modules using a dependency graph. It provides:
@@ -107,6 +108,7 @@ Centralized system settings are managed in `config/config.json`, covering Google
 -   **Google Drive API**: For data source synchronization, sheet creation, and output.
 -   **Anthropic Claude API**: Used for AI-powered botanical validation, native status checking, and other advanced data processing.
 -   **SerpApi**: For external reference URL discovery.
+-   **GBIF Species API**: For retrieving botanical synonyms and taxonomic information. No authentication required.
 
 ### Key NPM Packages
 -   `@anthropic-ai/sdk`: Integration with Anthropic Claude API.

@@ -23,6 +23,12 @@
       "path": "../synthesis/process-common-names.js",
       "enabled": true,
       "description": "Identifies all common/vernacular names used in Southeast Michigan and adjacent regions"
+    },
+    {
+      "id": "previous-botanical",
+      "path": "../synthesis/process-previous-botanical.js",
+      "enabled": true,
+      "description": "Retrieves botanical synonyms (legacy binomial names) from GBIF for cross-reference purposes"
     }
   ],
   "config": {
