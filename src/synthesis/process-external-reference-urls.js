@@ -9,6 +9,30 @@ const __dirname = path.dirname(__filename);
 const CONFIG_PATH = path.join(__dirname, '../../config/external-reference-urls.json');
 const CACHE_PATH = path.join(__dirname, '../../cache/external-reference-urls.json');
 
+// Module metadata for registry system
+export const metadata = {
+  id: 'external-reference-urls',
+  name: 'External Reference URL Discovery',
+  columns: ['External Reference URLs'],
+  dependencies: ['botanical-name'], // Requires valid botanical name for searching
+  description: 'Discovers URLs for plant species across botanical reference websites with caching'
+};
+
+/**
+ * Module runner function for registry system
+ * @param {string} genus - The genus name
+ * @param {string} species - The species name
+ * @param {Object} priorResults - Results from previously executed modules
+ * @returns {Promise<Object>} Object with externalUrls (JSON stringified)
+ */
+export async function run(genus, species, priorResults) {
+  const urls = await discoverAllUrls(genus, species);
+  
+  return {
+    externalUrls: urls
+  };
+}
+
 let config = null;
 let cache = null;
 
