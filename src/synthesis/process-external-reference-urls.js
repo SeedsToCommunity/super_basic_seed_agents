@@ -139,14 +139,23 @@ export async function discoverAllUrls(genus, species) {
   
   const speciesKey = `${genus} ${species}`;
   
-  if (currentCache[speciesKey]) {
-    console.log(`\nCache hit for ${speciesKey}`);
-    return currentCache[speciesKey];
+  // Load existing cached URLs for this species (if any)
+  const cachedUrls = currentCache[speciesKey] || {};
+  const urls = { ...cachedUrls }; // Start with existing cache
+  
+  // Check which sites are missing from cache
+  const sitesToDiscover = cfg.sites.filter(site => !cachedUrls[site.name]);
+  
+  if (sitesToDiscover.length === 0) {
+    console.log(`\nCache hit for ${speciesKey} (all ${cfg.sites.length} sites cached)`);
+    return urls;
   }
   
-  console.log(`\nDiscovering URLs for ${speciesKey}...`);
-  const urls = {};
-  let successfulSearches = 0;
+  const cachedCount = Object.keys(cachedUrls).length;
+  console.log(`\nPartial cache for ${speciesKey}: ${cachedCount}/${cfg.sites.length} sites cached`);
+  console.log(`Discovering ${sitesToDiscover.length} missing URLs...`);
+  
+  let newDiscoveries = 0;
   const apiKey = process.env.SERPAPI_API_KEY;
   
   // Warn if API key is missing but continue (direct URLs will still work)
@@ -155,7 +164,7 @@ export async function discoverAllUrls(genus, species) {
     console.warn('   Only direct URLs (e.g., Google Images) will be generated');
   }
   
-  for (const site of cfg.sites) {
+  for (const site of sitesToDiscover) {
     let url;
     
     if (site.useDirectUrl) {
@@ -178,18 +187,22 @@ export async function discoverAllUrls(genus, species) {
     
     if (url) {
       urls[site.name] = url;
-      successfulSearches++;
+      newDiscoveries++;
     }
   }
   
-  if (successfulSearches > 0) {
+  // Save updated cache if we discovered any new URLs
+  if (newDiscoveries > 0) {
     currentCache[speciesKey] = urls;
     cache = currentCache;
     saveCache();
-    console.log(`\nDiscovered ${Object.keys(urls).length}/${cfg.sites.length} URLs for ${speciesKey}`);
-  } else {
+    console.log(`\nDiscovered ${newDiscoveries} new URLs for ${speciesKey}`);
+    console.log(`Total: ${Object.keys(urls).length}/${cfg.sites.length} URLs cached`);
+  } else if (Object.keys(urls).length === 0) {
     console.log(`\n⚠️  No URLs discovered for ${speciesKey} - not caching empty result`);
     console.log('   This allows retry on next run if issues are resolved');
+  } else {
+    console.log(`\nNo new URLs discovered (still have ${Object.keys(urls).length}/${cfg.sites.length} from cache)`);
   }
   
   return urls;
