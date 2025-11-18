@@ -52,7 +52,7 @@ All synthesis modules must export:
 -   **`process-botanical-name.js`**: Validates botanical names using Claude API with **strict validation** (fails if name isn't exactly current accepted nomenclature). Acts as critical validation gate.
 -   **`process-native-checker.js`**: Determines if plant is native to Southeast Michigan using Claude API, dependent on botanical name validation.
 -   **`process-external-reference-urls.js`**: Discovers and caches URLs from botanical reference websites using SerpApi, based on validated botanical name.
--   **`test-flower-color.js`**: Test module demonstrating plug-and-play architecture (mock data for verification).
+-   **`process-common-names.js`**: Identifies all common/vernacular names used in Southeast Michigan and adjacent regions using Claude API. Excludes botanical synonyms and historical scientific names.
 
 ### Processing Pipeline (`src/output/plant-pipeline.js`)
 The pipeline dynamically loads, validates, and executes enabled modules using a dependency graph. It provides:
@@ -93,7 +93,7 @@ See `docs/synthesis-module-interface.md` for complete interface specification an
 
 ### CLI Tools
 -   **`src/output/process-plant.js`**: Processes a single plant and outputs to an individual Google Sheet.
--   **`src/output/batch-process-plants.js`**: Processes multiple plants, skipping invalid botanical names, and outputs to a single Google Sheet.
+-   **`src/output/batch-process-plants.js`**: Processes multiple plants with **incremental save strategy** - creates Google Sheet first, then saves each plant immediately after processing. This preserves partial progress if processing fails, critical for expensive API operations. Skips invalid botanical names.
 
 ### Data Processing Philosophy
 The system follows a "validation-first" approach, ensuring data quality before further processing. It supports configurable merge strategies and outputs synthesized data in JSON format. AI integration uses Anthropic Claude API for advanced data processing tasks like validation and native status checking.
