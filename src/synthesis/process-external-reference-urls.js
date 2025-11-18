@@ -115,22 +115,37 @@ export async function discoverAllUrls(genus, species) {
     return currentCache[speciesKey];
   }
   
-  const apiKey = process.env.SERPAPI_API_KEY;
-  if (!apiKey) {
-    console.error('\n⚠️  SERPAPI_API_KEY not set - skipping URL discovery');
-    console.error('   URLs will not be cached. Set the API key to enable discovery.');
-    return {};
-  }
-  
   console.log(`\nDiscovering URLs for ${speciesKey}...`);
   const urls = {};
   let successfulSearches = 0;
+  const apiKey = process.env.SERPAPI_API_KEY;
+  
+  // Warn if API key is missing but continue (direct URLs will still work)
+  if (!apiKey) {
+    console.warn('\n⚠️  SERPAPI_API_KEY not set - web searches will be skipped');
+    console.warn('   Only direct URLs (e.g., Google Images) will be generated');
+  }
   
   for (const site of cfg.sites) {
-    const searchQuery = `site:${site.baseUrl} ${genus} ${species}`;
-    console.log(`Searching: ${searchQuery}`);
+    let url;
     
-    const url = await searchWithRetry(searchQuery, site);
+    if (site.useDirectUrl) {
+      // Construct URL directly (e.g., for Google Images) - no API key needed
+      const searchTerm = encodeURIComponent(`${genus} ${species}`);
+      url = `https://www.${site.baseUrl}&q=${searchTerm}`;
+      console.log(`Constructing direct URL for ${site.name}: ${url}`);
+    } else {
+      // Use SerpApi to search for the URL - requires API key
+      if (!apiKey) {
+        console.log(`Skipping ${site.name} (requires SERPAPI_API_KEY)`);
+        continue;
+      }
+      
+      const searchQuery = `site:${site.baseUrl} ${genus} ${species}`;
+      console.log(`Searching: ${searchQuery}`);
+      
+      url = await searchWithRetry(searchQuery, site);
+    }
     
     if (url) {
       urls[site.name] = url;

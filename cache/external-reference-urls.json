@@ -1,1 +1,22 @@
-{}
+{
+  "Trillium grandiflorum": {
+    "Go Botany": "https://gobotany.nativeplanttrust.org/species/trillium/grandiflorum/",
+    "Illinois Wildflowers": "https://www.illinoiswildflowers.info/woodland/plants/lf_trillium.htm",
+    "Lady Bird Johnson Wildflower Center": "https://www.wildflower.org/plants/result.php?id_plant=trgr4",
+    "Prairie Moon Nursery": "https://www.prairiemoon.com/trillium-grandiflorum-large-flowered-trillium",
+    "USDA PLANTS": "https://plants.usda.gov/plant-profile/TRGR4",
+    "Tropicos": "http://legacy.tropicos.org/Name/18400344?tab=specimens",
+    "Minnesota Wildflowers": "https://www.minnesotawildflowers.info/flower/large-flowered-trillium",
+    "Google Images": "https://www.google.com/search?tbm=isch&q=Trillium%20grandiflorum"
+  },
+  "Quercus alba": {
+    "Go Botany": "https://gobotany.nativeplanttrust.org/species/quercus/alba/",
+    "Illinois Wildflowers": "https://www.illinoiswildflowers.info/trees/plants/white_oak.html",
+    "Lady Bird Johnson Wildflower Center": "https://www.wildflower.org/plants/result.php?id_plant=QUAL",
+    "Prairie Moon Nursery": "https://www.prairiemoon.com/catalogs/Prairie-Moon-Cultural-Guide-2024.pdf",
+    "USDA PLANTS": "https://plants.usda.gov/plant-profile/QUAL",
+    "Tropicos": "http://legacy.tropicos.org/Name/50164680?projectid=27&langid=66",
+    "Minnesota Wildflowers": "https://www.minnesotawildflowers.info/tree/white-oak",
+    "Google Images": "https://www.google.com/search?tbm=isch&q=Quercus%20alba"
+  }
+}

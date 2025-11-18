@@ -122,7 +122,13 @@ The system uses separate configuration files for different features:
 List of reference websites to search for species information:
 - Michigan Flora, Go Botany, Illinois Wildflowers
 - Lady Bird Johnson Wildflower Center, Prairie Moon Nursery
-- USDA PLANTS, Tropicos, Minnesota Wildflowers, Google Images
+- USDA PLANTS, Tropicos, Minnesota Wildflowers
+- Google Images (constructed directly, not searched)
+
+Each site can specify:
+- `name`: Display name
+- `baseUrl`: Base URL for site searches
+- `useDirectUrl` (optional): If true, constructs URL directly instead of searching (e.g., Google Images)
 
 **Retry Settings:**
 - `startDelayMs`: Initial delay between searches (default: 100ms)
@@ -171,7 +177,8 @@ node test-url-discovery.js
 ```
 
 **Features:**
-- Searches 9 reference sites (Michigan Flora, Go Botany, USDA PLANTS, etc.)
+- Searches 8 reference sites via SerpApi (Michigan Flora, Go Botany, USDA PLANTS, etc.)
+- Constructs Google Images URLs directly (no search required)
 - Smart caching: Results saved to `cache/external-reference-urls.json`
 - Cached lookups are instant and don't consume API credits
 - Exponential backoff retry logic for rate limiting

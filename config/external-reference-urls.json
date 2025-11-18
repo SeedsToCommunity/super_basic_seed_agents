@@ -34,7 +34,8 @@
     },
     {
       "name": "Google Images",
-      "baseUrl": "google.com/search?tbm=isch"
+      "baseUrl": "google.com/search?tbm=isch",
+      "useDirectUrl": true
     }
   ],
   "retrySettings": {

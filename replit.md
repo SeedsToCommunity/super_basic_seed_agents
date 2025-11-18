@@ -26,7 +26,8 @@ The Seed and Species Aggregator is a Node.js backend project for processing and 
   - Provides confidence status and contextual notes
   - Region configurable via `config.json` (default: SE Michigan)
 - `process-external-reference-urls.js`: Discovers URLs for species across reference websites
-  - Searches 9 reference sites (Michigan Flora, Go Botany, USDA PLANTS, etc.)
+  - Searches 8 reference sites via SerpApi (Michigan Flora, Go Botany, USDA PLANTS, etc.)
+  - Constructs Google Images URLs directly (no search required)
   - Uses SerpApi for web searches with exponential backoff retry logic
   - Caches results in `cache/external-reference-urls.json` to minimize API usage
   - Config: `config/external-reference-urls.json` with sites array and retry settings
@@ -154,7 +155,8 @@ Centralized configuration for system-wide settings:
 **Synthesis Module Configurations:**
 Each synthesis module has its own configuration file to maintain separation of concerns:
 - `config/external-reference-urls.json`: Sites array and retry settings for URL discovery
-  - Sites: Michigan Flora, Go Botany, Illinois Wildflowers, Lady Bird Johnson, Prairie Moon, USDA PLANTS, Tropicos, Minnesota Wildflowers, Google Images
+  - Sites: Michigan Flora, Go Botany, Illinois Wildflowers, Lady Bird Johnson, Prairie Moon, USDA PLANTS, Tropicos, Minnesota Wildflowers
+  - Google Images: Constructed directly using `useDirectUrl: true` flag
   - Retry settings: startDelayMs (100), maxDelayMs (2000) for exponential backoff
 
 **Cache Directory (`cache/`):**
