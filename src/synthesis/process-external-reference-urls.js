@@ -65,7 +65,31 @@ function loadCache() {
 
 function saveCache() {
   try {
-    fs.writeFileSync(CACHE_PATH, JSON.stringify(cache, null, 2), 'utf-8');
+    // Sort species keys alphabetically (top level) - case-insensitive
+    const sortedCache = {};
+    const speciesKeys = Object.keys(cache).sort((a, b) => 
+      a.localeCompare(b, undefined, { sensitivity: 'base' })
+    );
+    
+    for (const speciesKey of speciesKeys) {
+      // Sort site keys alphabetically (nested level) - case-insensitive
+      const siteUrls = cache[speciesKey];
+      const sortedSites = {};
+      const siteKeys = Object.keys(siteUrls).sort((a, b) =>
+        a.localeCompare(b, undefined, { sensitivity: 'base' })
+      );
+      
+      for (const siteKey of siteKeys) {
+        sortedSites[siteKey] = siteUrls[siteKey];
+      }
+      
+      sortedCache[speciesKey] = sortedSites;
+    }
+    
+    // Update in-memory cache to match persisted order
+    cache = sortedCache;
+    
+    fs.writeFileSync(CACHE_PATH, JSON.stringify(sortedCache, null, 2), 'utf-8');
     console.log('Cache saved successfully');
   } catch (error) {
     console.error('Failed to save cache:', error.message);
