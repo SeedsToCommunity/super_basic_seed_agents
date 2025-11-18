@@ -31,5 +31,14 @@
     "Tropicos": "https://www.tropicos.org/name/Search?name=Acer%20rubrum&exact=true",
     "Minnesota Wildflowers": "https://www.minnesotawildflowers.info/tree/red-maple",
     "Google Images": "https://www.google.com/search?tbm=isch&q=Acer%20rubrum"
+  },
+  "carex grayi": {
+    "Go Botany": "https://gobotany.nativeplanttrust.org/species/carex/grayi/",
+    "Illinois Wildflowers": "https://www.illinoiswildflowers.info/grasses/plants/gray_sedge.htm",
+    "Prairie Moon Nursery": "https://www.prairiemoon.com/carex-grayi-common-bur-sedge",
+    "USDA PLANTS": "https://plants.usda.gov/plant-profile/CAGR5/characteristics",
+    "Tropicos": "http://www.tropicos.org/NameSearch.aspx?name=Carex%20asa-grayi&exact=true",
+    "Minnesota Wildflowers": "https://www.minnesotawildflowers.info/grass-sedge-rush/grays-sedge",
+    "Google Images": "https://www.google.com/search?tbm=isch&q=carex%20grayi"
   }
 }

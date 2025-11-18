@@ -1,7 +1,4 @@
 import { google } from 'googleapis';
-import { validateBotanicalName } from '../synthesis/process-botanical-name.js';
-import { checkMichiganNative } from '../synthesis/process-native-checker.js';
-import { discoverAllUrls } from '../synthesis/process-external-reference-urls.js';
 import { readFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
@@ -13,20 +10,120 @@ const __dirname = dirname(__filename);
 const configPath = join(__dirname, '../../config/config.json');
 const config = JSON.parse(readFileSync(configPath, 'utf-8'));
 
+// Load synthesis registry
+const registryPath = join(__dirname, '../../config/synthesis-registry.json');
+const registry = JSON.parse(readFileSync(registryPath, 'utf-8'));
+
 let connectionSettings;
 let folderCache = {}; // Cache for folder IDs to avoid repeated Drive API calls
+let loadedModules = null; // Cache for loaded synthesis modules
 
-// Column definitions - single source of truth for all plant data columns
-export const PLANT_COLUMNS = {
-  HEADERS: ['Genus', 'Species', 'Family', 'SE MI Native', 'Botanical Name Notes', 'Native Check Notes', 'External Reference URLs'],
-  GENUS: 0,
-  SPECIES: 1,
-  FAMILY: 2,
-  SE_MI_NATIVE: 3,
-  BOTANICAL_NOTES: 4,
-  NATIVE_NOTES: 5,
-  EXTERNAL_URLS: 6
-};
+/**
+ * Topological sort to resolve module dependencies
+ * @param {Array<Object>} modules - Array of module metadata
+ * @returns {Array<Object>} Sorted modules in dependency order
+ */
+function sortModulesByDependencies(modules) {
+  const sorted = [];
+  const visited = new Set();
+  const visiting = new Set();
+  
+  function visit(moduleId) {
+    if (visited.has(moduleId)) return;
+    if (visiting.has(moduleId)) {
+      throw new Error(`Circular dependency detected involving module: ${moduleId}`);
+    }
+    
+    visiting.add(moduleId);
+    
+    const module = modules.find(m => m.metadata.id === moduleId);
+    if (!module) {
+      throw new Error(`Module not found: ${moduleId}`);
+    }
+    
+    // Visit dependencies first
+    for (const depId of module.metadata.dependencies || []) {
+      visit(depId);
+    }
+    
+    visiting.delete(moduleId);
+    visited.add(moduleId);
+    sorted.push(module);
+  }
+  
+  // Visit all modules
+  for (const module of modules) {
+    visit(module.metadata.id);
+  }
+  
+  return sorted;
+}
+
+/**
+ * Dynamically load synthesis modules from registry
+ * @returns {Promise<Array<Object>>} Sorted array of loaded modules
+ */
+async function loadSynthesisModules() {
+  if (loadedModules) {
+    return loadedModules;
+  }
+  
+  const modules = [];
+  
+  for (const registryEntry of registry.modules) {
+    if (!registryEntry.enabled) continue;
+    
+    const modulePath = join(__dirname, registryEntry.path);
+    const module = await import(modulePath);
+    
+    if (!module.metadata || !module.run) {
+      throw new Error(`Invalid synthesis module: ${registryEntry.id} (missing metadata or run function)`);
+    }
+    
+    modules.push({
+      metadata: module.metadata,
+      run: module.run,
+      registryEntry
+    });
+  }
+  
+  // Sort modules by dependencies
+  loadedModules = sortModulesByDependencies(modules);
+  return loadedModules;
+}
+
+/**
+ * Build column definitions from loaded modules
+ * @param {Array<Object>} modules - Array of loaded synthesis modules
+ * @returns {Object} Column definitions object
+ */
+function buildColumnDefinitions(modules) {
+  const headers = ['Genus', 'Species']; // Base columns always first
+  let columnIndex = 2;
+  const columnMap = {
+    GENUS: 0,
+    SPECIES: 1
+  };
+  
+  for (const module of modules) {
+    for (const columnName of module.metadata.columns) {
+      headers.push(columnName);
+      // Create constant name from column name (e.g., "SE MI Native" -> "SE_MI_NATIVE")
+      const constName = columnName.toUpperCase().replace(/\s+/g, '_');
+      columnMap[constName] = columnIndex;
+      columnIndex++;
+    }
+  }
+  
+  return {
+    HEADERS: headers,
+    ...columnMap
+  };
+}
+
+// Dynamically build column definitions from registry
+const modules = await loadSynthesisModules();
+export const PLANT_COLUMNS = buildColumnDefinitions(modules);
 
 async function getAccessToken() {
   if (connectionSettings && connectionSettings.settings.expires_at && new Date(connectionSettings.settings.expires_at).getTime() > Date.now()) {
@@ -114,55 +211,73 @@ export async function findFolderByName(folderName) {
 }
 
 /**
- * Gather all plant data (validation + native check + URL discovery)
- * Returns null if validation fails (status !== 'current')
+ * Gather all plant data by executing synthesis modules in dependency order
+ * Returns null if botanical name validation fails (status !== 'current')
  * @param {string} genus - The genus name
  * @param {string} species - The species name
  * @returns {Promise<Object|null>} Plant record object or null if validation failed
  */
 export async function getPlantRecord(genus, species) {
-  // Step 1: Validate botanical name
-  let validationResult;
-  try {
-    validationResult = await validateBotanicalName(`${genus} ${species}`);
-  } catch (error) {
-    throw new Error(`Validation failed for ${genus} ${species}: ${error.message}`);
+  const modules = await loadSynthesisModules();
+  const results = {};
+  
+  // Execute modules in dependency order
+  for (const module of modules) {
+    try {
+      console.log(`Executing module: ${module.metadata.id} for ${genus} ${species}`);
+      
+      const moduleResult = await module.run(genus, species, results);
+      
+      // Store results for dependent modules
+      results[module.metadata.id] = moduleResult;
+      
+      // Special handling for botanical-name module (validation gate)
+      if (module.metadata.id === 'botanical-name') {
+        if (moduleResult.status !== 'current') {
+          console.log(`${genus} ${species} is not a current botanical name (status: ${moduleResult.status})`);
+          return null; // Stop processing if not current
+        }
+      }
+      
+    } catch (error) {
+      const errorMsg = `Module ${module.metadata.id} failed for ${genus} ${species}: ${error.message}`;
+      
+      // Check if we should stop on critical failure
+      if (registry.config.stopOnCriticalFailure && module.metadata.id === 'botanical-name') {
+        throw new Error(errorMsg);
+      }
+      
+      console.error(errorMsg);
+      // Continue with empty result for non-critical failures
+      results[module.metadata.id] = {};
+    }
   }
   
-  // Only proceed if status is 'current'
-  if (validationResult.status !== 'current') {
-    return null; // Indicates validation failed (not a current name)
-  }
+  // Build final plant record from all module results
+  return buildPlantRecord(results);
+}
+
+/**
+ * Build final plant record object from module results
+ * @param {Object} moduleResults - Results from all executed modules
+ * @returns {Object} Formatted plant record
+ */
+function buildPlantRecord(moduleResults) {
+  const botanicalResult = moduleResults['botanical-name'] || {};
+  const nativeResult = moduleResults['native-checker'] || {};
+  const urlResult = moduleResults['external-reference-urls'] || {};
   
-  // Step 2: Check native status
-  let nativeResult;
-  try {
-    nativeResult = await checkMichiganNative(genus, species);
-  } catch (error) {
-    throw new Error(`Native check failed for ${genus} ${species}: ${error.message}`);
-  }
-  
-  // Step 3: Discover external reference URLs
-  let externalUrls;
-  try {
-    externalUrls = await discoverAllUrls(genus, species);
-  } catch (error) {
-    console.error(`URL discovery failed for ${genus} ${species}:`, error.message);
-    externalUrls = {}; // Continue with empty URLs on failure
-  }
-  
-  // Return the complete plant record
   return {
-    genus: validationResult.genus,
-    species: validationResult.species,
-    family: validationResult.family,
-    isNative: nativeResult.isNative,
-    validationNotes: validationResult.error || '',
-    nativeCheckNotes: nativeResult.notes || '',
-    externalUrls: externalUrls,
-    // Include validation status for reference
-    validationStatus: validationResult.status,
-    nativeStatus: nativeResult.status
+    genus: botanicalResult.genus || '',
+    species: botanicalResult.species || '',
+    family: botanicalResult.family || '',
+    isNative: nativeResult.isNative || false,
+    validationNotes: botanicalResult.notes || '',
+    nativeCheckNotes: nativeResult.nativeCheckNotes || '',
+    externalUrls: urlResult.externalUrls || {},
+    // Include status fields for reference
+    validationStatus: botanicalResult.status || '',
+    nativeStatus: nativeResult.status || ''
   };
 }
 

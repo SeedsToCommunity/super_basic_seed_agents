@@ -18,22 +18,18 @@ export const metadata = {
  * @param {string} genus - The genus name
  * @param {string} species - The species name
  * @param {Object} priorResults - Results from previously executed modules (empty for this module)
- * @returns {Promise<Object|null>} Plant record with genus, species, family, botanicalNotes or null if invalid
+ * @returns {Promise<Object>} Validation result with status, genus, species, family, and notes
  */
 export async function run(genus, species, priorResults) {
   const botanicalName = `${genus} ${species}`;
   const result = await validateBotanicalName(botanicalName);
   
-  // If not current, return null to stop pipeline
-  if (result.status !== 'current') {
-    return null;
-  }
-  
   return {
+    status: result.status,
     genus: result.genus,
     species: result.species,
     family: result.family,
-    botanicalNotes: result.error || ''
+    notes: result.error || ''
   };
 }
 
