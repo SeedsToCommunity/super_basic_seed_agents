@@ -40,5 +40,35 @@
     "Tropicos": "http://www.tropicos.org/NameSearch.aspx?name=Carex%20asa-grayi&exact=true",
     "Minnesota Wildflowers": "https://www.minnesotawildflowers.info/grass-sedge-rush/grays-sedge",
     "Google Images": "https://www.google.com/search?tbm=isch&q=carex%20grayi"
+  },
+  "Sanguinaria canadensis": {
+    "Go Botany": "https://gobotany.nativeplanttrust.org/species/sanguinaria/canadensis/",
+    "Illinois Wildflowers": "https://www.illinoiswildflowers.info/woodland/plants/bloodroot.htm",
+    "Lady Bird Johnson Wildflower Center": "https://www.wildflower.org/plants/result.php?id_plant=saca13",
+    "Prairie Moon Nursery": "https://www.prairiemoon.com/sanguinaria-canadensis-bloodroot",
+    "USDA PLANTS": "https://plants.usda.gov/plant-profile/SACA13",
+    "Tropicos": "http://legacy.tropicos.org/Name/40029302?projectid=23&langid=0",
+    "Minnesota Wildflowers": "https://www.minnesotawildflowers.info/flower/bloodroot",
+    "Google Images": "https://www.google.com/search?tbm=isch&q=Sanguinaria%20canadensis"
+  },
+  "Claytonia virginica": {
+    "Go Botany": "https://gobotany.nativeplanttrust.org/species/claytonia/virginica/",
+    "Illinois Wildflowers": "https://www.illinoiswildflowers.info/woodland/plants/spring_beauty.htm",
+    "Lady Bird Johnson Wildflower Center": "https://www.wildflower.org/plants/result.php?id_plant=clvi3",
+    "Prairie Moon Nursery": "https://www.prairiemoon.com/claytonia-virginica-spring-beauty",
+    "USDA PLANTS": "https://plants.usda.gov/plant-profile/CLVI3",
+    "Tropicos": "https://legacy.tropicos.org/Name/40009917?projectid=83&langid=66",
+    "Minnesota Wildflowers": "https://www.minnesotawildflowers.info/flower/virginia-spring-beauty",
+    "Google Images": "https://www.google.com/search?tbm=isch&q=Claytonia%20virginica"
+  },
+  "Erythronium americanum": {
+    "Go Botany": "https://gobotany.nativeplanttrust.org/species/erythronium/americanum/",
+    "Illinois Wildflowers": "https://www.illinoiswildflowers.info/woodland/plants/yl_troutlily.html",
+    "Lady Bird Johnson Wildflower Center": "https://www.wildflower.org/plants/result.php?id_plant=eram5",
+    "Prairie Moon Nursery": "https://www.prairiemoon.com/erythronium-americanum-yellow-trout-lily",
+    "USDA PLANTS": "https://plants.usda.gov/plant-profile/eram5",
+    "Tropicos": "http://legacy.tropicos.org/NameSearch.aspx?name=erythronium+americanum",
+    "Minnesota Wildflowers": "https://www.minnesotawildflowers.info/flower/yellow-trout-lily",
+    "Google Images": "https://www.google.com/search?tbm=isch&q=Erythronium%20americanum"
   }
 }
