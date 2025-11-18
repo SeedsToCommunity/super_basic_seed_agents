@@ -20,7 +20,12 @@
     "Google Images": "https://www.google.com/search?tbm=isch&q=Quercus%20alba"
   },
   "Carex grayi": {
-    "Google Images": "https://www.google.com/search?tbm=isch&q=Carex%20grayi"
+    "Google Images": "https://www.google.com/search?tbm=isch&q=Carex%20grayi",
+    "Go Botany": "https://gobotany.nativeplanttrust.org/species/carex/grayi/",
+    "Prairie Moon Nursery": "https://www.prairiemoon.com/carex-grayi-common-bur-sedge",
+    "USDA PLANTS": "https://plants.usda.gov/plant-profile/CAGR5/characteristics",
+    "Tropicos": "http://www.tropicos.org/NameSearch.aspx?name=Carex%20asa-grayi&exact=true",
+    "Minnesota Wildflowers": "https://www.minnesotawildflowers.info/grass-sedge-rush/grays-sedge"
   },
   "Acer rubrum": {
     "Go Botany": "https://gobotany.nativeplanttrust.org/species/acer/rubrum/",

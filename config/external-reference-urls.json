@@ -39,7 +39,7 @@
     }
   ],
   "retrySettings": {
-    "startDelayMs": 100,
-    "maxDelayMs": 2000
+    "startDelayMs": 10,
+    "maxDelayMs": 1000
   }
 }
