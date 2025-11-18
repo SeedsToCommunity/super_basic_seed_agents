@@ -1,0 +1,44 @@
+{
+  "sites": [
+    {
+      "name": "Michigan Flora",
+      "baseUrl": "michiganflora.net"
+    },
+    {
+      "name": "Go Botany",
+      "baseUrl": "gobotany.nativeplanttrust.org"
+    },
+    {
+      "name": "Illinois Wildflowers",
+      "baseUrl": "illinoiswildflowers.info"
+    },
+    {
+      "name": "Lady Bird Johnson Wildflower Center",
+      "baseUrl": "wildflower.org"
+    },
+    {
+      "name": "Prairie Moon Nursery",
+      "baseUrl": "prairiemoon.com"
+    },
+    {
+      "name": "USDA PLANTS",
+      "baseUrl": "plants.usda.gov"
+    },
+    {
+      "name": "Tropicos",
+      "baseUrl": "tropicos.org"
+    },
+    {
+      "name": "Minnesota Wildflowers",
+      "baseUrl": "minnesotawildflowers.info"
+    },
+    {
+      "name": "Google Images",
+      "baseUrl": "google.com/search?tbm=isch"
+    }
+  ],
+  "retrySettings": {
+    "startDelayMs": 100,
+    "maxDelayMs": 2000
+  }
+}

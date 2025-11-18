@@ -13,7 +13,8 @@
   "dependencies": {
     "@anthropic-ai/sdk": "^0.69.0",
     "@octokit/rest": "^22.0.1",
-    "googleapis": "^166.0.0"
+    "googleapis": "^166.0.0",
+    "serpapi": "^2.2.1"
   },
   "devDependencies": {
     "@types/node": "20.16.11"
