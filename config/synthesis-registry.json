@@ -1,0 +1,26 @@
+{
+  "modules": [
+    {
+      "id": "botanical-name",
+      "path": "../src/synthesis/process-botanical-name.js",
+      "enabled": true,
+      "description": "Validates botanical names and returns current nomenclature status"
+    },
+    {
+      "id": "native-checker",
+      "path": "../src/synthesis/process-native-checker.js",
+      "enabled": true,
+      "description": "Determines if plant species is native to Southeast Michigan"
+    },
+    {
+      "id": "external-reference-urls",
+      "path": "../src/synthesis/process-external-reference-urls.js",
+      "enabled": true,
+      "description": "Discovers URLs for plant species across botanical reference websites"
+    }
+  ],
+  "config": {
+    "stopOnCriticalFailure": true,
+    "parallelExecution": false
+  }
+}
