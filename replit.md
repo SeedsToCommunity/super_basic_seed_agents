@@ -16,22 +16,25 @@ The Seed and Species Aggregator is a Node.js backend project for processing and 
 
 ### CLI Scripts Architecture
 
-**Core Validators:**
-- `src/common/botanical-validator.js`: Validates botanical names using Claude API
+**Core Validators (in `src/synthesis/`):**
+- `process-botanical-name.js`: Validates botanical names using Claude API
   - Returns status: current/updated/likely_misspelled/invalid
   - Normalizes genus (capitalized) and species (lowercase)
   - Provides family classification
-- `src/common/michigan-native-checker.js`: Determines SE Michigan native status
+- `process-native-checker.js`: Determines native status for configured region
   - Returns boolean isNative flag
   - Provides confidence status and contextual notes
+  - Region configurable via `config.json` (default: SE Michigan)
 
 **Processing Pipeline:**
 - `src/output/plant-pipeline.js`: Shared pipeline functions (single source of truth)
   - `getPlantRecord()`: Orchestrates validation and native checking
-  - `createPlantSheet()`: Creates timestamped Google Sheets with headers
+  - `createPlantSheet()`: Creates timestamped Google Sheets with headers (uses config for file prefix)
   - `appendPlantRows()`: Writes plant data rows
   - `findFolderByName()`: Google Drive folder discovery with caching
+  - `getOutputFolderName()`: Returns output folder name from config
   - `PLANT_COLUMNS`: Centralized column definitions
+  - Reads configuration from `config/config.json` for folder names and file prefixes
 
 **CLI Tools:**
 - `src/output/process-plant.js`: Single plant processor
@@ -125,24 +128,27 @@ Processes 4 SE Michigan spring ephemerals (Trillium grandiflorum, Sanguinaria ca
 - Folder ID cached after first lookup to reduce API calls
 
 ### Configuration File (`config/config.json`)
-Currently stores:
-- Google Drive folder IDs for data sources
-- Synthesis output format preferences
-- Validation rules and merge strategies
+Centralized configuration for all system settings:
+- **Google Drive**: Output folder name, Seeds To Community spreadsheet reference, data source folder IDs
+- **Output**: File prefix for generated Google Sheets
+- **Synthesis**: Native check region (default: SE Michigan), output format, merge strategy
+- **Validation**: Strict mode, required fields
+
+Configuration is loaded by `plant-pipeline.js` at startup and used throughout the processing pipeline.
 
 ## File Reference
 
 | File | Purpose |
 |------|---------|
-| `src/common/botanical-validator.js` | Validates botanical names using Claude API |
-| `src/common/michigan-native-checker.js` | Checks SE Michigan native status using Claude API |
+| `src/synthesis/process-botanical-name.js` | Validates botanical names using Claude API |
+| `src/synthesis/process-native-checker.js` | Checks native status using Claude API (region configurable) |
 | `src/output/plant-pipeline.js` | Shared pipeline functions for data gathering and Google Sheets operations |
 | `src/output/process-plant.js` | CLI tool for single plant processing |
 | `src/output/batch-process-plants.js` | CLI tool for batch plant processing |
 | `test-botanical-validator.js` | Test harness for botanical validation |
 | `test-michigan-native.js` | Test harness for native status checking |
 | `test-batch-process.js` | Test harness for batch processing with 4 sample plants |
-| `config/config.json` | Configuration for data sources and processing rules |
+| `config/config.json` | Centralized configuration for all system settings |
 
 ## External Dependencies
 

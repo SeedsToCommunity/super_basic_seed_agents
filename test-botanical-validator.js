@@ -1,4 +1,4 @@
-import { validateBotanicalName } from "./src/common/botanical-validator.js";
+import { validateBotanicalName } from "./src/synthesis/process-botanical-name.js";
 
 const testCases = [
   // Valid current botanical names - SHOULD PASS
@@ -61,14 +61,14 @@ const testCases = [
 
   // Misspelled botanical names - SHOULD DETECT as likely misspelled
   {
-    name: "Misspelled genus for Carex pensylvanica	Penn Sedge",
+    name: "Misspelled genus for Carex pensylvanica      Penn Sedge",
     input: "Careex pennsylvanica",
     expectedStatus: "likely_misspelled",
     expectedSuggestedName: "Carex pensylvanica",
     shouldPass: false,
   },
   {
-    name: "Misspelled species for Carex pensylvanica	Penn Sedge",
+    name: "Misspelled species for Carex pensylvanica    Penn Sedge",
     input: "Carex pensylanica",
     expectedStatus: "likely_misspelled",
     expectedSuggestedName: "Carex pensylvanica",

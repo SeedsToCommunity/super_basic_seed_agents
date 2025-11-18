@@ -1,6 +1,16 @@
 import { google } from 'googleapis';
-import { validateBotanicalName } from '../common/botanical-validator.js';
-import { checkMichiganNative } from '../common/michigan-native-checker.js';
+import { validateBotanicalName } from '../synthesis/process-botanical-name.js';
+import { checkMichiganNative } from '../synthesis/process-native-checker.js';
+import { readFileSync } from 'fs';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+// Load configuration
+const configPath = join(__dirname, '../../config/config.json');
+const config = JSON.parse(readFileSync(configPath, 'utf-8'));
 
 let connectionSettings;
 let folderCache = {}; // Cache for folder IDs to avoid repeated Drive API calls
@@ -148,10 +158,10 @@ export async function getPlantRecord(genus, species) {
  * Create a new Google Sheet with datetime-stamped name
  * Always appends timestamp to ensure unique sheet names
  * @param {string} folderId - The ID of the folder to create the sheet in
- * @param {string} [prefix] - Optional prefix for sheet name (default: "PlantData")
+ * @param {string} [prefix] - Optional prefix for sheet name (defaults to config value)
  * @returns {Promise<Object>} Object with spreadsheetId and spreadsheetUrl
  */
-export async function createPlantSheet(folderId, prefix = 'PlantData') {
+export async function createPlantSheet(folderId, prefix = config.output.filePrefix) {
   const sheets = await getUncachableGoogleSheetsClient();
   
   // Generate datetime stamp (always included for uniqueness)
@@ -248,4 +258,12 @@ export async function appendPlantRows(spreadsheetId, plantRecords) {
       values: rows
     }
   });
+}
+
+/**
+ * Get the output folder name from configuration
+ * @returns {string} The configured output folder name
+ */
+export function getOutputFolderName() {
+  return config.googleDrive.folders.outputFolder;
 }

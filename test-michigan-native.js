@@ -1,4 +1,4 @@
-import { checkMichiganNative } from "./src/common/michigan-native-checker.js";
+import { checkMichiganNative } from "./src/synthesis/process-native-checker.js";
 
 const testCases = [
   // Native SE Michigan herbaceous plants

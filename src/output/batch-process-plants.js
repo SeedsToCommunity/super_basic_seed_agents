@@ -1,4 +1,4 @@
-import { getPlantRecord, createPlantSheet, appendPlantRows, findFolderByName } from './plant-pipeline.js';
+import { getPlantRecord, createPlantSheet, appendPlantRows, findFolderByName, getOutputFolderName } from './plant-pipeline.js';
 
 /**
  * Process multiple plants and save to a single Google Sheet
@@ -61,12 +61,13 @@ async function batchProcessPlants(plants) {
   console.log(`Step 2: Saving ${plantRecords.length} plants to Google Sheets...`);
   
   try {
-    // Find the folder
-    console.log(`  Finding folder "SpeciesAppDataFiles_DoNotTouch"...`);
-    const folderId = await findFolderByName('SpeciesAppDataFiles_DoNotTouch');
+    // Find the folder using config
+    const folderName = getOutputFolderName();
+    console.log(`  Finding folder "${folderName}"...`);
+    const folderId = await findFolderByName(folderName);
     
     if (!folderId) {
-      throw new Error('Folder "SpeciesAppDataFiles_DoNotTouch" not found in Google Drive');
+      throw new Error(`Folder "${folderName}" not found in Google Drive`);
     }
     
     console.log(`  ✓ Found folder (ID: ${folderId})`);
