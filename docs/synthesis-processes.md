@@ -24,25 +24,19 @@ The Seed and Species Aggregator uses **5 synthesis modules** that execute in dep
 
 The synthesis pipeline creates Google Sheets with the following column structure. Each module contributes one or more columns:
 
-### Complete Column Layout (14 total columns)
+### Complete Column Layout (9 total columns)
 
 | Column # | Column Header | Source Module | Data Type |
 |----------|---------------|---------------|-----------|
-| 1 | **Family** | botanical-name | String |
-| 2 | **Botanical Name Notes** | botanical-name | String |
-| 3 | **SE MI Native** | native-checker | "Yes" or "No" |
-| 4 | **Native Check Notes** | native-checker | String |
-| 5 | **Michigan Flora** | external-reference-urls | URL String |
-| 6 | **Go Botany** | external-reference-urls | URL String |
-| 7 | **Illinois Wildflowers** | external-reference-urls | URL String |
-| 8 | **Lady Bird Johnson Wildflower Center** | external-reference-urls | URL String |
-| 9 | **Prairie Moon Nursery** | external-reference-urls | URL String |
-| 10 | **USDA PLANTS** | external-reference-urls | URL String |
-| 11 | **Tropicos** | external-reference-urls | URL String |
-| 12 | **Minnesota Wildflowers** | external-reference-urls | URL String |
-| 13 | **Google Images** | external-reference-urls | URL String |
-| 14 | **Common Names** | common-names | String (comma-separated) |
-| 15 | **Previously Known As** | previous-botanical | String (comma-separated) |
+| 1 | **Genus** | *(base column)* | String |
+| 2 | **Species** | *(base column)* | String |
+| 3 | **Family** | botanical-name | String |
+| 4 | **Botanical Name Notes** | botanical-name | String |
+| 5 | **SE MI Native** | native-checker | "Yes" or "No" |
+| 6 | **Native Check Notes** | native-checker | String |
+| 7 | **External Reference URLs** | external-reference-urls | JSON Object (stringified) |
+| 8 | **Common Names** | common-names | String (comma-separated) |
+| 9 | **Previously Known As** | previous-botanical | String (comma-separated) |
 
 ### Example Complete Spreadsheet Row
 
@@ -50,19 +44,13 @@ The synthesis pipeline creates Google Sheets with the following column structure
 
 | Column | Value |
 |--------|-------|
+| Genus | `Quercus` |
+| Species | `alba` |
 | Family | `Fagaceae` |
 | Botanical Name Notes | *(empty)* |
 | SE MI Native | `Yes` |
 | Native Check Notes | `Common native tree throughout the region` |
-| Michigan Flora | *(empty - not found)* |
-| Go Botany | `https://gobotany.nativeplanttrust.org/species/quercus/alba/` |
-| Illinois Wildflowers | `https://www.illinoiswildflowers.info/trees/plants/wh_oak.htm` |
-| Lady Bird Johnson Wildflower Center | `https://www.wildflower.org/plants/result.php?id_plant=qual` |
-| Prairie Moon Nursery | `https://www.prairiemoon.com/quercus-alba-white-oak` |
-| USDA PLANTS | `https://plants.usda.gov/plant-profile/QUAL` |
-| Tropicos | `https://tropicos.org/...` |
-| Minnesota Wildflowers | `https://minnesotawildflowers.info/...` |
-| Google Images | `https://www.google.com/search?tbm=isch&q=Quercus%20alba` |
+| External Reference URLs | `{"Go Botany":"https://gobotany.nativeplanttrust.org/species/quercus/alba/","Illinois Wildflowers":"https://www.illinoiswildflowers.info/trees/plants/wh_oak.htm","Lady Bird Johnson Wildflower Center":"https://www.wildflower.org/plants/result.php?id_plant=qual","Prairie Moon Nursery":"https://www.prairiemoon.com/quercus-alba-white-oak","USDA PLANTS":"https://plants.usda.gov/plant-profile/QUAL","Tropicos":"https://tropicos.org/...","Minnesota Wildflowers":"https://minnesotawildflowers.info/...","Google Images":"https://www.google.com/search?tbm=isch&q=Quercus%20alba"}` |
 | Common Names | `White Oak, Eastern White Oak, Stave Oak, Ridge White Oak` |
 | Previously Known As | `Quercus candida, Quercus nigrescens, Quercus ramosa, Quercus repanda, Quercus repanda` |
 
@@ -252,30 +240,27 @@ Converts Claude's response to column values:
 1. **External Reference URLs** (`externalReferenceUrls`) - Object/Record with site names as keys
 
 ### Google Spreadsheet Columns
-This module populates **9 columns** in the output spreadsheet (one per reference website):
+This module populates **1 column** in the output spreadsheet:
 
 | Column Header | Example Value | Description |
 |---------------|---------------|-------------|
-| **Michigan Flora** | `https://michiganflora.net/...` | Michigan Flora website link |
-| **Go Botany** | `https://gobotany.nativeplanttrust.org/...` | Go Botany website link |
-| **Illinois Wildflowers** | `https://illinoiswildflowers.info/...` | Illinois Wildflowers website link |
-| **Lady Bird Johnson Wildflower Center** | `https://wildflower.org/...` | LBJWC website link |
-| **Prairie Moon Nursery** | `https://prairiemoon.com/...` | Prairie Moon Nursery link |
-| **USDA PLANTS** | `https://plants.usda.gov/...` | USDA PLANTS database link |
-| **Tropicos** | `https://tropicos.org/...` | Tropicos botanical database link |
-| **Minnesota Wildflowers** | `https://minnesotawildflowers.info/...` | Minnesota Wildflowers link |
-| **Google Images** | `https://google.com/search?tbm=isch&q=...` | Google Images search results |
+| **External Reference URLs** | `{"Go Botany":"https://...","USDA PLANTS":"https://..."}` | JSON object containing all discovered URLs |
 
-**Example Spreadsheet Row** (Quercus alba):
-```
-Go Botany: https://gobotany.nativeplanttrust.org/species/quercus/alba/
-Illinois Wildflowers: https://www.illinoiswildflowers.info/trees/plants/wh_oak.htm
-USDA PLANTS: https://plants.usda.gov/plant-profile/QUAL
-Google Images: https://www.google.com/search?tbm=isch&q=Quercus%20alba
-... (up to 9 columns)
+**Example Spreadsheet Cell** (Quercus alba):
+```json
+{
+  "Go Botany": "https://gobotany.nativeplanttrust.org/species/quercus/alba/",
+  "Illinois Wildflowers": "https://www.illinoiswildflowers.info/trees/plants/wh_oak.htm",
+  "Lady Bird Johnson Wildflower Center": "https://www.wildflower.org/plants/result.php?id_plant=qual",
+  "Prairie Moon Nursery": "https://www.prairiemoon.com/quercus-alba-white-oak",
+  "USDA PLANTS": "https://plants.usda.gov/plant-profile/QUAL",
+  "Tropicos": "https://tropicos.org/...",
+  "Minnesota Wildflowers": "https://minnesotawildflowers.info/...",
+  "Google Images": "https://www.google.com/search?tbm=isch&q=Quercus%20alba"
+}
 ```
 
-**Note**: Each reference website gets its own dedicated column. Empty columns appear if a URL was not found for that site.
+**Note**: The URLs are stored as a JSON-stringified object in a single spreadsheet cell. Each reference website name becomes a key in the object, with the discovered URL as the value. Missing URLs are simply not included in the object.
 
 ### Targeted Reference Websites (8 search-based + 1 direct)
 1. Michigan Flora
@@ -630,9 +615,11 @@ Google Sheets Output
 | botanical-name | `botanicalNameNotes` | Botanical Name Notes | String |
 | native-checker | `seMiNative` | SE MI Native | "Yes"/"No" |
 | native-checker | `nativeCheckNotes` | Native Check Notes | String |
-| external-reference-urls | `externalReferenceUrls` | External Reference URLs | Object (site→URL) |
+| external-reference-urls | `externalReferenceUrls` | External Reference URLs | JSON Object (stringified) |
 | common-names | `commonNames` | Common Names | String (comma-separated) |
 | previous-botanical | `previouslyKnownAs` | Previously Known As | String (comma-separated) |
+
+**Total: 7 synthesis columns** (plus 2 base columns for Genus/Species = **9 columns total in spreadsheet**)
 
 ---
 
