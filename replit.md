@@ -53,7 +53,7 @@ All synthesis modules must export:
 -   **`process-native-checker.js`**: Determines if plant is native to Southeast Michigan using Claude API, dependent on botanical name validation.
 -   **`process-external-reference-urls.js`**: Discovers and caches URLs from botanical reference websites using SerpApi, based on validated botanical name.
 -   **`process-common-names.js`**: Identifies all common/vernacular names used in Southeast Michigan and adjacent regions using Claude API. Excludes botanical synonyms and historical scientific names.
--   **`process-previous-botanical.js`**: Retrieves botanical synonyms (legacy binomial names) from GBIF Backbone Taxonomy for cross-reference purposes. Returns comma-separated species-level synonyms only, excluding varieties and subspecies. No authentication required.
+-   **`process-previous-botanical.js`**: Retrieves botanical synonyms (legacy binomial names) from GBIF Backbone Taxonomy for cross-reference purposes. Returns comma-separated species-level synonyms only, excluding varieties and subspecies. Uses file-based caching in `cache/GBIF/` with pretty-printed JSON files. No authentication required.
 
 ### Processing Pipeline (`src/output/plant-pipeline.js`)
 The pipeline dynamically loads, validates, and executes enabled modules using a dependency graph. It provides:
@@ -111,7 +111,11 @@ Comprehensive documentation is maintained in the `docs/` directory and kept sync
 The system follows a "validation-first" approach, ensuring data quality before further processing. It supports configurable merge strategies and outputs synthesized data in JSON format. AI integration uses Anthropic Claude API for advanced data processing tasks like validation and native status checking.
 
 ### Configuration
-Centralized system settings are managed in `config/config.json`, covering Google Drive settings, output preferences, synthesis parameters (e.g., native check region, merge strategy), and validation rules. Individual synthesis modules have their own configuration files (e.g., `config/external-reference-urls.json`). A `cache/` directory stores results like external reference URLs to minimize API usage.
+Centralized system settings are managed in `config/config.json`, covering Google Drive settings, output preferences, synthesis parameters (e.g., native check region, merge strategy), and validation rules. Individual synthesis modules have their own configuration files (e.g., `config/external-reference-urls.json`). 
+
+**Caching System**: The `cache/` directory stores API results to minimize expensive operations:
+- `cache/external-reference-urls.json`: Single JSON file with all discovered website URLs
+- `cache/GBIF/`: Folder with individual pretty-printed JSON files per species (`Genus_species_gbif.json`) containing synonym data
 
 ## External Dependencies
 
