@@ -1,0 +1,32 @@
+{
+  "found": true,
+  "scientificName": "Acer rubrum",
+  "taxonId": 48098,
+  "region": "Southeast Michigan",
+  "placeIds": {
+    "washtenaw": 2649,
+    "livingston": 2609,
+    "oakland": 2350,
+    "wayne": 986,
+    "monroe": 2009,
+    "jackson": 2948,
+    "lenawee": 2608
+  },
+  "monthlyObservations": {
+    "1": 10,
+    "2": 9,
+    "3": 40,
+    "4": 80,
+    "5": 191,
+    "6": 64,
+    "7": 58,
+    "8": 76,
+    "9": 133,
+    "10": 103,
+    "11": 16,
+    "12": 11
+  },
+  "totalObservations": 791,
+  "peakMonth": 5,
+  "peakMonthName": "May"
+}
