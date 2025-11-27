@@ -97,7 +97,7 @@ See `docs/synthesis-module-interface.md` for complete interface specification an
 ### Technical Reference Documentation
 Comprehensive documentation is maintained in the `docs/` directory and kept synchronized with code changes:
 
--   **`docs/api-data-sources.md`**: Complete reference for all external APIs and data sources (Google Drive/Sheets, Anthropic Claude, SerpApi, GBIF). Includes authentication methods, endpoints used, rate limits, caching strategies, and portability considerations.
+-   **`docs/api-data-sources.md`**: Complete reference for all external APIs and data sources (Google Drive/Sheets, Anthropic Claude, SerpApi, GBIF, iNaturalist). Includes authentication methods, endpoints used, rate limits, caching strategies, and portability considerations.
 -   **`docs/synthesis-processes.md`**: Detailed processing guide for each synthesis module. Describes data sources, output columns, high-level processing logic, and error handling for all 5 modules.
 -   **`docs/synthesis-module-interface.md`**: Interface specification for creating new synthesis modules.
 
@@ -117,6 +117,7 @@ Centralized system settings are managed in `config/config.json`, covering Google
 - `cache/external-reference-urls.json`: Single JSON file with all discovered website URLs
 - `cache/GBIF/`: Folder with individual pretty-printed JSON files per species (`Genus_species_gbif.json`) containing synonym data
 - `cache/MichiganFlora/`: Static 2024 dataset cached locally in CSV format (~2,873 species with ecological data)
+- `cache/iNaturalist/`: Folder with individual JSON files per species and endpoint type (`Genus_species_inaturalist_taxa.json`, `Genus_species_inaturalist_histogram.json`)
 
 ## External Dependencies
 
@@ -126,6 +127,7 @@ Centralized system settings are managed in `config/config.json`, covering Google
 -   **SerpApi**: For external reference URL discovery.
 -   **GBIF Species API**: For retrieving botanical synonyms and taxonomic information. No authentication required.
 -   **Michigan Flora CSV**: Local dataset (~2,873 species) with ecological data including Coefficient of Conservatism (C), Wetness Indicator (W), native status, and common names. No network required.
+-   **iNaturalist API**: For Wikipedia excerpts, taxonomic data, and phenology (observation histograms by month) for SE Michigan. No authentication required.
 
 ### Key NPM Packages
 -   `@anthropic-ai/sdk`: Integration with Anthropic Claude API.

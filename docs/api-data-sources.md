@@ -413,6 +413,153 @@ Some entries contain taxonomic annotations:
 
 ---
 
+## 6. iNaturalist API
+
+### Purpose
+- **Wikipedia Excerpts**: Retrieves Wikipedia summaries for species descriptions
+- **Taxonomic Data**: Gets taxonomy, conservation status, and observation counts
+- **Phenology Data**: Provides observation histograms by month for Southeast Michigan
+- **Common Names**: Retrieves preferred and alternative common names
+
+### Authentication
+**Method**: None required (public API)
+
+**Rate Limits**: 60 requests per minute (be respectful of public infrastructure)
+
+**Recommended**: Custom User-Agent header for identification
+
+### API Base URL
+```
+https://api.inaturalist.org/v1
+```
+
+### Endpoints Used
+
+#### Taxa Endpoint (`/taxa`)
+Retrieves taxonomic information including Wikipedia excerpts.
+
+**Search by Name**:
+```
+GET /taxa?q={scientific_name}&rank=species
+```
+
+**Get by ID**:
+```
+GET /taxa/{taxon_id}
+```
+
+**Response Fields Used**:
+- `wikipedia_summary` - Wikipedia excerpt (HTML)
+- `wikipedia_url` - Link to full Wikipedia article
+- `preferred_common_name` - Primary common name
+- `names` - Array of all common names by locale
+- `conservation_status` - IUCN status if applicable
+- `listed_taxa` - Establishment means by place
+- `observations_count` - Global observation count
+- `default_photo` - Representative photo URL
+
+#### Histogram Endpoint (`/observations/histogram`)
+Returns observation counts by time interval for phenology analysis.
+
+```
+GET /observations/histogram?taxon_id={id}&place_id={ids}&interval=month_of_year
+```
+
+**Response Format**:
+```json
+{
+  "results": {
+    "month_of_year": {
+      "1": 5,    // January
+      "2": 16,   // February
+      ...
+      "12": 9    // December
+    }
+  }
+}
+```
+
+### Southeast Michigan Place IDs
+The client uses iNaturalist Standard Places (from US Census TIGER data) for complete county boundaries:
+
+| County | place_id |
+|--------|----------|
+| Washtenaw | 2649 |
+| Livingston | 2609 |
+| Oakland | 2350 |
+| Wayne | 986 |
+| Monroe | 2009 |
+| Jackson | 2948 |
+| Lenawee | 2608 |
+
+These IDs cover the **entire official county boundary** as defined by US Census data.
+
+### Usage in Codebase
+**Files**:
+- `src/utils/inaturalist-client.js` - API client utility
+- `test/test-inaturalist-client.js` - Integration tests
+
+**Key Functions**:
+- `getTaxaData(genus, species)` - Get Wikipedia excerpt, taxonomy, conservation status
+- `getHistogramData(genus, species)` - Get phenology data for SE Michigan
+- `getFullSpeciesData(genus, species)` - Get both taxa and histogram data
+- `getPlaceIds()` - Get SE Michigan county place_id configuration
+- `clearSpeciesCache(genus, species)` - Remove cached data for a species
+- `listCachedSpecies()` - List all cached species
+
+### Caching Strategy
+**File-Based Cache**: Separate JSON files per endpoint type in `cache/iNaturalist/`
+
+**File Naming Convention**:
+- Taxa: `Genus_species_inaturalist_taxa.json`
+- Histogram: `Genus_species_inaturalist_histogram.json`
+
+**Behavior**:
+- First API call for a species caches the response
+- Subsequent calls return cached data (configurable with `useCache` parameter)
+- Cache includes not-found results to avoid repeated API calls
+- Pretty-printed JSON for human readability
+
+### Data Retrieved
+
+**From Taxa Endpoint**:
+| Field | Description |
+|-------|-------------|
+| `wikipediaSummary` | HTML excerpt from Wikipedia |
+| `wikipediaUrl` | Link to full Wikipedia article |
+| `preferredCommonName` | Primary English common name |
+| `commonNames` | Array of all English common names |
+| `conservationStatus` | IUCN status (authority, status, statusName) |
+| `establishmentMeans` | Native/introduced status by place |
+| `observationsCount` | Total iNaturalist observations |
+| `defaultPhotoUrl` | Representative species photo |
+
+**From Histogram Endpoint**:
+| Field | Description |
+|-------|-------------|
+| `monthlyObservations` | Object with counts per month (1-12) |
+| `totalObservations` | Sum of all observations in region |
+| `peakMonth` | Month number with most observations |
+| `peakMonthName` | Full name of peak month |
+
+### Error Handling
+**Module Behavior**:
+- Species not found → Returns `found: false` with empty data
+- Network errors → Throws error (caller handles)
+- Rate limit exceeded → API returns error (respect 60 req/min)
+
+### Portability Considerations
+✅ **Works anywhere**: Public API, no authentication  
+✅ **No API key needed**: Free and open  
+⚠️ **Rate limits**: 60 requests/minute  
+✅ **Stable endpoints**: Well-documented API
+
+### API Documentation
+**Official Docs**: https://api.inaturalist.org/v1/docs/  
+**Recommended Practices**: https://www.inaturalist.org/pages/api+recommended+practices
+
+---
+
 ## Summary Table
 
 | API/Service | Auth Method | API Key Required | Portability | Primary Use |
@@ -422,6 +569,7 @@ Some entries contain taxonomic annotations:
 | **SerpApi** | API Key | Yes (`SERPAPI_API_KEY`) | ✅ Universal | External reference URLs |
 | **GBIF Species** | None | No | ✅ Universal | Botanical synonyms |
 | **Michigan Flora** | None (local CSV) | No | ✅ Universal | Ecological data, C/W values |
+| **iNaturalist** | None | No | ✅ Universal | Wikipedia excerpts, phenology |
 
 ---
 
@@ -470,7 +618,13 @@ All environment variables can be viewed in:
 - **Limits**: 300 read requests per minute per user
 - **Best Practice**: Batch operations when possible
 
+### iNaturalist
+- **Rate Limits**: 60 requests per minute
+- **Best Practice**: Use User-Agent header for identification
+- **Caching**: All results cached in `cache/iNaturalist/` to minimize API usage
+- **Availability**: High uptime (public infrastructure)
+
 ---
 
-*Last Updated: 2024*
+*Last Updated: November 2025*
 *Maintained by: Agent (auto-updated with code changes)*
