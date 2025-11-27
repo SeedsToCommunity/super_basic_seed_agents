@@ -4,8 +4,3 @@ dist
 server/public
 vite.config.ts.*
 *.tar.gz
-
-# Cache directories (API responses)
-cache/iNaturalist/
-cache/GBIF/
-cache/external-reference-urls.json
