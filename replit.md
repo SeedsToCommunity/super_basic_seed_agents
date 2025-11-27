@@ -116,6 +116,7 @@ Centralized system settings are managed in `config/config.json`, covering Google
 **Caching System**: The `cache/` directory stores API results to minimize expensive operations:
 - `cache/external-reference-urls.json`: Single JSON file with all discovered website URLs
 - `cache/GBIF/`: Folder with individual pretty-printed JSON files per species (`Genus_species_gbif.json`) containing synonym data
+- `cache/MichiganFlora/`: Static 2024 dataset cached locally in CSV format (~2,873 species with ecological data)
 
 ## External Dependencies
 
@@ -124,6 +125,7 @@ Centralized system settings are managed in `config/config.json`, covering Google
 -   **Anthropic Claude API**: Used for AI-powered botanical validation, native status checking, and other advanced data processing.
 -   **SerpApi**: For external reference URL discovery.
 -   **GBIF Species API**: For retrieving botanical synonyms and taxonomic information. No authentication required.
+-   **Michigan Flora CSV**: Local dataset (~2,873 species) with ecological data including Coefficient of Conservatism (C), Wetness Indicator (W), native status, and common names. No network required.
 
 ### Key NPM Packages
 -   `@anthropic-ai/sdk`: Integration with Anthropic Claude API.
