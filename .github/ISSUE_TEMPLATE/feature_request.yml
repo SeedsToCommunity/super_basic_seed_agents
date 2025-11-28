@@ -2,6 +2,7 @@ name: Feature Request
 description: Suggest a new feature or enhancement
 title: "[Feature]: "
 labels: ["enhancement"]
+projects: ["SeedsToCommunity/Seedy AI Project"]
 body:
   - type: textarea
     id: description

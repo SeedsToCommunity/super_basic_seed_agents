@@ -2,6 +2,7 @@ name: S2C Investigation
 description: Document an investigation or research task
 title: "[S2C Investigation]: "
 labels: ["s2c-investigation"]
+projects: ["SeedsToCommunity/Seedy AI Project"]
 body:
   - type: textarea
     id: area-of-investigation

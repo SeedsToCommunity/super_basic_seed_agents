@@ -2,6 +2,7 @@ name: Bug Report
 description: Report a bug or unexpected behavior
 title: "[Bug]: "
 labels: ["bug"]
+projects: ["SeedsToCommunity/Seedy AI Project"]
 body:
   - type: textarea
     id: description

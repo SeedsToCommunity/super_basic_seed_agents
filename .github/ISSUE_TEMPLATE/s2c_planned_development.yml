@@ -2,6 +2,7 @@ name: S2C Planned Development
 description: Document planned development work
 title: "[S2C Development]: "
 labels: ["s2c-development"]
+projects: ["SeedsToCommunity/Seedy AI Project"]
 body:
   - type: textarea
     id: description
