@@ -1,0 +1,24 @@
+name: S2C Investigation
+description: Document an investigation or research task
+title: "[S2C Investigation]: "
+labels: ["s2c-investigation"]
+body:
+  - type: textarea
+    id: area-of-investigation
+    attributes:
+      label: Area of Investigation
+      description: Describe the area or topic being investigated
+      placeholder: Describe the area of investigation here...
+    validations:
+      required: true
+  - type: textarea
+    id: decisions-to-be-made
+    attributes:
+      label: Decisions to be made
+      description: List the decisions that need to be made as a result of this investigation
+      placeholder: |
+        - [ ] Decision 1
+        - [ ] Decision 2
+        - [ ] Decision 3
+    validations:
+      required: true

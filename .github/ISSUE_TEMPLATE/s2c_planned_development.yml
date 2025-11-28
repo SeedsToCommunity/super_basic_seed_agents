@@ -1,0 +1,24 @@
+name: S2C Planned Development
+description: Document planned development work
+title: "[S2C Development]: "
+labels: ["s2c-development"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A clear and concise description of the planned development
+      placeholder: Describe the planned development here...
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: List the acceptance criteria for this development work
+      placeholder: |
+        - [ ] Criteria 1
+        - [ ] Criteria 2
+        - [ ] Criteria 3
+    validations:
+      required: true
