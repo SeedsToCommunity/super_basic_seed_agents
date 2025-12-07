@@ -29,6 +29,18 @@
       "path": "../synthesis/process-previous-botanical.js",
       "enabled": true,
       "description": "Retrieves botanical synonyms (legacy binomial names) from GBIF for cross-reference purposes"
+    },
+    {
+      "id": "michigan-flora",
+      "path": "../synthesis/process-michigan-flora.js",
+      "enabled": true,
+      "description": "Retrieves ecological metrics from Michigan Flora dataset: C value, wetness, growth form, and life cycle"
+    },
+    {
+      "id": "inaturalist-observations",
+      "path": "../synthesis/process-inaturalist.js",
+      "enabled": true,
+      "description": "Appends Wikipedia URL to references, adds SE Michigan observation histogram and Wikipedia summary from iNaturalist"
     }
   ],
   "config": {

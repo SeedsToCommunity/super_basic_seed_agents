@@ -48,12 +48,14 @@ All synthesis modules must export:
 
 **Runtime Validation:** The pipeline validates that all declared column IDs have values and no extra keys exist, preventing silent data corruption.
 
-### Current Synthesis Modules
+### Current Synthesis Modules (7 Total)
 -   **`process-botanical-name.js`**: Validates botanical names using Claude API with **strict validation** (fails if name isn't exactly current accepted nomenclature). Acts as critical validation gate.
 -   **`process-native-checker.js`**: Determines if plant is native to Southeast Michigan using Claude API, dependent on botanical name validation.
 -   **`process-external-reference-urls.js`**: Discovers and caches URLs from botanical reference websites using SerpApi, based on validated botanical name.
 -   **`process-common-names.js`**: Identifies all common/vernacular names used in Southeast Michigan and adjacent regions using Claude API. Excludes botanical synonyms and historical scientific names.
 -   **`process-previous-botanical.js`**: Retrieves botanical synonyms (legacy binomial names) from GBIF Backbone Taxonomy for cross-reference purposes. Returns comma-separated species-level synonyms only, excluding varieties and subspecies. Uses file-based caching in `cache/GBIF/` with pretty-printed JSON files. No authentication required.
+-   **`process-michigan-flora.js`**: Retrieves ecological metrics from the Michigan Flora local CSV dataset (~2,873 species). Outputs 4 columns: Coefficient of Conservatism (C), Wetland Indicator (W), Physiognomy, and Duration. No network requests - reads from `cache/MichiganFlora/`. Depends on botanical-name.
+-   **`process-inaturalist.js`**: Enriches plant data from iNaturalist API. **Appends Wikipedia URL** to existing External Reference URLs column. Adds 2 new columns: SE Michigan Monthly Observations (JSON histogram like `{"January": 5, "February": 16, ...}`) and Wikipedia Summary. Uses file-based caching in `cache/iNaturalist/`. Depends on botanical-name AND external-reference-urls.
 
 ### Processing Pipeline (`src/output/plant-pipeline.js`)
 The pipeline dynamically loads, validates, and executes enabled modules using a dependency graph. It provides:
@@ -98,7 +100,7 @@ See `docs/synthesis-module-interface.md` for complete interface specification an
 Comprehensive documentation is maintained in the `docs/` directory and kept synchronized with code changes:
 
 -   **`docs/api-data-sources.md`**: Complete reference for all external APIs and data sources (Google Drive/Sheets, Anthropic Claude, SerpApi, GBIF, iNaturalist). Includes authentication methods, endpoints used, rate limits, caching strategies, and portability considerations.
--   **`docs/synthesis-processes.md`**: Detailed processing guide for each synthesis module. Describes data sources, output columns, high-level processing logic, and error handling for all 5 modules.
+-   **`docs/synthesis-processes.md`**: Detailed processing guide for each synthesis module. Describes data sources, output columns, high-level processing logic, and error handling for all 7 modules.
 -   **`docs/synthesis-module-interface.md`**: Interface specification for creating new synthesis modules.
 
 **Documentation Philosophy**: These are living documents that are proactively updated whenever code changes are made to ensure they reflect the current system state.
