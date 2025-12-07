@@ -176,9 +176,9 @@ function flattenColumnValues(module, columnValues) {
     const id = typeof col === 'string' ? col : col.id;
     const value = columnValues[id];
     
-    // JSON-stringify objects and arrays for Google Sheets
+    // JSON-stringify objects and arrays for Google Sheets (pretty-printed)
     if (value !== null && typeof value === 'object') {
-      return JSON.stringify(value);
+      return JSON.stringify(value, null, 2);
     }
     
     // Convert everything else to string (handles numbers, booleans, null, undefined)
