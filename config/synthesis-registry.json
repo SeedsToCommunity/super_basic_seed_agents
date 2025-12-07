@@ -41,6 +41,12 @@
       "path": "../synthesis/process-inaturalist.js",
       "enabled": true,
       "description": "Appends Wikipedia URL to references, adds SE Michigan observation histogram and Wikipedia summary from iNaturalist"
+    },
+    {
+      "id": "bonap-range-map",
+      "path": "../synthesis/process-bonap.js",
+      "enabled": true,
+      "description": "Discovers BONAP county-level range map image URL"
     }
   ],
   "config": {
