@@ -1,0 +1,25 @@
+{
+  "found": true,
+  "scientificName": "Sanguinaria canadensis",
+  "taxonId": 51044,
+  "wikipediaSummary": "<i><b>Sanguinaria canadensis</b></i>, <b>bloodroot</b>, is a perennial, herbaceous flowering plant native to eastern North America. It is the only species in the genus <i><b>Sanguinaria</b></i>, included in the poppy family Papaveraceae, and is most closely related to <i>Eomecon</i> of eastern Asia.",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Sanguinaria canadensis",
+  "preferredCommonName": "bloodroot",
+  "commonNames": [
+    "bloodroot"
+  ],
+  "taxonomy": {
+    "rank": "species",
+    "ancestry": "48460/47126/211194/47125/47124/48232/47332/889631/1453809/51045",
+    "iconicTaxonName": "Plantae"
+  },
+  "conservationStatus": null,
+  "establishmentMeans": [
+    {
+      "status": "native",
+      "place": "North America"
+    }
+  ],
+  "observationsCount": 87570,
+  "defaultPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/1862384/medium.jpg"
+}

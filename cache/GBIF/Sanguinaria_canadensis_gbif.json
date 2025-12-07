@@ -1,0 +1,117 @@
+{
+  "genus": "Sanguinaria",
+  "species": "canadensis",
+  "matched": true,
+  "usageKey": 5334192,
+  "acceptedName": "Sanguinaria canadensis L.",
+  "synonyms": [
+    {
+      "scientificName": "Belharnosia canadensis (L.) Nieuwl.",
+      "canonicalName": "Belharnosia canadensis",
+      "genus": "Belharnosia",
+      "species": "canadensis",
+      "binomial": "Belharnosia canadensis",
+      "status": "SYNONYM",
+      "publishedIn": "Nieuwl. (1914). In: Amer. Midl. Nat. 3: 350."
+    },
+    {
+      "scientificName": "Belharnosia mesochora (Greene) Lunell",
+      "canonicalName": "Belharnosia mesochora",
+      "genus": "Belharnosia",
+      "species": "mesochora",
+      "binomial": "Belharnosia mesochora",
+      "status": "SYNONYM",
+      "publishedIn": "Lunell. (1916). In: Amer. Midl. Nat. 4: 363."
+    },
+    {
+      "scientificName": "Sanguinaria acaulis Moench",
+      "canonicalName": "Sanguinaria acaulis",
+      "genus": "Sanguinaria",
+      "species": "acaulis",
+      "binomial": "Sanguinaria acaulis",
+      "status": "SYNONYM",
+      "publishedIn": "Moench. (1794). In: Methodus (Moench) 227."
+    },
+    {
+      "scientificName": "Sanguinaria australis Greene",
+      "canonicalName": "Sanguinaria australis",
+      "genus": "Sanguinaria",
+      "species": "australis",
+      "binomial": "Sanguinaria australis",
+      "status": "SYNONYM",
+      "publishedIn": "Greene. (1903). In: Pittonia 5: 307."
+    },
+    {
+      "scientificName": "Sanguinaria dilleniana Greene",
+      "canonicalName": "Sanguinaria dilleniana",
+      "genus": "Sanguinaria",
+      "species": "dilleniana",
+      "binomial": "Sanguinaria dilleniana",
+      "status": "SYNONYM",
+      "publishedIn": "Greene. (1903). In: Pittonia 5: 307."
+    },
+    {
+      "scientificName": "Sanguinaria grandiflora M.Roscoe",
+      "canonicalName": "Sanguinaria grandiflora",
+      "genus": "Sanguinaria",
+      "species": "grandiflora",
+      "binomial": "Sanguinaria grandiflora",
+      "status": "SYNONYM",
+      "publishedIn": "Roscoe, M. (1829). In: Fl. Ill. Seasons T. 8."
+    },
+    {
+      "scientificName": "Sanguinaria major Dill.",
+      "canonicalName": "Sanguinaria major",
+      "genus": "Sanguinaria",
+      "species": "major",
+      "binomial": "Sanguinaria major",
+      "status": "SYNONYM"
+    },
+    {
+      "scientificName": "Sanguinaria mesochora Greene",
+      "canonicalName": "Sanguinaria mesochora",
+      "genus": "Sanguinaria",
+      "species": "mesochora",
+      "binomial": "Sanguinaria mesochora",
+      "status": "SYNONYM",
+      "publishedIn": "Greene. (1903). In: Pittonia 5: 308."
+    },
+    {
+      "scientificName": "Sanguinaria rotundifolia Greene",
+      "canonicalName": "Sanguinaria rotundifolia",
+      "genus": "Sanguinaria",
+      "species": "rotundifolia",
+      "binomial": "Sanguinaria rotundifolia",
+      "status": "SYNONYM",
+      "publishedIn": "Greene. (1903). In: Pittonia 5: 307."
+    },
+    {
+      "scientificName": "Sanguinaria stenopetala Steud.",
+      "canonicalName": "Sanguinaria stenopetala",
+      "genus": "Sanguinaria",
+      "species": "stenopetala",
+      "binomial": "Sanguinaria stenopetala",
+      "status": "SYNONYM",
+      "publishedIn": "Steud. (1841). In: Nomencl. Bot., Ed. 2, 2: 510."
+    },
+    {
+      "scientificName": "Sanguinaria vernalis Salisb.",
+      "canonicalName": "Sanguinaria vernalis",
+      "genus": "Sanguinaria",
+      "species": "vernalis",
+      "binomial": "Sanguinaria vernalis",
+      "status": "SYNONYM",
+      "publishedIn": "Salisb. (1796). In: Prodr. Stirp. Chap. Allerton: 376."
+    },
+    {
+      "scientificName": "Sanguinaria virginiana Gaertn.",
+      "canonicalName": "Sanguinaria virginiana",
+      "genus": "Sanguinaria",
+      "species": "virginiana",
+      "binomial": "Sanguinaria virginiana",
+      "status": "SYNONYM",
+      "publishedIn": "Gaertn. (1791). In: Fruct. Sem. Pl. 2: 479."
+    }
+  ],
+  "cachedAt": "2025-12-07T14:54:43.081Z"
+}

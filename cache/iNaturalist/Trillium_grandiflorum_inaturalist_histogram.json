@@ -1,0 +1,32 @@
+{
+  "found": true,
+  "scientificName": "Trillium grandiflorum",
+  "taxonId": 55402,
+  "region": "Southeast Michigan",
+  "placeIds": {
+    "washtenaw": 2649,
+    "livingston": 2609,
+    "oakland": 2350,
+    "wayne": 986,
+    "monroe": 2009,
+    "jackson": 2948,
+    "lenawee": 2608
+  },
+  "monthlyObservations": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 459,
+    "5": 911,
+    "6": 32,
+    "7": 14,
+    "8": 2,
+    "9": 1,
+    "10": 1,
+    "11": 0,
+    "12": 0
+  },
+  "totalObservations": 1420,
+  "peakMonth": 5,
+  "peakMonthName": "May"
+}

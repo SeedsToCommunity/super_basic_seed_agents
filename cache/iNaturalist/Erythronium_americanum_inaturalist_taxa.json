@@ -1,0 +1,25 @@
+{
+  "found": true,
+  "scientificName": "Erythronium americanum",
+  "taxonId": 48240,
+  "wikipediaSummary": "<i><b>Erythronium americanum</b></i> (<b>trout lily</b>, <b>yellow trout lily</b>, <b>yellow dogtooth violet</b>) is a species of perennial, colony forming, spring ephemeral flower native to North America and dwelling in woodland habitats. Within its range it is a very common and widespread species, especially in eastern North America. The common name \"trout lily\" refers to the appearance of its gray-green leaves mottled with brown or gray, which allegedly resemble the coloring of brook trout.",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Erythronium americanum",
+  "preferredCommonName": "yellow trout lily",
+  "commonNames": [
+    "yellow trout lily"
+  ],
+  "taxonomy": {
+    "rank": "species",
+    "ancestry": "48460/47126/211194/47125/47163/47329/47328/859160/859161/48241",
+    "iconicTaxonName": "Plantae"
+  },
+  "conservationStatus": null,
+  "establishmentMeans": [
+    {
+      "status": "native",
+      "place": "North America"
+    }
+  ],
+  "observationsCount": 68122,
+  "defaultPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/495479600/medium.jpg"
+}

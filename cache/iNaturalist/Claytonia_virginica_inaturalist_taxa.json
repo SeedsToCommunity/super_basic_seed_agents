@@ -1,0 +1,25 @@
+{
+  "found": true,
+  "scientificName": "Claytonia virginica",
+  "taxonId": 117434,
+  "wikipediaSummary": "<i><b>Claytonia virginica</b></i>, the <b>Virginia springbeauty</b>, <b>eastern spring beauty</b>, <b>grass-flower</b> or <b>fairy spud</b>, is an herbaceous perennial in the family Montiaceae. Its native range is eastern North America. Its scientific name honors Colonial Virginia botanist John Clayton (1694–1773).",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Claytonia virginica",
+  "preferredCommonName": "Virginia Springbeauty",
+  "commonNames": [
+    "Virginia Springbeauty"
+  ],
+  "taxonomy": {
+    "rank": "species",
+    "ancestry": "48460/47126/211194/47125/47124/47366/71417/52995/779780",
+    "iconicTaxonName": "Plantae"
+  },
+  "conservationStatus": null,
+  "establishmentMeans": [
+    {
+      "status": "native",
+      "place": "North America"
+    }
+  ],
+  "observationsCount": 79765,
+  "defaultPhotoUrl": "https://static.inaturalist.org/photos/183910009/medium.jpeg"
+}

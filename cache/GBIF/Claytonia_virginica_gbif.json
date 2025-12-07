@@ -1,0 +1,99 @@
+{
+  "genus": "Claytonia",
+  "species": "virginica",
+  "matched": true,
+  "usageKey": 3084745,
+  "acceptedName": "Claytonia virginica L.",
+  "synonyms": [
+    {
+      "scientificName": "Claytonia acutiflora (DC.) Sweet",
+      "canonicalName": "Claytonia acutiflora",
+      "genus": "Claytonia",
+      "species": "acutiflora",
+      "binomial": "Claytonia acutiflora",
+      "status": "SYNONYM",
+      "publishedIn": "Sweet. (1830). In: Hort. Brit., Ed. 2: 220."
+    },
+    {
+      "scientificName": "Claytonia bodinii Holz.",
+      "canonicalName": "Claytonia bodinii",
+      "genus": "Claytonia",
+      "species": "bodinii",
+      "binomial": "Claytonia bodinii",
+      "status": "SYNONYM",
+      "publishedIn": "Holz. (1893). In: Contr. U.S. Natl. Herb. 1: 288."
+    },
+    {
+      "scientificName": "Claytonia cauliflora Sw.",
+      "canonicalName": "Claytonia cauliflora",
+      "genus": "Claytonia",
+      "species": "cauliflora",
+      "binomial": "Claytonia cauliflora",
+      "status": "SYNONYM"
+    },
+    {
+      "scientificName": "Claytonia cauliflora Sweet",
+      "canonicalName": "Claytonia cauliflora",
+      "genus": "Claytonia",
+      "species": "cauliflora",
+      "binomial": "Claytonia cauliflora",
+      "status": "SYNONYM",
+      "publishedIn": "Sweet. (1830). In: Hort. Brit. Ed. II. 220."
+    },
+    {
+      "scientificName": "Claytonia cautiflora Sweet",
+      "canonicalName": "Claytonia cautiflora",
+      "genus": "Claytonia",
+      "species": "cautiflora",
+      "binomial": "Claytonia cautiflora",
+      "status": "SYNONYM",
+      "publishedIn": "Hort. Brit., ed. 2: 220 (1830)"
+    },
+    {
+      "scientificName": "Claytonia grandiflora Sweet",
+      "canonicalName": "Claytonia grandiflora",
+      "genus": "Claytonia",
+      "species": "grandiflora",
+      "binomial": "Claytonia grandiflora",
+      "status": "SYNONYM",
+      "publishedIn": "Sweet. (1827). In: Brit. Fl. Gard. 3: T. 216."
+    },
+    {
+      "scientificName": "Claytonia linearis Raf.",
+      "canonicalName": "Claytonia linearis",
+      "genus": "Claytonia",
+      "species": "linearis",
+      "binomial": "Claytonia linearis",
+      "status": "HETEROTYPIC_SYNONYM",
+      "publishedIn": "Raf. (1840). In: Autik. Bot.: 20, Nom. Illeg."
+    },
+    {
+      "scientificName": "Claytonia media (DC.) Link",
+      "canonicalName": "Claytonia media",
+      "genus": "Claytonia",
+      "species": "media",
+      "binomial": "Claytonia media",
+      "status": "SYNONYM",
+      "publishedIn": "Link. (1831). In: Handbuch 2: 44."
+    },
+    {
+      "scientificName": "Claytonia media (DC.) Small",
+      "canonicalName": "Claytonia media",
+      "genus": "Claytonia",
+      "species": "media",
+      "binomial": "Claytonia media",
+      "status": "SYNONYM",
+      "publishedIn": "Small. (1933). In: Man. Southeast. Fl. 494, Isonym."
+    },
+    {
+      "scientificName": "Claytonia robusta (Somes) Rydb.",
+      "canonicalName": "Claytonia robusta",
+      "genus": "Claytonia",
+      "species": "robusta",
+      "binomial": "Claytonia robusta",
+      "status": "SYNONYM",
+      "publishedIn": "Rydb. (1931). In: Brittonia 1: 87."
+    }
+  ],
+  "cachedAt": "2025-12-07T14:54:55.176Z"
+}

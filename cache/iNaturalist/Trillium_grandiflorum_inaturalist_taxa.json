@@ -1,0 +1,29 @@
+{
+  "found": true,
+  "scientificName": "Trillium grandiflorum",
+  "taxonId": 55402,
+  "wikipediaSummary": "<i><b>Trillium grandiflorum</b></i> (common names <b>white trillium</b>, <b>large-flowered trillium</b>, <b>great white trillium</b>, <b>white wake-robin</b>, French <i><b>trille blanc</b></i>) is a species of flowering plant in the family Melanthiaceae. A monocotyledonous, herbaceous perennial, it is native to eastern North America, from northern Quebec to the southern parts of the United States through the Appalachian Mountains into northernmost Georgia and west to Minnesota. It also thrives on Vancouver Island in British Columbia. There are also several isolated populations, such as...",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Trillium grandiflorum",
+  "preferredCommonName": "large white trillium",
+  "commonNames": [
+    "large white trillium"
+  ],
+  "taxonomy": {
+    "rank": "species",
+    "ancestry": "48460/47126/211194/47125/47163/47329/49464/858333/49465/1413207",
+    "iconicTaxonName": "Plantae"
+  },
+  "conservationStatus": null,
+  "establishmentMeans": [
+    {
+      "status": "introduced",
+      "place": "Sangamon County, US, IL"
+    },
+    {
+      "status": "native",
+      "place": "North America"
+    }
+  ],
+  "observationsCount": 55501,
+  "defaultPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/80252/medium.jpg"
+}

@@ -1,0 +1,28 @@
+{
+  "genus": "Trillium",
+  "species": "grandiflorum",
+  "matched": true,
+  "usageKey": 2742283,
+  "acceptedName": "Trillium grandiflorum (Michx.) Salisb.",
+  "synonyms": [
+    {
+      "scientificName": "Trillium chandleri Farw.",
+      "canonicalName": "Trillium chandleri",
+      "genus": "Trillium",
+      "species": "chandleri",
+      "binomial": "Trillium chandleri",
+      "status": "SYNONYM",
+      "publishedIn": "Rep. (Annual) Michigan Acad. Sci. 20: 158 (1919)"
+    },
+    {
+      "scientificName": "Trillium erythrocarpum Curtis",
+      "canonicalName": "Trillium erythrocarpum",
+      "genus": "Trillium",
+      "species": "erythrocarpum",
+      "binomial": "Trillium erythrocarpum",
+      "status": "HETEROTYPIC_SYNONYM",
+      "publishedIn": "Bot. Mag. 22: t. 855 (1805)"
+    }
+  ],
+  "cachedAt": "2025-12-07T14:54:26.716Z"
+}

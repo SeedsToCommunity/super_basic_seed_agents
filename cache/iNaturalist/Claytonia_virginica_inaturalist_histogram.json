@@ -1,0 +1,32 @@
+{
+  "found": true,
+  "scientificName": "Claytonia virginica",
+  "taxonId": 117434,
+  "region": "Southeast Michigan",
+  "placeIds": {
+    "washtenaw": 2649,
+    "livingston": 2609,
+    "oakland": 2350,
+    "wayne": 986,
+    "monroe": 2009,
+    "jackson": 2948,
+    "lenawee": 2608
+  },
+  "monthlyObservations": {
+    "1": 0,
+    "2": 0,
+    "3": 47,
+    "4": 771,
+    "5": 301,
+    "6": 1,
+    "7": 0,
+    "8": 0,
+    "9": 0,
+    "10": 0,
+    "11": 0,
+    "12": 0
+  },
+  "totalObservations": 1120,
+  "peakMonth": 4,
+  "peakMonthName": "April"
+}

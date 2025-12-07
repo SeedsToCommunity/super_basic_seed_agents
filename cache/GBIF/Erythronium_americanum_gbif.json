@@ -1,0 +1,19 @@
+{
+  "genus": "Erythronium",
+  "species": "americanum",
+  "matched": true,
+  "usageKey": 2752815,
+  "acceptedName": "Erythronium americanum Ker Gawl.",
+  "synonyms": [
+    {
+      "scientificName": "Erythronium flavum Sm.",
+      "canonicalName": "Erythronium flavum",
+      "genus": "Erythronium",
+      "species": "flavum",
+      "binomial": "Erythronium flavum",
+      "status": "SYNONYM",
+      "publishedIn": "A.Rees, Cycl. 13: n.° 2 (1809)"
+    }
+  ],
+  "cachedAt": "2025-12-07T14:55:10.229Z"
+}
