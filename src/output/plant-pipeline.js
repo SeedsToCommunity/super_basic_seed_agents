@@ -94,32 +94,51 @@ async function loadSynthesisModules() {
 
 /**
  * Build column definitions from loaded modules
- * Handles {id, header} column format
+ * Uses "last-writer-wins" strategy: if multiple modules declare the same column ID,
+ * only the last module's version is kept (allows downstream modules to extend prior results)
+ * 
  * @param {Array<Object>} modules - Array of loaded synthesis modules
- * @returns {Object} Column definitions object
+ * @returns {Object} Column definitions object with HEADERS array and column indices
  */
 function buildColumnDefinitions(modules) {
+  // Track unique columns by ID - last module wins
+  const columnRegistry = new Map(); // columnId -> { header, moduleId }
+  const columnOrder = []; // Ordered list of unique column IDs
+  
+  for (const module of modules) {
+    for (const column of module.metadata.columns) {
+      const id = typeof column === 'string' ? column : column.id;
+      const header = typeof column === 'string' ? column : column.header;
+      
+      if (!columnRegistry.has(id)) {
+        // New column - add to order
+        columnOrder.push(id);
+      }
+      // Update registry (last writer wins)
+      columnRegistry.set(id, { header, moduleId: module.metadata.id });
+    }
+  }
+  
+  // Build headers from deduplicated columns
   const headers = ['Genus', 'Species']; // Base columns always first
-  let columnIndex = 2;
   const columnMap = {
     GENUS: 0,
     SPECIES: 1
   };
   
-  for (const module of modules) {
-    for (const column of module.metadata.columns) {
-      // Handle both string format (legacy) and {id, header} format
-      const header = typeof column === 'string' ? column : column.header;
-      headers.push(header);
-      // Create constant name from header (e.g., "SE MI Native" -> "SE_MI_NATIVE")
-      const constName = header.toUpperCase().replace(/\s+/g, '_');
-      columnMap[constName] = columnIndex;
-      columnIndex++;
-    }
+  let columnIndex = 2;
+  for (const columnId of columnOrder) {
+    const { header } = columnRegistry.get(columnId);
+    headers.push(header);
+    const constName = header.toUpperCase().replace(/\s+/g, '_');
+    columnMap[constName] = columnIndex;
+    columnIndex++;
   }
   
   return {
     HEADERS: headers,
+    COLUMN_ORDER: columnOrder,
+    COLUMN_REGISTRY: columnRegistry,
     ...columnMap
   };
 }
@@ -433,7 +452,7 @@ export async function createPlantSheet(folderId, prefix = config.output.filePref
 
 /**
  * Append plant data rows to an existing Google Sheet
- * Fully dynamic: works with any modules without hardcoded logic
+ * Uses "last-writer-wins" strategy: for duplicate column IDs, uses the last module's value
  * @param {string} spreadsheetId - The ID of the spreadsheet
  * @param {Array<Object>} plantRecords - Array of plant record objects from getPlantRecord()
  */
@@ -445,7 +464,7 @@ export async function appendPlantRows(spreadsheetId, plantRecords) {
   const sheets = await getUncachableGoogleSheetsClient();
   const modules = await loadSynthesisModules();
   
-  // Convert plant records to rows dynamically using flattening helper
+  // Convert plant records to rows using deduplicated columns
   const rows = plantRecords.map(record => {
     const row = [];
     
@@ -453,18 +472,23 @@ export async function appendPlantRows(spreadsheetId, plantRecords) {
     row.push(record.genus);
     row.push(record.species);
     
-    // Dynamically add module columns using flattenColumnValues helper
-    for (const module of modules) {
-      const moduleResult = record.moduleResults[module.metadata.id];
+    // For each unique column ID (in order), find the last module that produced it
+    for (const columnId of PLANT_COLUMNS.COLUMN_ORDER) {
+      const { moduleId } = PLANT_COLUMNS.COLUMN_REGISTRY.get(columnId);
+      const moduleResult = record.moduleResults[moduleId];
       
-      if (moduleResult && moduleResult.columnValues) {
-        // Use helper to flatten columnValues into ordered array
-        const values = flattenColumnValues(module, moduleResult.columnValues);
-        row.push(...values);
+      if (moduleResult && moduleResult.columnValues && columnId in moduleResult.columnValues) {
+        const value = moduleResult.columnValues[columnId];
+        
+        // JSON-stringify objects and arrays for Google Sheets (pretty-printed)
+        if (value !== null && typeof value === 'object') {
+          row.push(JSON.stringify(value, null, 2));
+        } else {
+          row.push(value == null ? '' : String(value));
+        }
       } else {
-        // Module failed or didn't run - fill with empty strings
-        const emptyValues = module.metadata.columns.map(() => '');
-        row.push(...emptyValues);
+        // Column not produced by this module - empty string
+        row.push('');
       }
     }
     
