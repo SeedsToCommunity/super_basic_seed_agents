@@ -1,0 +1,44 @@
+{
+  "genus": "Chelone",
+  "species": "glabra",
+  "matched": true,
+  "usageKey": 5414935,
+  "acceptedName": "Chelone glabra L.",
+  "synonyms": [
+    {
+      "scientificName": "Chelone alba Moench",
+      "canonicalName": "Chelone alba",
+      "genus": "Chelone",
+      "species": "alba",
+      "binomial": "Chelone alba",
+      "status": "SYNONYM",
+      "publishedIn": "Moench. (1794). In: Methodus (Moench) 442."
+    },
+    {
+      "scientificName": "Chelone capitata Raf.",
+      "canonicalName": "Chelone capitata",
+      "genus": "Chelone",
+      "species": "capitata",
+      "binomial": "Chelone capitata",
+      "status": "SYNONYM"
+    },
+    {
+      "scientificName": "Chelone chlorantha Pennell & Wherry",
+      "canonicalName": "Chelone chlorantha",
+      "genus": "Chelone",
+      "species": "chlorantha",
+      "binomial": "Chelone chlorantha",
+      "status": "SYNONYM",
+      "publishedIn": "Pennell, & Wherry. (1928). In: Bartonia, No. 10, 20."
+    },
+    {
+      "scientificName": "Chelone elatior Raf.",
+      "canonicalName": "Chelone elatior",
+      "genus": "Chelone",
+      "species": "elatior",
+      "binomial": "Chelone elatior",
+      "status": "SYNONYM"
+    }
+  ],
+  "cachedAt": "2025-12-07T17:29:12.782Z"
+}

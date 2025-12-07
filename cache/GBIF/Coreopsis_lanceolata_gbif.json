@@ -1,0 +1,73 @@
+{
+  "genus": "Coreopsis",
+  "species": "lanceolata",
+  "matched": true,
+  "usageKey": 3133938,
+  "acceptedName": "Coreopsis lanceolata L.",
+  "synonyms": [
+    {
+      "scientificName": "Bidens lanceolata (L.) Banfi, Galasso & Bartolucci",
+      "canonicalName": "Bidens lanceolata",
+      "genus": "Bidens",
+      "species": "lanceolata",
+      "binomial": "Bidens lanceolata",
+      "status": "SYNONYM",
+      "publishedIn": "Banfi, Galasso, & Bartolucci. (2017). In: Nat. Hist. Sci. 15(1): 18."
+    },
+    {
+      "scientificName": "Chrysomelea lanceolata (L.) Tausch",
+      "canonicalName": "Chrysomelea lanceolata",
+      "genus": "Chrysomelea",
+      "species": "lanceolata",
+      "binomial": "Chrysomelea lanceolata",
+      "status": "SYNONYM",
+      "publishedIn": "Tausch. (1836). In: Hort. Canal. Fasc. 1, Ex DC. Prod. 5: 570."
+    },
+    {
+      "scientificName": "Coreopsis crassifolia Aiton",
+      "canonicalName": "Coreopsis crassifolia",
+      "genus": "Coreopsis",
+      "species": "crassifolia",
+      "binomial": "Coreopsis crassifolia",
+      "status": "HETEROTYPIC_SYNONYM",
+      "publishedIn": "Aiton. (1789). In: Hort. Kew. 3: 253."
+    },
+    {
+      "scientificName": "Coreopsis crassifolia Pers.",
+      "canonicalName": "Coreopsis crassifolia",
+      "genus": "Coreopsis",
+      "species": "crassifolia",
+      "binomial": "Coreopsis crassifolia",
+      "status": "HETEROTYPIC_SYNONYM",
+      "publishedIn": "Pers. (1808). In: Syn. Pl. 2: 478, Nom. Illeg."
+    },
+    {
+      "scientificName": "Coreopsis heterogyna Fernald",
+      "canonicalName": "Coreopsis heterogyna",
+      "genus": "Coreopsis",
+      "species": "heterogyna",
+      "binomial": "Coreopsis heterogyna",
+      "status": "SYNONYM",
+      "publishedIn": "Fernald. (1938). In: Rhodora 40: 475."
+    },
+    {
+      "scientificName": "Coreopsis oblongifolia Nutt.",
+      "canonicalName": "Coreopsis oblongifolia",
+      "genus": "Coreopsis",
+      "species": "oblongifolia",
+      "binomial": "Coreopsis oblongifolia",
+      "status": "SYNONYM",
+      "publishedIn": "Nutt. (1834). In: J. Acad. Philad. 7: 76."
+    },
+    {
+      "scientificName": "Coreopsoides lanceolata (L.) Moench",
+      "canonicalName": "Coreopsoides lanceolata",
+      "genus": "Coreopsoides",
+      "species": "lanceolata",
+      "binomial": "Coreopsoides lanceolata",
+      "status": "SYNONYM",
+      "publishedIn": "Moench. (1794). In: Methodus 594."
+    }
+  ],
+  "cachedAt": "2025-12-07T17:29:38.148Z"
+}

@@ -1,0 +1,28 @@
+{
+  "genus": "Geranium",
+  "species": "maculatum",
+  "matched": true,
+  "usageKey": 7808016,
+  "acceptedName": "Geranium maculatum L.",
+  "synonyms": [
+    {
+      "scientificName": "Geranium album Myers",
+      "canonicalName": "Geranium album",
+      "genus": "Geranium",
+      "species": "album",
+      "binomial": "Geranium album",
+      "status": "SYNONYM",
+      "publishedIn": "Amer. Naturalist 4: 438 (1870)"
+    },
+    {
+      "scientificName": "Geranium ludovicianum Raf.",
+      "canonicalName": "Geranium ludovicianum",
+      "genus": "Geranium",
+      "species": "ludovicianum",
+      "binomial": "Geranium ludovicianum",
+      "status": "SYNONYM",
+      "publishedIn": "Fl. Ludov.: 89 (1817)"
+    }
+  ],
+  "cachedAt": "2025-12-07T17:28:18.451Z"
+}

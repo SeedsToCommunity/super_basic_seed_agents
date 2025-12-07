@@ -1,0 +1,25 @@
+{
+  "found": true,
+  "scientificName": "Coreopsis lanceolata",
+  "taxonId": 76444,
+  "wikipediaSummary": "<i><b>Coreopsis lanceolata</b></i>, the <b>Lance-leaved coreopsis</b>, is a North American species of Tickseed in the sunflower family. It is apparently native to the eastern and central parts of the United States and naturalized in Canada, the western United States, Mesoamerica, South America, South Africa, and eastern Asia.",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Coreopsis lanceolata",
+  "preferredCommonName": "Lance-leaved Coreopsis",
+  "commonNames": [
+    "Lance-leaved Coreopsis"
+  ],
+  "taxonomy": {
+    "rank": "species",
+    "ancestry": "48460/47126/211194/47125/47124/47605/47604/632790/568277/57952",
+    "iconicTaxonName": "Plantae"
+  },
+  "conservationStatus": null,
+  "establishmentMeans": [
+    {
+      "status": "introduced",
+      "place": "Uruguay"
+    }
+  ],
+  "observationsCount": 27118,
+  "defaultPhotoUrl": "https://static.inaturalist.org/photos/21088529/medium.jpg"
+}

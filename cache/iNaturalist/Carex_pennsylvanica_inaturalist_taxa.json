@@ -1,0 +1,25 @@
+{
+  "found": true,
+  "scientificName": "Carex pensylvanica",
+  "taxonId": 127326,
+  "wikipediaSummary": "<i><b>Carex pensylvanica</b></i> is a species of flowering plant in the sedge family commonly called <b>Pennsylvania sedge</b> (sometimes shortened to <b>Penn sedge</b>). Other common names include <b>early sedge</b>, <b>common oak sedge</b>, and <b>yellow sedge</b>.",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Carex pensylvanica",
+  "preferredCommonName": "Pennsylvania sedge",
+  "commonNames": [
+    "Pennsylvania sedge"
+  ],
+  "taxonomy": {
+    "rank": "species",
+    "ancestry": "48460/47126/211194/47125/47163/47162/47161/873509/924136/48571/1120852/1460915",
+    "iconicTaxonName": "Plantae"
+  },
+  "conservationStatus": null,
+  "establishmentMeans": [
+    {
+      "status": "native",
+      "place": "North America"
+    }
+  ],
+  "observationsCount": 10925,
+  "defaultPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/1811877/medium.jpg"
+}

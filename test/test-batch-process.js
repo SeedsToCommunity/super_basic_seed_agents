@@ -17,6 +17,10 @@ const testPlants = [
   { genus: 'Trillium', species: 'grandiflorum'},
   { genus: 'Sanguinaria', species: 'canadensis'},
   { genus: 'Claytonia', species: 'virginica'},
+  { genus: 'Geranium', species: 'maculatum'},
+  { genus: 'Carex', species: 'pennsylvanica'},
+  { genus: 'Chelone', species: 'glabra'},
+  { genus: 'Coreopsis', species: 'lanceolata'},
   { genus: 'Erythronium', species: 'americanum'}
 ];
 

@@ -1,0 +1,32 @@
+{
+  "found": true,
+  "scientificName": "Chelone glabra",
+  "taxonId": 82316,
+  "region": "Southeast Michigan",
+  "placeIds": {
+    "washtenaw": 2649,
+    "livingston": 2609,
+    "oakland": 2350,
+    "wayne": 986,
+    "monroe": 2009,
+    "jackson": 2948,
+    "lenawee": 2608
+  },
+  "monthlyObservations": {
+    "1": 2,
+    "2": 0,
+    "3": 1,
+    "4": 2,
+    "5": 14,
+    "6": 10,
+    "7": 8,
+    "8": 77,
+    "9": 307,
+    "10": 17,
+    "11": 3,
+    "12": 6
+  },
+  "totalObservations": 447,
+  "peakMonth": 9,
+  "peakMonthName": "September"
+}
