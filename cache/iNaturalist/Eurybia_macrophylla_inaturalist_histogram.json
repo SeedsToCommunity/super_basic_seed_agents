@@ -1,0 +1,32 @@
+{
+  "found": true,
+  "scientificName": "Eurybia macrophylla",
+  "taxonId": 126655,
+  "region": "Southeast Michigan",
+  "placeIds": {
+    "washtenaw": 2649,
+    "livingston": 2609,
+    "oakland": 2350,
+    "wayne": 986,
+    "monroe": 2009,
+    "jackson": 2948,
+    "lenawee": 2608
+  },
+  "monthlyObservations": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 11,
+    "5": 50,
+    "6": 20,
+    "7": 30,
+    "8": 48,
+    "9": 59,
+    "10": 26,
+    "11": 4,
+    "12": 0
+  },
+  "totalObservations": 248,
+  "peakMonth": 9,
+  "peakMonthName": "September"
+}

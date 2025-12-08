@@ -1,5 +1,15 @@
 # Design Decisions
 
+## 2025-12-05
+- Discover BONAP species range map image URLs.
+- Added Missourie Botanical Society external URL
+- Added aggregation spreadsheet source for all the new data.
+- Lots of formatting of those new columns in the species display tabs.
+    - Range map
+    - Observation graph
+    - Coefficients (wetness and conservation) and explanation pages.
+- Ability to reorder each separate species tab is useful. Not going to do too much more. No need for fancy layout. 
+
 ## 2025-11-27
 - Cache GBIF data locally in cache/GBIF json files.
 - Download Michigan Flora Online dataset of species for Michigan 2024 and cache that CSV file in cache/MichiganFlora. It will be read by a data source module.

@@ -1,0 +1,28 @@
+{
+  "genus": "Echinacea",
+  "species": "pallida",
+  "matched": true,
+  "usageKey": 3150919,
+  "acceptedName": "Echinacea pallida (Nutt.) Nutt.",
+  "synonyms": [
+    {
+      "scientificName": "Brauneria pallida (Nutt.) Britton",
+      "canonicalName": "Brauneria pallida",
+      "genus": "Brauneria",
+      "species": "pallida",
+      "binomial": "Brauneria pallida",
+      "status": "SYNONYM",
+      "publishedIn": "Britton. (1894). In: Mem. Torrey Bot. Club 5: 334."
+    },
+    {
+      "scientificName": "Rudbeckia pallida Nutt.",
+      "canonicalName": "Rudbeckia pallida",
+      "genus": "Rudbeckia",
+      "species": "pallida",
+      "binomial": "Rudbeckia pallida",
+      "status": "SYNONYM",
+      "publishedIn": "Nutt. (1834). In: J. Acad. Philad. 7: 77."
+    }
+  ],
+  "cachedAt": "2025-12-08T05:18:02.852Z"
+}

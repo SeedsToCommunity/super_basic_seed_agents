@@ -1,0 +1,32 @@
+{
+  "found": true,
+  "scientificName": "Echinacea pallida",
+  "taxonId": 127689,
+  "region": "Southeast Michigan",
+  "placeIds": {
+    "washtenaw": 2649,
+    "livingston": 2609,
+    "oakland": 2350,
+    "wayne": 986,
+    "monroe": 2009,
+    "jackson": 2948,
+    "lenawee": 2608
+  },
+  "monthlyObservations": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 4,
+    "6": 16,
+    "7": 12,
+    "8": 2,
+    "9": 3,
+    "10": 1,
+    "11": 1,
+    "12": 0
+  },
+  "totalObservations": 39,
+  "peakMonth": 6,
+  "peakMonthName": "June"
+}

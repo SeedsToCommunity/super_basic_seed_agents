@@ -1,0 +1,29 @@
+{
+  "found": true,
+  "scientificName": "Eurybia macrophylla",
+  "taxonId": 126655,
+  "wikipediaSummary": "<i><b>Eurybia macrophylla</b></i>, commonly known as the <b>bigleaf aster</b>, <b>large-leaved aster</b>, <b>largeleaf aster</b> or <b>bigleaf wood aster</b>, is an herbaceous perennial in the composite family that was formerly treated in the genus <i>Aster</i>. It is native to eastern North America, with a range extending from eastern and central Canada (from Nova Scotia to Manitoba) through the northeastern deciduous and mixed forests of New England and the Great Lakes region and south along the Appalachians as far as...",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Eurybia macrophylla",
+  "preferredCommonName": "large-leaved aster",
+  "commonNames": [
+    "large-leaved aster"
+  ],
+  "taxonomy": {
+    "rank": "species",
+    "ancestry": "48460/47126/211194/47125/47124/47605/47604/632790/461542/972893/52975",
+    "iconicTaxonName": "Plantae"
+  },
+  "conservationStatus": null,
+  "establishmentMeans": [
+    {
+      "status": "introduced",
+      "place": "Germany"
+    },
+    {
+      "status": "native",
+      "place": "North America"
+    }
+  ],
+  "observationsCount": 22495,
+  "defaultPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/324347843/medium.jpg"
+}

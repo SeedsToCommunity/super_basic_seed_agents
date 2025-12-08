@@ -1,0 +1,73 @@
+{
+  "genus": "Eurybia",
+  "species": "macrophylla",
+  "matched": true,
+  "usageKey": 5396106,
+  "acceptedName": "Eurybia macrophylla (L.) Cass.",
+  "synonyms": [
+    {
+      "scientificName": "Aster ambiguus Bernh. ex Nees",
+      "canonicalName": "Aster ambiguus",
+      "genus": "Aster",
+      "species": "ambiguus",
+      "binomial": "Aster ambiguus",
+      "status": "HETEROTYPIC_SYNONYM",
+      "publishedIn": "Bernh. ex Nees. (1832). In: Gen. Et Sp. Aster. 138."
+    },
+    {
+      "scientificName": "Aster excelsior E.S.Burgess",
+      "canonicalName": "Aster excelsior",
+      "genus": "Aster",
+      "species": "excelsior",
+      "binomial": "Aster excelsior",
+      "status": "SYNONYM",
+      "publishedIn": "Burgess, E. S. (1906). In: Mem. Torrey Bot. Club 13: 327."
+    },
+    {
+      "scientificName": "Aster ianthinus E.S.Burgess",
+      "canonicalName": "Aster ianthinus",
+      "genus": "Aster",
+      "species": "ianthinus",
+      "binomial": "Aster ianthinus",
+      "status": "SYNONYM",
+      "publishedIn": "Burgess, E. S. (1898). In: Britton & Brown, Ill. Fl. N. U.S. 3: 360."
+    },
+    {
+      "scientificName": "Aster jussiei E.S.Burgess",
+      "canonicalName": "Aster jussiei",
+      "genus": "Aster",
+      "species": "jussiei",
+      "binomial": "Aster jussiei",
+      "status": "SYNONYM",
+      "publishedIn": "Burgess, E. S. (1906). In: Mem. Torrey Bot. Club 13: 388."
+    },
+    {
+      "scientificName": "Aster latifolius Desf., 1829",
+      "canonicalName": "Aster latifolius",
+      "genus": "Aster",
+      "species": "latifolius",
+      "binomial": "Aster latifolius",
+      "status": "SYNONYM",
+      "publishedIn": "(1829). Cat. Pl. Horti Paris."
+    },
+    {
+      "scientificName": "Aster macrophyllus L.",
+      "canonicalName": "Aster macrophyllus",
+      "genus": "Aster",
+      "species": "macrophyllus",
+      "binomial": "Aster macrophyllus",
+      "status": "SYNONYM",
+      "publishedIn": "L. (1763). In: Sp. Pl. Ed. 2, 1232."
+    },
+    {
+      "scientificName": "Aster multiformis E.S.Burgess",
+      "canonicalName": "Aster multiformis",
+      "genus": "Aster",
+      "species": "multiformis",
+      "binomial": "Aster multiformis",
+      "status": "SYNONYM",
+      "publishedIn": "N.L.Britton & A.Brown, Ill. Fl. N. U.S. 3: 361 (1898)"
+    }
+  ],
+  "cachedAt": "2025-12-08T05:18:34.338Z"
+}

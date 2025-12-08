@@ -1,0 +1,14 @@
+console.log('='.repeat(60));
+console.log('Seed and Species Aggregator - CLI Tool');
+console.log('='.repeat(60));
+console.log('');
+console.log('This is a command-line botanical data processor.');
+console.log('');
+console.log('Available commands:');
+console.log('  node src/output/process-plant.js <genus> <species>');
+console.log('  node src/output/batch-process-plants.js');
+console.log('');
+console.log('Example:');
+console.log('  node src/output/process-plant.js Acer saccharum');
+console.log('');
+console.log('='.repeat(60));

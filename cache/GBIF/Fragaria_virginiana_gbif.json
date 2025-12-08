@@ -1,0 +1,26 @@
+{
+  "genus": "Fragaria",
+  "species": "virginiana",
+  "matched": true,
+  "usageKey": 7950792,
+  "acceptedName": "Fragaria virginiana Duchesne",
+  "synonyms": [
+    {
+      "scientificName": "Fragaria illinoensis Prince",
+      "canonicalName": "Fragaria illinoensis",
+      "genus": "Fragaria",
+      "species": "illinoensis",
+      "binomial": "Fragaria illinoensis",
+      "status": "SYNONYM"
+    },
+    {
+      "scientificName": "Fragaria umbelliformis F.W.Schultz ex Nyman",
+      "canonicalName": "Fragaria umbelliformis",
+      "genus": "Fragaria",
+      "species": "umbelliformis",
+      "binomial": "Fragaria umbelliformis",
+      "status": "SYNONYM"
+    }
+  ],
+  "cachedAt": "2025-12-08T05:19:05.613Z"
+}

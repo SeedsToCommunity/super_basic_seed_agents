@@ -1,0 +1,25 @@
+{
+  "found": true,
+  "scientificName": "Echinacea pallida",
+  "taxonId": 127689,
+  "wikipediaSummary": "<i><b>Echinacea pallida</b></i>, commonly called <b>pale purple coneflower</b>, is a species of herbaceous perennial plant in the family Asteraceae. It is sometimes grown in gardens and used for medicinal purposes. Its native range is the central region of the United States, in the Mississippi Valley, the southeastern Great Plains, and the region south of Lake Michigan. Most of the known populations are in the region from southern Wisconsin and Iowa south to Louisiana and eastern Texas, with...",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Echinacea pallida",
+  "preferredCommonName": "pale purple coneflower",
+  "commonNames": [
+    "pale purple coneflower"
+  ],
+  "taxonomy": {
+    "rank": "species",
+    "ancestry": "48460/47126/211194/47125/47124/47605/47604/632790/605446/960953/48628",
+    "iconicTaxonName": "Plantae"
+  },
+  "conservationStatus": null,
+  "establishmentMeans": [
+    {
+      "status": "introduced",
+      "place": "Sweden"
+    }
+  ],
+  "observationsCount": 7005,
+  "defaultPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/27278434/medium.jpeg"
+}

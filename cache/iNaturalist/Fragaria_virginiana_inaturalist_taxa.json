@@ -1,0 +1,29 @@
+{
+  "found": true,
+  "scientificName": "Fragaria virginiana",
+  "taxonId": 77155,
+  "wikipediaSummary": "The <b>Virginia strawberry</b>, <b>wild strawberry</b>, or <b>common strawberry</b> (<i><b>Fragaria virginiana</b></i>) is one of two species of wild strawberry that were hybridized to create the modern domesticated garden strawberry. Its natural range is confined to North America, in the United States (including Alaska) and Canada, although a popular variety called \"Little Scarlet\" is grown only in Great Britain, having been imported from the United States in the early 1900s.",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Fragaria virginiana",
+  "preferredCommonName": "Virginia strawberry",
+  "commonNames": [
+    "Virginia strawberry"
+  ],
+  "taxonomy": {
+    "rank": "species",
+    "ancestry": "48460/47126/211194/47125/47124/47132/47148/415343/885411/975959/50299",
+    "iconicTaxonName": "Plantae"
+  },
+  "conservationStatus": null,
+  "establishmentMeans": [
+    {
+      "status": "introduced",
+      "place": "Oberösterreich, Österreich, AT"
+    },
+    {
+      "status": "native",
+      "place": "North America"
+    }
+  ],
+  "observationsCount": 54711,
+  "defaultPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/38629712/medium.jpeg"
+}

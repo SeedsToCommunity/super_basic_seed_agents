@@ -1,0 +1,32 @@
+{
+  "found": true,
+  "scientificName": "Fragaria virginiana",
+  "taxonId": 77155,
+  "region": "Southeast Michigan",
+  "placeIds": {
+    "washtenaw": 2649,
+    "livingston": 2609,
+    "oakland": 2350,
+    "wayne": 986,
+    "monroe": 2009,
+    "jackson": 2948,
+    "lenawee": 2608
+  },
+  "monthlyObservations": {
+    "1": 10,
+    "2": 2,
+    "3": 15,
+    "4": 103,
+    "5": 186,
+    "6": 29,
+    "7": 10,
+    "8": 12,
+    "9": 25,
+    "10": 15,
+    "11": 8,
+    "12": 4
+  },
+  "totalObservations": 419,
+  "peakMonth": 5,
+  "peakMonthName": "May"
+}
