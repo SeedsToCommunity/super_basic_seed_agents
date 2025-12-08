@@ -481,10 +481,13 @@ export async function appendPlantRows(spreadsheetId, plantRecords) {
         const value = moduleResult.columnValues[columnId];
         
         // JSON-stringify objects and arrays for Google Sheets (pretty-printed)
+        // Keep primitives (numbers, strings, booleans) as-is for proper Sheets formatting
         if (value !== null && typeof value === 'object') {
           row.push(JSON.stringify(value, null, 2));
+        } else if (value == null) {
+          row.push('');
         } else {
-          row.push(value == null ? '' : String(value));
+          row.push(value);
         }
       } else {
         // Column not produced by this module - empty string

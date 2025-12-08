@@ -53,8 +53,8 @@ export async function run(genus, species, priorResults) {
     
     return {
       columnValues: {
-        coefficientC: String(record.coefficientC),
-        wetlandIndicatorW: String(record.wetnessW),
+        coefficientC: record.coefficientC,
+        wetlandIndicatorW: record.wetnessW,
         physiognomy: record.physiognomy || '',
         duration: record.duration || ''
       }
