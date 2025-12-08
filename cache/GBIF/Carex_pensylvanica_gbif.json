@@ -1,0 +1,44 @@
+{
+  "genus": "Carex",
+  "species": "pensylvanica",
+  "matched": true,
+  "usageKey": 2724855,
+  "acceptedName": "Carex pensylvanica Lam.",
+  "synonyms": [
+    {
+      "scientificName": "Carex marginata Muhl.",
+      "canonicalName": "Carex marginata",
+      "genus": "Carex",
+      "species": "marginata",
+      "binomial": "Carex marginata",
+      "status": "HOMOTYPIC_SYNONYM"
+    },
+    {
+      "scientificName": "Carex marginata Muhl. ex Willd.",
+      "canonicalName": "Carex marginata",
+      "genus": "Carex",
+      "species": "marginata",
+      "binomial": "Carex marginata",
+      "status": "HETEROTYPIC_SYNONYM",
+      "publishedIn": "Sp. Pl. ed. 4. 4: 261 (1805)"
+    },
+    {
+      "scientificName": "Carex stolonifera Schwein.",
+      "canonicalName": "Carex stolonifera",
+      "genus": "Carex",
+      "species": "stolonifera",
+      "binomial": "Carex stolonifera",
+      "status": "SYNONYM"
+    },
+    {
+      "scientificName": "Carex subbiflora Steud.",
+      "canonicalName": "Carex subbiflora",
+      "genus": "Carex",
+      "species": "subbiflora",
+      "binomial": "Carex subbiflora",
+      "status": "SYNONYM",
+      "publishedIn": "Syn. Pl. Glumac. 2: 234 (1855)"
+    }
+  ],
+  "cachedAt": "2025-12-07T17:44:24.444Z"
+}
