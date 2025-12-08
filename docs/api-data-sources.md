@@ -345,7 +345,7 @@ The module searches 8 botanical reference websites:
 | Acronym | `acronym` | string | Michigan Flora short code (e.g., "ACESAU") |
 | Native? | `isNative` | boolean | true = native to Michigan, false = non-native |
 | C | `coefficientC` | number | Coefficient of Conservatism (0-10 scale) |
-| W | `wetnessW` | number | Wetland Indicator Status (-5 to +5 scale) |
+| CW | `wetnessW` | number | Coefficient of Wetness (-5 to +5 scale) |
 | Physiognomy | `physiognomy` | string | Plant growth form (forb, tree, shrub, grass, etc.) |
 | Duration | `duration` | string | Life cycle (annual, perennial, biennial) |
 | Common Name | `commonName` | string | Vernacular name(s), semicolon-separated if multiple |
@@ -359,7 +359,7 @@ The module searches 8 botanical reference websites:
 - **7-9**: High fidelity, found in high-quality natural areas
 - **10**: Found only in pristine, undisturbed natural communities
 
-**Wetness Indicator (W)** - Habitat moisture preference:
+**Coefficient of Wetness (CW)** - Habitat moisture preference:
 - **-5**: Obligate Wetland (OBL) - Almost always in wetlands
 - **-4 to -3**: Facultative Wetland (FACW) - Usually in wetlands
 - **-2 to -1**: Facultative (FAC) - Equally in wetland/upland

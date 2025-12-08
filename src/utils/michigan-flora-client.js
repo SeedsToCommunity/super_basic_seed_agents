@@ -16,7 +16,7 @@
  * - coefficientC: Coefficient of Conservatism (0-10 scale)
  *     0 = Found in any habitat, tolerant of disturbance
  *     10 = Found only in high-quality natural areas
- * - wetnessW: Wetland Indicator Status (-5 to +5 scale)
+ * - wetnessW: Coefficient of Wetness (-5 to +5 scale)
  *     -5 = Obligate wetland species
  *     +5 = Obligate upland species
  *     0 = Facultative (equally likely in wetland or upland)

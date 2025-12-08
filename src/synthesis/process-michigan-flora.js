@@ -2,7 +2,7 @@
  * Michigan Flora Ecological Metrics Synthesis Module
  * 
  * Retrieves ecological data from the Michigan Flora Online dataset (local CSV cache)
- * including Coefficient of Conservatism, Wetland Indicator, Physiognomy, and Duration.
+ * including Coefficient of Conservatism, Coefficient of Wetness, Physiognomy, and Duration.
  * 
  * Data Source: MichiganFloraSpeciesDatabase_Michigan_2024.csv (~2,873 species)
  * No network requests required - uses locally cached static dataset.
@@ -16,7 +16,7 @@ export const metadata = {
   name: 'Michigan Flora Ecological Metrics',
   columns: [
     { id: 'coefficientC', header: 'Coefficient of Conservatism (C)' },
-    { id: 'wetlandIndicatorW', header: 'Wetland Indicator (W)' },
+    { id: 'wetlandIndicatorW', header: 'Coefficient of Wetness (CW)' },
     { id: 'physiognomy', header: 'Physiognomy' },
     { id: 'duration', header: 'Duration' }
   ],
