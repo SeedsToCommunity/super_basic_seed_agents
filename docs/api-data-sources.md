@@ -230,11 +230,45 @@ The module searches 8 botanical reference websites:
 
 **Content Extraction**: Uses Mozilla's `@mozilla/readability` library (same algorithm as Firefox Reader View) to extract main page content, stripping navigation, ads, and boilerplate.
 
-**Behavior**:
-- Cache hit: Returns all URLs immediately (no API calls)
+#### SerpApi Query Cache (New in v2.0)
+**Cache Location**: `cache/SerpApi/` (query-based, MD5 hash filenames)
+
+**File Naming**: `{md5-hash-of-query}.json`
+
+**Purpose**: Caches SerpApi search results to avoid repeated API calls for the same query
+
+**Cache Structure**:
+```json
+{
+  "_meta": {
+    "query": "site:illinoiswildflowers.info Acer rubrum",
+    "cachedAt": "2025-12-11T...",
+    "numResults": 5,
+    "site": "Illinois Wildflowers",
+    "genus": "Acer",
+    "species": "rubrum"
+  },
+  "results": [
+    { "link": "https://...", "title": "...", "snippet": "..." }
+  ]
+}
+```
+
+**Behavior**: 
+- Before any SerpApi call, check if query was previously searched
+- Cache hit: Use cached organic_results directly (no API call)
+- Cache miss: Call SerpApi and cache results (even empty results)
+- Caching empty results prevents repeated API calls for queries with no results
+
+**Cost Savings**: Each cached query saves one SerpApi credit (~$0.002 per search)
+
+#### Cache Behavior Summary
+- **URL Cache**: Returns discovered URLs immediately (no API calls)
+- **SerpApi Cache**: Returns search results immediately (no API calls)
+- **Raw HTML Cache**: Returns page HTML immediately (no network fetch)
+- **Page Content Cache**: Returns parsed content for validated URLs
 - Partial cache: Only searches missing sites
-- Cache miss: Searches all configured sites
-- Empty results NOT cached (allows retry on next run)
+- Empty SerpApi results ARE cached (prevents repeated calls)
 - Page content cached after URL validation passes
 
 ### Retry & Rate Limiting

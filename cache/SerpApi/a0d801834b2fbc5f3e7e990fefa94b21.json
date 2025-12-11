@@ -1,0 +1,18 @@
+{
+  "_meta": {
+    "query": "site:michiganflora.net Acer rubrum",
+    "cachedAt": "2025-12-11T14:40:53.104Z",
+    "numResults": 2,
+    "site": "Michigan Flora",
+    "genus": "Acer",
+    "species": "rubrum"
+  },
+  "results": [
+    {
+      "link": "https://michiganflora.net/species.aspx?id=52"
+    },
+    {
+      "link": "https://michiganflora.net/genus.aspx?id=Acer"
+    }
+  ]
+}
