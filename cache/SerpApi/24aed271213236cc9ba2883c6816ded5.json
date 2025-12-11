@@ -1,0 +1,25 @@
+{
+  "_meta": {
+    "query": "site:tropicos.org Sanguinaria canadensis",
+    "cachedAt": "2025-12-11T14:44:22.926Z",
+    "numResults": 1,
+    "site": "Tropicos",
+    "genus": "Sanguinaria",
+    "species": "canadensis"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Tropicos | Name - !Sanguinaria L.",
+      "link": "http://legacy.tropicos.org/Name/40029302?projectid=23&langid=0",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://legacy.tropicos.org/Name/40029302%3Fprojectid%3D23%26langid%3D0&ved=2ahUKEwi8iaXu3bWRAxW3YfUHHeC8DzIQFnoECCEQAQ",
+      "displayed_link": "http://legacy.tropicos.org › Name",
+      "favicon": "https://serpapi.com/searches/693ad37cafea45d15cca366e/images/f6ab052f1cf7a1a122176723a0ab9d08d676ddd1bbe4950bc22420e01a5c254a.png",
+      "snippet": "Sanguinaria L. One species, eastern U.S. Canada. Lower Taxa. Sanguinaria canadensis L. Cite this page: Tropicos.org. Missouri Botanical Garden. 06 Aug 2025 ...",
+      "snippet_highlighted_words": [
+        "Sanguinaria canadensis"
+      ],
+      "source": "Tropicos"
+    }
+  ]
+}

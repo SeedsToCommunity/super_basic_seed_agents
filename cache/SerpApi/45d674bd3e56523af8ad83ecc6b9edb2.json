@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "query": "site:tropicos.org Erythronium americanum",
+    "cachedAt": "2025-12-11T14:53:40.435Z",
+    "numResults": 1,
+    "site": "Tropicos",
+    "genus": "Erythronium",
+    "species": "americanum"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Tropicos database",
+      "link": "http://legacy.tropicos.org/NameSearch.aspx?name=erythronium+americanum",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://legacy.tropicos.org/NameSearch.aspx%3Fname%3Derythronium%2Bamericanum&ved=2ahUKEwjena_75LWRAxXNAbkGHU1SHPkQFnoECBgQAQ",
+      "displayed_link": "http://legacy.tropicos.org › NameSearch › name=erythro...",
+      "favicon": "https://serpapi.com/searches/693adaedfda607d18aa384a6/images/d4e436fc06eeaaa4aa83c09feb8443e43096fcea07e0acf95cb42b896f4aa917.png",
+      "snippet": "No information is available for this page.",
+      "source": "Tropicos"
+    }
+  ]
+}

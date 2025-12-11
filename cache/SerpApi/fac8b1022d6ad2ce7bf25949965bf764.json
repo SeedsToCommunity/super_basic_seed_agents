@@ -1,0 +1,66 @@
+{
+  "_meta": {
+    "query": "site:wildflower.org Claytonia virginica",
+    "cachedAt": "2025-12-11T14:44:32.223Z",
+    "numResults": 4,
+    "site": "Lady Bird Johnson Wildflower Center",
+    "genus": "Claytonia",
+    "species": "virginica"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Claytonia virginica (Virginia springbeauty) | Native Plants ...",
+      "link": "https://www.wildflower.org/plants/result.php?id_plant=clvi3",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/plants/result.php%3Fid_plant%3Dclvi3&ved=2ahUKEwiG-Jz83bWRAxVv4skDHWY7K98QFnoECCAQAQ",
+      "displayed_link": "https://www.wildflower.org › plants › result",
+      "thumbnail": "https://serpapi.com/searches/693ad39bff3b7a2d3066cc3b/images/fc2954b7faa1b5e0f7a86b193700ddd6a0cfccc32e3eca8a935e3d18a14546e0.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad39bff3b7a2d3066cc3b/images/fc2954b7faa1b5e0f7a86b193700ddd6180c8c84f82569e632661a1c65c71280.png",
+      "snippet": "A low plant with loose clusters of pink or whitish flowers, striped with dark pink. A pair of smooth, grass-like leaves occurs halfway up the slender, 4-16 in.",
+      "source": "Lady Bird Johnson Wildflower Center"
+    },
+    {
+      "position": 2,
+      "title": "Springbeauty in New Jersey and Dog Allergies | NPIN",
+      "link": "https://www.wildflower.org/expert/show.php?id=9333&frontpage=true",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/expert/show.php%3Fid%3D9333%26frontpage%3Dtrue&ved=2ahUKEwiG-Jz83bWRAxVv4skDHWY7K98QFnoECCIQAQ",
+      "displayed_link": "https://www.wildflower.org › expert › show",
+      "thumbnail": "https://serpapi.com/searches/693ad39bff3b7a2d3066cc3b/images/fc2954b7faa1b5e0f7a86b193700ddd6dbb655f249250f173d3f3ab8d391ae42.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad39bff3b7a2d3066cc3b/images/fc2954b7faa1b5e0f7a86b193700ddd6ff32da7dd4ad0b27f142d5ae15bd9ec4.png",
+      "date": "May 11, 2013",
+      "snippet": "The ASPCA list of toxic plants for dogs does not include Claytonia virginica. Tom Ogren has some information on his Allergy-Free Gardening ...",
+      "snippet_highlighted_words": [
+        "Claytonia virginica"
+      ],
+      "source": "Lady Bird Johnson Wildflower Center"
+    },
+    {
+      "position": 3,
+      "title": "Claytonia virginica var. virginica (Virginia springbeauty)",
+      "link": "https://www.wildflower.org/plants/result.php?id_plant=CLVIV",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/plants/result.php%3Fid_plant%3DCLVIV&ved=2ahUKEwiG-Jz83bWRAxVv4skDHWY7K98QFnoECCEQAQ",
+      "displayed_link": "https://www.wildflower.org › plants › result",
+      "favicon": "https://serpapi.com/searches/693ad39bff3b7a2d3066cc3b/images/fc2954b7faa1b5e0f7a86b193700ddd674967f5c3b4726aa13838e19800b333d.png",
+      "date": "May 2, 2023",
+      "snippet": "Size Notes: Stems erect to decumbent, up to about 16 inches long. Bloom Information. Bloom Color: White , Red Bloom Time: Jan , Feb , Mar , Apr ...",
+      "snippet_highlighted_words": [
+        "Stems erect to decumbent, up to about 16 inches long"
+      ],
+      "source": "Lady Bird Johnson Wildflower Center"
+    },
+    {
+      "position": 4,
+      "title": "Claytonia virginica var. acutiflora (Eastern spring beauty)",
+      "link": "https://www.wildflower.org/plants/result.php?id_plant=CLVIA",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/plants/result.php%3Fid_plant%3DCLVIA&ved=2ahUKEwiG-Jz83bWRAxVv4skDHWY7K98QFnoECDEQAQ",
+      "displayed_link": "https://www.wildflower.org › plants › result",
+      "favicon": "https://serpapi.com/searches/693ad39bff3b7a2d3066cc3b/images/fc2954b7faa1b5e0f7a86b193700ddd638791edd131e44238443469abe7a8460.png",
+      "date": "Nov 12, 2020",
+      "snippet": "Plant Characteristics ... Size Notes: Up to about 16 inches tall. Bloom Information. Bloom Color: White , Pink , Orange , Yellow Bloom Time: Mar , ...",
+      "snippet_highlighted_words": [
+        "Up to about 16 inches tall"
+      ],
+      "source": "Lady Bird Johnson Wildflower Center"
+    }
+  ]
+}

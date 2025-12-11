@@ -1,0 +1,78 @@
+{
+  "_meta": {
+    "query": "site:plants.usda.gov Eurybia macrophylla",
+    "cachedAt": "2025-12-11T14:46:35.265Z",
+    "numResults": 5,
+    "site": "USDA PLANTS",
+    "genus": "Eurybia",
+    "species": "macrophylla"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Eurybia macrophylla (L.) Cass.",
+      "link": "https://plants.usda.gov/plant-profile/euma27",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/plant-profile/euma27&ved=2ahUKEwjtlu-w47WRAxXEBrwBHVxXLPoQFnoECCsQAQ",
+      "displayed_link": "https://plants.usda.gov › plant-profile › euma27",
+      "thumbnail": "https://serpapi.com/searches/693ad94af680d1fa001c6ffb/images/fdf64dc11a62981ed60e2d0d296375dd5f21b54ecf47594e8c79e25bbd0d2bfe.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad94af680d1fa001c6ffb/images/fdf64dc11a62981ed60e2d0d296375dd978137adc256d0a55c9accaffdc0dc72.png",
+      "snippet": "bigleaf aster · General · Images · Synonyms · Rarity · Wetland · Related Links · Sources · Characteristics. thumbnail image of bigleaf aster. bigleaf aster",
+      "snippet_highlighted_words": [
+        "bigleaf aster"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "Plant Profile - Characteristics",
+      "link": "https://plants.usda.gov/plant-profile/EUMA27/characteristics",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/plant-profile/EUMA27/characteristics&ved=2ahUKEwjtlu-w47WRAxXEBrwBHVxXLPoQFnoECCkQAQ",
+      "displayed_link": "https://plants.usda.gov › plant-profile › EUMA27 › cha...",
+      "favicon": "https://serpapi.com/searches/693ad94af680d1fa001c6ffb/images/fdf64dc11a62981ed60e2d0d296375ddc4e5d22330f6ae7ed367d881e72ad93f.png",
+      "snippet": "bigleaf aster ; Flower Color, Purple ; Flower Conspicuous, Yes ; Foliage Color, Dark Green ; Foliage Porosity Summer, Dense.",
+      "snippet_highlighted_words": [
+        "bigleaf aster"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "Down to Species - Eurybia macrophylla (L.) Cass.",
+      "link": "https://plants.usda.gov/classification/35511",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/classification/35511&ved=2ahUKEwjtlu-w47WRAxXEBrwBHVxXLPoQFnoECCUQAQ",
+      "displayed_link": "https://plants.usda.gov › classification",
+      "favicon": "https://serpapi.com/searches/693ad94af680d1fa001c6ffb/images/fdf64dc11a62981ed60e2d0d296375ddd32cdd2e9f12731a76d1bc9fff86030b.png",
+      "snippet": "Classification for Kingdom Plantae Down to Species Eurybia macrophylla (L.) Cass. ; Kingdom, Plantae - Plants ; Subkingdom, Tracheobionta - Vascular plants.",
+      "snippet_highlighted_words": [
+        "Eurybia macrophylla"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "Eurybia macrophylla (L.) Cass.",
+      "link": "https://plants.usda.gov/plant-profile/EUMA27/rarity",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/plant-profile/EUMA27/rarity&ved=2ahUKEwjtlu-w47WRAxXEBrwBHVxXLPoQFnoECCYQAQ",
+      "displayed_link": "https://plants.usda.gov › plant-profile › EUMA27 › rarity",
+      "favicon": "https://serpapi.com/searches/693ad94af680d1fa001c6ffb/images/fdf64dc11a62981ed60e2d0d296375dd93079030ea3ca8fb1167db35c13c7556.png",
+      "snippet": "Eurybia macrophylla (L.) Cass. bigleaf aster. Profile pages. General, Images, Synonyms, Rarity, Wetland, Related Links, Sources, Characteristics. General ...",
+      "snippet_highlighted_words": [
+        "Eurybia macrophylla"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "Classification for Kingdom Plantae Down to Genus Eurybia ...",
+      "link": "https://plants.usda.gov/classification/35456",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/classification/35456&ved=2ahUKEwjtlu-w47WRAxXEBrwBHVxXLPoQFnoECCQQAQ",
+      "displayed_link": "https://plants.usda.gov › classification",
+      "favicon": "https://serpapi.com/searches/693ad94af680d1fa001c6ffb/images/fdf64dc11a62981ed60e2d0d296375ddff2750cd9749cfa48552f27b1f691897.png",
+      "snippet": "Classification for Kingdom Plantae Down to Genus Eurybia (Cass.) Cass. ; Class, Magnoliopsida - Dicotyledons ; Subclass, Asteridae ; Order, Asterales ; Family ...",
+      "snippet_highlighted_words": [
+        "Class, Magnoliopsida - Dicotyledons"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    }
+  ]
+}

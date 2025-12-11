@@ -1,0 +1,68 @@
+{
+  "_meta": {
+    "query": "site:gobotany.nativeplanttrust.org Coreopsis lanceolata",
+    "cachedAt": "2025-12-11T14:52:42.309Z",
+    "numResults": 4,
+    "site": "Go Botany",
+    "genus": "Coreopsis",
+    "species": "lanceolata"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Coreopsis lanceolata (lance-leaved tickseed) - Go Botany",
+      "link": "https://gobotany.nativeplanttrust.org/species/coreopsis/lanceolata/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://gobotany.nativeplanttrust.org/species/coreopsis/lanceolata/&ved=2ahUKEwje1uPf5LWRAxUIv4kEHY2wFpkQFnoECCAQAQ",
+      "displayed_link": "https://gobotany.nativeplanttrust.org › species › lanceol...",
+      "thumbnail": "https://serpapi.com/searches/693adab8e6590eecaa7c3d61/images/cf33b15c5a2831137ff70fa7fad202a1744cbe603fbfffbd77c638e5a21433c6.jpeg",
+      "favicon": "https://serpapi.com/searches/693adab8e6590eecaa7c3d61/images/cf33b15c5a2831137ff70fa7fad202a1656366dcca1f0cf5dbdf9da9a7b7f7a4.png",
+      "snippet": "Lance-leaved tickseed is native to the Midwest and Southeast, and is considered introduced in our area. It has an attractive flower and is grown as an ...",
+      "snippet_highlighted_words": [
+        "is native to the Midwest and Southeast"
+      ],
+      "source": "Go Botany"
+    },
+    {
+      "position": 2,
+      "title": "Coreopsis: Dichotomous Key - Go Botany",
+      "link": "https://gobotany.nativeplanttrust.org/dkey/coreopsis/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://gobotany.nativeplanttrust.org/dkey/coreopsis/&ved=2ahUKEwje1uPf5LWRAxUIv4kEHY2wFpkQFnoECCEQAQ",
+      "displayed_link": "https://gobotany.nativeplanttrust.org › dkey › coreopsis",
+      "thumbnail": "https://serpapi.com/searches/693adab8e6590eecaa7c3d61/images/cf33b15c5a2831137ff70fa7fad202a1ac28f1ba5e5607d0c8b5134b2aa52451.png",
+      "favicon": "https://serpapi.com/searches/693adab8e6590eecaa7c3d61/images/cf33b15c5a2831137ff70fa7fad202a11c127c194c4f5f0dc29f4f8c4366d240.png",
+      "snippet": "Each photo represents one species in this genus. Coreopsis basalis · Coreopsis grandiflora · Coreopsis lanceolata · Coreopsis major · Coreopsis palmata.",
+      "snippet_highlighted_words": [
+        "Coreopsis lanceolata"
+      ],
+      "source": "Go Botany"
+    },
+    {
+      "position": 3,
+      "title": "Coreopsis grandiflora (large-flowered tickseed) - Go Botany",
+      "link": "https://gobotany.nativeplanttrust.org/species/coreopsis/grandiflora/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://gobotany.nativeplanttrust.org/species/coreopsis/grandiflora/&ved=2ahUKEwje1uPf5LWRAxUIv4kEHY2wFpkQFnoECCIQAQ",
+      "displayed_link": "https://gobotany.nativeplanttrust.org › species › grandif...",
+      "thumbnail": "https://serpapi.com/searches/693adab8e6590eecaa7c3d61/images/cf33b15c5a2831137ff70fa7fad202a19106837d4aaf0027160c1ca3547421c0.jpeg",
+      "favicon": "https://serpapi.com/searches/693adab8e6590eecaa7c3d61/images/cf33b15c5a2831137ff70fa7fad202a180ed24418667c67606fe08eb27342c6a.png",
+      "snippet": "Coreopsis lanceolata has disk corollas 6–7.5 mm long and stems with 1–3 (–5) leaf-bearing nodes below the first peduncle. Native to North America? Yes and no ( ...",
+      "snippet_highlighted_words": [
+        "has disk corollas 6–7.5 mm long"
+      ],
+      "source": "Go Botany"
+    },
+    {
+      "position": 4,
+      "title": "Genus: Coreopsis (tickseed) - Go Botany - Native Plant Trust",
+      "link": "https://gobotany.nativeplanttrust.org/genus/coreopsis/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://gobotany.nativeplanttrust.org/genus/coreopsis/&ved=2ahUKEwje1uPf5LWRAxUIv4kEHY2wFpkQFnoECDEQAQ",
+      "displayed_link": "https://gobotany.nativeplanttrust.org › genus › coreopsis",
+      "thumbnail": "https://serpapi.com/searches/693adab8e6590eecaa7c3d61/images/cf33b15c5a2831137ff70fa7fad202a13ae9518c60f42b401da45f45239db428.jpeg",
+      "favicon": "https://serpapi.com/searches/693adab8e6590eecaa7c3d61/images/cf33b15c5a2831137ff70fa7fad202a1b3cb5a331b6b8c268ff48adaa5a4429c.png",
+      "snippet": "Genus: Coreopsis — tickseed. Reference: Strother (2006) ... This genus's species in New England. Coreopsis basalis · Coreopsis grandiflora · Coreopsis lanceolata ...",
+      "snippet_highlighted_words": [
+        "Coreopsis lanceolata"
+      ],
+      "source": "Go Botany"
+    }
+  ]
+}

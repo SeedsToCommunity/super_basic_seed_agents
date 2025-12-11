@@ -1,0 +1,56 @@
+{
+  "_meta": {
+    "query": "site:illinoiswildflowers.info Echinacea pallida",
+    "cachedAt": "2025-12-11T14:45:56.197Z",
+    "numResults": 4,
+    "site": "Illinois Wildflowers",
+    "genus": "Echinacea",
+    "species": "pallida"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Pale Purple Coneflower (Echinacea pallida)",
+      "link": "https://www.illinoiswildflowers.info/prairie/plantx/pale_coneflowerx.htm",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.illinoiswildflowers.info/prairie/plantx/pale_coneflowerx.htm&ved=2ahUKEwju9Zue47WRAxWBGFkFHYsqK9UQFnoECCIQAQ",
+      "displayed_link": "https://www.illinoiswildflowers.info › prairie › plantx › p...",
+      "thumbnail": "https://serpapi.com/searches/693ad9235922f4e78453eeb5/images/2a5d704367bf11d5a48ee34932017421bc90a272316249185a6347c5805b34f2.jpeg",
+      "snippet": "This herbaceous perennial plant is up to 3' tall and unbranched. The stout central stem is greyish or reddish green and covered with coarse white hairs.",
+      "source": "Illinois Wildflowers"
+    },
+    {
+      "position": 2,
+      "title": "Echinacea pallida (Insect Feeders)",
+      "link": "http://w.illinoiswildflowers.info/plant_insects/plants/echinacea_pallida.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://w.illinoiswildflowers.info/plant_insects/plants/echinacea_pallida.html&ved=2ahUKEwju9Zue47WRAxWBGFkFHYsqK9UQFnoECCEQAQ",
+      "displayed_link": "http://w.illinoiswildflowers.info › plant_insects › plants",
+      "snippet": "Echinacea pallida (Pale Purple Coneflower) [Asteraceae] (observations are from Wilhelm & Rericha and Williams) Heteroptera (True Bugs)",
+      "snippet_highlighted_words": [
+        "Echinacea pallida"
+      ],
+      "source": "Illinois Wildflowers"
+    },
+    {
+      "position": 3,
+      "title": "Purple Coneflower (Echinacea purpurea)",
+      "link": "https://www.illinoiswildflowers.info/prairie/plantx/pur_coneflowerx.htm",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.illinoiswildflowers.info/prairie/plantx/pur_coneflowerx.htm&ved=2ahUKEwju9Zue47WRAxWBGFkFHYsqK9UQFnoECCAQAQ",
+      "displayed_link": "https://www.illinoiswildflowers.info › pur_coneflowerx",
+      "thumbnail": "https://serpapi.com/searches/693ad9235922f4e78453eeb5/images/2a5d704367bf11d5a48ee34932017421d3f3953c3f6d7ec370af615add76e59f.jpeg",
+      "snippet": "Description: This is a perennial plant up to 3½' tall that branches occasionally. The light green stems have small purple streaks and scattered white hairs.",
+      "source": "Illinois Wildflowers"
+    },
+    {
+      "position": 4,
+      "title": "Echinacea pallida (floral visitors)",
+      "link": "https://ww25.cpanel.illinoiswildflowers.info/flower_insects/plants/pp_coneflower.htm",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ww25.cpanel.illinoiswildflowers.info/flower_insects/plants/pp_coneflower.htm&ved=2ahUKEwju9Zue47WRAxWBGFkFHYsqK9UQFnoECC0QAQ",
+      "displayed_link": "https://ww25.cpanel.illinoiswildflowers.info › plants › pp...",
+      "snippet": "Echinacea pallida (Pale Purple Coneflower) (Bees suck nectar and/or collect pollen; beetles feed on nectar, feed on pollen, or gnaw on floral tissue; ...",
+      "snippet_highlighted_words": [
+        "Echinacea pallida"
+      ],
+      "source": "Illinois Wildflowers"
+    }
+  ]
+}

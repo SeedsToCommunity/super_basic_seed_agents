@@ -1,0 +1,66 @@
+{
+  "_meta": {
+    "query": "site:wildflower.org Coreopsis lanceolata",
+    "cachedAt": "2025-12-11T14:52:46.965Z",
+    "numResults": 4,
+    "site": "Lady Bird Johnson Wildflower Center",
+    "genus": "Coreopsis",
+    "species": "lanceolata"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Coreopsis lanceolata (Lanceleaf coreopsis) | Native Plants ...",
+      "link": "https://www.wildflower.org/plants/result.php?id_plant=cola5",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/plants/result.php%3Fid_plant%3Dcola5&ved=2ahUKEwi15t3h5LWRAxUO4MkDHUlNCcoQFnoECCEQAQ",
+      "displayed_link": "https://www.wildflower.org › plants › result",
+      "thumbnail": "https://serpapi.com/searches/693adabd3d34dd0ebc857668/images/7b2e5bc2a5bb9f53de0cd3ffd3e350a362b9acac94f1abe9becab506480d9a04.jpeg",
+      "favicon": "https://serpapi.com/searches/693adabd3d34dd0ebc857668/images/7b2e5bc2a5bb9f53de0cd3ffd3e350a3d0647185c475a0781c6cd8d49528b158.png",
+      "snippet": "Lance-leaf tickseed grows in small clumps but forms extensive colonies. It is 1-2 feet tall and has leaves 3-4 inches long, opposite, sometimes alternate near ...",
+      "snippet_highlighted_words": [
+        "grows in small clumps but forms extensive colonies"
+      ],
+      "source": "Lady Bird Johnson Wildflower Center"
+    },
+    {
+      "position": 2,
+      "title": "Coreopsis lanceolata",
+      "link": "https://www.wildflower.org/gallery/result.php?id_image=22039",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/gallery/result.php%3Fid_image%3D22039&ved=2ahUKEwi15t3h5LWRAxUO4MkDHUlNCcoQFnoECCAQAQ",
+      "displayed_link": "https://www.wildflower.org › gallery › result",
+      "thumbnail": "https://serpapi.com/searches/693adabd3d34dd0ebc857668/images/7b2e5bc2a5bb9f53de0cd3ffd3e350a3f893ebe7eb23f8bee6cd0e4da5bde1a1.jpeg",
+      "favicon": "https://serpapi.com/searches/693adabd3d34dd0ebc857668/images/7b2e5bc2a5bb9f53de0cd3ffd3e350a33aaa7a5c4ebdb9e73cd89ed52d321b27.png",
+      "snippet": "Coreopsis lanceolata L. · Lanceleaf Coreopsis, Lance-leaved Coreopsis, Lanceleaf Tickseed, Sand Coreopsis · Asteraceae (Aster Family) · USDA Symbol: COLA5 ...",
+      "snippet_highlighted_words": [
+        "Coreopsis lanceolata L"
+      ],
+      "source": "Lady Bird Johnson Wildflower Center"
+    },
+    {
+      "position": 3,
+      "title": "Choosing the right Coreopsis species for Tennessee | NPIN",
+      "link": "https://www.wildflower.org/expert/show.php?id=11317",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/expert/show.php%3Fid%3D11317&ved=2ahUKEwi15t3h5LWRAxUO4MkDHUlNCcoQFnoECCIQAQ",
+      "displayed_link": "https://www.wildflower.org › expert › show",
+      "thumbnail": "https://serpapi.com/searches/693adabd3d34dd0ebc857668/images/7b2e5bc2a5bb9f53de0cd3ffd3e350a34f5fdd27361981826aa56ccf7a4b6588.jpeg",
+      "favicon": "https://serpapi.com/searches/693adabd3d34dd0ebc857668/images/7b2e5bc2a5bb9f53de0cd3ffd3e350a3902afd2425c3783adc45a6c49c4f935a.png",
+      "date": "Nov 28, 2015",
+      "snippet": "It includes some descriptions of some Coreopsis species being invasive. For example, Coreopsis lanceolata (Lanceleaf coreopsis) is highly ...",
+      "snippet_highlighted_words": [
+        "Coreopsis lanceolata"
+      ],
+      "source": "Lady Bird Johnson Wildflower Center"
+    },
+    {
+      "position": 4,
+      "title": "Coreopsis lanceolata (Lanceleaf coreopsis) | NPIN",
+      "link": "https://www.wildflower.org/gallery/species.php?id_plant=cola5",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/gallery/species.php%3Fid_plant%3Dcola5&ved=2ahUKEwi15t3h5LWRAxUO4MkDHUlNCcoQFnoECDwQAQ",
+      "displayed_link": "https://www.wildflower.org › gallery › species",
+      "thumbnail": "https://serpapi.com/searches/693adabd3d34dd0ebc857668/images/7b2e5bc2a5bb9f53de0cd3ffd3e350a385cefdd964c710155702adf55c7e9663.jpeg",
+      "favicon": "https://serpapi.com/searches/693adabd3d34dd0ebc857668/images/7b2e5bc2a5bb9f53de0cd3ffd3e350a34f4c81f129fd5ea0fe0d6248d3db1fe0.png",
+      "snippet": "Welcome to the Lady Bird Johnson Wildflower Center's collection of 176,992 plant images. We have listened to our users and made it even easier to find images in ...",
+      "source": "Lady Bird Johnson Wildflower Center"
+    }
+  ]
+}

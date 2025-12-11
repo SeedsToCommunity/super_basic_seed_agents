@@ -1,0 +1,78 @@
+{
+  "_meta": {
+    "query": "site:plants.usda.gov Claytonia virginica",
+    "cachedAt": "2025-12-11T14:44:32.681Z",
+    "numResults": 5,
+    "site": "USDA PLANTS",
+    "genus": "Claytonia",
+    "species": "virginica"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Claytonia virginica L.",
+      "link": "https://plants.usda.gov/plant-profile/CLVI3",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/plant-profile/CLVI3&ved=2ahUKEwiX_pKA3rWRAxXonWoFHbWTEeIQFnoECC0QAQ",
+      "displayed_link": "https://plants.usda.gov › plant-profile › CLVI3",
+      "thumbnail": "https://serpapi.com/searches/693ad3a5c2bb9916d61beebe/images/442dad086c9d355d13db5a267db4bdac23fdbbac5c143253570e960d1fb15aff.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad3a5c2bb9916d61beebe/images/442dad086c9d355d13db5a267db4bdac463ad9f46b2a1462d75d47de378b9f71.png",
+      "snippet": "Virginia springbeauty General Information: Symbol, Group, Duration, Growth Habits, Native Status, Download Distribution Data",
+      "snippet_highlighted_words": [
+        "Virginia springbeauty"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "Down to Species - Claytonia virginica L.",
+      "link": "https://plants.usda.gov/classification/59833",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/classification/59833&ved=2ahUKEwiX_pKA3rWRAxXonWoFHbWTEeIQFnoECCoQAQ",
+      "displayed_link": "https://plants.usda.gov › classification",
+      "favicon": "https://serpapi.com/searches/693ad3a5c2bb9916d61beebe/images/442dad086c9d355d13db5a267db4bdac68896bfde20c21893a165edfdaca8e93.png",
+      "snippet": "Classification for Kingdom Plantae Down to Species Claytonia virginica L. ; Division, Magnoliophyta - Flowering plants ; Class, Magnoliopsida - Dicotyledons.",
+      "snippet_highlighted_words": [
+        "Classification for Kingdom Plantae Down to Species Claytonia virginica L"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "Claytonia virginica L. var. acutiflora DC.",
+      "link": "https://plants.usda.gov/plant-profile/CLVIA/sources",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/plant-profile/CLVIA/sources&ved=2ahUKEwiX_pKA3rWRAxXonWoFHbWTEeIQFnoECCMQAQ",
+      "displayed_link": "https://plants.usda.gov › plant-profile › CLVIA › sources",
+      "favicon": "https://serpapi.com/searches/693ad3a5c2bb9916d61beebe/images/442dad086c9d355d13db5a267db4bdacae76789f58ca05cfdd500c9b151ff63f.png",
+      "snippet": "The PLANTS Database includes the following 4 data sources of Claytonia virginica L. var. acutiflora DC. Data Documentation for <i>Claytonia virginica</i> ...",
+      "snippet_highlighted_words": [
+        "Claytonia virginica L. var. acutiflora DC"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "Plant Profile - Sources",
+      "link": "https://plants.usda.gov/plant-profile/CLVIV2/sources",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/plant-profile/CLVIV2/sources&ved=2ahUKEwiX_pKA3rWRAxXonWoFHbWTEeIQFnoECCUQAQ",
+      "displayed_link": "https://plants.usda.gov › plant-profile › CLVIV2 › sour...",
+      "favicon": "https://serpapi.com/searches/693ad3a5c2bb9916d61beebe/images/442dad086c9d355d13db5a267db4bdac8f88583c7ae3d1fbf87c0d718150a40c.png",
+      "snippet": "Claytonia virginica L. var. virginica f. virginica. Virginia springbeauty ... Data Documentation. The PLANTS Database includes the following 22 data sources of ...",
+      "snippet_highlighted_words": [
+        "Claytonia virginica"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "USDA Plants Database Plant Profile Wetland",
+      "link": "https://plants.usda.gov/plant-profile/clvi3/wetland",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/plant-profile/clvi3/wetland&ved=2ahUKEwiX_pKA3rWRAxXonWoFHbWTEeIQFnoECCEQAQ",
+      "displayed_link": "https://plants.usda.gov › plant-profile › clvi3 › wetland",
+      "favicon": "https://serpapi.com/searches/693ad3a5c2bb9916d61beebe/images/442dad086c9d355d13db5a267db4bdac68ac472193f668c8d3c566d46820802c.png",
+      "snippet": "Claytonia virginica L. Virginia springbeauty. Profile pages. General, Images, Subordinate Taxa, Wetland, Related Links, Sources. General · Images · Subordinate ...",
+      "snippet_highlighted_words": [
+        "Claytonia virginica L"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    }
+  ]
+}

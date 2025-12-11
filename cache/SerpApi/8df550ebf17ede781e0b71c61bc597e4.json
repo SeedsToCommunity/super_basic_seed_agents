@@ -1,0 +1,51 @@
+{
+  "_meta": {
+    "query": "site:tropicos.org Echinacea pallida",
+    "cachedAt": "2025-12-11T14:46:07.602Z",
+    "numResults": 3,
+    "site": "Tropicos",
+    "genus": "Echinacea",
+    "species": "pallida"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Echinacea pallida var. sanguinea (Nutt.) Gandhi & R.D. Thomas",
+      "link": "http://legacy.tropicos.org/Name/50220751?projectid=83",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://legacy.tropicos.org/Name/50220751%3Fprojectid%3D83&ved=2ahUKEwjm19yj47WRAxVZM9AFHZoENO0QFnoECBcQAQ",
+      "displayed_link": "http://legacy.tropicos.org › Name",
+      "favicon": "https://serpapi.com/searches/693ad92ed868dddba73f95ce/images/8c229d83fbd46594a3209fe0c2f5cadf00af790d819d4a84e9c121757a8b4bc0.png",
+      "snippet": "Echinacea pallida var. sanguinea (Nutt.) Gandhi & R.D. Thomas Search in IPNI · Search in Australian Plant Name Index · Search in NYBG Virtual Herbarium ...",
+      "snippet_highlighted_words": [
+        "Echinacea pallida var. sanguinea"
+      ],
+      "source": "Tropicos"
+    },
+    {
+      "position": 2,
+      "title": "Name - Echinacea pallida (Nutt.) Nutt.",
+      "link": "http://legacy.tropicos.org/Name/2710005?projectid=80&langid=66",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://legacy.tropicos.org/Name/2710005%3Fprojectid%3D80%26langid%3D66&ved=2ahUKEwjm19yj47WRAxVZM9AFHZoENO0QFnoECBgQAQ",
+      "displayed_link": "http://legacy.tropicos.org › Name",
+      "favicon": "https://serpapi.com/searches/693ad92ed868dddba73f95ce/images/8c229d83fbd46594a3209fe0c2f5cadff73c26375d82505d1b7bb49d61de6f38.png",
+      "snippet": "Echinacea pallida (Nutt.) Nutt. Search in The Plant List · Search in IPNI · Search in Australian Plant Name Index · Search in NYBG Virtual Herbarium ...",
+      "snippet_highlighted_words": [
+        "Echinacea pallida (Nutt.) Nutt"
+      ],
+      "source": "Tropicos"
+    },
+    {
+      "position": 3,
+      "title": "Echinacea pallida var. sanguinea (Nutt.) Gandhi & R.D. Thomas",
+      "link": "http://legacy.tropicos.org/Name/50220751?tab=acceptednames",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://legacy.tropicos.org/Name/50220751%3Ftab%3Dacceptednames&ved=2ahUKEwjm19yj47WRAxVZM9AFHZoENO0QFnoECB0QAQ",
+      "displayed_link": "http://legacy.tropicos.org › Name",
+      "favicon": "https://serpapi.com/searches/693ad92ed868dddba73f95ce/images/8c229d83fbd46594a3209fe0c2f5cadf30f5ce2840834b0b8a8f04ae3cd2af27.png",
+      "snippet": "Echinacea sanguinea Nutt. Reference article Flora of North America Editorial Committee. 2006. Magnoliophyta: Asteridae, part 8: Asteraceae, part 3.",
+      "snippet_highlighted_words": [
+        "Echinacea sanguinea Nutt"
+      ],
+      "source": "Tropicos"
+    }
+  ]
+}

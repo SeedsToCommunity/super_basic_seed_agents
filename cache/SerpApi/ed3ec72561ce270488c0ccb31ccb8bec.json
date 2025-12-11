@@ -1,0 +1,62 @@
+{
+  "_meta": {
+    "query": "site:minnesotawildflowers.info Echinacea pallida",
+    "cachedAt": "2025-12-11T14:46:13.383Z",
+    "numResults": 4,
+    "site": "Minnesota Wildflowers",
+    "genus": "Echinacea",
+    "species": "pallida"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Echinacea pallida (Pale Purple Coneflower)",
+      "link": "https://www.minnesotawildflowers.info/flower/pale-purple-coneflower",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.minnesotawildflowers.info/flower/pale-purple-coneflower&ved=2ahUKEwit-LKm47WRAxUnQjABHbPMNvwQFnoECB8QAQ",
+      "displayed_link": "https://www.minnesotawildflowers.info › flower › pale-p...",
+      "thumbnail": "https://serpapi.com/searches/693ad93370e9d0de75bb6d1f/images/7579d3d087944afa08c6e4180b7a6de8c0b7d7627067e8166ddcc1391576dc4f.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad93370e9d0de75bb6d1f/images/7579d3d087944afa08c6e4180b7a6de8f6ed453495bd541b4f67d6685e5131d9.png",
+      "snippet": "Echinacea pallida is a perennial from the South/Eastern US, growing 2-3 feet tall, with purplish pink to white flowers, and is not native to Minnesota.",
+      "snippet_highlighted_words": [
+        "a perennial from the South/Eastern US"
+      ],
+      "source": "Minnesota Wildflowers"
+    },
+    {
+      "position": 2,
+      "title": "Search: latin name contains 'Echinacea'",
+      "link": "https://www.minnesotawildflowers.info/search?scientific_name=Echinacea&wh",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.minnesotawildflowers.info/search%3Fscientific_name%3DEchinacea%26wh&ved=2ahUKEwit-LKm47WRAxUnQjABHbPMNvwQFnoECBkQAQ",
+      "displayed_link": "https://www.minnesotawildflowers.info › search › scienti...",
+      "favicon": "https://serpapi.com/searches/693ad93370e9d0de75bb6d1f/images/7579d3d087944afa08c6e4180b7a6de8b6c91b337331e29878478ff9fb12bfbd.png",
+      "snippet": "Echinacea angustifoliaNarrow-leaved Purple Coneflower; [photo of Pale Purple Coneflower] Echinacea pallidaPale Purple Coneflower; [photo of Eastern Purple ...",
+      "snippet_highlighted_words": [
+        "Echinacea pallida"
+      ],
+      "source": "Minnesota Wildflowers"
+    },
+    {
+      "position": 3,
+      "title": "Echinacea angustifolia (Narrow-leaved Purple Coneflower)",
+      "link": "https://www.minnesotawildflowers.info/flower/narrow-leaved-purple-coneflower",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.minnesotawildflowers.info/flower/narrow-leaved-purple-coneflower&ved=2ahUKEwit-LKm47WRAxUnQjABHbPMNvwQFnoECBoQAQ",
+      "displayed_link": "https://www.minnesotawildflowers.info › flower › narro...",
+      "favicon": "https://serpapi.com/searches/693ad93370e9d0de75bb6d1f/images/7579d3d087944afa08c6e4180b7a6de8a2132ed139829c8675b512f4c5d1f35e.png",
+      "snippet": "Echinacea angustifolia is a native perennial, 1-2 feet tall, with 15-20 pink to light purple rays, and long, narrow basal leaves. It is native to western sandy ...",
+      "snippet_highlighted_words": [
+        "1-2 feet tall, with 15-20 pink to light purple rays"
+      ],
+      "source": "Minnesota Wildflowers"
+    },
+    {
+      "position": 4,
+      "title": "Purple Minnesota Wildflowers",
+      "link": "https://www.minnesotawildflowers.info/page/flowers-by-color/purple",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.minnesotawildflowers.info/page/flowers-by-color/purple&ved=2ahUKEwit-LKm47WRAxUnQjABHbPMNvwQFnoECDEQAQ",
+      "displayed_link": "https://www.minnesotawildflowers.info › flowers-by-color",
+      "favicon": "https://serpapi.com/searches/693ad93370e9d0de75bb6d1f/images/7579d3d087944afa08c6e4180b7a6de8c4e6d10f11393f11a53a08ba1f0b9e6e.png",
+      "snippet": "These wildflowers are in the color range of pale lavender to deep blue-violet or reddish purple. Color is subjective, however.",
+      "source": "Minnesota Wildflowers"
+    }
+  ]
+}

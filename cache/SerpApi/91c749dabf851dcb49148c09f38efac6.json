@@ -1,0 +1,35 @@
+{
+  "_meta": {
+    "query": "site:tropicos.org Coreopsis lanceolata",
+    "cachedAt": "2025-12-11T14:53:00.006Z",
+    "numResults": 2,
+    "site": "Tropicos",
+    "genus": "Coreopsis",
+    "species": "lanceolata"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Name - Coreopsis lanceolata var. villosa Michx.",
+      "link": "https://legacy.tropicos.org/Name/2724703",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://legacy.tropicos.org/Name/2724703&ved=2ahUKEwjomKno5LWRAxUfpZUCHYNDJdsQFnoECCAQAQ",
+      "displayed_link": "https://legacy.tropicos.org › Name",
+      "favicon": "https://serpapi.com/searches/693adac83d0e4ed9a2dc8bef/images/7b808f6fc84ca3087862305b46dc6677932252d43be5738e4606405626ab7714.png",
+      "snippet": "Details · References (2) · Specimens · Distributions (9). Group: Dicot Rank: variety Kind: Name of a new Taxon Herbarium Placement: Bayer, 3rd, D, 280",
+      "source": "Tropicos"
+    },
+    {
+      "position": 2,
+      "title": "Name - !Coreopsis lanceolata L.",
+      "link": "https://legacy.tropicos.org/Name/2702330?projectid=83&langid=12",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://legacy.tropicos.org/Name/2702330%3Fprojectid%3D83%26langid%3D12&ved=2ahUKEwjomKno5LWRAxUfpZUCHYNDJdsQFnoECCEQAQ",
+      "displayed_link": "https://legacy.tropicos.org › Name",
+      "favicon": "https://serpapi.com/searches/693adac83d0e4ed9a2dc8bef/images/7b808f6fc84ca3087862305b46dc6677559a1a76c3d64e7fae4903fbea71c292.png",
+      "snippet": "VPA > Asterales > Asteraceae > Coreopsis > Coreopsis lanceolata. Choose Project down. Tropicos · China · IPCN · Mesoamericana · Missouri · Pakistan · SNR · VPA.",
+      "snippet_highlighted_words": [
+        "Coreopsis lanceolata"
+      ],
+      "source": "Tropicos"
+    }
+  ]
+}

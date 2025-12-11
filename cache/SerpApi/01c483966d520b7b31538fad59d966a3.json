@@ -1,0 +1,47 @@
+{
+  "_meta": {
+    "query": "site:illinoiswildflowers.info Eurybia macrophylla",
+    "cachedAt": "2025-12-11T14:46:27.396Z",
+    "numResults": 3,
+    "site": "Illinois Wildflowers",
+    "genus": "Eurybia",
+    "species": "macrophylla"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Big-Leaved Aster (Eurybia macrophylla)",
+      "link": "https://www.illinoiswildflowers.info/woodland/plants/bglv_aster.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.illinoiswildflowers.info/woodland/plants/bglv_aster.html&ved=2ahUKEwiHoImt47WRAxWCRDABHepRDZcQFnoECCQQAQ",
+      "displayed_link": "https://www.illinoiswildflowers.info › plants › bglv_aster",
+      "thumbnail": "https://serpapi.com/searches/693ad942b9dbc4e05312b199/images/a3b054e8d8a8c2f92ace9a686506138a313b2b38d4d4a9cf074dc9a8c92a186e.jpeg",
+      "snippet": "Description: This perennial wildflower consists of a rosette of basal leaves during the spring that spans about 6-12\" across. The blades of the basal leaves ...",
+      "source": "Illinois Wildflowers"
+    },
+    {
+      "position": 2,
+      "title": "Aster macrophyllus (Insect Feeders)",
+      "link": "https://ww25.cpanel.illinoiswildflowers.info/plant_insects/plants/aster_macrophyllus.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ww25.cpanel.illinoiswildflowers.info/plant_insects/plants/aster_macrophyllus.html&ved=2ahUKEwiHoImt47WRAxWCRDABHepRDZcQFnoECCEQAQ",
+      "displayed_link": "https://ww25.cpanel.illinoiswildflowers.info › plants › ast...",
+      "snippet": "Aster macrophyllus (Big-Leaved Aster) [Asteraceae] (A scientific synonym of this species is Eurybia macrophylla. These observations are from Clark et al., ...",
+      "snippet_highlighted_words": [
+        "Eurybia macrophylla"
+      ],
+      "source": "Illinois Wildflowers"
+    },
+    {
+      "position": 3,
+      "title": "Woodland Wildflowers",
+      "link": "https://www.illinoiswildflowers.info/woodland/woodland_index.htm",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.illinoiswildflowers.info/woodland/woodland_index.htm&ved=2ahUKEwiHoImt47WRAxWCRDABHepRDZcQFnoECCAQAQ",
+      "displayed_link": "https://www.illinoiswildflowers.info › woodland_index",
+      "date": "Mar 14, 2020",
+      "snippet": "Eurybia macrophylla (Big-leaved Aster) · Floerkea proserpinacoides (False Mermaid) · Galium circaezans (Wild Licorice) · Galium concinnum ( ...",
+      "snippet_highlighted_words": [
+        "Eurybia macrophylla"
+      ],
+      "source": "Illinois Wildflowers"
+    }
+  ]
+}

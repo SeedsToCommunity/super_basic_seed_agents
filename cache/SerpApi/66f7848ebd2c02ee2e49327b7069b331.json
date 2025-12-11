@@ -1,0 +1,65 @@
+{
+  "_meta": {
+    "query": "site:minnesotawildflowers.info Chelone glabra",
+    "cachedAt": "2025-12-11T14:45:36.517Z",
+    "numResults": 4,
+    "site": "Minnesota Wildflowers",
+    "genus": "Chelone",
+    "species": "glabra"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Chelone glabra (White Turtlehead)",
+      "link": "https://www.minnesotawildflowers.info/flower/white-turtlehead",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.minnesotawildflowers.info/flower/white-turtlehead&ved=2ahUKEwjJg9yU47WRAxXiSjABHf73ILwQFnoECB8QAQ",
+      "displayed_link": "https://www.minnesotawildflowers.info › flower › white-...",
+      "thumbnail": "https://serpapi.com/searches/693ad90ecf8870bbca1f1fd8/images/4c0c3f4e129d856d8685f15bf8984d6c026cf5bf57b8c41eaa2cadcde758127d.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad90ecf8870bbca1f1fd8/images/4c0c3f4e129d856d8685f15bf8984d6c2b81aac9d54e6ad4df35692a12effd4c.png",
+      "snippet": "White Turtlehead is a perennial, native plant growing 2-4 feet tall, with creamy white, sometimes pink, tubular flowers in a spike, and 8 inch long leaves.",
+      "snippet_highlighted_words": [
+        "perennial, native plant growing 2-4 feet tall"
+      ],
+      "source": "Minnesota Wildflowers"
+    },
+    {
+      "position": 2,
+      "title": "Search: name contains 'Chelone'",
+      "link": "https://www.minnesotawildflowers.info/search?kw=Chelone",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.minnesotawildflowers.info/search%3Fkw%3DChelone&ved=2ahUKEwjJg9yU47WRAxXiSjABHf73ILwQFnoECBkQAQ",
+      "displayed_link": "https://www.minnesotawildflowers.info › search › kw=C...",
+      "favicon": "https://serpapi.com/searches/693ad90ecf8870bbca1f1fd8/images/4c0c3f4e129d856d8685f15bf8984d6c11146bf49c4dc941bc8829155dccede2.png",
+      "snippet": "Search Results. Criteria: name contains 'Chelone'. Number of results: 1. [photo of White Turtlehead] Chelone glabraWhite Turtlehead ...",
+      "snippet_highlighted_words": [
+        "Chelone glabra"
+      ],
+      "source": "Minnesota Wildflowers"
+    },
+    {
+      "position": 3,
+      "title": "Search: family contains 'Plantaginaceae'",
+      "link": "https://www.minnesotawildflowers.info/search?family=Plantaginaceae&wh",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.minnesotawildflowers.info/search%3Ffamily%3DPlantaginaceae%26wh&ved=2ahUKEwjJg9yU47WRAxXiSjABHf73ILwQFnoECBoQAQ",
+      "displayed_link": "https://www.minnesotawildflowers.info › search",
+      "favicon": "https://serpapi.com/searches/693ad90ecf8870bbca1f1fd8/images/4c0c3f4e129d856d8685f15bf8984d6cf825b9f7013657bd945b1217e1fc1589.png",
+      "snippet": "Chelone glabraWhite Turtlehead; [photo of Yellow Foxglove] Digitalis grandifloraYellow Foxglove; [photo of Grecian Foxglove] Digitalis lanataGrecian Foxglove ...",
+      "snippet_highlighted_words": [
+        "Chelone glabra"
+      ],
+      "source": "Minnesota Wildflowers"
+    },
+    {
+      "position": 4,
+      "title": "Minnesota Plant List",
+      "link": "https://www.minnesotawildflowers.info/page/plants-by-name",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.minnesotawildflowers.info/page/plants-by-name&ved=2ahUKEwjJg9yU47WRAxXiSjABHf73ILwQFnoECC8QAQ",
+      "displayed_link": "https://www.minnesotawildflowers.info › plants-by-name",
+      "favicon": "https://serpapi.com/searches/693ad90ecf8870bbca1f1fd8/images/4c0c3f4e129d856d8685f15bf8984d6cea533ac78a5a1883b2daba86515b40ba.png",
+      "snippet": "Chelone glabra, White Turtlehead. Chenopodium album, Lamb's-quarters, Pigweed, Fat Hen. Chenopodium berlandieri, Pitseed Goosefoot, Berlandier's Goosefoot ...",
+      "snippet_highlighted_words": [
+        "Chelone glabra"
+      ],
+      "source": "Minnesota Wildflowers"
+    }
+  ]
+}

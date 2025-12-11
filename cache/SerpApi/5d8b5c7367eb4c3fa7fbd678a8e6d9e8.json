@@ -1,0 +1,73 @@
+{
+  "_meta": {
+    "query": "site:plants.usda.gov Carex pensylvanica",
+    "cachedAt": "2025-12-11T14:44:54.443Z",
+    "numResults": 5,
+    "site": "USDA PLANTS",
+    "genus": "Carex",
+    "species": "pensylvanica"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Carex pensylvanica Lam.",
+      "link": "https://plants.usda.gov/plant-profile/CAPE6",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/plant-profile/CAPE6&ved=2ahUKEwjb1bim3rWRAxW-1fACHQUJJW0QFnoECCcQAQ",
+      "displayed_link": "https://plants.usda.gov › plant-profile › CAPE6",
+      "thumbnail": "https://serpapi.com/searches/693ad3f697c19f58d9299c55/images/2254742738f971df29f10dd64cb69754db5a2a70ad18a55afe09c61c5aff2b96.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad3f697c19f58d9299c55/images/2254742738f971df29f10dd64cb69754f855d16fe7de778ba8095211b5a5c05c.png",
+      "snippet": "Pennsylvania sedge. Classification. Kingdom. Plantae - Plants. Subkingdom. Tracheobionta - Vascular plants. Superdivision. Spermatophyta - Seed plants ...",
+      "snippet_highlighted_words": [
+        "Pennsylvania sedge"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "Carex pensylvanica Lam. - Plant Profile",
+      "link": "https://plants.usda.gov/plant-profile/cape6/rarity",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/plant-profile/cape6/rarity&ved=2ahUKEwjb1bim3rWRAxW-1fACHQUJJW0QFnoECB4QAQ",
+      "displayed_link": "https://plants.usda.gov › plant-profile › cape6 › rarity",
+      "favicon": "https://serpapi.com/searches/693ad3f697c19f58d9299c55/images/2254742738f971df29f10dd64cb6975442ce71533dd72ccfaf6730acc23efe51.png",
+      "snippet": "Endangered, Threatened, and Rarity Information. Status Name, Status. This plant is listed by the U.S. federal government or a state.",
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "Carex albicans Willd. ex Spreng. var. albicans",
+      "link": "https://plants.usda.gov/plant-profile/CAALA/sources",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/plant-profile/CAALA/sources&ved=2ahUKEwjb1bim3rWRAxW-1fACHQUJJW0QFnoECB0QAQ",
+      "displayed_link": "https://plants.usda.gov › plant-profile › CAALA › sources",
+      "favicon": "https://serpapi.com/searches/693ad3f697c19f58d9299c55/images/2254742738f971df29f10dd64cb697542ea2a9cd585910b72d3b17b0bb9fd19a.png",
+      "snippet": "A taxonomic study of the Carex pensylvanica complex (Cyperaceae) in North America. Ph.D. Dissertation. University of Pennsylvania, Philadelphia. Minnesota ...",
+      "snippet_highlighted_words": [
+        "Carex pensylvanica complex"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "Classification for Kingdom Plantae Down to Genus Carex L.",
+      "link": "https://plants.usda.gov/classification/17222",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/classification/17222&ved=2ahUKEwjb1bim3rWRAxW-1fACHQUJJW0QFnoECCUQAQ",
+      "displayed_link": "https://plants.usda.gov › classification",
+      "favicon": "https://serpapi.com/searches/693ad3f697c19f58d9299c55/images/2254742738f971df29f10dd64cb6975463a81975a85be3f77b17f963563e61db.png",
+      "snippet": "Carex pensylvanica Lam. - Pennsylvania sedge P. Carex perdentata S.D. Jones ... Carex senta Boott - swamp carex P. Carex seorsa Howe - weak stellate ...",
+      "snippet_highlighted_words": [
+        "Carex pensylvanica Lam"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "doc",
+      "link": "https://plants.usda.gov/DocumentLibrary/plantguide/doc/pg_paama2.docx",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/DocumentLibrary/plantguide/doc/pg_paama2.docx&ved=2ahUKEwjb1bim3rWRAxW-1fACHQUJJW0QFnoECB8QAQ",
+      "displayed_link": "https://plants.usda.gov › doc › pg_paama2",
+      "favicon": "https://serpapi.com/searches/693ad3f697c19f58d9299c55/images/2254742738f971df29f10dd64cb69754c961c3467923a6e8e18a15da5ce694c3.png",
+      "date": "Sep 20, 2020",
+      "snippet": "Planting coastal panicgrass in coastal dune environments is recommended as a means of discouraging the recolonization of the invasive Asiatic ...",
+      "source": "USDA Plants Database (.gov)"
+    }
+  ]
+}

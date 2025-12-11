@@ -1,0 +1,97 @@
+{
+  "_meta": {
+    "query": "site:plants.usda.gov Echinacea pallida",
+    "cachedAt": "2025-12-11T14:46:06.011Z",
+    "numResults": 5,
+    "site": "USDA PLANTS",
+    "genus": "Echinacea",
+    "species": "pallida"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "PALE PURPLE CONEFLOWER - Echinacea pallida (Nutt ...",
+      "link": "https://plants.usda.gov/DocumentLibrary/plantguide/pdf/pg_ecpa.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/DocumentLibrary/plantguide/pdf/pg_ecpa.pdf&ved=2ahUKEwiLk_qi47WRAxWWF1kFHS4zA-MQFnoECB0QAQ",
+      "displayed_link": "https://plants.usda.gov › pdf › pg_ecpa",
+      "favicon": "https://serpapi.com/searches/693ad92d0e285d8adb5fb59f/images/3b0156771b65733cefa52215ce9f3d6d1f30d89f4a5d543db721a3f8908828c2.png",
+      "snippet": "Pale coneflower can be used as cut flowers and the brown, rounded, spiny heads can also provide attractive accents to dried arrangements. Kindscher (1992) ...",
+      "snippet_highlighted_words": [
+        "can be used as cut flowers"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 4
+          },
+          "extensions": [
+            "4 pages"
+          ]
+        }
+      },
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "Echinacea pallida (Nutt.) Nutt.",
+      "link": "https://plants.usda.gov/plant-profile/ECPA",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/plant-profile/ECPA&ved=2ahUKEwiLk_qi47WRAxWWF1kFHS4zA-MQFnoECCQQAQ",
+      "displayed_link": "https://plants.usda.gov › plant-profile › ECPA",
+      "favicon": "https://serpapi.com/searches/693ad92d0e285d8adb5fb59f/images/3b0156771b65733cefa52215ce9f3d6d51ce96e7664c43cfdcd1db31320ae791.png",
+      "snippet": "pale purple coneflower. General Information. Symbol. ECPA. Group. Dicot. Duration. Perennial. Growth Habits. Forb/herb. Native Status. CAN N | L48 N ...",
+      "snippet_highlighted_words": [
+        "pale purple coneflower"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "PALE PURPLE CONEFLOWER - Plant Fact Sheet",
+      "link": "https://plants.usda.gov/DocumentLibrary/factsheet/pdf/fs_ecpa.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/DocumentLibrary/factsheet/pdf/fs_ecpa.pdf&ved=2ahUKEwiLk_qi47WRAxWWF1kFHS4zA-MQFnoECCUQAQ",
+      "displayed_link": "https://plants.usda.gov › factsheet › pdf › fs_ecpa",
+      "favicon": "https://serpapi.com/searches/693ad92d0e285d8adb5fb59f/images/3b0156771b65733cefa52215ce9f3d6d734364cbbfb200bd0271e487594b2a48.png",
+      "snippet": "Echinacea pallida (Nutt.) Nutt. Plant Symbol = ECPA. Contributed by: USDA NRCS Elsberry Plant. Materials Center. Britton and Brown 1913. Illustrated flora of ...",
+      "snippet_highlighted_words": [
+        "Echinacea pallida"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 2
+          },
+          "extensions": [
+            "2 pages"
+          ]
+        }
+      },
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "Plant Profile - Characteristics",
+      "link": "https://plants.usda.gov/plant-profile/ECPA/characteristics",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/plant-profile/ECPA/characteristics&ved=2ahUKEwiLk_qi47WRAxWWF1kFHS4zA-MQFnoECBsQAQ",
+      "displayed_link": "https://plants.usda.gov › plant-profile › ECPA › charact...",
+      "favicon": "https://serpapi.com/searches/693ad92d0e285d8adb5fb59f/images/3b0156771b65733cefa52215ce9f3d6d39984a3b3d23828c38b7e7834109f0f4.png",
+      "snippet": "pale purple coneflower ; Fire Resistant, Yes ; Flower Color, White ; Flower Conspicuous, Yes ; Foliage Color, Green.",
+      "snippet_highlighted_words": [
+        "pale purple coneflower"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "Down to Species - Echinacea pallida (Nutt.) Nutt.",
+      "link": "https://plants.usda.gov/classification/34468",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/classification/34468&ved=2ahUKEwiLk_qi47WRAxWWF1kFHS4zA-MQFnoECBwQAQ",
+      "displayed_link": "https://plants.usda.gov › classification",
+      "favicon": "https://serpapi.com/searches/693ad92d0e285d8adb5fb59f/images/3b0156771b65733cefa52215ce9f3d6dfd1363ce499727d68229d386022465d4.png",
+      "snippet": "Classification for Kingdom Plantae Down to Species Echinacea pallida (Nutt.) Nutt. ; Kingdom, Plantae - Plants ; Subkingdom, Tracheobionta - Vascular plants.",
+      "snippet_highlighted_words": [
+        "Echinacea pallida"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    }
+  ]
+}

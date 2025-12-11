@@ -1,0 +1,25 @@
+{
+  "_meta": {
+    "query": "site:tropicos.org Fragaria virginiana",
+    "cachedAt": "2025-12-11T14:47:16.206Z",
+    "numResults": 1,
+    "site": "Tropicos",
+    "genus": "Fragaria",
+    "species": "virginiana"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Tropicos | Name - !Fragaria virginiana Mill.",
+      "link": "https://legacy.tropicos.org/Name/50100081?tab=homonyms",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://legacy.tropicos.org/Name/50100081%3Ftab%3Dhomonyms&ved=2ahUKEwiRv67E47WRAxUgz_ACHd43CcUQFnoECCEQAQ",
+      "displayed_link": "https://legacy.tropicos.org › Name",
+      "favicon": "https://serpapi.com/searches/693ad973550cc4bb02214bbc/images/c35e2ded50bf0153debe3065abe36e19877964d4b4b5d303d69e53a66fb86353.png",
+      "snippet": "**Fragaria virginiana Duchesne Histoire Naturelle des Fraisiers 204. 1766. (Hist. Nat. Frais.) Cite this page: Tropicos ...",
+      "snippet_highlighted_words": [
+        "Fragaria virginiana"
+      ],
+      "source": "Tropicos"
+    }
+  ]
+}

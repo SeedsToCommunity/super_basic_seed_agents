@@ -1,0 +1,25 @@
+{
+  "_meta": {
+    "query": "site:michiganflora.net Fragaria virginiana",
+    "cachedAt": "2025-12-11T14:46:55.113Z",
+    "numResults": 1,
+    "site": "Michigan Flora",
+    "genus": "Fragaria",
+    "species": "virginiana"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Rosaceae",
+      "link": "https://michiganflora.net/family/Rosaceae",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://michiganflora.net/family/Rosaceae&ved=2ahUKEwiUiLK647WRAxUSQzABHXkrD10QFnoECCEQAQ",
+      "displayed_link": "https://michiganflora.net › family › Rosaceae",
+      "favicon": "https://serpapi.com/searches/693ad95e69a322ef9fbfd441/images/8c846882c46e586e13dde00a3ca6200465520c1d336cfc37b50df115c22552d6.png",
+      "snippet": "Receptacle greatly enlarging in fruit, becoming fleshy and red; plants with elongate stolons flat on the ground; petals white, the flowers several on a peduncle ...",
+      "snippet_highlighted_words": [
+        "Receptacle greatly enlarging in fruit, becoming fleshy and red"
+      ],
+      "source": "Michigan Flora"
+    }
+  ]
+}

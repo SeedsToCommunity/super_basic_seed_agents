@@ -1,0 +1,39 @@
+{
+  "_meta": {
+    "query": "site:www.missouriplants.com Echinacea pallida",
+    "cachedAt": "2025-12-11T14:46:10.801Z",
+    "numResults": 2,
+    "site": "Missouri Native Plant Society",
+    "genus": "Echinacea",
+    "species": "pallida"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Echinacea simulata page",
+      "link": "https://www.missouriplants.com/Echinacea_simulata_page.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.missouriplants.com/Echinacea_simulata_page.html&ved=2ahUKEwiI4Oek47WRAxVoG9AFHdyZCHcQFnoECCAQAQ",
+      "displayed_link": "https://www.missouriplants.com › Echinacea_simulata_...",
+      "thumbnail": "https://serpapi.com/searches/693ad931e3e176370c9fb514/images/1117c40c230ebc98b00b4ad45bf68faf15d95206b87357d7664b4d924e4423e5.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad931e3e176370c9fb514/images/1117c40c230ebc98b00b4ad45bf68faf1e3b6aa42f97c95b32140e26813116b4.png",
+      "snippet": "The pollen color serves to differentiate this plant from E. pallida, which looks very similar. In the absence of pollen the two can be hard to tell apart. Many ...",
+      "snippet_highlighted_words": [
+        "E. pallida"
+      ],
+      "source": "Missouri flora"
+    },
+    {
+      "position": 2,
+      "title": "Asteraceae-Heliantheae page",
+      "link": "http://www.missouriplants.com/Asteraceae-Heliantheae_list.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://www.missouriplants.com/Asteraceae-Heliantheae_list.html&ved=2ahUKEwiI4Oek47WRAxVoG9AFHdyZCHcQFnoECB4QAQ",
+      "displayed_link": "http://www.missouriplants.com › Asteraceae-Helianthea...",
+      "favicon": "https://serpapi.com/searches/693ad931e3e176370c9fb514/images/1117c40c230ebc98b00b4ad45bf68fafd653e0a5da2d2482b931ff83320f4e88.png",
+      "snippet": "Echinacea pallida thumbnail. Echinacea pallida · Echinacea paradoxa thumbnail. Echinacea paradoxa · Echinacea purpurea thumbnail. Echinacea purpurea · Echinacea ...",
+      "snippet_highlighted_words": [
+        "Echinacea pallida"
+      ],
+      "source": "Missouri Plants"
+    }
+  ]
+}

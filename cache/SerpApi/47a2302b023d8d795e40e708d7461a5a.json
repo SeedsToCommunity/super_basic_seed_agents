@@ -1,0 +1,66 @@
+{
+  "_meta": {
+    "query": "site:wildflower.org Sanguinaria canadensis",
+    "cachedAt": "2025-12-11T14:44:22.068Z",
+    "numResults": 4,
+    "site": "Lady Bird Johnson Wildflower Center",
+    "genus": "Sanguinaria",
+    "species": "canadensis"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Sanguinaria canadensis (Bloodroot) | Native Plants of ...",
+      "link": "https://www.wildflower.org/plants/result.php?id_plant=saca13",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/plants/result.php%3Fid_plant%3Dsaca13&ved=2ahUKEwiPps3o3bWRAxUh3RoGHehpOSYQFnoECCIQAQ",
+      "displayed_link": "https://www.wildflower.org › plants › result",
+      "thumbnail": "https://serpapi.com/searches/693ad373f9c5e94743b07306/images/6dbc8f17183cbdf00b7aec475f0780c75bd8a26107adf992b11a4b1832cfcfce.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad373f9c5e94743b07306/images/6dbc8f17183cbdf00b7aec475f0780c7ce3f4e475a16bc160c9fb7f6f96a8b99.png",
+      "date": "Feb 24, 2023",
+      "snippet": "This fragile spring flower develops and rises from the center of its curled leaf, opening in full sun, and closing at night. Like most members ...",
+      "source": "Lady Bird Johnson Wildflower Center"
+    },
+    {
+      "position": 2,
+      "title": "Sanguinaria canadensis (Bloodroot) | NPIN",
+      "link": "https://www.wildflower.org/gallery/result.php?id_image=47417",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/gallery/result.php%3Fid_image%3D47417&ved=2ahUKEwiPps3o3bWRAxUh3RoGHehpOSYQFnoECB4QAQ",
+      "displayed_link": "https://www.wildflower.org › gallery › result",
+      "thumbnail": "https://serpapi.com/searches/693ad373f9c5e94743b07306/images/6dbc8f17183cbdf00b7aec475f0780c77c167b07b2ce2138a6efbadf32e53c56.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad373f9c5e94743b07306/images/6dbc8f17183cbdf00b7aec475f0780c73d00149467d2b63a2a5b0f40cb6be907.png",
+      "snippet": "Sanguinaria canadensis L. · Bloodroot, Canada Puccoon, Bloodwort, Redroot, Red Puccoon, Black Paste, Indian Paint · Papaveraceae (Poppy Family) · USDA Symbol: ...",
+      "snippet_highlighted_words": [
+        "Sanguinaria canadensis L"
+      ],
+      "source": "Lady Bird Johnson Wildflower Center"
+    },
+    {
+      "position": 3,
+      "title": "Sanguinaria canadensis (Bloodroot) | NPIN",
+      "link": "https://www.wildflower.org/gallery/result.php?id_image=26198",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/gallery/result.php%3Fid_image%3D26198&ved=2ahUKEwiPps3o3bWRAxUh3RoGHehpOSYQFnoECCYQAQ",
+      "displayed_link": "https://www.wildflower.org › gallery › result",
+      "thumbnail": "https://serpapi.com/searches/693ad373f9c5e94743b07306/images/6dbc8f17183cbdf00b7aec475f0780c71ad3abce4e5ff97da435dfc8740b413f.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad373f9c5e94743b07306/images/6dbc8f17183cbdf00b7aec475f0780c7be03253901f458c0f1f7180ad7bc7ee7.png",
+      "snippet": "Sanguinaria canadensis L. · Bloodroot, Canada Puccoon, Bloodwort, Redroot, Red Puccoon, Black Paste, Indian Paint · Papaveraceae (Poppy Family) · USDA Symbol: ...",
+      "snippet_highlighted_words": [
+        "Sanguinaria canadensis L"
+      ],
+      "source": "Lady Bird Johnson Wildflower Center"
+    },
+    {
+      "position": 4,
+      "title": "Alternative names for Aquilegia Sanguinaria | NPIN",
+      "link": "https://www.wildflower.org/expert/show.php?id=690&frontpage=true",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/expert/show.php%3Fid%3D690%26frontpage%3Dtrue&ved=2ahUKEwiPps3o3bWRAxUh3RoGHehpOSYQFnoECDEQAQ",
+      "displayed_link": "https://www.wildflower.org › expert › show",
+      "favicon": "https://serpapi.com/searches/693ad373f9c5e94743b07306/images/6dbc8f17183cbdf00b7aec475f0780c705380b34824efc0d13d76497ac177bcf.png",
+      "date": "May 3, 2006",
+      "snippet": "Since “sanguinaria” can indicate the color red (as for Bloodroot, Sanguinaria canadensis), it might have been a mistaken naming of one of ...",
+      "snippet_highlighted_words": [
+        "Sanguinaria canadensis"
+      ],
+      "source": "Lady Bird Johnson Wildflower Center"
+    }
+  ]
+}

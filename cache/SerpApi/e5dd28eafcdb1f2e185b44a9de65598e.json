@@ -1,0 +1,66 @@
+{
+  "_meta": {
+    "query": "site:minnesotawildflowers.info Erythronium americanum",
+    "cachedAt": "2025-12-11T14:53:43.447Z",
+    "numResults": 4,
+    "site": "Minnesota Wildflowers",
+    "genus": "Erythronium",
+    "species": "americanum"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Erythronium americanum (Yellow Trout Lily)",
+      "link": "https://www.minnesotawildflowers.info/flower/yellow-trout-lily",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.minnesotawildflowers.info/flower/yellow-trout-lily&ved=2ahUKEwjPgfX85LWRAxWErokEHeUyCUQQFnoECCAQAQ",
+      "displayed_link": "https://www.minnesotawildflowers.info › flower › yellow...",
+      "thumbnail": "https://serpapi.com/searches/693adaf6d3fb8525ce000d91/images/4e542759ad5bb1bf683f2a4e3c68e309c4d9a0fbe821fd9f38a8837846a4294c.jpeg",
+      "favicon": "https://serpapi.com/searches/693adaf6d3fb8525ce000d91/images/4e542759ad5bb1bf683f2a4e3c68e3091a6507da6ffa3cc2a005354fb27d48f8.png",
+      "snippet": "A single, nodding flower at the end of a stiff naked stalk 4 to 7 inches (10 to 18 cm) long. Flowers have 6 lance-elliptic tepals (3 petals and 3 similar ...",
+      "snippet_highlighted_words": [
+        "A single, nodding flower at the end of a stiff naked stalk 4 to 7 inches (10 to 18 cm) long"
+      ],
+      "source": "Minnesota Wildflowers"
+    },
+    {
+      "position": 2,
+      "title": "Erythronium albidum (White Trout Lily)",
+      "link": "https://www.minnesotawildflowers.info/flower/white-trout-lily",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.minnesotawildflowers.info/flower/white-trout-lily&ved=2ahUKEwjPgfX85LWRAxWErokEHeUyCUQQFnoECCQQAQ",
+      "displayed_link": "https://www.minnesotawildflowers.info › flower › white-...",
+      "thumbnail": "https://serpapi.com/searches/693adaf6d3fb8525ce000d91/images/4e542759ad5bb1bf683f2a4e3c68e3097840526ef3a7f41760fb364657189b4e.jpeg",
+      "favicon": "https://serpapi.com/searches/693adaf6d3fb8525ce000d91/images/4e542759ad5bb1bf683f2a4e3c68e309fd022e0cd1bd861f14184e0d376597cd.png",
+      "snippet": "White Trout Lily is one of the first woodland flowers to bloom in the spring. It can form massive colonies—there are literally millions of them at Nerstrand Big ...",
+      "snippet_highlighted_words": [
+        "White Trout Lily is one of the first woodland flowers to bloom in the spring"
+      ],
+      "source": "Minnesota Wildflowers"
+    },
+    {
+      "position": 3,
+      "title": "Search: latin name contains 'Erythronium'",
+      "link": "https://www.minnesotawildflowers.info/search?scientific_name=Erythronium&wh",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.minnesotawildflowers.info/search%3Fscientific_name%3DErythronium%26wh&ved=2ahUKEwjPgfX85LWRAxWErokEHeUyCUQQFnoECB4QAQ",
+      "displayed_link": "https://www.minnesotawildflowers.info › search › scienti...",
+      "favicon": "https://serpapi.com/searches/693adaf6d3fb8525ce000d91/images/4e542759ad5bb1bf683f2a4e3c68e309078c9da4482c0c79cade0835d9aec49f.png",
+      "snippet": "Erythronium albidumWhite Trout Lily; [photo of Yellow Trout Lily] Erythronium americanumYellow Trout Lily; [photo of Dwarf Trout Lily] ...",
+      "snippet_highlighted_words": [
+        "Erythronium americanum"
+      ],
+      "source": "Minnesota Wildflowers"
+    },
+    {
+      "position": 4,
+      "title": "Search: family contains 'Liliaceae'",
+      "link": "https://www.minnesotawildflowers.info/search?family=Liliaceae&wh",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.minnesotawildflowers.info/search%3Ffamily%3DLiliaceae%26wh&ved=2ahUKEwjPgfX85LWRAxWErokEHeUyCUQQFnoECC0QAQ",
+      "displayed_link": "https://www.minnesotawildflowers.info › search",
+      "favicon": "https://serpapi.com/searches/693adaf6d3fb8525ce000d91/images/4e542759ad5bb1bf683f2a4e3c68e3090cf61633323883a32934d40537e832e3.png",
+      "snippet": "Erythronium albidumWhite Trout Lily; [photo of Yellow Trout Lily] Erythronium americanumYellow Trout Lily; [photo of Dwarf Trout Lily] ...",
+      "snippet_highlighted_words": [
+        "Erythronium americanum"
+      ],
+      "source": "Minnesota Wildflowers"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "_meta": {
+    "query": "site:www.missouriplants.com Erythronium americanum",
+    "cachedAt": "2025-12-11T14:53:42.079Z",
+    "numResults": 1,
+    "site": "Missouri Native Plant Society",
+    "genus": "Erythronium",
+    "species": "americanum"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Erythronium rostratum W. Wolf",
+      "link": "https://www.missouriplants.com/Erythronium_rostratum_page.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.missouriplants.com/Erythronium_rostratum_page.html&ved=2ahUKEwiVuKj85LWRAxXAnWoFHYs2HqEQFnoECCAQAQ",
+      "displayed_link": "https://www.missouriplants.com › Erythronium_rostratu...",
+      "thumbnail": "https://serpapi.com/searches/693adaf4974bbb272b758796/images/4db6f92474ed6a3a8f6af432ce40515311a12b773f507c2cacac2324ddb9f1b5.jpeg",
+      "favicon": "https://serpapi.com/searches/693adaf4974bbb272b758796/images/4db6f92474ed6a3a8f6af432ce405153d7cdbd9517f2c6c41c1dfb093c459462.png",
+      "snippet": "Lookalikes - E. americanum. Other info. - This attractive species is found in southern counties of Missouri, mostly on the western side of the state. Its global ...",
+      "snippet_highlighted_words": [
+        "is found in southern counties of Missouri"
+      ],
+      "source": "Missouri Plants"
+    }
+  ]
+}

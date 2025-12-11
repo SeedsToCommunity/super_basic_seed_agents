@@ -25,10 +25,6 @@
       "baseUrl": "plants.usda.gov"
     },
     {
-      "name": "Tropicos",
-      "baseUrl": "tropicos.org"
-    },
-    {
       "name": "Missouri Native Plant Society",
       "baseUrl": "www.missouriplants.com"
     },

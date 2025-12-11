@@ -1,0 +1,65 @@
+{
+  "_meta": {
+    "query": "site:plants.usda.gov Sanguinaria canadensis",
+    "cachedAt": "2025-12-11T14:44:22.757Z",
+    "numResults": 4,
+    "site": "USDA PLANTS",
+    "genus": "Sanguinaria",
+    "species": "canadensis"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Sanguinaria canadensis L.",
+      "link": "https://plants.usda.gov/plant-profile/SACA13",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/plant-profile/SACA13&ved=2ahUKEwj_ir_r3bWRAxV_tokEHbQQFCsQFnoECB8QAQ",
+      "displayed_link": "https://plants.usda.gov › plant-profile › SACA13",
+      "thumbnail": "https://serpapi.com/searches/693ad37a9d26cfb665a31efa/images/78e860686a8dcb809e1ea44fce53e0ecd56cba91f20905a7a338196843cfa8d6.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad37a9d26cfb665a31efa/images/78e860686a8dcb809e1ea44fce53e0ecf183dee5fa4a99e4507b4a3ff0e7eb4b.png",
+      "snippet": "bloodroot ; Kingdom. Plantae - Plants ; Subkingdom. Tracheobionta - Vascular plants ; Superdivision. Spermatophyta - Seed plants ; Division. Magnoliophyta - ...",
+      "snippet_highlighted_words": [
+        "bloodroot"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "Down to Species - Sanguinaria canadensis L.",
+      "link": "https://plants.usda.gov/classification/72090",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/classification/72090&ved=2ahUKEwj_ir_r3bWRAxV_tokEHbQQFCsQFnoECB4QAQ",
+      "displayed_link": "https://plants.usda.gov › classification",
+      "favicon": "https://serpapi.com/searches/693ad37a9d26cfb665a31efa/images/78e860686a8dcb809e1ea44fce53e0ec4fbffef1cb73032809277fd8808209d8.png",
+      "snippet": "Classification for Kingdom Plantae Down to Species Sanguinaria canadensis L. ; Division, Magnoliophyta - Flowering plants ; Class, Magnoliopsida - Dicotyledons.",
+      "snippet_highlighted_words": [
+        "Sanguinaria canadensis L"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "Plant Profile - Sources",
+      "link": "https://plants.usda.gov/plant-profile/SACA13/sources",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/plant-profile/SACA13/sources&ved=2ahUKEwj_ir_r3bWRAxV_tokEHbQQFCsQFnoECB0QAQ",
+      "displayed_link": "https://plants.usda.gov › plant-profile › SACA13 › sour...",
+      "favicon": "https://serpapi.com/searches/693ad37a9d26cfb665a31efa/images/78e860686a8dcb809e1ea44fce53e0ec90445765174b670b3828e626ede3acb5.png",
+      "snippet": "Data Documentation. The PLANTS Database includes the following 63 data sources of Sanguinaria canadensis L. - Showing 1 to 25 results ...",
+      "snippet_highlighted_words": [
+        "Sanguinaria canadensis L"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "USDA Plants Database Plant Profile Wetland",
+      "link": "https://plants.usda.gov/plant-profile/saca13/wetland",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/plant-profile/saca13/wetland&ved=2ahUKEwj_ir_r3bWRAxV_tokEHbQQFCsQFnoECDUQAQ",
+      "displayed_link": "https://plants.usda.gov › plant-profile › saca13 › wetland",
+      "favicon": "https://serpapi.com/searches/693ad37a9d26cfb665a31efa/images/78e860686a8dcb809e1ea44fce53e0ec044f9eecad747e40fd734a817ee6b50d.png",
+      "snippet": "Sanguinaria canadensis L. bloodroot. Profile pages. General, Images, Synonyms, Wetland, Related Links, Sources. General · Images · Synonyms · Wetland · Related ...",
+      "snippet_highlighted_words": [
+        "Sanguinaria canadensis L. bloodroot"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    }
+  ]
+}

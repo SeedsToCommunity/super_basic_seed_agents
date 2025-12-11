@@ -1,0 +1,76 @@
+{
+  "_meta": {
+    "query": "site:plants.usda.gov Chelone glabra",
+    "cachedAt": "2025-12-11T14:45:23.738Z",
+    "numResults": 5,
+    "site": "USDA PLANTS",
+    "genus": "Chelone",
+    "species": "glabra"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Chelone glabra L.",
+      "link": "https://plants.usda.gov/plant-profile/chgl2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/plant-profile/chgl2&ved=2ahUKEwj8qLCO47WRAxUZJkQIHQsUOz4QFnoECCoQAQ",
+      "displayed_link": "https://plants.usda.gov › plant-profile › chgl2",
+      "thumbnail": "https://serpapi.com/searches/693ad90171577f5de00ce496/images/c6b19b517c17b31e8aea7f975eef96878105cfc015cfcfbfaf1623cf89360b83.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad90171577f5de00ce496/images/c6b19b517c17b31e8aea7f975eef9687306b72bc2c12d213256d6f2404bfef00.png",
+      "snippet": "white turtlehead. Classification. Kingdom. Plantae - Plants. Subkingdom. Tracheobionta - Vascular plants. Superdivision. Spermatophyta - Seed plants ...",
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "Chelone glabra L.",
+      "link": "https://plants.usda.gov/plant-profile/CHGL2/sources",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/plant-profile/CHGL2/sources&ved=2ahUKEwj8qLCO47WRAxUZJkQIHQsUOz4QFnoECCAQAQ",
+      "displayed_link": "https://plants.usda.gov › plant-profile › CHGL2 › sources",
+      "favicon": "https://serpapi.com/searches/693ad90171577f5de00ce496/images/c6b19b517c17b31e8aea7f975eef9687177dd8a10c6168af99959a1a094aa8c6.png",
+      "snippet": "Chelone glabra L. white turtlehead. Profile pages. General, Images, Synonyms, Rarity, Wetland, Related Links, Sources. General · Images · Synonyms · Rarity ...",
+      "snippet_highlighted_words": [
+        "Chelone glabra"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "Down to Species - Chelone glabra L.",
+      "link": "https://plants.usda.gov/classification/50704",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/classification/50704&ved=2ahUKEwj8qLCO47WRAxUZJkQIHQsUOz4QFnoECB4QAQ",
+      "displayed_link": "https://plants.usda.gov › classification",
+      "favicon": "https://serpapi.com/searches/693ad90171577f5de00ce496/images/c6b19b517c17b31e8aea7f975eef9687db39b412e06b6d74c963169cc3b88d8f.png",
+      "snippet": "Classification for Kingdom Plantae Down to Species Chelone glabra L. ; Subkingdom, Tracheobionta - Vascular plants ; Superdivision, Spermatophyta - Seed plants.",
+      "snippet_highlighted_words": [
+        "Chelone glabra"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "Chelone glabra L.",
+      "link": "https://plants.usda.gov/plant-profile/CHGL2/rarity",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/plant-profile/CHGL2/rarity&ved=2ahUKEwj8qLCO47WRAxUZJkQIHQsUOz4QFnoECCEQAQ",
+      "displayed_link": "https://plants.usda.gov › plant-profile › CHGL2 › rarity",
+      "favicon": "https://serpapi.com/searches/693ad90171577f5de00ce496/images/c6b19b517c17b31e8aea7f975eef9687c87acdf2e1377326b23f6009cdee9ae6.png",
+      "snippet": "Chelone glabra L. white turtlehead. Profile pages. General, Images, Synonyms, Rarity, Wetland, Related Links, Sources. General · Images · Synonyms · Rarity ...",
+      "snippet_highlighted_words": [
+        "Chelone glabra"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "Chelone glabra L.",
+      "link": "https://plants.usda.gov/plant-profile/chgl2/synonyms",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/plant-profile/chgl2/synonyms&ved=2ahUKEwj8qLCO47WRAxUZJkQIHQsUOz4QFnoECB8QAQ",
+      "displayed_link": "https://plants.usda.gov › chgl2 › synonyms",
+      "favicon": "https://serpapi.com/searches/693ad90171577f5de00ce496/images/c6b19b517c17b31e8aea7f975eef96872f78bf9cca62599f55ebebc9fec244a3.png",
+      "snippet": "Chelone glabra L. white turtlehead. Profile pages. General, Images, Synonyms ... Chelone glabra L. var. chlorantha (Pennell & Wherry) Cooperr. CHGLD ...",
+      "snippet_highlighted_words": [
+        "Chelone glabra",
+        "Chelone glabra"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    }
+  ]
+}

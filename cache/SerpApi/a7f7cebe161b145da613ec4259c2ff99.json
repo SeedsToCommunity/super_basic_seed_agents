@@ -1,0 +1,87 @@
+{
+  "_meta": {
+    "query": "site:plants.usda.gov Coreopsis lanceolata",
+    "cachedAt": "2025-12-11T14:52:56.159Z",
+    "numResults": 5,
+    "site": "USDA PLANTS",
+    "genus": "Coreopsis",
+    "species": "lanceolata"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "LANCE-LEAF COREOPSIS",
+      "link": "https://plants.usda.gov/DocumentLibrary/factsheet/pdf/fs_cola5.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/DocumentLibrary/factsheet/pdf/fs_cola5.pdf&ved=2ahUKEwidvbjm5LWRAxXPkokEHRF6N0MQFnoECCsQAQ",
+      "displayed_link": "https://plants.usda.gov › factsheet › pdf › fs_cola5",
+      "favicon": "https://serpapi.com/searches/693adac6d0a88f025bf59810/images/601780ba2c8998c0e79f68b9d8f8a9736e446286091af8ee6e571b214c169ad6.png",
+      "snippet": "Lance-leaf coreopsis prefers full sun, but will tolerate light shade. On sites that are heavily shaded, plants produce fewer flowers and the stems grow taller.",
+      "snippet_highlighted_words": [
+        "prefers full sun, but will tolerate light shade"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 2
+          },
+          "extensions": [
+            "2 pages"
+          ]
+        }
+      },
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "Coreopsis lanceolata L.",
+      "link": "https://plants.usda.gov/plant-profile/COLA5",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/plant-profile/COLA5&ved=2ahUKEwidvbjm5LWRAxXPkokEHRF6N0MQFnoECCAQAQ",
+      "displayed_link": "https://plants.usda.gov › plant-profile › COLA5",
+      "favicon": "https://serpapi.com/searches/693adac6d0a88f025bf59810/images/601780ba2c8998c0e79f68b9d8f8a973ad8e00e64607024fa2a8bd89436c1965.png",
+      "snippet": "lanceleaf tickseed General Information: Symbol, Group, Duration, Growth Habits, Native Status, Fact Sheet, Download Distribution Data",
+      "snippet_highlighted_words": [
+        "lanceleaf tickseed"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "Coreopsis lanceolata L.",
+      "link": "https://plants.usda.gov/plant-profile/COLA5/characteristics",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/plant-profile/COLA5/characteristics&ved=2ahUKEwidvbjm5LWRAxXPkokEHRF6N0MQFnoECCEQAQ",
+      "displayed_link": "https://plants.usda.gov › COLA5 › characteristics",
+      "favicon": "https://serpapi.com/searches/693adac6d0a88f025bf59810/images/601780ba2c8998c0e79f68b9d8f8a9735cd6723f4405223af6a05ea289d9c3fe.png",
+      "snippet": "Morphology/Physiology. Name, Value. Active Growth Period, Spring and Summer. After Harvest Regrowth Rate, Slow. Bloat, None. C:N Ratio, Low.",
+      "snippet_highlighted_words": [
+        "Active Growth Period, Spring and Summer"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "Down to Species - Coreopsis lanceolata L.",
+      "link": "https://plants.usda.gov/classification/33940",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/classification/33940&ved=2ahUKEwidvbjm5LWRAxXPkokEHRF6N0MQFnoECB8QAQ",
+      "displayed_link": "https://plants.usda.gov › classification",
+      "favicon": "https://serpapi.com/searches/693adac6d0a88f025bf59810/images/601780ba2c8998c0e79f68b9d8f8a97304d3c9d449e3b9f486fe95867140a14b.png",
+      "snippet": "Classification for Kingdom Plantae Down to Species Coreopsis lanceolata L. Click on names to expand them, and on P for PLANTS profiles.",
+      "snippet_highlighted_words": [
+        "Coreopsis lanceolata L"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "Coreopsis L.",
+      "link": "https://plants.usda.gov/classification/33894",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/classification/33894&ved=2ahUKEwidvbjm5LWRAxXPkokEHRF6N0MQFnoECCQQAQ",
+      "displayed_link": "https://plants.usda.gov › classification",
+      "favicon": "https://serpapi.com/searches/693adac6d0a88f025bf59810/images/601780ba2c8998c0e79f68b9d8f8a973f263b60b62453beccb2f2c115d0fdb49.png",
+      "snippet": "Superdivision, Spermatophyta - Seed plants ; Division, Magnoliophyta - Flowering plants ; Class, Magnoliopsida - Dicotyledons ; Subclass, Asteridae.",
+      "snippet_highlighted_words": [
+        "Superdivision, Spermatophyta - Seed plants"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    }
+  ]
+}

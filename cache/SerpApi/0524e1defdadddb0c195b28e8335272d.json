@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "query": "site:tropicos.org Trillium grandiflorum",
+    "cachedAt": "2025-12-11T14:44:11.884Z",
+    "numResults": 1,
+    "site": "Tropicos",
+    "genus": "Trillium",
+    "species": "grandiflorum"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Name - Trillium grandiflorum (Michx.) Salisb.",
+      "link": "http://legacy.tropicos.org/Name/18400344?tab=specimens",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://legacy.tropicos.org/Name/18400344%3Ftab%3Dspecimens&ved=2ahUKEwj3htLc3bWRAxVm48kDHfwpEsIQFnoECBwQAQ",
+      "displayed_link": "http://legacy.tropicos.org › Name",
+      "favicon": "https://serpapi.com/searches/693ad35b01289bbddf545b2a/images/1b3d0fbe746f013a226072281fce0644b64c005eec1ea83cb8f57b8308b8cb5e.png",
+      "snippet": "s.n., UMO. United States · Michigan · Ingham, 260 - 264 m, 42°42'58\"N, 084°28'28\"W, 03 May 1969, W. D. Stevens ...",
+      "source": "Tropicos"
+    }
+  ]
+}

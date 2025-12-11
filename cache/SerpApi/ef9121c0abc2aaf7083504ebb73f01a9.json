@@ -1,0 +1,60 @@
+{
+  "_meta": {
+    "query": "site:illinoiswildflowers.info Erythronium americanum",
+    "cachedAt": "2025-12-11T14:53:22.914Z",
+    "numResults": 4,
+    "site": "Illinois Wildflowers",
+    "genus": "Erythronium",
+    "species": "americanum"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Yellow Trout Lily (Erythronium americanum)",
+      "link": "https://www.illinoiswildflowers.info/woodland/plants/yl_troutlily.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.illinoiswildflowers.info/woodland/plants/yl_troutlily.html&ved=2ahUKEwjytZzz5LWRAxVeRzABHXiEFecQFnoECCUQAQ",
+      "displayed_link": "https://www.illinoiswildflowers.info › woodland › plants",
+      "thumbnail": "https://serpapi.com/searches/693adae1484c095f39b38ffc/images/002f51c8f7b2d6000839fd6597ecf449f1c3b4286a8933d551ff692ea9b13e22.jpeg",
+      "snippet": "This herbaceous perennial plant consists of 1 or 2 basal leaves and a single-flowered inflorescence up to 6\" tall.",
+      "source": "Illinois Wildflowers"
+    },
+    {
+      "position": 2,
+      "title": "Erythronium americanum (floral visitors)",
+      "link": "https://www.illinoiswildflowers.info/flower_insects/plants/yl_troutlily.htm",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.illinoiswildflowers.info/flower_insects/plants/yl_troutlily.htm&ved=2ahUKEwjytZzz5LWRAxVeRzABHXiEFecQFnoECCMQAQ",
+      "displayed_link": "https://www.illinoiswildflowers.info › plants › yl_troutlily",
+      "snippet": "Erythronium americanum (Yellow Trout Lily) (Bees suck nectar and/or collect pollen; observations are from Graenicher, Krombein et al., and Wilhelm & Rericha ...",
+      "snippet_highlighted_words": [
+        "Erythronium americanum"
+      ],
+      "source": "Illinois Wildflowers"
+    },
+    {
+      "position": 3,
+      "title": "White Trout Lily (Erythronium albidum)",
+      "link": "https://www.illinoiswildflowers.info/woodland/plants/wh_troutlily.htm",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.illinoiswildflowers.info/woodland/plants/wh_troutlily.htm&ved=2ahUKEwjytZzz5LWRAxVeRzABHXiEFecQFnoECCEQAQ",
+      "displayed_link": "https://www.illinoiswildflowers.info › woodland › plants",
+      "thumbnail": "https://serpapi.com/searches/693adae1484c095f39b38ffc/images/002f51c8f7b2d6000839fd6597ecf449b7af308c827c2f68d1bcd544daf04863.jpeg",
+      "snippet": "Description: This herbaceous perennial plant is about 4-6\" tall, consisting of 1-2 basal leaves and a flowering stalk with a single flower.",
+      "snippet_highlighted_words": [
+        "about 4-6\" tall"
+      ],
+      "source": "Illinois Wildflowers"
+    },
+    {
+      "position": 4,
+      "title": "Woodland Wildflowers",
+      "link": "https://www.illinoiswildflowers.info/woodland/woodland_index.htm",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.illinoiswildflowers.info/woodland/woodland_index.htm&ved=2ahUKEwjytZzz5LWRAxVeRzABHXiEFecQFnoECC4QAQ",
+      "displayed_link": "https://www.illinoiswildflowers.info › woodland_index",
+      "date": "Mar 14, 2020",
+      "snippet": "Erythronium albidum (White Trout Lily) · Erythronium americanum (Yellow Trout Lily) · Euonymus obovatus (Running Strawberry Bush) · Eurybia ...",
+      "snippet_highlighted_words": [
+        "Erythronium americanum (Yellow Trout Lily"
+      ],
+      "source": "Illinois Wildflowers"
+    }
+  ]
+}

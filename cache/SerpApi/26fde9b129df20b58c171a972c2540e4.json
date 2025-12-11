@@ -1,0 +1,63 @@
+{
+  "_meta": {
+    "query": "site:illinoiswildflowers.info Coreopsis lanceolata",
+    "cachedAt": "2025-12-11T14:52:44.930Z",
+    "numResults": 4,
+    "site": "Illinois Wildflowers",
+    "genus": "Coreopsis",
+    "species": "lanceolata"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Sand Coreopsis (Coreopsis lanceolata)",
+      "link": "https://www.illinoiswildflowers.info/prairie/plantx/sand_coreopsisx.htm",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.illinoiswildflowers.info/prairie/plantx/sand_coreopsisx.htm&ved=2ahUKEwia6d3g5LWRAxUtGtAFHQ6SLZcQFnoECCUQAQ",
+      "displayed_link": "https://www.illinoiswildflowers.info › prairie › plantx › s...",
+      "thumbnail": "https://serpapi.com/searches/693adabb06ca7f06bd557200/images/e63d4221f91db1361dcb627d57c13d5f0945ea22483e09b30dc2ea8d81e20b44.jpeg",
+      "snippet": "Sand Coreopsis (Coreopsis lanceolata) can be distinguished from other Coreopsis spp. primarily by the lack of lobes on its basal leaves and some of its ...",
+      "snippet_highlighted_words": [
+        "can be distinguished from other Coreopsis spp"
+      ],
+      "source": "Illinois Wildflowers"
+    },
+    {
+      "position": 2,
+      "title": "Large-Flowered Coreopsis",
+      "link": "https://www.illinoiswildflowers.info/prairie/plantx/large_coreopsisx.htm",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.illinoiswildflowers.info/prairie/plantx/large_coreopsisx.htm&ved=2ahUKEwia6d3g5LWRAxUtGtAFHQ6SLZcQFnoECCkQAQ",
+      "displayed_link": "https://www.illinoiswildflowers.info › prairie › plantx › l...",
+      "thumbnail": "https://serpapi.com/searches/693adabb06ca7f06bd557200/images/e63d4221f91db1361dcb627d57c13d5fc0c2c5ba8e76f2fd4c173590cdc0b55a.jpeg",
+      "snippet": "The species Coreopsis lanceolata (Sand Coreopsis) has ragged-looking petals, but its leaves are primarily lanceolate or oblanceolate in shape and confined ...",
+      "snippet_highlighted_words": [
+        "has ragged-looking petals, but its leaves are primarily lanceo"
+      ],
+      "source": "Illinois Wildflowers"
+    },
+    {
+      "position": 3,
+      "title": "Coreopsis lanceolata (floral visitors)",
+      "link": "http://w.illinoiswildflowers.info/flower_insects/plants/sand_coreopsis.htm",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://w.illinoiswildflowers.info/flower_insects/plants/sand_coreopsis.htm&ved=2ahUKEwia6d3g5LWRAxUtGtAFHQ6SLZcQFnoECCEQAQ",
+      "displayed_link": "http://w.illinoiswildflowers.info › plants › sand_coreopsis",
+      "snippet": "Flower-Visiting Insects of Sand Coreopsis. Coreopsis lanceolata (Sand Coreopsis) (Bees suck nectar and/or collect pollen; flies suck nectar or feed on pollen ...",
+      "snippet_highlighted_words": [
+        "Coreopsis lanceolata"
+      ],
+      "source": "Illinois Wildflowers"
+    },
+    {
+      "position": 4,
+      "title": "Prairie Coreopsis",
+      "link": "https://www.illinoiswildflowers.info/prairie/plantx/pr_coreopsisx.htm",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.illinoiswildflowers.info/prairie/plantx/pr_coreopsisx.htm&ved=2ahUKEwia6d3g5LWRAxUtGtAFHQ6SLZcQFnoECCIQAQ",
+      "displayed_link": "https://www.illinoiswildflowers.info › pr_coreopsisx",
+      "thumbnail": "https://serpapi.com/searches/693adabb06ca7f06bd557200/images/e63d4221f91db1361dcb627d57c13d5f0ea7d904e07d3ac98f65cc56f8931748.jpeg",
+      "snippet": "Prairie Coreopsis can be distinguished from Sand Coreopsis (Coreopsis lanceolata) by its more deeply lobed and shorter leaves; these leaves are distributed ...",
+      "snippet_highlighted_words": [
+        "Prairie Coreopsis can be distinguished from Sand Coreopsis (Coreopsis lanceolata"
+      ],
+      "source": "Illinois Wildflowers"
+    }
+  ]
+}

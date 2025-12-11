@@ -1,0 +1,73 @@
+{
+  "_meta": {
+    "query": "site:plants.usda.gov Erythronium americanum",
+    "cachedAt": "2025-12-11T14:53:33.214Z",
+    "numResults": 5,
+    "site": "USDA PLANTS",
+    "genus": "Erythronium",
+    "species": "americanum"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Erythronium americanum Ker Gawl.",
+      "link": "https://plants.usda.gov/plant-profile/eram5",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/plant-profile/eram5&ved=2ahUKEwiy15L45LWRAxU_F1kFHWDsJ8oQFnoECCcQAQ",
+      "displayed_link": "https://plants.usda.gov › plant-profile › eram5",
+      "thumbnail": "https://serpapi.com/searches/693adae971577f35c9938f0a/images/585fe2840e3e1b5f7c231419a443da9d9e869594c9c24bdd26ce3823bc60fe87.jpeg",
+      "favicon": "https://serpapi.com/searches/693adae971577f35c9938f0a/images/585fe2840e3e1b5f7c231419a443da9dad4bbaab160cd476292018dd341d18af.png",
+      "snippet": "dogtooth violet. Classification. Kingdom. Plantae - Plants. Subkingdom. Tracheobionta - Vascular plants. Superdivision. Spermatophyta - Seed plants ...",
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "Erythronium americanum Ker Gawl. ssp. harperi (W. Wolf) ...",
+      "link": "https://plants.usda.gov/plant-profile/ERAMH",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/plant-profile/ERAMH&ved=2ahUKEwiy15L45LWRAxU_F1kFHWDsJ8oQFnoECBwQAQ",
+      "displayed_link": "https://plants.usda.gov › plant-profile › ERAMH",
+      "favicon": "https://serpapi.com/searches/693adae971577f35c9938f0a/images/585fe2840e3e1b5f7c231419a443da9dbf6b8e800074d951cc757b457ba37876.png",
+      "snippet": "dogtooth violet ; Kingdom. Plantae - Plants ; Subkingdom. Tracheobionta - Vascular plants ; Superdivision. Spermatophyta - Seed plants ; Division. Magnoliophyta - ...",
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "Plant Profile - Sources",
+      "link": "https://plants.usda.gov/plant-profile/ERAMA2/sources",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/plant-profile/ERAMA2/sources&ved=2ahUKEwiy15L45LWRAxU_F1kFHWDsJ8oQFnoECB0QAQ",
+      "displayed_link": "https://plants.usda.gov › plant-profile › ERAMA2 › sou...",
+      "favicon": "https://serpapi.com/searches/693adae971577f35c9938f0a/images/585fe2840e3e1b5f7c231419a443da9d78a1bdb93cbb37f29621cc21f1dfa232.png",
+      "snippet": "Data Documentation for <i>Erythronium americanum</i> Ker Gawl. ssp. <i>americanum </i>. Documentation, State, Type, Symbol. 1963. Brittonia.",
+      "snippet_highlighted_words": [
+        "Erythronium americanum",
+        "americanum"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "Erythronium americanum Ker Gawl. ssp. harperi (W. Wolf) Parks ...",
+      "link": "https://plants.usda.gov/plant-profile/ERAMH/sources",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/plant-profile/ERAMH/sources&ved=2ahUKEwiy15L45LWRAxU_F1kFHWDsJ8oQFnoECCIQAQ",
+      "displayed_link": "https://plants.usda.gov › ERAMH › sources",
+      "favicon": "https://serpapi.com/searches/693adae971577f35c9938f0a/images/585fe2840e3e1b5f7c231419a443da9df01fcfcb8f94caa9ded0329d83c2f19b.png",
+      "snippet": "Data Documentation for <i>Erythronium americanum</i> Ker Gawl. ssp. <i>harperi</i> (W. Wolf) Parks & Hardin. Documentation, State, Type, Symbol. 1963.",
+      "snippet_highlighted_words": [
+        "Erythronium americanum"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "Erythronium L.",
+      "link": "https://plants.usda.gov/classification/28497",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/classification/28497&ved=2ahUKEwiy15L45LWRAxU_F1kFHWDsJ8oQFnoECBsQAQ",
+      "displayed_link": "https://plants.usda.gov › classification",
+      "favicon": "https://serpapi.com/searches/693adae971577f35c9938f0a/images/585fe2840e3e1b5f7c231419a443da9dadd7fdb54eeb26b31190979163fb6904.png",
+      "snippet": "Classification for Kingdom Plantae Down to Genus Erythronium L. ; Subkingdom, Tracheobionta - Vascular plants ; Superdivision, Spermatophyta - Seed plants.",
+      "snippet_highlighted_words": [
+        "Erythronium"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    }
+  ]
+}

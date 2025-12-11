@@ -1,0 +1,63 @@
+{
+  "_meta": {
+    "query": "site:gobotany.nativeplanttrust.org Echinacea pallida",
+    "cachedAt": "2025-12-11T14:45:54.231Z",
+    "numResults": 4,
+    "site": "Go Botany",
+    "genus": "Echinacea",
+    "species": "pallida"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Echinacea pallida (pale purple coneflower) - Go Botany",
+      "link": "https://gobotany.nativeplanttrust.org/species/echinacea/pallida/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://gobotany.nativeplanttrust.org/species/echinacea/pallida/&ved=2ahUKEwjsoI6d47WRAxUP48kDHYcOEAwQFnoECCIQAQ",
+      "displayed_link": "https://gobotany.nativeplanttrust.org › species › pallida",
+      "thumbnail": "https://serpapi.com/searches/693ad920a4817cf46d75cbf9/images/461ee7422528d1c51d6a8ea8bd08643da2b05837b201c1c811a26313a7d9bc6a.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad920a4817cf46d75cbf9/images/461ee7422528d1c51d6a8ea8bd08643d95ff891ef8dc03cc5f95f405472067c9.png",
+      "snippet": "A native of midwestern and southern states, pale purple coneflower is considered to be non-native in New England, where it is recorded from Connecticut, ...",
+      "source": "Go Botany"
+    },
+    {
+      "position": 2,
+      "title": "Genus: Echinacea (purple coneflower) - Go Botany",
+      "link": "https://gobotany.nativeplanttrust.org/genus/echinacea/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://gobotany.nativeplanttrust.org/genus/echinacea/&ved=2ahUKEwjsoI6d47WRAxUP48kDHYcOEAwQFnoECCEQAQ",
+      "displayed_link": "https://gobotany.nativeplanttrust.org › genus › echinacea",
+      "thumbnail": "https://serpapi.com/searches/693ad920a4817cf46d75cbf9/images/461ee7422528d1c51d6a8ea8bd08643d69f7c3ce206c09012e3feaf473e2cc13.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad920a4817cf46d75cbf9/images/461ee7422528d1c51d6a8ea8bd08643d3a67f74be2b62b724220944e4140e258.png",
+      "snippet": "Genus: Echinacea — purple coneflower. Leaves: Echinacea pallida. ~ By John Hilty. ~ Copyright © 2025 John Hilty. Stems: Echinacea pallida. ~ By Merel Black.",
+      "snippet_highlighted_words": [
+        "purple coneflower"
+      ],
+      "source": "Go Botany"
+    },
+    {
+      "position": 3,
+      "title": "Echinacea: Dichotomous Key - Go Botany - Native Plant Trust",
+      "link": "https://gobotany.nativeplanttrust.org/dkey/echinacea/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://gobotany.nativeplanttrust.org/dkey/echinacea/&ved=2ahUKEwjsoI6d47WRAxUP48kDHYcOEAwQFnoECCAQAQ",
+      "displayed_link": "https://gobotany.nativeplanttrust.org › dkey › echinacea",
+      "favicon": "https://serpapi.com/searches/693ad920a4817cf46d75cbf9/images/461ee7422528d1c51d6a8ea8bd08643da9761f70c3815aba0b5034aff9640e25.png",
+      "snippet": "pallida. 1b. Lower leaf blades narrow-lanceolate to narrow ... Each photo represents one species in this genus. Echinacea pallida · Echinacea purpurea.",
+      "snippet_highlighted_words": [
+        "Echinacea pallida"
+      ],
+      "source": "Go Botany"
+    },
+    {
+      "position": 4,
+      "title": "Sighting: Echinacea pallida at Jefferson, wi: PlantShare: Go Botany",
+      "link": "https://gobotany.nativeplanttrust.org/plantshare/sightings/1445/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://gobotany.nativeplanttrust.org/plantshare/sightings/1445/&ved=2ahUKEwjsoI6d47WRAxUP48kDHYcOEAwQFnoECC0QAQ",
+      "displayed_link": "https://gobotany.nativeplanttrust.org › sightings",
+      "favicon": "https://serpapi.com/searches/693ad920a4817cf46d75cbf9/images/461ee7422528d1c51d6a8ea8bd08643d7a1d6f9314ca662cabd828a5a4fa08c6.png",
+      "snippet": "There are no photos available yet for this sighting. PlantShare · Sightings Locator · Recent Sightings · Ask the Botanist · Sign Up for PlantShare. Log ...",
+      "snippet_highlighted_words": [
+        "There are no photos available yet for this sighting"
+      ],
+      "source": "Go Botany: Native Plant Trust"
+    }
+  ]
+}

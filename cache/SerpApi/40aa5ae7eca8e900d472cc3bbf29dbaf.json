@@ -1,0 +1,62 @@
+{
+  "_meta": {
+    "query": "site:illinoiswildflowers.info Chelone glabra",
+    "cachedAt": "2025-12-11T14:45:13.421Z",
+    "numResults": 4,
+    "site": "Illinois Wildflowers",
+    "genus": "Chelone",
+    "species": "glabra"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "White Turtlehead (Chelone glabra linifolia)",
+      "link": "https://www.illinoiswildflowers.info/wetland/plants/wh_turtlehead.htm",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.illinoiswildflowers.info/wetland/plants/wh_turtlehead.htm&ved=2ahUKEwjjsuuJ47WRAxXdLkQIHVtQOf4QFnoECCMQAQ",
+      "displayed_link": "https://www.illinoiswildflowers.info › wh_turtlehead",
+      "thumbnail": "https://serpapi.com/searches/693ad8f7d17a80892c017946/images/c8b56a6ff76451694e6c01b02ca95bf7ff8ccb63d06d5cbd5229d8c66106e1cd.jpeg",
+      "snippet": "This perennial plant is about 2-3' tall and unbranched or sparingly branched. The central stem is glabrous and either terete or 4-angled.",
+      "snippet_highlighted_words": [
+        "about 2-3' tall and unbranched or sparingly branched"
+      ],
+      "source": "Illinois Wildflowers"
+    },
+    {
+      "position": 2,
+      "title": "Pink Turtlehead (Chelone obliqua speciosa)",
+      "link": "http://www.illinoiswildflowers.info/wetland/plants/pink_turtlehead.htm",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://www.illinoiswildflowers.info/wetland/plants/pink_turtlehead.htm&ved=2ahUKEwjjsuuJ47WRAxXdLkQIHVtQOf4QFnoECCUQAQ",
+      "displayed_link": "http://www.illinoiswildflowers.info › wetland › plants › p...",
+      "thumbnail": "https://serpapi.com/searches/693ad8f7d17a80892c017946/images/c8b56a6ff76451694e6c01b02ca95bf7217e7b234e85d3054ac1158ac029712e.jpeg",
+      "snippet": "The other native Turtlehead within the state is Chelone glabra (White Turtlehead), which has white (or slightly pink) flowers and shorter petioles (less than ¼\") ...",
+      "snippet_highlighted_words": [
+        "Chelone glabra"
+      ],
+      "source": "Illinois Wildflowers"
+    },
+    {
+      "position": 3,
+      "title": "Chelone glabra (Insect Feeders)",
+      "link": "https://www.illinoiswildflowers.info/plant_insects/plants/chelone_glabra.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.illinoiswildflowers.info/plant_insects/plants/chelone_glabra.html&ved=2ahUKEwjjsuuJ47WRAxXdLkQIHVtQOf4QFnoECCIQAQ",
+      "displayed_link": "https://www.illinoiswildflowers.info › plant_insects › plants",
+      "snippet": "Chelone glabra (White Turtlehead) [Scrophulariaceae] (Observations are from Marshall, Clark et al., Wagner, Bouseman & Sternburg, Smith, Opler & Krizek, ...",
+      "snippet_highlighted_words": [
+        "Chelone glabra"
+      ],
+      "source": "Illinois Wildflowers"
+    },
+    {
+      "position": 4,
+      "title": "White Turtlehead (flower visitors)",
+      "link": "https://m.illinoiswildflowers.info/flower_insects/plants/wh_turtlehead.htm",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://m.illinoiswildflowers.info/flower_insects/plants/wh_turtlehead.htm&ved=2ahUKEwjjsuuJ47WRAxXdLkQIHVtQOf4QFnoECCEQAQ",
+      "displayed_link": "https://m.illinoiswildflowers.info › plants › wh_turtlehead",
+      "snippet": "Chelone glabra (White Turtlehead) (According to Costelloe, bumblebees suck nectar; the flowers are mildly fragrant; observations are from Costelloe, Lovell, ...",
+      "snippet_highlighted_words": [
+        "Chelone glabra (White Turtlehead"
+      ],
+      "source": "Illinois Wildflowers"
+    }
+  ]
+}

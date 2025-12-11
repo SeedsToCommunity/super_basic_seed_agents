@@ -1,0 +1,38 @@
+{
+  "_meta": {
+    "query": "site:tropicos.org Claytonia virginica",
+    "cachedAt": "2025-12-11T14:44:32.882Z",
+    "numResults": 2,
+    "site": "Tropicos",
+    "genus": "Claytonia",
+    "species": "virginica"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Tropicos | Name - Claytonia L.",
+      "link": "https://legacy.tropicos.org/Name/40009917?projectid=83&langid=66",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://legacy.tropicos.org/Name/40009917%3Fprojectid%3D83%26langid%3D66&ved=2ahUKEwj36LeB3rWRAxV_rJUCHcrgFXgQFnoECB0QAQ",
+      "displayed_link": "https://legacy.tropicos.org › Name",
+      "favicon": "https://serpapi.com/searches/693ad3a7f5d5ace5a796ab32/images/f1eb56cf11d8b64175dae95fe48c694498b685b229e5bd96736c09f1736cbc7b.png",
+      "snippet": "Claytonia robusta (Somes) Rydb. = Claytonia virginica L. Claytonia rosea Rydb. !Claytonia rubra (Howell) Tidestr. Claytonia rupestris (Barnéoud) Kuntze ...",
+      "snippet_highlighted_words": [
+        "Claytonia virginica L"
+      ],
+      "source": "Tropicos"
+    },
+    {
+      "position": 2,
+      "title": "Tropicos | Name - Claytonia L.",
+      "link": "https://legacy.tropicos.org/Name/40009917?projectid=9",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://legacy.tropicos.org/Name/40009917%3Fprojectid%3D9&ved=2ahUKEwj36LeB3rWRAxV_rJUCHcrgFXgQFnoECB4QAQ",
+      "displayed_link": "https://legacy.tropicos.org › Name",
+      "favicon": "https://serpapi.com/searches/693ad3a7f5d5ace5a796ab32/images/f1eb56cf11d8b64175dae95fe48c694440566d774cc3271036d3ca1b8bbfaf46.png",
+      "snippet": "Claytonia sibirica L. Claytonia soczaviana Jurtzev !Claytonia tuberosa Pall. ex Willd. Claytonia virginica L. Export. Format Tab Delimited CSV. Encoding Type",
+      "snippet_highlighted_words": [
+        "Claytonia virginica L"
+      ],
+      "source": "Tropicos"
+    }
+  ]
+}

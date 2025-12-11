@@ -1,0 +1,88 @@
+{
+  "_meta": {
+    "query": "site:plants.usda.gov Fragaria virginiana",
+    "cachedAt": "2025-12-11T14:47:14.408Z",
+    "numResults": 5,
+    "site": "USDA PLANTS",
+    "genus": "Fragaria",
+    "species": "virginiana"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Fragaria virginiana Duchesne",
+      "link": "https://plants.usda.gov/plant-profile/FRVI",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/plant-profile/FRVI&ved=2ahUKEwiP8cvD47WRAxWdEFkFHQxeLP4QFnoECCoQAQ",
+      "displayed_link": "https://plants.usda.gov › plant-profile › FRVI",
+      "thumbnail": "https://serpapi.com/searches/693ad9713d8701a44a7a2576/images/a373115e9fc58c829ba10ca01df3287962a5cbeb9637d5fc9b5e1c2984d93246.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad9713d8701a44a7a2576/images/a373115e9fc58c829ba10ca01df32879f9a4030ce423f6c03be5cc4318a19332.png",
+      "snippet": "Virginia strawberry · Symbol · Group · Duration · Growth Habits · Native Status · Plant Guide · Kingdom · Subkingdom. Tracheobionta - Vascular plants ...",
+      "snippet_highlighted_words": [
+        "Virginia strawberry"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "MOUNTAIN STRAWBERRY - Fragaria virginiana Duchesne",
+      "link": "https://plants.usda.gov/DocumentLibrary/plantguide/pdf/cs_frvi.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/DocumentLibrary/plantguide/pdf/cs_frvi.pdf&ved=2ahUKEwiP8cvD47WRAxWdEFkFHQxeLP4QFnoECCYQAQ",
+      "displayed_link": "https://plants.usda.gov › plantguide › pdf › cs_frvi",
+      "favicon": "https://serpapi.com/searches/693ad9713d8701a44a7a2576/images/a373115e9fc58c829ba10ca01df32879bbf3c6ecf62bea1398a56d37153327a4.png",
+      "snippet": "Mountain Strawberry (Fragaria virginiana Duchesne) is a herbaceous perennial with 3-leaflet leaves, white flowers, and red fruit. It spreads by seed and ...",
+      "snippet_highlighted_words": [
+        "Mountain Strawberry (Fragaria virginiana Duchesne"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 2
+          },
+          "extensions": [
+            "2 pages"
+          ]
+        }
+      },
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "Fragaria virginiana Duchesne - Plant Profile",
+      "link": "https://plants.usda.gov/plant-profile/FRVI/wildlife",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/plant-profile/FRVI/wildlife&ved=2ahUKEwiP8cvD47WRAxWdEFkFHQxeLP4QFnoECCgQAQ",
+      "displayed_link": "https://plants.usda.gov › plant-profile › FRVI › wildlife",
+      "favicon": "https://serpapi.com/searches/693ad9713d8701a44a7a2576/images/a373115e9fc58c829ba10ca01df3287946bf88e5bd4fde4d65fd2df227ae7822.png",
+      "snippet": "Description of Values for <i>Fragaria virginiana</i> Duchesne. Value Class, Food, Cover. High, Average 25-50% of diet, Regular source of cover.",
+      "snippet_highlighted_words": [
+        "Fragaria virginiana"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "Down to Species - Fragaria virginiana Duchesne",
+      "link": "https://plants.usda.gov/classification/89751",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/classification/89751&ved=2ahUKEwiP8cvD47WRAxWdEFkFHQxeLP4QFnoECCsQAQ",
+      "displayed_link": "https://plants.usda.gov › classification",
+      "favicon": "https://serpapi.com/searches/693ad9713d8701a44a7a2576/images/a373115e9fc58c829ba10ca01df3287969f5d156dd28e33d4235e9e366d547bd.png",
+      "snippet": "Classification for Kingdom Plantae Down to Species Fragaria virginiana Duchesne ; Order, Rosales ; Family, Rosaceae Juss. - Rose family ; Genus, Fragaria L. · - ...",
+      "snippet_highlighted_words": [
+        "Fragaria virginiana Duchesne"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "Fragaria virginiana Duchesne ssp. grayana (Vilm. ex J. ...",
+      "link": "https://plants.usda.gov/plant-profile/FRVIG3/sources",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/plant-profile/FRVIG3/sources&ved=2ahUKEwiP8cvD47WRAxWdEFkFHQxeLP4QFnoECCQQAQ",
+      "displayed_link": "https://plants.usda.gov › FRVIG3 › sources",
+      "favicon": "https://serpapi.com/searches/693ad9713d8701a44a7a2576/images/a373115e9fc58c829ba10ca01df3287962b8c0b9de50029f52a9c2c6d24dce9d.png",
+      "snippet": "Data Documentation. The PLANTS Database includes the following 9 data sources of Fragaria virginiana Duchesne ssp. grayana (Vilm. ex J. Gay) Staudt ...",
+      "snippet_highlighted_words": [
+        "Fragaria virginiana Duchesne ssp. grayana"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "_meta": {
+    "query": "site:www.missouriplants.com Chelone glabra",
+    "cachedAt": "2025-12-11T14:45:34.666Z",
+    "numResults": 1,
+    "site": "Missouri Native Plant Society",
+    "genus": "Chelone",
+    "species": "glabra"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Plantaginaceae page",
+      "link": "https://www.missouriplants.com/Plantaginaceae_list.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.missouriplants.com/Plantaginaceae_list.html&ved=2ahUKEwix07uT47WRAxXi4MkDHfZwCbkQFnoECC4QAQ",
+      "displayed_link": "https://www.missouriplants.com › Plantaginaceae_list",
+      "thumbnail": "https://serpapi.com/searches/693ad9091a29fe8e90511681/images/8adf3373b4ce1afc3c9d4cf2fd14955719c2126670a5cfd1d27b97dd6aa4528b.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad9091a29fe8e90511681/images/8adf3373b4ce1afc3c9d4cf2fd149557a2248cda4f0981431d5ce0041100cac2.png",
+      "snippet": "minus · Chelone glabra thumbnail. Chelone glabra · Chelone obliqua thumbnail. Chelone obliqua · Collinsia verna thumbnail. Collinsia verna · Collinsia violacea ...",
+      "snippet_highlighted_words": [
+        "Chelone glabra"
+      ],
+      "images": [
+        "https://serpapi.com/searches/693ad9091a29fe8e90511681/images/8adf3373b4ce1afc3c9d4cf2fd149557f0490387a6f227598175d7653db31c2b.jpeg"
+      ],
+      "source": "Missouri flora"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "_meta": {
+    "query": "site:wildflower.org Geranium maculatum",
+    "cachedAt": "2025-12-11T14:44:43.844Z",
+    "numResults": 4,
+    "site": "Lady Bird Johnson Wildflower Center",
+    "genus": "Geranium",
+    "species": "maculatum"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Geranium maculatum (Spotted geranium) | Native Plants ...",
+      "link": "https://www.wildflower.org/plants/result.php?id_plant=gema",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/plants/result.php%3Fid_plant%3Dgema&ved=2ahUKEwjzjJCN3rWRAxWz78kDHaLXKXYQFnoECCAQAQ",
+      "displayed_link": "https://www.wildflower.org › plants › result",
+      "thumbnail": "https://serpapi.com/searches/693ad3c05604334b32a1666e/images/ada621ff7bbcaeba5ef99a1ace2622fd0552bf805b7dc0278af34fe3f33cb529.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad3c05604334b32a1666e/images/ada621ff7bbcaeba5ef99a1ace2622fd597f873eff321c41a5cec4264ae03953.png",
+      "date": "May 31, 2023",
+      "snippet": "This perennial is well known for its 5- to 6-parted, deeply cut leaves. It colonizes by thick rhizomes but is not aggressive.",
+      "source": "Lady Bird Johnson Wildflower Center"
+    },
+    {
+      "position": 2,
+      "title": "Geranium maculatum (Spotted geranium) | NPIN",
+      "link": "https://www.wildflower.org/gallery/result.php?id_image=31905",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/gallery/result.php%3Fid_image%3D31905&ved=2ahUKEwjzjJCN3rWRAxWz78kDHaLXKXYQFnoECB4QAQ",
+      "displayed_link": "https://www.wildflower.org › gallery › result",
+      "favicon": "https://serpapi.com/searches/693ad3c05604334b32a1666e/images/ada621ff7bbcaeba5ef99a1ace2622fde18cf526294bad57b6e19cf2b9871416.png",
+      "snippet": "Geranium maculatum L. Spotted Geranium, Wild Geranium, Cranesbill Geraniaceae (Geranium Family) USDA Symbol: GEMA",
+      "snippet_highlighted_words": [
+        "Geranium maculatum"
+      ],
+      "source": "Lady Bird Johnson Wildflower Center"
+    },
+    {
+      "position": 3,
+      "title": "Geranium maculatum (Spotted geranium) | NPIN",
+      "link": "https://www.wildflower.org/gallery/result.php?id_image=27398",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/gallery/result.php%3Fid_image%3D27398&ved=2ahUKEwjzjJCN3rWRAxWz78kDHaLXKXYQFnoECCQQAQ",
+      "displayed_link": "https://www.wildflower.org › gallery › result",
+      "thumbnail": "https://serpapi.com/searches/693ad3c05604334b32a1666e/images/ada621ff7bbcaeba5ef99a1ace2622fda448dba0f844ed7c6cc294ea4375993b.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad3c05604334b32a1666e/images/ada621ff7bbcaeba5ef99a1ace2622fdbb832664e56921be12e5c1b9261671d2.png",
+      "snippet": "Geranium maculatum L. Spotted Geranium, Wild Geranium, Cranesbill Geraniaceae (Geranium Family) USDA Symbol: GEMA",
+      "snippet_highlighted_words": [
+        "Geranium maculatum"
+      ],
+      "source": "Lady Bird Johnson Wildflower Center"
+    },
+    {
+      "position": 4,
+      "title": "Geranium maculatum (Spotted geranium) | NPIN",
+      "link": "https://www.wildflower.org/gallery/species.php?id_plant=GEMA",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/gallery/species.php%3Fid_plant%3DGEMA&ved=2ahUKEwjzjJCN3rWRAxWz78kDHaLXKXYQFnoECDUQAQ",
+      "displayed_link": "https://www.wildflower.org › gallery › species",
+      "thumbnail": "https://serpapi.com/searches/693ad3c05604334b32a1666e/images/ada621ff7bbcaeba5ef99a1ace2622fde565619f8750b1d9ed9356ee5fa572f9.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad3c05604334b32a1666e/images/ada621ff7bbcaeba5ef99a1ace2622fd42a0b900f5734bd90dc3c350bc0cf30f.png",
+      "snippet": "Geranium maculatum L. · Spotted Geranium, Wild Geranium, Cranesbill · Geraniaceae (Geranium Family) · USDA Symbol: GEMA · USDA Native Status: L48 (N), CAN (N) ...",
+      "snippet_highlighted_words": [
+        "Geranium maculatum L"
+      ],
+      "source": "Lady Bird Johnson Wildflower Center"
+    }
+  ]
+}

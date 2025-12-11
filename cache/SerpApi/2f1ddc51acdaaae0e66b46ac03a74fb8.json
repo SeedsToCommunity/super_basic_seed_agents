@@ -1,0 +1,71 @@
+{
+  "_meta": {
+    "query": "site:wildflower.org Fragaria virginiana",
+    "cachedAt": "2025-12-11T14:47:01.823Z",
+    "numResults": 4,
+    "site": "Lady Bird Johnson Wildflower Center",
+    "genus": "Fragaria",
+    "species": "virginiana"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Fragaria virginiana (Virginia strawberry) | Native Plants of ...",
+      "link": "https://www.wildflower.org/plants/result.php?id_plant=frvi",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/plants/result.php%3Fid_plant%3Dfrvi&ved=2ahUKEwi3o6G947WRAxV5SDABHSr2AugQFnoECCcQAQ",
+      "displayed_link": "https://www.wildflower.org › plants › result",
+      "thumbnail": "https://serpapi.com/searches/693ad9642efef8efa66c0ca9/images/bb77e8276b4d62ec8c227eb789849b1b1907b7e8a7e26126fd8cc43e74373ce9.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad9642efef8efa66c0ca9/images/bb77e8276b4d62ec8c227eb789849b1bfcbc81e9bfe56b3d6ebe181b7f0e0ce9.png",
+      "date": "Feb 10, 2023",
+      "snippet": "Virginia Strawberry or Wild Strawberry is a ground-hugging plant rising from a fibrous, perennial root system. Hairy leaf petioles, up to 6 in.",
+      "snippet_highlighted_words": [
+        "Virginia Strawberry or Wild Strawberry"
+      ],
+      "source": "Lady Bird Johnson Wildflower Center"
+    },
+    {
+      "position": 2,
+      "title": "Fragaria virginiana ssp. virginiana (Virginia strawberry)",
+      "link": "https://www.wildflower.org/plants/result.php?id_plant=FRVIV",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/plants/result.php%3Fid_plant%3DFRVIV&ved=2ahUKEwi3o6G947WRAxV5SDABHSr2AugQFnoECCYQAQ",
+      "displayed_link": "https://www.wildflower.org › plants › result",
+      "thumbnail": "https://serpapi.com/searches/693ad9642efef8efa66c0ca9/images/bb77e8276b4d62ec8c227eb789849b1b1f4f22addc32f2836849f760974d664b.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad9642efef8efa66c0ca9/images/bb77e8276b4d62ec8c227eb789849b1bd095fe80045f88a7bd0995cbf9c999fb.png",
+      "date": "Feb 10, 2023",
+      "snippet": "Plant Characteristics ... Size Notes: Ground-hugging, up to about 4 inches tall. Fruit: Aggregated achenes set on the surface of the edible fruit.",
+      "snippet_highlighted_words": [
+        "Size Notes: Ground-hugging, up to about 4 inches tall"
+      ],
+      "source": "Lady Bird Johnson Wildflower Center"
+    },
+    {
+      "position": 3,
+      "title": "Fragaria virginiana ssp. glauca (Virginia strawberry)",
+      "link": "https://www.wildflower.org/plants/result.php?id_plant=frvig2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/plants/result.php%3Fid_plant%3Dfrvig2&ved=2ahUKEwi3o6G947WRAxV5SDABHSr2AugQFnoECCgQAQ",
+      "displayed_link": "https://www.wildflower.org › plants › result",
+      "thumbnail": "https://serpapi.com/searches/693ad9642efef8efa66c0ca9/images/bb77e8276b4d62ec8c227eb789849b1b1f4fbde0f4d609c6c42afe426dc700d7.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad9642efef8efa66c0ca9/images/bb77e8276b4d62ec8c227eb789849b1baed6a761f80395cfad1e159f1dab3dfa.png",
+      "date": "Mar 27, 2025",
+      "snippet": "Size Notes: Ground-hugging, up to about 4 inches tall. Fruit: Aggregated achenes set on the surface of the edible fruit. Bloom Information.",
+      "snippet_highlighted_words": [
+        "Size Notes: Ground-hugging, up to about 4 inches tall"
+      ],
+      "source": "Lady Bird Johnson Wildflower Center"
+    },
+    {
+      "position": 4,
+      "title": "Fragaria virginiana ssp. grayana (Virginia strawberry)",
+      "link": "https://www.wildflower.org/plants/result.php?id_plant=FRVIG3",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/plants/result.php%3Fid_plant%3DFRVIG3&ved=2ahUKEwi3o6G947WRAxV5SDABHSr2AugQFnoECCEQAQ",
+      "displayed_link": "https://www.wildflower.org › plants › result",
+      "favicon": "https://serpapi.com/searches/693ad9642efef8efa66c0ca9/images/bb77e8276b4d62ec8c227eb789849b1b87bdba5bc8ba2b2b95fa3e153daa9911.png",
+      "date": "May 9, 2023",
+      "snippet": "Size Notes: Up to about 8 inches tall. Fruit: Aggregated achenes set on the surface of the edible fruit. Bloom Information. Bloom Color: White",
+      "snippet_highlighted_words": [
+        "Up to about 8 inches tall"
+      ],
+      "source": "Lady Bird Johnson Wildflower Center"
+    }
+  ]
+}

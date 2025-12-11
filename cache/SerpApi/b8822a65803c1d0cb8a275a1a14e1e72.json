@@ -1,0 +1,67 @@
+{
+  "_meta": {
+    "query": "site:gobotany.nativeplanttrust.org Chelone glabra",
+    "cachedAt": "2025-12-11T14:45:10.263Z",
+    "numResults": 4,
+    "site": "Go Botany",
+    "genus": "Chelone",
+    "species": "glabra"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Chelone glabra (white turtlehead) - Go Botany",
+      "link": "https://gobotany.nativeplanttrust.org/species/chelone/glabra/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://gobotany.nativeplanttrust.org/species/chelone/glabra/&ved=2ahUKEwiVwYOI47WRAxWy5ckDHbVwGC0QFnoECCUQAQ",
+      "displayed_link": "https://gobotany.nativeplanttrust.org › species › glabra",
+      "thumbnail": "https://serpapi.com/searches/693ad8f3fd81c84eede828fe/images/036f99ca1f89455ad6d48eb97b394ed9b14307c137ae99505b727074d3d84670.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad8f3fd81c84eede828fe/images/036f99ca1f89455ad6d48eb97b394ed96e85551bef46b3ecd260a40938028e4b.png",
+      "snippet": "An attractive plant of wetland margins, white turtlehead makes a good wildflower garden plant, attracting bumblebees and the occasional hummingbird.",
+      "snippet_highlighted_words": [
+        "makes a good wildflower garden plant"
+      ],
+      "source": "Go Botany: Native Plant Trust"
+    },
+    {
+      "position": 2,
+      "title": "Chelone obliqua (red turtlehead) - Go Botany",
+      "link": "https://gobotany.nativeplanttrust.org/species/chelone/obliqua/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://gobotany.nativeplanttrust.org/species/chelone/obliqua/&ved=2ahUKEwiVwYOI47WRAxWy5ckDHbVwGC0QFnoECB4QAQ",
+      "displayed_link": "https://gobotany.nativeplanttrust.org › species › obliqua",
+      "thumbnail": "https://serpapi.com/searches/693ad8f3fd81c84eede828fe/images/036f99ca1f89455ad6d48eb97b394ed9bf708712554c33ab6f7fe5ad80814448.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad8f3fd81c84eede828fe/images/036f99ca1f89455ad6d48eb97b394ed9ba47f281fae8f19ec481d736386b8017.png",
+      "snippet": "Chelone glabra: corolla white, sometimes partly green-yellow or tinged with pink near apex, staminode green, and leaves will ill-defined petioles or ...",
+      "snippet_highlighted_words": [
+        "corolla white, sometimes partly green-yellow or tinged with pink near apex"
+      ],
+      "source": "Go Botany"
+    },
+    {
+      "position": 3,
+      "title": "Genus: Chelone (turtlehead) - Go Botany - Native Plant Trust",
+      "link": "https://gobotany.nativeplanttrust.org/genus/chelone/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://gobotany.nativeplanttrust.org/genus/chelone/&ved=2ahUKEwiVwYOI47WRAxWy5ckDHbVwGC0QFnoECB0QAQ",
+      "displayed_link": "https://gobotany.nativeplanttrust.org › genus › chelone",
+      "thumbnail": "https://serpapi.com/searches/693ad8f3fd81c84eede828fe/images/036f99ca1f89455ad6d48eb97b394ed9a9f918c4ffeb8b3a76ae0aa41f094feb.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad8f3fd81c84eede828fe/images/036f99ca1f89455ad6d48eb97b394ed9edf34a4fad5e8a7d8e217c85fde3a15e.png",
+      "snippet": "Genus: Chelone — turtlehead. Flowers: Chelone glabra. ~ By Arthur Haines. ~ Copyright © 2025 Arthur Haines. Plant form: Chelone glabra.",
+      "snippet_highlighted_words": [
+        "Chelone glabra"
+      ],
+      "source": "Go Botany"
+    },
+    {
+      "position": 4,
+      "title": "Sighting: Chelone glabra at 42.314, -71.308: PlantShare: Go Botany",
+      "link": "https://gobotany.nativeplanttrust.org/plantshare/sightings/457/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://gobotany.nativeplanttrust.org/plantshare/sightings/457/&ved=2ahUKEwiVwYOI47WRAxWy5ckDHbVwGC0QFnoECDIQAQ",
+      "displayed_link": "https://gobotany.nativeplanttrust.org › sightings",
+      "favicon": "https://serpapi.com/searches/693ad8f3fd81c84eede828fe/images/036f99ca1f89455ad6d48eb97b394ed97da7025682ecd9c4053957c9c504ea07.png",
+      "snippet": "There are no photos available yet for this sighting. PlantShare · Sightings Locator · Recent Sightings · Ask the Botanist · Sign Up for PlantShare. Log ...",
+      "snippet_highlighted_words": [
+        "There are no photos available yet for this sighting"
+      ],
+      "source": "Go Botany: Native Plant Trust"
+    }
+  ]
+}

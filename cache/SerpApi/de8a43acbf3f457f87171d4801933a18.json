@@ -1,0 +1,31 @@
+{
+  "_meta": {
+    "query": "site:michiganflora.net Coreopsis lanceolata",
+    "cachedAt": "2025-12-11T14:52:40.287Z",
+    "numResults": 2,
+    "site": "Michigan Flora",
+    "genus": "Coreopsis",
+    "species": "lanceolata"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "https://michiganflora.net/record/296",
+      "link": "https://michiganflora.net/record/296",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://michiganflora.net/record/296&ved=2ahUKEwjJgsTe5LWRAxWNlokEHSd-NRcQFnoECCAQAQ",
+      "displayed_link": "https://michiganflora.net › record",
+      "favicon": "https://serpapi.com/searches/693adab52771439e7cfc8e27/images/bad7b9ddd352dcfa833d3ddfaece65d60a47a9e29c8e198d7679c3da1747ef25.png",
+      "source": "Michigan Flora"
+    },
+    {
+      "position": 2,
+      "title": "Coreopsis",
+      "link": "https://michiganflora.net/genus/Coreopsis",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://michiganflora.net/genus/Coreopsis&ved=2ahUKEwjJgsTe5LWRAxWNlokEHSd-NRcQFnoECCEQAQ",
+      "displayed_link": "https://michiganflora.net › genus › Coreopsis",
+      "favicon": "https://serpapi.com/searches/693adab52771439e7cfc8e27/images/bad7b9ddd352dcfa833d3ddfaece65d677aa97246a111fe241fc3d30b506ccdf.png",
+      "snippet": "1. Phyllaries of outer series all or mostly less than 2.5 mm long; disk flowers 4-merous, red-purple; ray flowers less than 1.5 cm long, usually red-purple on ...",
+      "source": "Michigan Flora"
+    }
+  ]
+}

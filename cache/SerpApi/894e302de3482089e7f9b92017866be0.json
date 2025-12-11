@@ -1,0 +1,83 @@
+{
+  "_meta": {
+    "query": "site:plants.usda.gov Trillium grandiflorum",
+    "cachedAt": "2025-12-11T14:44:11.284Z",
+    "numResults": 5,
+    "site": "USDA PLANTS",
+    "genus": "Trillium",
+    "species": "grandiflorum"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Trillium grandiflorum - USDA Plants Database",
+      "link": "https://plants.usda.gov/plant-profile/TRGR4",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/plant-profile/TRGR4&ved=2ahUKEwiJroTc3bWRAxWYGFkFHeMDBM8QFnoECCYQAQ",
+      "displayed_link": "https://plants.usda.gov › plant-profile › TRGR4",
+      "thumbnail": "https://serpapi.com/searches/693ad35accb1e967a7492a0e/images/77f0143f72bef3f4a96afb67d60436a6ba8c1290bc126e2cb3107b3df8c19cbb.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad35accb1e967a7492a0e/images/77f0143f72bef3f4a96afb67d60436a6f6a2ee3eb17810e3a475975896f5cdc5.png",
+      "snippet": "General Information: Symbol, Group, Duration, Growth Habits, Native Status, Other Common Names, Download Distribution Data",
+      "snippet_highlighted_words": [
+        "Symbol, Group, Duration, Growth Habits, Native Status"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "Trillium grandiflorum (Michx.) Salisb.",
+      "link": "https://plants.usda.gov/plant-profile/TRGR4/rarity",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/plant-profile/TRGR4/rarity&ved=2ahUKEwiJroTc3bWRAxWYGFkFHeMDBM8QFnoECB4QAQ",
+      "displayed_link": "https://plants.usda.gov › plant-profile › TRGR4 › rarity",
+      "favicon": "https://serpapi.com/searches/693ad35accb1e967a7492a0e/images/77f0143f72bef3f4a96afb67d60436a635f4d57851507bc5b951e59fb0b2dac4.png",
+      "snippet": "Endangered, Threatened, and Rarity Information. Status Name, Status. This plant is listed by the U.S. federal government or a state.",
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "USDA Plants Database Plant Profile Images",
+      "link": "https://plants.usda.gov/plant-profile/TRGR4/images",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/plant-profile/TRGR4/images&ved=2ahUKEwiJroTc3bWRAxWYGFkFHeMDBM8QFnoECB8QAQ",
+      "displayed_link": "https://plants.usda.gov › plant-profile › TRGR4 › images",
+      "favicon": "https://serpapi.com/searches/693ad35accb1e967a7492a0e/images/77f0143f72bef3f4a96afb67d60436a68226cec64acb2201ec8474ae544feadf.png",
+      "snippet": "Trillium grandiflorum (Michx.) Salisb. white trillium. Profile pages. General, Images, Rarity, Related Links, Sources. General · Images · Rarity · Related Links ...",
+      "snippet_highlighted_words": [
+        "Trillium grandiflorum"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "USDA Plants Database Plant Profile Related Links",
+      "link": "https://plants.usda.gov/plant-profile/TRGR4/related-links",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/plant-profile/TRGR4/related-links&ved=2ahUKEwiJroTc3bWRAxWYGFkFHeMDBM8QFnoECCAQAQ",
+      "displayed_link": "https://plants.usda.gov › plant-profile › TRGR4 › relate...",
+      "favicon": "https://serpapi.com/searches/693ad35accb1e967a7492a0e/images/77f0143f72bef3f4a96afb67d60436a68e24a08c5d3068cbdf5c1da61bc45de0.png",
+      "snippet": "Trillium grandiflorum (Michx.) Salisb. white trillium. Profile pages. General, Images, Rarity, Related Links, Sources. General · Images · Rarity · Related Links ...",
+      "snippet_highlighted_words": [
+        "Trillium grandiflorum"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "Plant Guide",
+      "link": "https://plants.usda.gov/DocumentLibrary/plantguide/pdf/pg_hyca.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/DocumentLibrary/plantguide/pdf/pg_hyca.pdf&ved=2ahUKEwiJroTc3bWRAxWYGFkFHeMDBM8QFnoECCQQAQ",
+      "displayed_link": "https://plants.usda.gov › pdf › pg_hyca",
+      "favicon": "https://serpapi.com/searches/693ad35accb1e967a7492a0e/images/77f0143f72bef3f4a96afb67d60436a64d060932767517c217124dec10183630.png",
+      "author": "by A Sinclair",
+      "snippet": "Abstract. Interest in the cultivation of goldenseal is increasing and this may have benefits for agriculture, human health, and conservation.",
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 13
+          },
+          "extensions": [
+            "13 pages"
+          ]
+        }
+      },
+      "source": "USDA Plants Database (.gov)"
+    }
+  ]
+}

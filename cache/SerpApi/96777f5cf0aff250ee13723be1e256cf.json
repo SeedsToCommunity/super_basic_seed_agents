@@ -1,0 +1,38 @@
+{
+  "_meta": {
+    "query": "site:www.missouriplants.com Claytonia virginica",
+    "cachedAt": "2025-12-11T14:44:33.398Z",
+    "numResults": 2,
+    "site": "Missouri Native Plant Society",
+    "genus": "Claytonia",
+    "species": "virginica"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Claytonia perfoliata page",
+      "link": "https://www.missouriplants.com/Claytonia_perfoliata_page.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.missouriplants.com/Claytonia_perfoliata_page.html&ved=2ahUKEwjG18aC3rWRAxWVrYkEHRrKLfgQFnoECBsQAQ",
+      "displayed_link": "https://www.missouriplants.com › Claytonia_perfoliata_...",
+      "favicon": "https://serpapi.com/searches/693ad3aabdfe4975e74e2cdf/images/9ba470605bbaef297b749ebea5ded807fe3c536348febd0d8fa6f10408efdcdf.png",
+      "snippet": "virginica (spring beauty), a very common species in Missouri. Another name for the species is Montia perfoliata. Subspecies have been named, but assignment ...",
+      "snippet_highlighted_words": [
+        "a very common species in Missouri"
+      ],
+      "source": "Missouri flora"
+    },
+    {
+      "position": 2,
+      "title": "Portulacaceae page",
+      "link": "https://www.missouriplants.com/Portulacaceae_list.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.missouriplants.com/Portulacaceae_list.html&ved=2ahUKEwjG18aC3rWRAxWVrYkEHRrKLfgQFnoECBwQAQ",
+      "displayed_link": "https://www.missouriplants.com › Portulacaceae_list",
+      "favicon": "https://serpapi.com/searches/693ad3aabdfe4975e74e2cdf/images/9ba470605bbaef297b749ebea5ded80786bdf9e8e2154666c6fc0eeda4ce728b.png",
+      "snippet": "Claytonia perfoliata thumbnail. Claytonia perfoliata ; Claytonia virginica thumbnail. Claytonia virginica ; Phemeranthus calycinus thumbnail. Phemeranthus",
+      "snippet_highlighted_words": [
+        "Claytonia virginica"
+      ],
+      "source": "Missouri flora"
+    }
+  ]
+}

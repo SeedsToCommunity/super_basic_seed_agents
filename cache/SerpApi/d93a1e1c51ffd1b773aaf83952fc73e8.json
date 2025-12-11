@@ -1,0 +1,67 @@
+{
+  "_meta": {
+    "query": "site:wildflower.org Echinacea pallida",
+    "cachedAt": "2025-12-11T14:45:57.446Z",
+    "numResults": 4,
+    "site": "Lady Bird Johnson Wildflower Center",
+    "genus": "Echinacea",
+    "species": "pallida"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Echinacea pallida (Pale purple coneflower) | Native Plants ...",
+      "link": "https://www.wildflower.org/plants/result.php?id_plant=ECPA",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/plants/result.php%3Fid_plant%3DECPA&ved=2ahUKEwjdquae47WRAxVhJUQIHVWkBn8QFnoECCMQAQ",
+      "displayed_link": "https://www.wildflower.org › plants › result",
+      "thumbnail": "https://serpapi.com/searches/693ad924d10c6a01dd4ef001/images/fa655ea8321d602ae49815c09d315223d4f77af1ce6efdcf3909c46808bd7f61.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad924d10c6a01dd4ef001/images/fa655ea8321d602ae49815c09d3152233fd3ad9cb3e3360b88f0b6cdbd994fb7.png",
+      "date": "Dec 26, 2022",
+      "snippet": "A sometimes aggressive plant that shows off best and benefits from mixing with grasses. The only Echinacea native to Ontario.",
+      "snippet_highlighted_words": [
+        "Echinacea"
+      ],
+      "source": "Lady Bird Johnson Wildflower Center"
+    },
+    {
+      "position": 2,
+      "title": "Echinacea pallida (Pale purple coneflower) | NPIN",
+      "link": "https://www.wildflower.org/gallery/species.php?id_plant=ECPA",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/gallery/species.php%3Fid_plant%3DECPA&ved=2ahUKEwjdquae47WRAxVhJUQIHVWkBn8QFnoECCAQAQ",
+      "displayed_link": "https://www.wildflower.org › gallery › species",
+      "thumbnail": "https://serpapi.com/searches/693ad924d10c6a01dd4ef001/images/fa655ea8321d602ae49815c09d315223e98da6b916e316ce3b7325222d281b6e.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad924d10c6a01dd4ef001/images/fa655ea8321d602ae49815c09d31522376993b96d109f64eb04f5c1e4a510458.png",
+      "snippet": "Welcome to the Lady Bird Johnson Wildflower Center's collection of 176,996 plant images. We have listened to our users and made it even easier to find images in ...",
+      "source": "Lady Bird Johnson Wildflower Center"
+    },
+    {
+      "position": 3,
+      "title": "Natural Remedy - Lady Bird Johnson ...",
+      "link": "https://www.wildflower.org/magazine/native-plants/natural-remedy",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/magazine/native-plants/natural-remedy&ved=2ahUKEwjdquae47WRAxVhJUQIHVWkBn8QFnoECB4QAQ",
+      "displayed_link": "https://www.wildflower.org › magazine › native-plants",
+      "favicon": "https://serpapi.com/searches/693ad924d10c6a01dd4ef001/images/fa655ea8321d602ae49815c09d31522329000bbc3ea83e0cd513e4edbfd10df8.png",
+      "date": "May 1, 2010",
+      "snippet": "Echinacea pallida is the only coneflower with white pollen. One of the most beautiful coneflowers of all is the only one that is not purple ...",
+      "snippet_highlighted_words": [
+        "Echinacea pallida is the only coneflower with white pollen"
+      ],
+      "source": "Lady Bird Johnson Wildflower Center"
+    },
+    {
+      "position": 4,
+      "title": "Echinacea sanguinea (Sanguine purple coneflower)",
+      "link": "https://www.wildflower.org/plants/result.php?id_plant=ECSA",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/plants/result.php%3Fid_plant%3DECSA&ved=2ahUKEwjdquae47WRAxVhJUQIHVWkBn8QFnoECDUQAQ",
+      "displayed_link": "https://www.wildflower.org › plants › result",
+      "thumbnail": "https://serpapi.com/searches/693ad924d10c6a01dd4ef001/images/fa655ea8321d602ae49815c09d3152237e8852c17918970ae8ded38ba16957cd.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad924d10c6a01dd4ef001/images/fa655ea8321d602ae49815c09d315223d5b312c624bb96434e3fddf34613b561.png",
+      "date": "Dec 26, 2022",
+      "snippet": "The graceful purple coneflower has an unbranched stem that grows to 4 feet tall. Leaves are alternate and usually near the base, 4-10 inches long and 1/4 inch ...",
+      "snippet_highlighted_words": [
+        "grows to 4 feet tall"
+      ],
+      "source": "Lady Bird Johnson Wildflower Center"
+    }
+  ]
+}

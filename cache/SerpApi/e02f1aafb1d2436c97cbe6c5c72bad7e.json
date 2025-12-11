@@ -1,0 +1,53 @@
+{
+  "_meta": {
+    "query": "site:www.missouriplants.com Fragaria virginiana",
+    "cachedAt": "2025-12-11T14:47:17.582Z",
+    "numResults": 3,
+    "site": "Missouri Native Plant Society",
+    "genus": "Fragaria",
+    "species": "virginiana"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Fragaria virginiana page",
+      "link": "https://www.missouriplants.com/Fragaria_virginiana_page.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.missouriplants.com/Fragaria_virginiana_page.html&ved=2ahUKEwib0__E47WRAxXbQjABHWxKOscQFnoECBYQAQ",
+      "displayed_link": "https://www.missouriplants.com › Fragaria_virginiana_...",
+      "thumbnail": "https://serpapi.com/searches/693ad974a89e0223a5e852a8/images/c0c3e87eaa3dfa02310a238c4ea5c1b63fe47232e88e64fce9294b2979dcf966.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad974a89e0223a5e852a8/images/c0c3e87eaa3dfa02310a238c4ea5c1b6cd6bfe3536fb36781f81b3baf158edaa.png",
+      "snippet": "This is the wild strawberry plant, found throughout Missouri and in some form across the entire continental US.",
+      "snippet_highlighted_words": [
+        "found throughout Missouri"
+      ],
+      "source": "Missouri flora"
+    },
+    {
+      "position": 2,
+      "title": "Fragaria vesca page",
+      "link": "https://www.missouriplants.com/Fragaria_vesca_page.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.missouriplants.com/Fragaria_vesca_page.html&ved=2ahUKEwib0__E47WRAxXbQjABHWxKOscQFnoECBcQAQ",
+      "displayed_link": "https://www.missouriplants.com › Fragaria_vesca_page",
+      "thumbnail": "https://serpapi.com/searches/693ad974a89e0223a5e852a8/images/c0c3e87eaa3dfa02310a238c4ea5c1b6ce5ed4ddcbcaf79c5a49b3a62d82b7fb.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad974a89e0223a5e852a8/images/c0c3e87eaa3dfa02310a238c4ea5c1b68207588360bd0bd7622aec53ac37ee44.png",
+      "snippet": "Fragaria vesca is a native, perennial forb with trifoliate leaves, a strawberry fruit, and a leaflet tip that extends past other teeth. It is uncommon in ...",
+      "snippet_highlighted_words": [
+        "Fragaria vesca is a native, perennial forb"
+      ],
+      "source": "Missouri flora"
+    },
+    {
+      "position": 3,
+      "title": "Rosaceae page",
+      "link": "https://www.missouriplants.com/Rosaceae_list.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.missouriplants.com/Rosaceae_list.html&ved=2ahUKEwib0__E47WRAxXbQjABHWxKOscQFnoECBUQAQ",
+      "displayed_link": "https://www.missouriplants.com › Rosaceae_list",
+      "favicon": "https://serpapi.com/searches/693ad974a89e0223a5e852a8/images/c0c3e87eaa3dfa02310a238c4ea5c1b63848674ae3bd31fb564a8b6bb285b760.png",
+      "snippet": "Fragaria vesca thumbnail. Fragaria vesca · Fragaria virginiana thumbnail. Fragaria virginiana · Geum aleppicum thumbnail. Geum aleppicum · Geum canadense ...",
+      "snippet_highlighted_words": [
+        "Fragaria virginiana"
+      ],
+      "source": "Missouri Plants"
+    }
+  ]
+}

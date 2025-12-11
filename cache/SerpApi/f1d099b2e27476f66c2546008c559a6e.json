@@ -1,0 +1,25 @@
+{
+  "_meta": {
+    "query": "site:www.missouriplants.com Coreopsis lanceolata",
+    "cachedAt": "2025-12-11T14:53:03.651Z",
+    "numResults": 1,
+    "site": "Missouri Native Plant Society",
+    "genus": "Coreopsis",
+    "species": "lanceolata"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Asteraceae-Heliantheae page",
+      "link": "http://www.missouriplants.com/Asteraceae-Heliantheae_list.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://www.missouriplants.com/Asteraceae-Heliantheae_list.html&ved=2ahUKEwjgxsrp5LWRAxW3MtAFHcaLMmUQFnoECCAQAQ",
+      "displayed_link": "http://www.missouriplants.com › Asteraceae-Helianthea...",
+      "favicon": "https://serpapi.com/searches/693adaccf6e9268a0bdb584e/images/ef8802d6a28b3394d8b9917cc2d2b56072fab492a31ba19db74377f67aed2c50.png",
+      "snippet": "Coreopsis lanceolata thumbnail. Coreopsis lanceolata · Coreopsis palmata thumbnail. Coreopsis palmata · Coreopsis pubescens thumbnail. Coreopsis pubescens ...",
+      "snippet_highlighted_words": [
+        "Coreopsis lanceolata"
+      ],
+      "source": "Missouri Plants"
+    }
+  ]
+}

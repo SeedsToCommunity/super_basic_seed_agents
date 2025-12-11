@@ -1,0 +1,65 @@
+{
+  "_meta": {
+    "query": "site:minnesotawildflowers.info Coreopsis lanceolata",
+    "cachedAt": "2025-12-11T14:53:06.034Z",
+    "numResults": 4,
+    "site": "Minnesota Wildflowers",
+    "genus": "Coreopsis",
+    "species": "lanceolata"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Coreopsis lanceolata (Lanceleaf Coreopsis)",
+      "link": "https://www.minnesotawildflowers.info/flower/lanceleaf-coreopsis",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.minnesotawildflowers.info/flower/lanceleaf-coreopsis&ved=2ahUKEwjMvN7q5LWRAxUWEzQIHV-oLWgQFnoECCMQAQ",
+      "displayed_link": "https://www.minnesotawildflowers.info › flower › lancel...",
+      "thumbnail": "https://serpapi.com/searches/693adacfa3882d748128726b/images/d53981a9eec708b4372ef5eb1ee2313f66c3cf29a6a8c75d60b4fa3a282880dd.jpeg",
+      "favicon": "https://serpapi.com/searches/693adacfa3882d748128726b/images/d53981a9eec708b4372ef5eb1ee2313f569d0f284bf49ac3ca347d780841ca4e.png",
+      "snippet": "Lanceleaf Coreopsis is native from the Great Lakes south to the Gulf of Mexico, but the western edge of its range ends at the Wisconsin/Minnesota border.",
+      "snippet_highlighted_words": [
+        "is native from the Great Lakes south to the Gulf of Mexico"
+      ],
+      "source": "Minnesota Wildflowers"
+    },
+    {
+      "position": 2,
+      "title": "Search: latin name contains 'Coreopsis'",
+      "link": "https://www.minnesotawildflowers.info/search?scientific_name=Coreopsis&wh",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.minnesotawildflowers.info/search%3Fscientific_name%3DCoreopsis%26wh&ved=2ahUKEwjMvN7q5LWRAxUWEzQIHV-oLWgQFnoECCAQAQ",
+      "displayed_link": "https://www.minnesotawildflowers.info › search › scienti...",
+      "favicon": "https://serpapi.com/searches/693adacfa3882d748128726b/images/d53981a9eec708b4372ef5eb1ee2313fc0475c07011528ab2a98a18eec153b51.png",
+      "snippet": "Coreopsis lanceolataLanceleaf Coreopsis; [photo of Prairie Coreopsis] Coreopsis palmataPrairie Coreopsis; [photo of Plains Coreopsis] ...",
+      "snippet_highlighted_words": [
+        "Coreopsis lanceolata"
+      ],
+      "source": "Minnesota Wildflowers"
+    },
+    {
+      "position": 3,
+      "title": "Coreopsis palmata (Prairie Coreopsis)",
+      "link": "https://www.minnesotawildflowers.info/flower/prairie-coreopsis",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.minnesotawildflowers.info/flower/prairie-coreopsis&ved=2ahUKEwjMvN7q5LWRAxUWEzQIHV-oLWgQFnoECB8QAQ",
+      "displayed_link": "https://www.minnesotawildflowers.info › flower › prairie...",
+      "favicon": "https://serpapi.com/searches/693adacfa3882d748128726b/images/d53981a9eec708b4372ef5eb1ee2313fc7ed058bb22e9fad05cd711b8d5a65aa.png",
+      "snippet": "Life cycle: perennial ; Origin: native ; Habitat: sun; fields, prairies ; Bloom season: June - August ; Plant height: 1 to 3 feet.",
+      "snippet_highlighted_words": [
+        "Life cycle: perennial"
+      ],
+      "source": "Minnesota Wildflowers"
+    },
+    {
+      "position": 4,
+      "title": "Non-native Wildflowers Blooming in Minnesota",
+      "link": "https://www.minnesotawildflowers.info/page/whats-blooming/non-native-species",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.minnesotawildflowers.info/page/whats-blooming/non-native-species&ved=2ahUKEwjMvN7q5LWRAxUWEzQIHV-oLWgQFnoECDQQAQ",
+      "displayed_link": "https://www.minnesotawildflowers.info › whats-blooming",
+      "favicon": "https://serpapi.com/searches/693adacfa3882d748128726b/images/d53981a9eec708b4372ef5eb1ee2313f9203b001f0b23409fe733788a11fc054.png",
+      "snippet": "Non-native Wildflower Bloom Times ; Coreopsis lanceolata Lanceleaf Coreopsis, f ; Coreopsis tinctoria Plains Coreopsis ; Crepis tectorum Narrow-leaf Hawksbeard ...",
+      "snippet_highlighted_words": [
+        "Coreopsis lanceolata"
+      ],
+      "source": "Minnesota Wildflowers"
+    }
+  ]
+}

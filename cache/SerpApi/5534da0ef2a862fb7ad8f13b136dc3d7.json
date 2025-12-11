@@ -1,0 +1,61 @@
+{
+  "_meta": {
+    "query": "site:wildflower.org Trillium grandiflorum",
+    "cachedAt": "2025-12-11T14:44:09.865Z",
+    "numResults": 4,
+    "site": "Lady Bird Johnson Wildflower Center",
+    "genus": "Trillium",
+    "species": "grandiflorum"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Trillium grandiflorum (White wake-robin) | Native Plants of ...",
+      "link": "https://www.wildflower.org/plants/result.php?id_plant=trgr4",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/plants/result.php%3Fid_plant%3Dtrgr4&ved=2ahUKEwjo1u3Y3bWRAxXW_8kDHd75GCEQFnoECCMQAQ",
+      "displayed_link": "https://www.wildflower.org › plants › result",
+      "thumbnail": "https://serpapi.com/searches/693ad35397f1ccf0404dba0e/images/0aa43a4d6e36fd48e64c66567245ba528fd4ce7c9ff58af33f123b669b72fdab.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad35397f1ccf0404dba0e/images/0aa43a4d6e36fd48e64c66567245ba522e0db81d008d2631ef69b19906936b9c.png",
+      "date": "Feb 28, 2023",
+      "snippet": "A stout, 12-15 in. stem is topped by three large, oval leaves. A single large, white, long-lasting flower arises above the leaf whorl and ...",
+      "source": "Lady Bird Johnson Wildflower Center"
+    },
+    {
+      "position": 2,
+      "title": "Trillium grandiflorum (White wake-robin) | NPIN",
+      "link": "https://www.wildflower.org/gallery/result.php?id_image=294",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/gallery/result.php%3Fid_image%3D294&ved=2ahUKEwjo1u3Y3bWRAxXW_8kDHd75GCEQFnoECCgQAQ",
+      "displayed_link": "https://www.wildflower.org › gallery › result",
+      "thumbnail": "https://serpapi.com/searches/693ad35397f1ccf0404dba0e/images/0aa43a4d6e36fd48e64c66567245ba52c3e552b4d0df86d5be20c40253add2a4.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad35397f1ccf0404dba0e/images/0aa43a4d6e36fd48e64c66567245ba52ea98958c011dee775da265ea3be8eebd.png",
+      "snippet": "Welcome to the Lady Bird Johnson Wildflower Center's collection of 176,991 plant images. This site is not designed for commercial use or publication. All images ...",
+      "source": "Lady Bird Johnson Wildflower Center"
+    },
+    {
+      "position": 3,
+      "title": "Trillium grandiflorum (White wake-robin) | NPIN",
+      "link": "https://www.wildflower.org/gallery/species.php?id_plant=TRGR4",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/gallery/species.php%3Fid_plant%3DTRGR4&ved=2ahUKEwjo1u3Y3bWRAxXW_8kDHd75GCEQFnoECCQQAQ",
+      "displayed_link": "https://www.wildflower.org › gallery › species",
+      "thumbnail": "https://serpapi.com/searches/693ad35397f1ccf0404dba0e/images/0aa43a4d6e36fd48e64c66567245ba52e436b184110682b941a027c50d9f785f.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad35397f1ccf0404dba0e/images/0aa43a4d6e36fd48e64c66567245ba5246766851f04bc3d5e7eac0e667469966.png",
+      "snippet": "Welcome to the Lady Bird Johnson Wildflower Center's collection of 176,992 plant images. We have listened to our users and made it even easier to find images in ...",
+      "source": "Lady Bird Johnson Wildflower Center"
+    },
+    {
+      "position": 4,
+      "title": "Ask Mr. Smarty Plants",
+      "link": "https://www.wildflower.org/expert/show.php?id=5582&frontpage=true",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/expert/show.php%3Fid%3D5582%26frontpage%3Dtrue&ved=2ahUKEwjo1u3Y3bWRAxXW_8kDHd75GCEQFnoECDIQAQ",
+      "displayed_link": "https://www.wildflower.org › expert › show",
+      "thumbnail": "https://serpapi.com/searches/693ad35397f1ccf0404dba0e/images/0aa43a4d6e36fd48e64c66567245ba520572bde76512dd90bda297a00116bebf.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad35397f1ccf0404dba0e/images/0aa43a4d6e36fd48e64c66567245ba52d55d531ef28d039c567af5ec2d94c19c.png",
+      "date": "May 16, 2010",
+      "snippet": "This phenomenon is called phototropism (light seeking growth) and it is common in the genus Trillium.",
+      "snippet_highlighted_words": [
+        "Trillium"
+      ],
+      "source": "Lady Bird Johnson Wildflower Center"
+    }
+  ]
+}

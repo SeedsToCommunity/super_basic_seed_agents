@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "query": "site:michiganflora.net Carex pensylvanica",
+    "cachedAt": "2025-12-11T14:44:53.128Z",
+    "numResults": 1,
+    "site": "Michigan Flora",
+    "genus": "Carex",
+    "species": "pensylvanica"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Carex",
+      "link": "https://michiganflora.net/genus/Carex",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://michiganflora.net/genus/Carex&ved=2ahUKEwjr16ee3rWRAxWOpZUCHfNuD2AQFnoECBcQAQ",
+      "displayed_link": "https://michiganflora.net › genus › Carex",
+      "favicon": "https://serpapi.com/searches/693ad3e3f965612a9a0f29b1/images/cc9da6c5d3e1a293ef4606a64749a62bb9b761ad62499d4e7003034e267c6843.png",
+      "snippet": "This genus, by far the largest in our flora as in most temperate regions, is composed of somewhat grass-like plants, but with clearly 3-ranked leaves.",
+      "source": "Michigan Flora"
+    }
+  ]
+}

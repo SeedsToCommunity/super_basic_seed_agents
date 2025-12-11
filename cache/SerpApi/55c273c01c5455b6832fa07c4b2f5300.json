@@ -1,0 +1,69 @@
+{
+  "_meta": {
+    "query": "site:wildflower.org Chelone glabra",
+    "cachedAt": "2025-12-11T14:45:17.202Z",
+    "numResults": 4,
+    "site": "Lady Bird Johnson Wildflower Center",
+    "genus": "Chelone",
+    "species": "glabra"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Chelone glabra (White turtlehead) | Native Plants of North ...",
+      "link": "https://www.wildflower.org/plants/result.php?id_plant=chgl2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/plants/result.php%3Fid_plant%3Dchgl2&ved=2ahUKEwjB2uiK47WRAxUK4ckDHZXjLk4QFnoECCEQAQ",
+      "displayed_link": "https://www.wildflower.org › plants › result",
+      "thumbnail": "https://serpapi.com/searches/693ad8f997c19f688ad672ea/images/973c942d5229e1772065920eee7a1bee919b72ac3bdbf16b838aac06331a59be.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad8f997c19f688ad672ea/images/973c942d5229e1772065920eee7a1bee02bc6115b0fe1e33dbee1395c33fcb8f.png",
+      "date": "Dec 6, 2022",
+      "snippet": "Chelone glabra, or White Turtlehead, is a perennial with white, turtle-head-like flowers, growing 1-4 ft tall, with white to pinkish flowers. ...",
+      "snippet_highlighted_words": [
+        "is a perennial with white, turtle-head-like flowers"
+      ],
+      "source": "Lady Bird Johnson Wildflower Center"
+    },
+    {
+      "position": 2,
+      "title": "Chelone glabra (White turtlehead) | NPIN",
+      "link": "https://www.wildflower.org/gallery/result.php?id_image=7251",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/gallery/result.php%3Fid_image%3D7251&ved=2ahUKEwjB2uiK47WRAxUK4ckDHZXjLk4QFnoECCMQAQ",
+      "displayed_link": "https://www.wildflower.org › gallery › result",
+      "thumbnail": "https://serpapi.com/searches/693ad8f997c19f688ad672ea/images/973c942d5229e1772065920eee7a1bee638b3e8e5b4afe074cf007290dd25ca8.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad8f997c19f688ad672ea/images/973c942d5229e1772065920eee7a1beece11a4f6c1afd3c742394a95b3d658ae.png",
+      "snippet": "Chelone glabra L. · White Turtlehead · Scrophulariaceae (Figwort Family) · USDA Symbol: CHGL2 ...",
+      "snippet_highlighted_words": [
+        "Chelone glabra L"
+      ],
+      "source": "Lady Bird Johnson Wildflower Center"
+    },
+    {
+      "position": 3,
+      "title": "Chelone glabra (White turtlehead) | NPIN",
+      "link": "https://www.wildflower.org/gallery/result.php?id_image=84469",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/gallery/result.php%3Fid_image%3D84469&ved=2ahUKEwjB2uiK47WRAxUK4ckDHZXjLk4QFnoECB4QAQ",
+      "displayed_link": "https://www.wildflower.org › gallery › result",
+      "thumbnail": "https://serpapi.com/searches/693ad8f997c19f688ad672ea/images/973c942d5229e1772065920eee7a1bee6850d87d0f4d06d5efa0531e25de73c9.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad8f997c19f688ad672ea/images/973c942d5229e1772065920eee7a1bee04d9f0b27b7ff8e6c1a6bb9693b97f19.png",
+      "snippet": "USDA Symbol: CHGL2. Chelone glabra (White turtlehead) #84469. Image Information. Photographer: Brundage, Stephanie County: Clay",
+      "snippet_highlighted_words": [
+        "Chelone glabra (White turtlehead"
+      ],
+      "source": "Lady Bird Johnson Wildflower Center"
+    },
+    {
+      "position": 4,
+      "title": "Chelone glabra (White turtlehead) | NPIN",
+      "link": "https://www.wildflower.org/gallery/species.php?id_plant=chgl2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/gallery/species.php%3Fid_plant%3Dchgl2&ved=2ahUKEwjB2uiK47WRAxUK4ckDHZXjLk4QFnoECDwQAQ",
+      "displayed_link": "https://www.wildflower.org › gallery › species",
+      "thumbnail": "https://serpapi.com/searches/693ad8f997c19f688ad672ea/images/973c942d5229e1772065920eee7a1bee59eb5f12d8f3a790b8cbcdcf4a6e747b.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad8f997c19f688ad672ea/images/973c942d5229e1772065920eee7a1bee4a85c082c212181e34ed15a22771ae26.png",
+      "snippet": "Chelone glabra L. · White Turtlehead · Scrophulariaceae (Figwort Family) · USDA Symbol: chgl2 · USDA Native Status: L48 (N), CAN (N), SPM (N) ...",
+      "snippet_highlighted_words": [
+        "Chelone glabra L"
+      ],
+      "source": "Lady Bird Johnson Wildflower Center"
+    }
+  ]
+}

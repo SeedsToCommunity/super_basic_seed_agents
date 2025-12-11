@@ -1,0 +1,69 @@
+{
+  "_meta": {
+    "query": "site:gobotany.nativeplanttrust.org Fragaria virginiana",
+    "cachedAt": "2025-12-11T14:46:56.085Z",
+    "numResults": 4,
+    "site": "Go Botany",
+    "genus": "Fragaria",
+    "species": "virginiana"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Fragaria virginiana (common strawberry) - Go Botany",
+      "link": "https://gobotany.nativeplanttrust.org/species/fragaria/virginiana/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://gobotany.nativeplanttrust.org/species/fragaria/virginiana/&ved=2ahUKEwim8eK647WRAxUbQjABHSd8NbwQFnoECCQQAQ",
+      "displayed_link": "https://gobotany.nativeplanttrust.org › species › virginia...",
+      "thumbnail": "https://serpapi.com/searches/693ad95f73ae606621cbb034/images/6b34b0c4d60371a174c4383367d1607c529ab266c0b4827a77a1df581801bbff.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad95f73ae606621cbb034/images/6b34b0c4d60371a174c4383367d1607cd34a80790b0b37bb53ca2fb0f417c7f5.png",
+      "snippet": "Virginian strawberry is one of the parent plants of cultivated hybrid strawberries, the other being native to Chile.",
+      "snippet_highlighted_words": [
+        "Virginian strawberry"
+      ],
+      "images": [
+        "https://serpapi.com/searches/693ad95f73ae606621cbb034/images/6b34b0c4d60371a174c4383367d1607c1b13ebe4ca3187a16825ed489a9b8ceb.jpeg"
+      ],
+      "source": "Go Botany"
+    },
+    {
+      "position": 2,
+      "title": "Fragaria: Dichotomous Key - Go Botany - Native Plant Trust",
+      "link": "https://gobotany.nativeplanttrust.org/dkey/fragaria/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://gobotany.nativeplanttrust.org/dkey/fragaria/&ved=2ahUKEwim8eK647WRAxUbQjABHSd8NbwQFnoECCEQAQ",
+      "displayed_link": "https://gobotany.nativeplanttrust.org › dkey › fragaria",
+      "thumbnail": "https://serpapi.com/searches/693ad95f73ae606621cbb034/images/6b34b0c4d60371a174c4383367d1607c8f9236c4a531ce15f77425e68260584f.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad95f73ae606621cbb034/images/6b34b0c4d60371a174c4383367d1607ccc18cbc441cbcafc4ed5f68ce123a2c8.png",
+      "snippet": "Fragaria vesca occasionally hybridizes with F. virginiana var. glauca (using the varietal epithet terrae-novae) in northern ME.",
+      "snippet_highlighted_words": [
+        "Fragaria vesca occasionally hybridizes with F. virginiana var. glauca"
+      ],
+      "source": "Go Botany"
+    },
+    {
+      "position": 3,
+      "title": "Sighting: Fragaria virginiana at 42.26222, -72.53417: PlantShare ...",
+      "link": "https://gobotany.nativeplanttrust.org/plantshare/sightings/3028/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://gobotany.nativeplanttrust.org/plantshare/sightings/3028/&ved=2ahUKEwim8eK647WRAxUbQjABHSd8NbwQFnoECB4QAQ",
+      "displayed_link": "https://gobotany.nativeplanttrust.org › sightings",
+      "favicon": "https://serpapi.com/searches/693ad95f73ae606621cbb034/images/6b34b0c4d60371a174c4383367d1607cc8cafd2cbf9d25c64bcd09cf5f79d597.png",
+      "snippet": "Comments: Stem is hairy with very unique hair type. The plant has 3 leaves and is very small. The edges have teeth and a fuzzy hairy tip.",
+      "snippet_highlighted_words": [
+        "Stem is hairy with very unique hair type"
+      ],
+      "source": "Go Botany"
+    },
+    {
+      "position": 4,
+      "title": "Sighting: Fragaria virginiana at 42.29556, -72.53: PlantShare: Go ...",
+      "link": "https://gobotany.nativeplanttrust.org/plantshare/sightings/3116/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://gobotany.nativeplanttrust.org/plantshare/sightings/3116/&ved=2ahUKEwim8eK647WRAxUbQjABHSd8NbwQFnoECDEQAQ",
+      "displayed_link": "https://gobotany.nativeplanttrust.org › sightings",
+      "favicon": "https://serpapi.com/searches/693ad95f73ae606621cbb034/images/6b34b0c4d60371a174c4383367d1607c07427799b9976d9415b3ece8b572c6af.png",
+      "snippet": "Comments: This is a terrestrial plant with broad leaf. These aren't woody plants. They don't grow tall. The leaves blade edge has teeth. Photos.",
+      "snippet_highlighted_words": [
+        "terrestrial plant with broad leaf"
+      ],
+      "source": "Go Botany"
+    }
+  ]
+}

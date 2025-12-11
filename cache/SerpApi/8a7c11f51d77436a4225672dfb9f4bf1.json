@@ -1,0 +1,66 @@
+{
+  "_meta": {
+    "query": "site:plants.usda.gov Geranium maculatum",
+    "cachedAt": "2025-12-11T14:44:44.609Z",
+    "numResults": 4,
+    "site": "USDA PLANTS",
+    "genus": "Geranium",
+    "species": "maculatum"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Geranium maculatum L.",
+      "link": "https://plants.usda.gov/plant-profile/GEMA",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/plant-profile/GEMA&ved=2ahUKEwjjx42T3rWRAxUx4ckDHfbDO3EQFnoECCcQAQ",
+      "displayed_link": "https://plants.usda.gov › plant-profile › GEMA",
+      "thumbnail": "https://serpapi.com/searches/693ad3cd8c60ca603fea4fb0/images/c5a97f68042793842012d29ea92ae6a69eb72a79c82c74585fcdfbdfdcc990a1.jpeg",
+      "favicon": "https://serpapi.com/searches/693ad3cd8c60ca603fea4fb0/images/c5a97f68042793842012d29ea92ae6a61ae92d417824f20c650ecd7cbc236d11.png",
+      "snippet": "spotted geranium ; Kingdom. Plantae - Plants ; Subkingdom. Tracheobionta - Vascular plants ; Superdivision. Spermatophyta - Seed plants ; Division. Magnoliophyta - ...",
+      "snippet_highlighted_words": [
+        "geranium"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "Down to Species - Geranium maculatum L.",
+      "link": "https://plants.usda.gov/classification/83748",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/classification/83748&ved=2ahUKEwjjx42T3rWRAxUx4ckDHfbDO3EQFnoECCEQAQ",
+      "displayed_link": "https://plants.usda.gov › classification",
+      "favicon": "https://serpapi.com/searches/693ad3cd8c60ca603fea4fb0/images/c5a97f68042793842012d29ea92ae6a672549aa234ec252c19a1ba4a0e626be1.png",
+      "snippet": "Classification for <i>Geranium maculatum</i> L. Rank, Scientific Name and Common Name. Kingdom, Plantae - Plants. Subkingdom, Tracheobionta - Vascular ...",
+      "snippet_highlighted_words": [
+        "Geranium maculatum"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "Plant Profile - Sources",
+      "link": "https://plants.usda.gov/plant-profile/GEMA/sources",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/plant-profile/GEMA/sources&ved=2ahUKEwjjx42T3rWRAxUx4ckDHfbDO3EQFnoECCAQAQ",
+      "displayed_link": "https://plants.usda.gov › plant-profile › GEMA › sources",
+      "favicon": "https://serpapi.com/searches/693ad3cd8c60ca603fea4fb0/images/c5a97f68042793842012d29ea92ae6a6013cc40f11894d70ad145af5b1069e7f.png",
+      "snippet": "The PLANTS Database includes the following 56 data sources of Geranium maculatum L. - Showing 1 to 25 results. Data Documentation for <i>Geranium maculatum</i> ...",
+      "snippet_highlighted_words": [
+        "Geranium maculatum",
+        "Geranium maculatum"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "Plant Profile - Subordinate Taxa",
+      "link": "https://plants.usda.gov/plant-profile/geran/subordinate-taxa",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/plant-profile/geran/subordinate-taxa&ved=2ahUKEwjjx42T3rWRAxUx4ckDHfbDO3EQFnoECCwQAQ",
+      "displayed_link": "https://plants.usda.gov › plant-profile › geran › subordi...",
+      "favicon": "https://serpapi.com/searches/693ad3cd8c60ca603fea4fb0/images/c5a97f68042793842012d29ea92ae6a6375950f37f8b6a1a961efbcd60cff68a.png",
+      "snippet": "Geranium lucidum L. shining geranium. HI. AS. FM. GU. MH. MP. PW. UM-P. GEMA. PEI ... Geranium maculatum L. spotted geranium. HI. AS. FM. GU. MH. MP. PW. UM-P ...",
+      "snippet_highlighted_words": [
+        "Geranium maculatum"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    }
+  ]
+}

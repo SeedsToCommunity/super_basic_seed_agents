@@ -1,0 +1,64 @@
+{
+  "_meta": {
+    "query": "site:gobotany.nativeplanttrust.org Erythronium americanum",
+    "cachedAt": "2025-12-11T14:53:20.880Z",
+    "numResults": 4,
+    "site": "Go Botany",
+    "genus": "Erythronium",
+    "species": "americanum"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Erythronium americanum (American trout-lily) - Go Botany",
+      "link": "https://gobotany.nativeplanttrust.org/species/erythronium/americanum/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://gobotany.nativeplanttrust.org/species/erythronium/americanum/&ved=2ahUKEwjF2pry5LWRAxX20PACHWS1LJ4QFnoECB8QAQ",
+      "displayed_link": "https://gobotany.nativeplanttrust.org › species › america...",
+      "thumbnail": "https://serpapi.com/searches/693adadeeb55a3fc5b2495d9/images/901b1d42635058006eb60c2ec449642da502c1408a6c84a86d476d1610df2c45.jpeg",
+      "favicon": "https://serpapi.com/searches/693adadeeb55a3fc5b2495d9/images/901b1d42635058006eb60c2ec449642daefacb99b1c521fe4f25f180aa5ef3e7.png",
+      "snippet": "The mottled leaves of American trout-lily are said to resemble the markings on trout. In most populations, non-flowering individuals outnumber the flowering ...",
+      "snippet_highlighted_words": [
+        "The mottled leaves of American trout-lily are said to resemble the markings on trout"
+      ],
+      "source": "Go Botany"
+    },
+    {
+      "position": 2,
+      "title": "Erythronium albidum (white trout-lily) - Go Botany",
+      "link": "https://gobotany.nativeplanttrust.org/species/erythronium/albidum/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://gobotany.nativeplanttrust.org/species/erythronium/albidum/&ved=2ahUKEwjF2pry5LWRAxX20PACHWS1LJ4QFnoECCQQAQ",
+      "displayed_link": "https://gobotany.nativeplanttrust.org › species › albidum",
+      "thumbnail": "https://serpapi.com/searches/693adadeeb55a3fc5b2495d9/images/901b1d42635058006eb60c2ec449642d2e6f5f08f57efcf3783b53ecf5a0a792.jpeg",
+      "favicon": "https://serpapi.com/searches/693adadeeb55a3fc5b2495d9/images/901b1d42635058006eb60c2ec449642dd281b600cfce431f601e65ffdd028f91.png",
+      "snippet": "White trout-lily is a very attractive wild flower of eastern North American forests and woodlands. It is not native to New England.",
+      "snippet_highlighted_words": [
+        "a very attractive wild flower of eastern North American forests and woodlands"
+      ],
+      "source": "Go Botany"
+    },
+    {
+      "position": 3,
+      "title": "Sighting: Erythronium americanum at Guilford, CT: PlantShare: Go ...",
+      "link": "https://gobotany.nativeplanttrust.org/plantshare/sightings/4515/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://gobotany.nativeplanttrust.org/plantshare/sightings/4515/&ved=2ahUKEwjF2pry5LWRAxX20PACHWS1LJ4QFnoECB0QAQ",
+      "displayed_link": "https://gobotany.nativeplanttrust.org › sightings",
+      "favicon": "https://serpapi.com/searches/693adadeeb55a3fc5b2495d9/images/901b1d42635058006eb60c2ec449642d7e36676b3079d27149252bc89bbf4ca1.png",
+      "snippet": "Location notes: In Mill Pasture Preserve, a guilford land and conservation trust property. Comments: This guy and several siblings are growing strong, ...",
+      "source": "Go Botany: Native Plant Trust"
+    },
+    {
+      "position": 4,
+      "title": "Genus: Erythronium (trout-lily) - Go Botany",
+      "link": "https://gobotany.nativeplanttrust.org/genus/erythronium/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://gobotany.nativeplanttrust.org/genus/erythronium/&ved=2ahUKEwjF2pry5LWRAxX20PACHWS1LJ4QFnoECDEQAQ",
+      "displayed_link": "https://gobotany.nativeplanttrust.org › genus › erythron...",
+      "thumbnail": "https://serpapi.com/searches/693adadeeb55a3fc5b2495d9/images/901b1d42635058006eb60c2ec449642de5dd1ca67ac5ddcb6593eafa66d597ce.jpeg",
+      "favicon": "https://serpapi.com/searches/693adadeeb55a3fc5b2495d9/images/901b1d42635058006eb60c2ec449642d48300f613199a4c6623ff6f4ca4cd004.png",
+      "snippet": "Genus: Erythronium — trout-lily. Flowers: Erythronium albidum. ~ By Paul ... This genus's species in New England. Erythronium albidum · Erythronium americanum.",
+      "snippet_highlighted_words": [
+        "Erythronium americanum"
+      ],
+      "source": "Go Botany"
+    }
+  ]
+}

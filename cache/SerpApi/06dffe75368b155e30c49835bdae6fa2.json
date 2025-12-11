@@ -1,0 +1,51 @@
+{
+  "_meta": {
+    "query": "site:tropicos.org Eurybia macrophylla",
+    "cachedAt": "2025-12-11T14:46:38.655Z",
+    "numResults": 3,
+    "site": "Tropicos",
+    "genus": "Eurybia",
+    "species": "macrophylla"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Name - Eurybia macrophylla (L.) Cass.",
+      "link": "http://legacy.tropicos.org/Name/50008725?projectid=83",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://legacy.tropicos.org/Name/50008725%3Fprojectid%3D83&ved=2ahUKEwiXtLqy47WRAxWWLEQIHQShI3MQFnoECCQQAQ",
+      "displayed_link": "http://legacy.tropicos.org › Name",
+      "favicon": "https://serpapi.com/searches/693ad94bb4ab72b1df3cf06d/images/c4e3105ff215acc3bf11e20987d00409611f1b6516e91679f70d596300bcadd9.png",
+      "snippet": "Eurybia macrophylla (L.) Cass. Search in The Plant List · Search in IPNI · Search in Australian Plant Name Index · Search in NYBG Virtual Herbarium · Search in ...",
+      "snippet_highlighted_words": [
+        "Eurybia macrophylla (L.) Cass"
+      ],
+      "source": "Tropicos"
+    },
+    {
+      "position": 2,
+      "title": "Name - Eurybia macrophylla (L.) Cass.",
+      "link": "http://legacy.tropicos.org/name/50008725?projectid=23",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://legacy.tropicos.org/name/50008725%3Fprojectid%3D23&ved=2ahUKEwiXtLqy47WRAxWWLEQIHQShI3MQFnoECCMQAQ",
+      "displayed_link": "http://legacy.tropicos.org › name",
+      "favicon": "https://serpapi.com/searches/693ad94bb4ab72b1df3cf06d/images/c4e3105ff215acc3bf11e20987d004096c72e2f9905087f808df33cfc6804230.png",
+      "snippet": "Plants with long, sometimes relatively stout, fleshy rhizomes, often forming large colonies. Stems 30–120 cm long, often slightly zigzag, moderately to densely ...",
+      "snippet_highlighted_words": [
+        "Plants with long, sometimes relatively stout, fleshy rhizomes"
+      ],
+      "source": "Tropicos"
+    },
+    {
+      "position": 3,
+      "title": "Name - !Eurybia (Cass.) Cass.",
+      "link": "http://legacy.tropicos.org/name/40007334?projectid=23",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://legacy.tropicos.org/name/40007334%3Fprojectid%3D23&ved=2ahUKEwiXtLqy47WRAxWWLEQIHQShI3MQFnoECCIQAQ",
+      "displayed_link": "http://legacy.tropicos.org › name",
+      "favicon": "https://serpapi.com/searches/693ad94bb4ab72b1df3cf06d/images/c4e3105ff215acc3bf11e20987d00409709e121d371160ac07de441a63884568.png",
+      "snippet": "Eurybia (Cass.) S.F. Gray. Plants perennial herbs, usually with elongate, fleshy rhizomes, often forming colonies, the rootstock sometimes somewhat woody in ...",
+      "snippet_highlighted_words": [
+        "Eurybia (Cass.) S.F. Gray"
+      ],
+      "source": "Tropicos"
+    }
+  ]
+}

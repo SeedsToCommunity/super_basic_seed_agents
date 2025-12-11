@@ -1,0 +1,70 @@
+{
+  "_meta": {
+    "query": "site:wildflower.org Erythronium americanum",
+    "cachedAt": "2025-12-11T14:53:25.512Z",
+    "numResults": 4,
+    "site": "Lady Bird Johnson Wildflower Center",
+    "genus": "Erythronium",
+    "species": "americanum"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Erythronium americanum (Yellow trout-lily) | Native Plants ...",
+      "link": "https://www.wildflower.org/plants/result.php?id_plant=eram5",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/plants/result.php%3Fid_plant%3Deram5&ved=2ahUKEwiNjYH05LWRAxUJvokEHY13MEIQFnoECCMQAQ",
+      "displayed_link": "https://www.wildflower.org › plants › result",
+      "thumbnail": "https://serpapi.com/searches/693adae3eeabd32801d99ed8/images/72773b1d5f418c260d574c5a8ee74ea4b6557be0cefa2c7ab5b6c6bc96e45e58.jpeg",
+      "favicon": "https://serpapi.com/searches/693adae3eeabd32801d99ed8/images/72773b1d5f418c260d574c5a8ee74ea46fc015d1e33577b0f3342ff9bf486f5f.png",
+      "date": "Feb 8, 2023",
+      "snippet": "Recognized by its brown-mottled leaves, this is one of our most common spring ephemeral wildflowers, and it is found in sizable colonies.",
+      "snippet_highlighted_words": [
+        "one of our most common spring ephemeral wildflowers"
+      ],
+      "source": "Lady Bird Johnson Wildflower Center"
+    },
+    {
+      "position": 2,
+      "title": "Erythronium americanum (Yellow trout-lily) | NPIN",
+      "link": "https://www.wildflower.org/gallery/species.php?id_plant=eram5",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/gallery/species.php%3Fid_plant%3Deram5&ved=2ahUKEwiNjYH05LWRAxUJvokEHY13MEIQFnoECB4QAQ",
+      "displayed_link": "https://www.wildflower.org › gallery › species",
+      "thumbnail": "https://serpapi.com/searches/693adae3eeabd32801d99ed8/images/72773b1d5f418c260d574c5a8ee74ea41e55e40860e9fea9b5dae0db4ad00f16.jpeg",
+      "favicon": "https://serpapi.com/searches/693adae3eeabd32801d99ed8/images/72773b1d5f418c260d574c5a8ee74ea480550eb6bbb0f1c53b5eca714052c5a1.png",
+      "snippet": "Erythronium americanum Ker Gawl. · Yellow Trout-lily, American Trout-lily, Eastern Trout-lily, Yellow Dogtooth Violet, Adder's Tongue · Liliaceae (Lily Family).",
+      "snippet_highlighted_words": [
+        "Yellow Trout-lily"
+      ],
+      "source": "Lady Bird Johnson Wildflower Center"
+    },
+    {
+      "position": 3,
+      "title": "Erythronium americanum ssp. harperi (Harper's trout-lily)",
+      "link": "https://www.wildflower.org/plants/result.php?id_plant=ERAMH",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/plants/result.php%3Fid_plant%3DERAMH&ved=2ahUKEwiNjYH05LWRAxUJvokEHY13MEIQFnoECB0QAQ",
+      "displayed_link": "https://www.wildflower.org › plants › result",
+      "thumbnail": "https://serpapi.com/searches/693adae3eeabd32801d99ed8/images/72773b1d5f418c260d574c5a8ee74ea4246f23a8fd5e819b684ce79ff5b3aa08.jpeg",
+      "favicon": "https://serpapi.com/searches/693adae3eeabd32801d99ed8/images/72773b1d5f418c260d574c5a8ee74ea45c45930e25f6936ad072122efc19c676.png",
+      "date": "Apr 11, 2023",
+      "snippet": "Plant Characteristics: Duration: Perennial, Habit: Herb, Fruit Type: Capsule, Size Notes: To about 9 inches in height. Fruit: Seeds brown.",
+      "snippet_highlighted_words": [
+        "Plant Characteristics"
+      ],
+      "source": "Lady Bird Johnson Wildflower Center"
+    },
+    {
+      "position": 4,
+      "title": "Erythronium americanum (Yellow trout-lily) | NPIN",
+      "link": "https://www.wildflower.org/gallery/result.php?id_image=30147",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/gallery/result.php%3Fid_image%3D30147&ved=2ahUKEwiNjYH05LWRAxUJvokEHY13MEIQFnoECDIQAQ",
+      "displayed_link": "https://www.wildflower.org › gallery › result",
+      "thumbnail": "https://serpapi.com/searches/693adae3eeabd32801d99ed8/images/72773b1d5f418c260d574c5a8ee74ea45ff37d15f61895ff01234e54157c24df.jpeg",
+      "favicon": "https://serpapi.com/searches/693adae3eeabd32801d99ed8/images/72773b1d5f418c260d574c5a8ee74ea486c67bbc0c4581f9616df12948241b35.png",
+      "snippet": "Erythronium americanum Ker Gawl. · Yellow Trout-lily, American Trout-lily, Eastern Trout-lily, Yellow Dogtooth Violet, Adder's Tongue · Liliaceae (Lily Family).",
+      "snippet_highlighted_words": [
+        "Yellow Trout-lily"
+      ],
+      "source": "Lady Bird Johnson Wildflower Center"
+    }
+  ]
+}
