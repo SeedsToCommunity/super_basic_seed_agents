@@ -1,0 +1,35 @@
+{
+  "attribution": {
+    "title": "Lake County Seed Collection Guide",
+    "subTitle": "Springwoodlandforbsv",
+    "version": "version 2",
+    "authors": "Dale Shields;Kelly Schultz",
+    "location": "Lake County, Illinois, USA",
+    "organization": "Lake County Forest Preserve District",
+    "license": "CC BY-NC",
+    "attributionText": "Lake County Seed Collection Guide | Spring Woodland Forbs | Lake County, Illinois, USA | Lake County Forest Preserve District | Authors: Kelly Schultz & Dale Shields | Photos by DJ Shields | License: CC BY-NC 4.0"
+  },
+  "family": "Ranunculaceae",
+  "seedGroups": [
+    {
+      "name": "Shattering",
+      "description": "Shattering seeds can be tough to visually judge for ripeness. Use a *gentle* touch test to see if the seeds easily loosen.",
+      "images": [
+        "Shattering_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_page1_img1.png"
+      ]
+    }
+  ],
+  "species": {
+    "id": "sp_13",
+    "commonName": "Small-flowered Buttercup",
+    "scientificName": "Ranunculus abortivus",
+    "photoDate": "6-3-18",
+    "description": "Shattering. This common buttercup is found in woodlands, wet to dry. Flowers are tiny, about ¼” across, with petals smaller than the green center disc. Lower basal leaves are kidney-shaped (most buttercups have lobed leaves). Collect when seeds are easily loosened.",
+    "images": [
+      "ranunculus_abortivus_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p7_1.png",
+      "ranunculus_abortivus_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p7_2.png",
+      "ranunculus_abortivus_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p7_3.png"
+    ],
+    "pageNumber": 7
+  }
+}

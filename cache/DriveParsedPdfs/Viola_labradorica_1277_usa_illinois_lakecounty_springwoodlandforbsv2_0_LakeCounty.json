@@ -1,0 +1,41 @@
+{
+  "attribution": {
+    "title": "Lake County Seed Collection Guide",
+    "subTitle": "Springwoodlandforbsv",
+    "version": "version 2",
+    "authors": "Dale Shields;Kelly Schultz",
+    "location": "Lake County, Illinois, USA",
+    "organization": "Lake County Forest Preserve District",
+    "license": "CC BY-NC",
+    "attributionText": "Lake County Seed Collection Guide | Spring Woodland Forbs | Lake County, Illinois, USA | Lake County Forest Preserve District | Authors: Kelly Schultz & Dale Shields | Photos by DJ Shields | License: CC BY-NC 4.0"
+  },
+  "family": "Violaceae",
+  "seedGroups": [
+    {
+      "name": "Elaiosomes",
+      "description": "Elaiosomes are “ant candy” attached to the seeds. Ants are strong and motivated, able to quickly carry the candy back to their home and tossing the heavy “candy wrapper” (seeds) into their compost piles.",
+      "images": [
+        "Elaiosomes_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_page1_img1.png"
+      ]
+    },
+    {
+      "name": "Ballistic",
+      "description": "Ballistic capsules catapult their babies away, up to 30 feet! Search YouTube for “exploding seeds” to see these in action. To harvest: learn the ripening sequence & harvest just before explosion; store in a *sealed* paper bag or mesh bag for a day or two.",
+      "images": [
+        "Ballistic_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_page1_img1.png"
+      ]
+    }
+  ],
+  "species": {
+    "id": "sp_19",
+    "commonName": "Dog Violet",
+    "scientificName": "Viola labradorica",
+    "photoDate": "6-19-17",
+    "description": "Ballistic. Elaiosomes. Pods start out nodding, then raise their heads up to the sky, split open into 3rds, and finally shoot their seeds away. Collect when heads are aimed between the horizon & the sky. Most violet species have multiple rounds of seeds: initially from open flowers (chasmogamous), but later they form flowers that never open and self-pollinate (cleistogamous) to produce additional seeds. Sow fresh.",
+    "images": [
+      "viola_labradorica_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p9_1.png",
+      "viola_labradorica_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p9_2.png"
+    ],
+    "pageNumber": 9
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "attribution": {
+    "title": "Lake County Seed Collection Guide",
+    "subTitle": "Springwoodlandforbsv",
+    "version": "version 2",
+    "authors": "Dale Shields;Kelly Schultz",
+    "location": "Lake County, Illinois, USA",
+    "organization": "Lake County Forest Preserve District",
+    "license": "CC BY-NC",
+    "attributionText": "Lake County Seed Collection Guide | Spring Woodland Forbs | Lake County, Illinois, USA | Lake County Forest Preserve District | Authors: Kelly Schultz & Dale Shields | Photos by DJ Shields | License: CC BY-NC 4.0"
+  },
+  "family": "Ranunculaceae",
+  "seedGroups": [
+    {
+      "name": "Shattering",
+      "description": "Shattering seeds can be tough to visually judge for ripeness. Use a *gentle* touch test to see if the seeds easily loosen.",
+      "images": [
+        "Shattering_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_page1_img1.png"
+      ]
+    }
+  ],
+  "species": {
+    "id": "sp_6",
+    "commonName": "Wood Anemone",
+    "scientificName": "Anemone quinquefolia",
+    "photoDate": "5-30-19",
+    "description": "Shattering. This white flower grows in rhizomatous colonies. Usually 5 petals, and. 3 – 5 leaflets. Individual plants take years to flower; typical to see more leafy plants than flowering ones. Collect when green seeds are loose, by a *gentle* touch test. Sow fresh.",
+    "images": [
+      "anemone_quinquefolia_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p4_7.png",
+      "anemone_quinquefolia_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p4_8.png",
+      "anemone_quinquefolia_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p4_9.png"
+    ],
+    "pageNumber": 4
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "attribution": {
+    "title": "Lake County Seed Collection Guide",
+    "subTitle": "Springwoodlandforbsv",
+    "version": "version 2",
+    "authors": "Dale Shields;Kelly Schultz",
+    "location": "Lake County, Illinois, USA",
+    "organization": "Lake County Forest Preserve District",
+    "license": "CC BY-NC",
+    "attributionText": "Lake County Seed Collection Guide | Spring Woodland Forbs | Lake County, Illinois, USA | Lake County Forest Preserve District | Authors: Kelly Schultz & Dale Shields | Photos by DJ Shields | License: CC BY-NC 4.0"
+  },
+  "family": "Ranunculaceae",
+  "seedGroups": [
+    {
+      "name": "Shattering",
+      "description": "Shattering seeds can be tough to visually judge for ripeness. Use a *gentle* touch test to see if the seeds easily loosen.",
+      "images": [
+        "Shattering_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_page1_img1.png"
+      ]
+    }
+  ],
+  "species": {
+    "id": "sp_12",
+    "commonName": "Early Meadow Rue",
+    "scientificName": "Thalictrum dioicum",
+    "photoDate": "6-24-2018",
+    "description": "Shattering. Seeds are football-shaped with parallel striations. Collect when they fall off easily with a light touch – no force is necessary. Flowers are subtle and wind pollinated. Sow fresh seeds asap for best germination.",
+    "images": [
+      "thalictrum_dioicum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p6_8.png",
+      "thalictrum_dioicum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p6_9.png",
+      "thalictrum_dioicum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p6_10.png"
+    ],
+    "pageNumber": 6
+  }
+}

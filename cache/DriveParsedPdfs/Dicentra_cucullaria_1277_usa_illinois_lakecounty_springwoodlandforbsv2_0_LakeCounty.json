@@ -1,0 +1,42 @@
+{
+  "attribution": {
+    "title": "Lake County Seed Collection Guide",
+    "subTitle": "Springwoodlandforbsv",
+    "version": "version 2",
+    "authors": "Dale Shields;Kelly Schultz",
+    "location": "Lake County, Illinois, USA",
+    "organization": "Lake County Forest Preserve District",
+    "license": "CC BY-NC",
+    "attributionText": "Lake County Seed Collection Guide | Spring Woodland Forbs | Lake County, Illinois, USA | Lake County Forest Preserve District | Authors: Kelly Schultz & Dale Shields | Photos by DJ Shields | License: CC BY-NC 4.0"
+  },
+  "family": "Fumariaceae",
+  "seedGroups": [
+    {
+      "name": "Elaiosomes",
+      "description": "Elaiosomes are “ant candy” attached to the seeds. Ants are strong and motivated, able to quickly carry the candy back to their home and tossing the heavy “candy wrapper” (seeds) into their compost piles.",
+      "images": [
+        "Elaiosomes_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_page1_img1.png"
+      ]
+    },
+    {
+      "name": "Beaks",
+      "description": "Beaks are a subset of the shaker group, with seed capsules that split open like a beak when the seeds are ripe. Collect when beaks are open.",
+      "images": [
+        "Beaks_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_page1_img1.png"
+      ]
+    }
+  ],
+  "species": {
+    "id": "sp_1",
+    "commonName": "Dutchman’s Breeches",
+    "scientificName": "Dicentra cucullaria",
+    "photoDate": "5-18-18",
+    "description": "Elaiosomes. Beaks. A very cool flower, like white puffy pants hanging upside down on a clothesline. Green capsules swell to ~1/8” wide & split when ripe, seeds are oily black. Look for an open capsule and test the remaining ones with a *gentle* squeeze. Sow seed right away.",
+    "images": [
+      "dicentra_cucullaria_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p3_1.png",
+      "dicentra_cucullaria_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p3_2.png",
+      "dicentra_cucullaria_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p3_3.png"
+    ],
+    "pageNumber": 3
+  }
+}

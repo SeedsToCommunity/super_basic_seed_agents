@@ -1,0 +1,42 @@
+{
+  "attribution": {
+    "title": "Lake County Seed Collection Guide",
+    "subTitle": "Springwoodlandforbsv",
+    "version": "version 2",
+    "authors": "Dale Shields;Kelly Schultz",
+    "location": "Lake County, Illinois, USA",
+    "organization": "Lake County Forest Preserve District",
+    "license": "CC BY-NC",
+    "attributionText": "Lake County Seed Collection Guide | Spring Woodland Forbs | Lake County, Illinois, USA | Lake County Forest Preserve District | Authors: Kelly Schultz & Dale Shields | Photos by DJ Shields | License: CC BY-NC 4.0"
+  },
+  "family": "Caryophyllaceae",
+  "seedGroups": [
+    {
+      "name": "Elaiosomes",
+      "description": "Elaiosomes are “ant candy” attached to the seeds. Ants are strong and motivated, able to quickly carry the candy back to their home and tossing the heavy “candy wrapper” (seeds) into their compost piles.",
+      "images": [
+        "Elaiosomes_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_page1_img1.png"
+      ]
+    },
+    {
+      "name": "Beaks",
+      "description": "Beaks are a subset of the shaker group, with seed capsules that split open like a beak when the seeds are ripe. Collect when beaks are open.",
+      "images": [
+        "Beaks_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_page1_img1.png"
+      ]
+    }
+  ],
+  "species": {
+    "id": "sp_26",
+    "commonName": "Wood Sandwort",
+    "scientificName": "Moehringia lateriflora",
+    "photoDate": "6-28-19",
+    "description": "Elaiosomes. Beaks. This white wildflower adds little pops of flowers, around ankle high. Found in wet to dry-mesic woodlands and wet to mesic sand prairies. Collect open capsules, sow seed promptly.",
+    "images": [
+      "moehringia_lateriflora_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p11_4.png",
+      "moehringia_lateriflora_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p11_5.png",
+      "moehringia_lateriflora_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p11_6.png"
+    ],
+    "pageNumber": 11
+  }
+}

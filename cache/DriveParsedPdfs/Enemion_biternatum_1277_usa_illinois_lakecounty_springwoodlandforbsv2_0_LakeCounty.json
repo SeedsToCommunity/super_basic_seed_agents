@@ -1,0 +1,42 @@
+{
+  "attribution": {
+    "title": "Lake County Seed Collection Guide",
+    "subTitle": "Springwoodlandforbsv",
+    "version": "version 2",
+    "authors": "Dale Shields;Kelly Schultz",
+    "location": "Lake County, Illinois, USA",
+    "organization": "Lake County Forest Preserve District",
+    "license": "CC BY-NC",
+    "attributionText": "Lake County Seed Collection Guide | Spring Woodland Forbs | Lake County, Illinois, USA | Lake County Forest Preserve District | Authors: Kelly Schultz & Dale Shields | Photos by DJ Shields | License: CC BY-NC 4.0"
+  },
+  "family": "Ranunculaceae",
+  "seedGroups": [
+    {
+      "name": "Shattering",
+      "description": "Shattering seeds can be tough to visually judge for ripeness. Use a *gentle* touch test to see if the seeds easily loosen.",
+      "images": [
+        "Shattering_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_page1_img1.png"
+      ]
+    },
+    {
+      "name": "Beaks",
+      "description": "Beaks are a subset of the shaker group, with seed capsules that split open like a beak when the seeds are ripe. Collect when beaks are open.",
+      "images": [
+        "Beaks_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_page1_img1.png"
+      ]
+    }
+  ],
+  "species": {
+    "id": "sp_10",
+    "commonName": "False Rue Anemone",
+    "scientificName": "Enemion biternatum",
+    "photoDate": "6-3-18",
+    "description": "Shattering. Beaks. Star-like clusters have an elongated point like an elf shoe. Collect when the beak opens (follicle – like a beak, but splits on one side) or the capsule is loose to the touch. Sow seed fresh. False Rue Anemone & Rue Anemone are often confusing when in flower, but the seeds are clearly different (see below).",
+    "images": [
+      "enemion_biternatum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p6_1.png",
+      "enemion_biternatum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p6_2.png",
+      "enemion_biternatum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p6_3.png"
+    ],
+    "pageNumber": 6
+  }
+}

@@ -1,0 +1,928 @@
+{
+  "id": "1277_usa_illinois_lakecounty_springwoodlandforbsv2_0",
+  "fileName": "1277_usa_illinois_lakecounty_springwoodlandforbsv2_0.pdf",
+  "filePath": "Data-Raw/LakeCountyCollection/1277_usa_illinois_lakecounty_springwoodlandforbsv2_0.pdf",
+  "status": "draft",
+  "header": {
+    "title": "Lake County Seed Collection Guide",
+    "subTitle": "Springwoodlandforbsv",
+    "version": "version 2",
+    "authors": "Dale Shields;Kelly Schultz",
+    "location": "Lake County, Illinois, USA",
+    "organization": "Lake County Forest Preserve District",
+    "license": "CC BY-NC",
+    "attributionText": "Lake County Seed Collection Guide | Spring Woodland Forbs | Lake County, Illinois, USA | Lake County Forest Preserve District | Authors: Kelly Schultz & Dale Shields | Photos by DJ Shields | License: CC BY-NC 4.0"
+  },
+  "intro": {
+    "harvestNotes": "Successful collection of viable seed requires an understanding of when to collect, how to collect, how to store, how to process, and when to sow. Determine these criteria and have a plan before harvesting seeds, especially of uncommon species. The species are listed in order of the photo dates, so will give an approximate time for collection, but collection dates vary according to local weather effects on blooming and pollinators; proximity to Lake Michigan; slopes; sun vs shade, etc. Many seed harvest charts are available with collection dates, but it is best to scout each site rather than relying on historic dates. Seeds collected before mid-June should be sown right away. They are intolerant of dry storage and most of them require both warm & cold treatments to stimulate germination. Late June seeds are more tolerant of dry storage; sow these seeds soon, but you can let them dry for a few weeks. Seeds ripening July and later can be held for fall/ winter sowing, sow by Jan 1st for best results.",
+    "seedGroups": [
+      {
+        "name": "Elaiosomes",
+        "description": "Elaiosomes are “ant candy” attached to the seeds. Ants are strong and motivated, able to quickly carry the candy back to their home and tossing the heavy “candy wrapper” (seeds) into their compost piles.",
+        "images": [
+          "Elaiosomes_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_page1_img1.png"
+        ],
+        "pageNumber": 1,
+        "regionTop": 0.5929797979797979,
+        "regionBottom": 0.6549229797979799
+      },
+      {
+        "name": "Ballistic",
+        "description": "Ballistic capsules catapult their babies away, up to 30 feet! Search YouTube for “exploding seeds” to see these in action. To harvest: learn the ripening sequence & harvest just before explosion; store in a *sealed* paper bag or mesh bag for a day or two.",
+        "images": [
+          "Ballistic_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_page1_img1.png"
+        ],
+        "pageNumber": 1,
+        "regionTop": 0.6612361111111112,
+        "regionBottom": 0.7395164141414141
+      },
+      {
+        "name": "Fluffy",
+        "description": "Fluffy seeds are quite common, allowing for wind to efficiently move seeds over long distances. Collect when fluffy.",
+        "images": [
+          "Fluffy_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_page1_img1.png"
+        ],
+        "pageNumber": 1,
+        "regionTop": 0.7458295454545455,
+        "regionBottom": 0.8241098484848484
+      },
+      {
+        "name": "Milkweed",
+        "description": "Milkweed seeds are ripe when pods are split open & seeds are brown.",
+        "images": [
+          "Milkweed_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_page1_img1.png"
+        ],
+        "pageNumber": 1,
+        "regionTop": 0.8304229797979797,
+        "regionBottom": 0.8722916666666667
+      },
+      {
+        "name": "Berries",
+        "description": "Berries turn a vibrant color when ripe, as an advertisement to the wildlife to EAT ME and disperse the seed. Collection window is small for some of these seeds.",
+        "images": [
+          "Berries_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_page1_img1.png"
+        ],
+        "pageNumber": 1,
+        "regionTop": 0.878604797979798,
+        "regionBottom": 0.9671313131313131
+      },
+      {
+        "name": "Mama's Boys",
+        "description": "Mama’s Boys will remain on the stem for a while. Ideal for forecasting future workdays.",
+        "images": [],
+        "pageNumber": 2,
+        "regionTop": 0.17257979797979806,
+        "regionBottom": 0.19838787878787878
+      },
+      {
+        "name": "Shakers",
+        "description": "Shakers drop seeds very close to the mother plant, when shaken loose by the wind or a passing critter. Usually a Mama’s Boy, unless strong weather occurs.",
+        "images": [
+          "Shakers_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_page1_img1.png"
+        ],
+        "pageNumber": 2,
+        "regionTop": 0.2047010101010101,
+        "regionBottom": 0.26672121212121214
+      },
+      {
+        "name": "Beaks",
+        "description": "Beaks are a subset of the shaker group, with seed capsules that split open like a beak when the seeds are ripe. Collect when beaks are open.",
+        "images": [
+          "Beaks_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_page1_img1.png"
+        ],
+        "pageNumber": 2,
+        "regionTop": 0.27303434343434346,
+        "regionBottom": 0.33505454545454544
+      },
+      {
+        "name": "Coneheads",
+        "description": "Coneheads are flowers with a cone-shaped center. Imagine these flowers without their colorful parts, and you know exactly what they look like when seeds are ripe.",
+        "images": [
+          "Coneheads_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_page1_img1.png"
+        ],
+        "pageNumber": 2,
+        "regionTop": 0.34136767676767676,
+        "regionBottom": 0.40323636363636367
+      },
+      {
+        "name": "Crumbly Coneheads",
+        "description": "Crumbly Coneheads are cone-shaped or thimble-shaped. Softer than standard coneheads, they crumble when ripe and are easily stripped by hand.",
+        "images": [
+          "CrumblyConeheads_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_page1_img1.png"
+        ],
+        "pageNumber": 2,
+        "regionTop": 0.40954949494949494,
+        "regionBottom": 0.47156969696969697
+      },
+      {
+        "name": "Shattering",
+        "description": "Shattering seeds can be tough to visually judge for ripeness. Use a *gentle* touch test to see if the seeds easily loosen.",
+        "images": [
+          "Shattering_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_page1_img1.png"
+        ],
+        "pageNumber": 2,
+        "regionTop": 0.4778828282828283,
+        "regionBottom": 0.5473272727272728
+      },
+      {
+        "name": "Hitchhikers",
+        "description": "Hitchhikers are easy to tell when ripe – they hitch a ride on your pants! Color can be an indicator, but not always. Do Not Collect.",
+        "images": [
+          "Hitchhikers_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_page1_img1.png"
+        ],
+        "pageNumber": 2,
+        "regionTop": 0.553640404040404,
+        "regionBottom": 0.6816640404040403
+      }
+    ],
+    "introImages": [
+      {
+        "url": "1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p1_1.png",
+        "top": 0.5791034506313132,
+        "bottom": 0.6474116161616161,
+        "centerY": 0.6132575333964646,
+        "topPx": 458.6499329,
+        "bottomPx": 512.75,
+        "viewportHeight": 792,
+        "pageNumber": 1
+      },
+      {
+        "url": "1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p1_2.png",
+        "top": 0.6555237433080808,
+        "bottom": 0.7238319088383839,
+        "centerY": 0.6896778260732324,
+        "topPx": 519.1748047,
+        "bottomPx": 573.2748718,
+        "viewportHeight": 792,
+        "pageNumber": 1
+      },
+      {
+        "url": "1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p1_3.png",
+        "top": 0.7362685733585859,
+        "bottom": 0.8045768352272727,
+        "centerY": 0.7704227042929293,
+        "topPx": 583.1247101,
+        "bottomPx": 637.2248535,
+        "viewportHeight": 792,
+        "pageNumber": 1
+      },
+      {
+        "url": "1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p1_4.png",
+        "top": 0.8152145039141414,
+        "bottom": 0.8811149597222223,
+        "centerY": 0.8481647318181819,
+        "topPx": 645.6498871,
+        "bottomPx": 697.8430481,
+        "viewportHeight": 792,
+        "pageNumber": 1
+      },
+      {
+        "url": "1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p1_5.png",
+        "top": 0.8791309511363636,
+        "bottom": 0.9587374407828283,
+        "centerY": 0.918934195959596,
+        "topPx": 696.2717133,
+        "bottomPx": 759.3200531,
+        "viewportHeight": 792,
+        "pageNumber": 1
+      },
+      {
+        "url": "1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p2_1.png",
+        "top": 0.1882127127525253,
+        "bottom": 0.2565208782828283,
+        "centerY": 0.2223667955176768,
+        "topPx": 149.06446850000003,
+        "bottomPx": 203.16453560000002,
+        "viewportHeight": 792,
+        "pageNumber": 2
+      },
+      {
+        "url": "1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p2_2.png",
+        "top": 0.25652093611111115,
+        "bottom": 0.32482910164141415,
+        "centerY": 0.2906750188762627,
+        "topPx": 203.16458140000003,
+        "bottomPx": 257.2646485,
+        "viewportHeight": 792,
+        "pageNumber": 2
+      },
+      {
+        "url": "1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p2_3.png",
+        "top": 0.3248290438131314,
+        "bottom": 0.39313730568181826,
+        "centerY": 0.3589831747474748,
+        "topPx": 257.26460270000007,
+        "bottomPx": 311.36474610000005,
+        "viewportHeight": 792,
+        "pageNumber": 2
+      },
+      {
+        "url": "1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p2_4.png",
+        "top": 0.39313734431818187,
+        "bottom": 0.4614455098484849,
+        "centerY": 0.42729142708333334,
+        "topPx": 311.36477670000005,
+        "bottomPx": 365.46484380000004,
+        "viewportHeight": 792,
+        "pageNumber": 2
+      },
+      {
+        "url": "1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p2_5.png",
+        "top": 0.46144554835858587,
+        "bottom": 0.5365085795454546,
+        "centerY": 0.49897706395202024,
+        "topPx": 365.4648743,
+        "bottomPx": 424.914795,
+        "viewportHeight": 792,
+        "pageNumber": 2
+      },
+      {
+        "url": "1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p2_6.png",
+        "top": 0.5372031049242424,
+        "bottom": 0.6055112704545454,
+        "centerY": 0.5713571876893939,
+        "topPx": 425.4648591,
+        "bottomPx": 479.5649262,
+        "viewportHeight": 792,
+        "pageNumber": 2
+      }
+    ]
+  },
+  "species": [
+    {
+      "id": "sp_1",
+      "commonName": "Dutchman’s Breeches",
+      "scientificName": "Dicentra cucullaria",
+      "family": "Fumariaceae",
+      "photoDate": "5-18-18",
+      "description": "Elaiosomes. Beaks. A very cool flower, like white puffy pants hanging upside down on a clothesline. Green capsules swell to ~1/8” wide & split when ripe, seeds are oily black. Look for an open capsule and test the remaining ones with a *gentle* squeeze. Sow seed right away.",
+      "seedGroups": [
+        "Elaiosomes",
+        "Beaks"
+      ],
+      "images": [
+        "dicentra_cucullaria_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p3_1.png",
+        "dicentra_cucullaria_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p3_2.png",
+        "dicentra_cucullaria_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p3_3.png"
+      ],
+      "pageNumber": 3,
+      "yTop": 0.16964354932985537,
+      "yBottom": 0.4282866161616161,
+      "textTop": 0.1817676767676768,
+      "textBottom": 0.4282866161616161,
+      "imgTop": 0.16964354932985537,
+      "imgBottom": 0.40264058725285523
+    },
+    {
+      "id": "sp_2",
+      "commonName": "Sharp-lobed Hepatica",
+      "scientificName": "Hepatica acutiloba",
+      "family": "Ranunculaceae",
+      "photoDate": "5-18-18",
+      "description": "Shattering. The sepals cup around the hairy seeds, hidden under the leaves and pointing downhill. Seeds are ripe when they fall off with a *gentle* touch; no force is necessary. Must sow fresh and viability is often low. Hepatica are some of the earliest flowers of the year.",
+      "seedGroups": [
+        "Shattering"
+      ],
+      "images": [
+        "hepatica_acutiloba_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p3_4.png",
+        "hepatica_acutiloba_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p3_5.png"
+      ],
+      "pageNumber": 3,
+      "yTop": 0.43294688050915237,
+      "yBottom": 0.6935391414141414,
+      "textTop": 0.4471717171717172,
+      "textBottom": 0.6935391414141414,
+      "imgTop": 0.43294688050915237,
+      "imgBottom": 0.666655845582398
+    },
+    {
+      "id": "sp_3",
+      "commonName": "Round-lobed Hepatica",
+      "scientificName": "Hepatica americana",
+      "family": "Ranunculaceae",
+      "photoDate": "5-22-18",
+      "description": "Shattering. Same treatment as H. acutiloba. White or lavender flowers pop up on fuzzy stalks, over a cluster of last year’s leaves. Happiest on drier slopes, the low moisture and slow erosion reduces competition from other plants. Rare, collect 10%",
+      "seedGroups": [
+        "Shattering"
+      ],
+      "images": [
+        "hepatica_americana_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p3_6.png",
+        "hepatica_americana_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p3_7.png",
+        "hepatica_americana_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p3_8.png"
+      ],
+      "pageNumber": 3,
+      "yTop": 0.6985404498969752,
+      "yBottom": 0.9575757575757575,
+      "textTop": 0.709848484848485,
+      "textBottom": 0.9575757575757575,
+      "imgTop": 0.6985404498969752,
+      "imgBottom": 0.9302292843289535
+    },
+    {
+      "id": "sp_4",
+      "commonName": "Spring Beauty",
+      "scientificName": "Claytonia virginica",
+      "family": "Portulacaceae",
+      "photoDate": "5-22-18",
+      "description": "Beaks. Elaiosomes. Looks like a bunch of tiny duckbills along the stem. Stem may be upright or flat on the ground. Inside the duckbills are capsules that will split open to drop out the seed. Collect when at least one of the capsules is open; the rest will open in the bag.",
+      "seedGroups": [
+        "Elaiosomes",
+        "Beaks"
+      ],
+      "images": [
+        "claytonia_virginica_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p4_1.png",
+        "claytonia_virginica_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p4_2.png",
+        "claytonia_virginica_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p4_3.png"
+      ],
+      "pageNumber": 4,
+      "yTop": 0.16857924307942712,
+      "yBottom": 0.4270239898989899,
+      "textTop": 0.1830808080808081,
+      "textBottom": 0.4270239898989899,
+      "imgTop": 0.16857924307942712,
+      "imgBottom": 0.40093592474695333
+    },
+    {
+      "id": "sp_5",
+      "commonName": "Siberian Squill",
+      "scientificName": "Scilla siberica",
+      "family": "Hyacinthaceae",
+      "photoDate": "5-29-20",
+      "description": "Elaiosomes. This common blue flower pops up in lawns and escapes into woodlands. Flowers are 6 petals, occasionally white. Leaves are grass-like. Do not collect. Plant Hepatica, Mertensia, or Camassia instead.",
+      "seedGroups": [
+        "Elaiosomes"
+      ],
+      "images": [
+        "scilla_siberica_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p4_4.png",
+        "scilla_siberica_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p4_5.png",
+        "scilla_siberica_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p4_6.png"
+      ],
+      "pageNumber": 4,
+      "yTop": 0.432911711325522,
+      "yBottom": 0.6898017676767676,
+      "textTop": 0.4432828282828283,
+      "textBottom": 0.6898017676767676,
+      "imgTop": 0.432911711325522,
+      "imgBottom": 0.6636885571381357
+    },
+    {
+      "id": "sp_6",
+      "commonName": "Wood Anemone",
+      "scientificName": "Anemone quinquefolia",
+      "family": "Ranunculaceae",
+      "photoDate": "5-30-19",
+      "description": "Shattering. This white flower grows in rhizomatous colonies. Usually 5 petals, and. 3 – 5 leaflets. Individual plants take years to flower; typical to see more leafy plants than flowering ones. Collect when green seeds are loose, by a *gentle* touch test. Sow fresh.",
+      "seedGroups": [
+        "Shattering"
+      ],
+      "images": [
+        "anemone_quinquefolia_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p4_7.png",
+        "anemone_quinquefolia_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p4_8.png",
+        "anemone_quinquefolia_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p4_9.png"
+      ],
+      "pageNumber": 4,
+      "yTop": 0.6954130931040555,
+      "yBottom": 0.9588383838383838,
+      "textTop": 0.7111111111111111,
+      "textBottom": 0.9588383838383838,
+      "imgTop": 0.6954130931040555,
+      "imgBottom": 0.9314916934044194
+    },
+    {
+      "id": "sp_7",
+      "commonName": "False Mermaid",
+      "scientificName": "Floerkea proserpinacoides",
+      "family": "Limnanthaceae",
+      "photoDate": "5-30-19",
+      "description": "Shattering. This ephemeral plant forms delicate mats along the ground, especially in wet to mesic woodlands. Subtle blooms are easy to overlook, and the entire plant disappears by summer. Test seed ripeness with a *gentle* touch test. Collect 10%.",
+      "seedGroups": [
+        "Shattering"
+      ],
+      "images": [
+        "floerkea_proserpinacoides_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p5_1.png",
+        "floerkea_proserpinacoides_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p5_2.png",
+        "floerkea_proserpinacoides_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p5_3.png"
+      ],
+      "pageNumber": 5,
+      "yTop": 0.1701888214968333,
+      "yBottom": 0.43081186868686866,
+      "textTop": 0.18429292929292934,
+      "textBottom": 0.43081186868686866,
+      "imgTop": 0.1701888214968333,
+      "imgBottom": 0.4047238090358883
+    },
+    {
+      "id": "sp_8",
+      "commonName": "White Trout Lily",
+      "scientificName": "Erythronium albidum",
+      "family": "Liliaceae",
+      "photoDate": "6-1-18",
+      "description": "Elaiosomes. Beaks. Capsules & stems usually detach and lie loose on the ground. Collect detached stems or open capsules. Seeds are honey or caramel colored when ripe. E. americanum (yellow trout lily) is less common in Lake Co.",
+      "seedGroups": [
+        "Elaiosomes",
+        "Beaks"
+      ],
+      "images": [
+        "erythronium_albidum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p5_4.png",
+        "erythronium_albidum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p5_5.png",
+        "erythronium_albidum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p5_6.png"
+      ],
+      "pageNumber": 5,
+      "yTop": 0.4372799241114332,
+      "yBottom": 0.6998522727272728,
+      "textTop": 0.4534848484848485,
+      "textBottom": 0.6998522727272728,
+      "imgTop": 0.4372799241114332,
+      "imgBottom": 0.6729689828729932
+    },
+    {
+      "id": "sp_9",
+      "commonName": "Bloodroot",
+      "scientificName": "Sanguinaria canadensis",
+      "family": "Papaveraceae",
+      "photoDate": "6-8-18",
+      "description": "Elaiosomes. The elaiosome is obvious in bloodroot, like a white gummy worm. Wear gloves to prevent the pod’s yellow sap staining your fingers. Collect open capsules. Can give swollen pods (~ ½” wide) a *gentle* squeeze to see if it pops open to reveal the wine-colored seeds.",
+      "seedGroups": [
+        "Elaiosomes"
+      ],
+      "images": [
+        "sanguinaria_canadensis_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p5_7.png",
+        "sanguinaria_canadensis_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p5_8.png",
+        "sanguinaria_canadensis_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p5_9.png"
+      ],
+      "pageNumber": 5,
+      "yTop": 0.7053994987518288,
+      "yBottom": 0.9664141414141414,
+      "textTop": 0.720050505050505,
+      "textBottom": 0.9664141414141414,
+      "imgTop": 0.7053994987518288,
+      "imgBottom": 0.9395095789646759
+    },
+    {
+      "id": "sp_10",
+      "commonName": "False Rue Anemone",
+      "scientificName": "Enemion biternatum",
+      "family": "Ranunculaceae",
+      "photoDate": "6-3-18",
+      "description": "Shattering. Beaks. Star-like clusters have an elongated point like an elf shoe. Collect when the beak opens (follicle – like a beak, but splits on one side) or the capsule is loose to the touch. Sow seed fresh. False Rue Anemone & Rue Anemone are often confusing when in flower, but the seeds are clearly different (see below).",
+      "seedGroups": [
+        "Shattering",
+        "Beaks"
+      ],
+      "images": [
+        "enemion_biternatum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p6_1.png",
+        "enemion_biternatum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p6_2.png",
+        "enemion_biternatum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p6_3.png"
+      ],
+      "pageNumber": 6,
+      "yTop": 0.1697605934654001,
+      "yBottom": 0.4425833333333333,
+      "textTop": 0.18439393939393936,
+      "textBottom": 0.4425833333333333,
+      "imgTop": 0.1697605934654001,
+      "imgBottom": 0.40390313462225336
+    },
+    {
+      "id": "sp_11",
+      "commonName": "Rue Anemone",
+      "scientificName": "Anemonella thalictroides",
+      "family": "Ranunculaceae",
+      "photoDate": "6-15-18",
+      "description": "Shattering. Thalictroides is Latin for “thalictrum-like” and this is clear in the similarity of the seeds and leaves. The leaf arrangement & plant size is clearly different: a small whorl of leaves for this ankle-high species, and bushier for the shin- to knee-high Thalictrum.",
+      "seedGroups": [
+        "Shattering"
+      ],
+      "images": [
+        "anemonella_thalictroides_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p6_4.png",
+        "anemonella_thalictroides_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p6_5.png",
+        "anemonella_thalictroides_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p6_6.png",
+        "anemonella_thalictroides_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p6_7.png"
+      ],
+      "pageNumber": 6,
+      "yTop": 0.18439393939393936,
+      "yBottom": 0.6810974930555554,
+      "textTop": 0.18439393939393936,
+      "textBottom": 0.4295492424242424,
+      "imgTop": 0.4480871134841564,
+      "imgBottom": 0.6810974930555554
+    },
+    {
+      "id": "sp_12",
+      "commonName": "Early Meadow Rue",
+      "scientificName": "Thalictrum dioicum",
+      "family": "Ranunculaceae",
+      "photoDate": "6-24-2018",
+      "description": "Shattering. Seeds are football-shaped with parallel striations. Collect when they fall off easily with a light touch – no force is necessary. Flowers are subtle and wind pollinated. Sow fresh seeds asap for best germination.",
+      "seedGroups": [
+        "Shattering"
+      ],
+      "images": [
+        "thalictrum_dioicum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p6_8.png",
+        "thalictrum_dioicum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p6_9.png",
+        "thalictrum_dioicum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p6_10.png"
+      ],
+      "pageNumber": 6,
+      "yTop": 0.713795040118184,
+      "yBottom": 0.9731818181818181,
+      "textTop": 0.7253030303030303,
+      "textBottom": 0.9731818181818181,
+      "imgTop": 0.713795040118184,
+      "imgBottom": 0.9462646677009006
+    },
+    {
+      "id": "sp_13",
+      "commonName": "Small-flowered Buttercup",
+      "scientificName": "Ranunculus abortivus",
+      "family": "Ranunculaceae",
+      "photoDate": "6-3-18",
+      "description": "Shattering. This common buttercup is found in woodlands, wet to dry. Flowers are tiny, about ¼” across, with petals smaller than the green center disc. Lower basal leaves are kidney-shaped (most buttercups have lobed leaves). Collect when seeds are easily loosened.",
+      "seedGroups": [
+        "Shattering"
+      ],
+      "images": [
+        "ranunculus_abortivus_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p7_1.png",
+        "ranunculus_abortivus_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p7_2.png",
+        "ranunculus_abortivus_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p7_3.png"
+      ],
+      "pageNumber": 7,
+      "yTop": 0.16952794140908875,
+      "yBottom": 0.4270239898989899,
+      "textTop": 0.18050505050505056,
+      "textBottom": 0.4270239898989899,
+      "imgTop": 0.16952794140908875,
+      "imgBottom": 0.40093594907357144
+    },
+    {
+      "id": "sp_14",
+      "commonName": "Swamp Buttercup",
+      "scientificName": "Ranunculus septentrionalis",
+      "family": "Ranunculaceae",
+      "photoDate": "6-15-18",
+      "description": "Shattering. The most common large-flowered buttercup found in wet to mesic woodlands. Leaves are compound, with deep lobes. Stems are hairless or sometimes fine, pressed hairs. Collect when seeds are loose.",
+      "seedGroups": [
+        "Shattering"
+      ],
+      "images": [
+        "ranunculus_septentrionalis_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p7_4.png",
+        "ranunculus_septentrionalis_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p7_5.png",
+        "ranunculus_septentrionalis_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p7_6.png"
+      ],
+      "pageNumber": 7,
+      "yTop": 0.43282901637584886,
+      "yBottom": 0.6922765151515152,
+      "textTop": 0.4459090909090909,
+      "textBottom": 0.6922765151515152,
+      "imgTop": 0.43282901637584886,
+      "imgBottom": 0.6649511571743447
+    },
+    {
+      "id": "sp_15",
+      "commonName": "Wild Geranium",
+      "scientificName": "Geranium maculatum",
+      "family": "Geraniaceae",
+      "photoDate": "6-13-17",
+      "description": "Ballistic. Geranium aka cranesbill looks somewhat like a bird’s long beak with 5 bumps at the bottom. These are 5 “ladles” that turn brown, then spring up to catapult the seeds away, finishing in a chandelier shape. Collect brown bills. Chandeliers no longer contain seed.",
+      "seedGroups": [
+        "Ballistic"
+      ],
+      "images": [
+        "geranium_maculatum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p7_7.png",
+        "geranium_maculatum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p7_8.png",
+        "geranium_maculatum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p7_9.png"
+      ],
+      "pageNumber": 7,
+      "yTop": 0.6972768699719584,
+      "yBottom": 0.9563131313131313,
+      "textTop": 0.7111616161616162,
+      "textBottom": 0.9563131313131313,
+      "imgTop": 0.6972768699719584,
+      "imgBottom": 0.9306079438667398
+    },
+    {
+      "id": "sp_16",
+      "commonName": "Toothwort",
+      "scientificName": "Dentaria laciniata",
+      "family": "Brassicaceae",
+      "photoDate": "6-15-18",
+      "description": "Ballistic. Seed pods have a long and skinny shape (silique) found in many mustards (including the invasive garlic mustard). As it dries, one side peels back & curls up to send the green seeds flying. Look for an open silique, collect the rest. Pinch at base of pod to contain seeds.",
+      "seedGroups": [
+        "Ballistic"
+      ],
+      "images": [
+        "dentaria_laciniata_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p8_1.png",
+        "dentaria_laciniata_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p8_2.png",
+        "dentaria_laciniata_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p8_3.png"
+      ],
+      "pageNumber": 8,
+      "yTop": 0.16927549114366416,
+      "yBottom": 0.4270239898989899,
+      "textTop": 0.18050505050505056,
+      "textBottom": 0.4270239898989899,
+      "imgTop": 0.16927549114366416,
+      "imgBottom": 0.40093595879744065
+    },
+    {
+      "id": "sp_17",
+      "commonName": "Jacob’s Ladder",
+      "scientificName": "Polemonium reptans",
+      "family": "Polemoniaceae",
+      "photoDate": "6-15-18",
+      "description": "Beaks. Inside the “Chinese lantern” of the calyx is a capsule that slowly turns from green to beige-yellow, and then opens to drop the seeds. Shortly before opening, capsule often becomes a little translucent and the brown-burgundy color of the seeds becomes visible. Peel back the papery lantern to check. Collect when the capsule is yellow-beige or translucent. Leaves are opposite pairs, like ladder rungs.",
+      "seedGroups": [
+        "Beaks"
+      ],
+      "images": [
+        "polemonium_reptans_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p8_4.png",
+        "polemonium_reptans_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p8_5.png",
+        "polemonium_reptans_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p8_6.png"
+      ],
+      "pageNumber": 8,
+      "yTop": 0.4325765619995304,
+      "yBottom": 0.7040479797979798,
+      "textTop": 0.4459090909090909,
+      "textBottom": 0.7040479797979798,
+      "imgTop": 0.4325765619995304,
+      "imgBottom": 0.6649511627964675
+    },
+    {
+      "id": "sp_18",
+      "commonName": "Wild Hyacinth",
+      "scientificName": "Camassia scilloides",
+      "family": "Hyacinthaceae",
+      "photoDate": "6-23-18",
+      "description": "Beaks. These lovely bulbs form a capsule that turns from green to beige-brown, and splits into 3 parts to reveal black seeds. Collect when the beaks open. Like many lily relatives, these are slow from seed. Flowers are charming 6-pointed stars, in pale blue-violet.",
+      "seedGroups": [
+        "Beaks"
+      ],
+      "images": [
+        "camassia_scilloides_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p8_7.png",
+        "camassia_scilloides_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p8_8.png",
+        "camassia_scilloides_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p8_9.png"
+      ],
+      "pageNumber": 8,
+      "yTop": 0.7110157782828282,
+      "yBottom": 0.9706565656565657,
+      "textTop": 0.7241414141414141,
+      "textBottom": 0.9706565656565657,
+      "imgTop": 0.7110157782828282,
+      "imgBottom": 0.9449388348945369
+    },
+    {
+      "id": "sp_19",
+      "commonName": "Dog Violet",
+      "scientificName": "Viola labradorica",
+      "family": "Violaceae",
+      "photoDate": "6-19-17",
+      "description": "Ballistic. Elaiosomes. Pods start out nodding, then raise their heads up to the sky, split open into 3rds, and finally shoot their seeds away. Collect when heads are aimed between the horizon & the sky. Most violet species have multiple rounds of seeds: initially from open flowers (chasmogamous), but later they form flowers that never open and self-pollinate (cleistogamous) to produce additional seeds. Sow fresh.",
+      "seedGroups": [
+        "Elaiosomes",
+        "Ballistic"
+      ],
+      "images": [
+        "viola_labradorica_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p9_1.png",
+        "viola_labradorica_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p9_2.png"
+      ],
+      "pageNumber": 9,
+      "yTop": 0.17076912050675466,
+      "yBottom": 0.4425833333333333,
+      "textTop": 0.18439393939393936,
+      "textBottom": 0.4425833333333333,
+      "imgTop": 0.17076912050675466,
+      "imgBottom": 0.40346115660599985
+    },
+    {
+      "id": "sp_20",
+      "commonName": "Smooth Yellow Violet",
+      "scientificName": "Viola pubescens var. scabriuscula",
+      "family": "Violaceae",
+      "photoDate": "6-23-18",
+      "description": "Ballistic. For sessile (stemless) pods, check with a *gentle* squeeze or look for split capsules. Capsules will ripen at slightly different times, on the same plant. Common in mesic to dry-mesic woodlands, although usually scattered in small populations.",
+      "seedGroups": [
+        "Ballistic"
+      ],
+      "images": [
+        "viola_pubescens_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p9_3.png",
+        "viola_pubescens_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p9_4.png",
+        "viola_pubescens_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p9_5.png"
+      ],
+      "pageNumber": 9,
+      "yTop": 0.4478327324662444,
+      "yBottom": 0.7066198232323233,
+      "textTop": 0.45722222222222225,
+      "textBottom": 0.7066198232323233,
+      "imgTop": 0.4478327324662444,
+      "imgBottom": 0.6797241992832748
+    },
+    {
+      "id": "sp_21",
+      "commonName": "Wild Columbine",
+      "scientificName": "Aquilegia canadensis",
+      "family": "Ranunculaceae",
+      "photoDate": "6-24-17",
+      "description": "Beaks. The follicles (seed capsules) look somewhat like the flower, but upside down. Collect when beaks open to reveal the oil-black seeds. Follicles will turn colors too, but the open beak is more important. Flowers are a bold red and yellow. Short-lived perennial.",
+      "seedGroups": [
+        "Beaks"
+      ],
+      "images": [
+        "aquilegia_canadensis_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p9_6.png",
+        "aquilegia_canadensis_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p9_7.png",
+        "aquilegia_canadensis_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p9_8.png"
+      ],
+      "pageNumber": 9,
+      "yTop": 0.7111324693415709,
+      "yBottom": 0.9706565656565657,
+      "textTop": 0.7255050505050505,
+      "textBottom": 0.9706565656565657,
+      "imgTop": 0.7111324693415709,
+      "imgBottom": 0.9437394179617579
+    },
+    {
+      "id": "sp_22",
+      "commonName": "Reflexed Wild Ginger",
+      "scientificName": "Asarum canadense var. reflexum",
+      "family": "Aristolochiaceae",
+      "photoDate": "6-24-18",
+      "description": "Elaiosomes. The spade-shaped leaves make a lovely native groundcover. Burgundy flowers are hidden under the leaves, right on top of the soil. Capsules degrade into a mealy mess; collect when soft & mushy. Plants also divide & transplant easily.",
+      "seedGroups": [
+        "Elaiosomes"
+      ],
+      "images": [
+        "asarum_canadense_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p10_1.png",
+        "asarum_canadense_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p10_2.png",
+        "asarum_canadense_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p10_3.png"
+      ],
+      "pageNumber": 10,
+      "yTop": 0.16927498482558867,
+      "yBottom": 0.4282866161616161,
+      "textTop": 0.1831313131313131,
+      "textBottom": 0.4282866161616161,
+      "imgTop": 0.16927498482558867,
+      "imgBottom": 0.4026405850152239
+    },
+    {
+      "id": "sp_23",
+      "commonName": "Twinleaf",
+      "scientificName": "Jeffersonia diphylla",
+      "family": "Berberidaceae",
+      "photoDate": "6-24-18",
+      "description": "Elaiosomes. Beaks. Pods are green & upright, then turn green-yellow and tilt toward the ground right before opening to spill the seeds out. Look for tilted pods; collect open capsules, or any that pop under *gentle* pressure. Entire population may ripen & drop in only a few days.",
+      "seedGroups": [
+        "Elaiosomes",
+        "Beaks"
+      ],
+      "images": [
+        "jeffersonia_diphylla_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p10_4.png",
+        "jeffersonia_diphylla_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p10_5.png",
+        "jeffersonia_diphylla_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p10_6.png"
+      ],
+      "pageNumber": 10,
+      "yTop": 0.4324611571207224,
+      "yBottom": 0.6922765151515152,
+      "textTop": 0.4445454545454545,
+      "textBottom": 0.6922765151515152,
+      "imgTop": 0.4324611571207224,
+      "imgBottom": 0.6653932048236365
+    },
+    {
+      "id": "sp_24",
+      "commonName": "Woodland Phlox",
+      "scientificName": "Phlox divaricata",
+      "family": "Polemoniaceae",
+      "photoDate": "6-24-17",
+      "description": "Ballistic. The blue-purple petals drop, revealing hard capsules tucked in the center of the 5 sepals. Capsules swell & turn green-beige, before splitting into 3 pieces & shooting the dark seeds away. Sepals often reflex (peel backwards) like a star shortly before catapulting. After flowers start to fade, cover with mesh hoods to capture seeds",
+      "seedGroups": [
+        "Ballistic"
+      ],
+      "images": [
+        "phlox_divaricata_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p10_7.png",
+        "phlox_divaricata_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p10_8.png",
+        "phlox_divaricata_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p10_9.png"
+      ],
+      "pageNumber": 10,
+      "yTop": 0.6982862553514434,
+      "yBottom": 0.9718724747474747,
+      "textTop": 0.7124747474747475,
+      "textBottom": 0.9718724747474747,
+      "imgTop": 0.6982862553514434,
+      "imgBottom": 0.9319337997779928
+    },
+    {
+      "id": "sp_25",
+      "commonName": "Fire Pink",
+      "scientificName": "Silene virginica",
+      "family": "Caryophyllaceae",
+      "photoDate": "6-24-17",
+      "description": "Beaks. This rare plant has fiery red petals, notched at the tips. The peak of the sticky beak will split open and the brown seeds will easily spill into your hand. Short-lived perennial.",
+      "seedGroups": [
+        "Beaks"
+      ],
+      "images": [
+        "silene_virginica_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p11_1.png",
+        "silene_virginica_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p11_2.png",
+        "silene_virginica_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p11_3.png"
+      ],
+      "pageNumber": 11,
+      "yTop": 0.17052723109308124,
+      "yBottom": 0.4270239898989899,
+      "textTop": 0.18186868686868682,
+      "textBottom": 0.4270239898989899,
+      "imgTop": 0.17052723109308124,
+      "imgBottom": 0.4013779479913426
+    },
+    {
+      "id": "sp_26",
+      "commonName": "Wood Sandwort",
+      "scientificName": "Moehringia lateriflora",
+      "family": "Caryophyllaceae",
+      "photoDate": "6-28-19",
+      "description": "Elaiosomes. Beaks. This white wildflower adds little pops of flowers, around ankle high. Found in wet to dry-mesic woodlands and wet to mesic sand prairies. Collect open capsules, sow seed promptly.",
+      "seedGroups": [
+        "Elaiosomes",
+        "Beaks"
+      ],
+      "images": [
+        "moehringia_lateriflora_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p11_4.png",
+        "moehringia_lateriflora_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p11_5.png",
+        "moehringia_lateriflora_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p11_6.png"
+      ],
+      "pageNumber": 11,
+      "yTop": 0.43164996682333556,
+      "yBottom": 0.6935391414141414,
+      "textTop": 0.44580808080808076,
+      "textBottom": 0.6935391414141414,
+      "imgTop": 0.43164996682333556,
+      "imgBottom": 0.6662137835269056
+    },
+    {
+      "id": "sp_27",
+      "commonName": "Bellwort",
+      "scientificName": "Uvularia grandiflora",
+      "family": "Colchicaceae",
+      "photoDate": "6-29-18",
+      "description": "Elaiosomes. Beaks. Cheery yellow flowers. Leaves are perfoliate (leaves surround the stem). Capsule splits into 3 parts (typical of lily relatives). Caramel colored seeds. Insects often chew into the capsules. Collect once the capsules have opened. Happiest on gravelly slopes.",
+      "seedGroups": [
+        "Elaiosomes",
+        "Beaks"
+      ],
+      "images": [
+        "uvularia_grandiflora_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p11_7.png",
+        "uvularia_grandiflora_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p11_8.png",
+        "uvularia_grandiflora_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p11_9.png"
+      ],
+      "pageNumber": 11,
+      "yTop": 0.6998864463557269,
+      "yBottom": 0.9613636363636363,
+      "textTop": 0.7136363636363637,
+      "textBottom": 0.9613636363636363,
+      "imgTop": 0.6998864463557269,
+      "imgBottom": 0.9344590475095272
+    },
+    {
+      "id": "sp_28",
+      "commonName": "Large-flowered Trillium",
+      "scientificName": "Trillium grandiflorum",
+      "family": "Trilliaceae",
+      "photoDate": "7-16-18",
+      "description": "Elaiosomes. Three bright white petals that fade to pink with age. Three leaves of solid green. Trillium capsules are ripe when their color fades to yellow-green/off-white & they easily pop off the stem. Sow fresh, takes 2 years to germinate.",
+      "seedGroups": [
+        "Elaiosomes"
+      ],
+      "images": [
+        "trillium_grandiflorum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p12_1.png",
+        "trillium_grandiflorum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p12_2.png",
+        "trillium_grandiflorum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p12_3.png"
+      ],
+      "pageNumber": 12,
+      "yTop": 0.16912529684343433,
+      "yBottom": 0.4315768939393939,
+      "textTop": 0.18505795454545462,
+      "textBottom": 0.4315768939393939,
+      "imgTop": 0.16912529684343433,
+      "imgBottom": 0.4059308369949495
+    },
+    {
+      "id": "sp_29",
+      "commonName": "Prairie Trillium",
+      "alias": "Red Trillium",
+      "scientificName": "Trillium recurvatum",
+      "family": "Trilliaceae",
+      "photoDate": "7-23-18",
+      "description": "Elaiosomes. Flowers are maroon-red petals around black anthers. Leaves are mottled shades of green. Common in woodlands & savannas; finding these in prairies typically indicates a historic woodland. Trillium capsules start to degrade when ripe, but not as mushy as wild ginger.",
+      "seedGroups": [
+        "Elaiosomes"
+      ],
+      "images": [
+        "trillium_recurvatum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p12_4.png",
+        "trillium_recurvatum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p12_5.png",
+        "trillium_recurvatum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p12_6.png"
+      ],
+      "pageNumber": 12,
+      "yTop": 0.4381910574494949,
+      "yBottom": 0.7018799242424243,
+      "textTop": 0.45414886363636364,
+      "textBottom": 0.7018799242424243,
+      "imgTop": 0.4381910574494949,
+      "imgBottom": 0.6749966169191919
+    }
+  ]
+}

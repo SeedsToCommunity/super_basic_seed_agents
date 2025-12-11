@@ -1,0 +1,35 @@
+{
+  "attribution": {
+    "title": "Lake County Seed Collection Guide",
+    "subTitle": "Springwoodlandforbsv",
+    "version": "version 2",
+    "authors": "Dale Shields;Kelly Schultz",
+    "location": "Lake County, Illinois, USA",
+    "organization": "Lake County Forest Preserve District",
+    "license": "CC BY-NC",
+    "attributionText": "Lake County Seed Collection Guide | Spring Woodland Forbs | Lake County, Illinois, USA | Lake County Forest Preserve District | Authors: Kelly Schultz & Dale Shields | Photos by DJ Shields | License: CC BY-NC 4.0"
+  },
+  "family": "Trilliaceae",
+  "seedGroups": [
+    {
+      "name": "Elaiosomes",
+      "description": "Elaiosomes are “ant candy” attached to the seeds. Ants are strong and motivated, able to quickly carry the candy back to their home and tossing the heavy “candy wrapper” (seeds) into their compost piles.",
+      "images": [
+        "Elaiosomes_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_page1_img1.png"
+      ]
+    }
+  ],
+  "species": {
+    "id": "sp_28",
+    "commonName": "Large-flowered Trillium",
+    "scientificName": "Trillium grandiflorum",
+    "photoDate": "7-16-18",
+    "description": "Elaiosomes. Three bright white petals that fade to pink with age. Three leaves of solid green. Trillium capsules are ripe when their color fades to yellow-green/off-white & they easily pop off the stem. Sow fresh, takes 2 years to germinate.",
+    "images": [
+      "trillium_grandiflorum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p12_1.png",
+      "trillium_grandiflorum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p12_2.png",
+      "trillium_grandiflorum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p12_3.png"
+    ],
+    "pageNumber": 12
+  }
+}

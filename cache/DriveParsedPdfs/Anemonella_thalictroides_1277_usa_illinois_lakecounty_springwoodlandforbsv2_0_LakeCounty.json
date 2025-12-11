@@ -1,0 +1,36 @@
+{
+  "attribution": {
+    "title": "Lake County Seed Collection Guide",
+    "subTitle": "Springwoodlandforbsv",
+    "version": "version 2",
+    "authors": "Dale Shields;Kelly Schultz",
+    "location": "Lake County, Illinois, USA",
+    "organization": "Lake County Forest Preserve District",
+    "license": "CC BY-NC",
+    "attributionText": "Lake County Seed Collection Guide | Spring Woodland Forbs | Lake County, Illinois, USA | Lake County Forest Preserve District | Authors: Kelly Schultz & Dale Shields | Photos by DJ Shields | License: CC BY-NC 4.0"
+  },
+  "family": "Ranunculaceae",
+  "seedGroups": [
+    {
+      "name": "Shattering",
+      "description": "Shattering seeds can be tough to visually judge for ripeness. Use a *gentle* touch test to see if the seeds easily loosen.",
+      "images": [
+        "Shattering_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_page1_img1.png"
+      ]
+    }
+  ],
+  "species": {
+    "id": "sp_11",
+    "commonName": "Rue Anemone",
+    "scientificName": "Anemonella thalictroides",
+    "photoDate": "6-15-18",
+    "description": "Shattering. Thalictroides is Latin for “thalictrum-like” and this is clear in the similarity of the seeds and leaves. The leaf arrangement & plant size is clearly different: a small whorl of leaves for this ankle-high species, and bushier for the shin- to knee-high Thalictrum.",
+    "images": [
+      "anemonella_thalictroides_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p6_4.png",
+      "anemonella_thalictroides_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p6_5.png",
+      "anemonella_thalictroides_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p6_6.png",
+      "anemonella_thalictroides_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p6_7.png"
+    ],
+    "pageNumber": 6
+  }
+}

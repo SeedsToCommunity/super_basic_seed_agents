@@ -1,0 +1,894 @@
+{
+  "files": {
+    "Viola_pubescens_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_LakeCounty.json": {
+      "id": "1NPqHinPbCZRWDNqGeMxCH_1JQAgR7_hs",
+      "modifiedTime": "2025-12-10T16:42:31.899Z",
+      "size": "1793",
+      "mimeType": "application/json",
+      "downloadedAt": "2025-12-11T17:27:03.506Z"
+    },
+    "Viola_labradorica_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_LakeCounty.json": {
+      "id": "1TW8auaxNlgP1lAV_W83ej88X0poQQ31v",
+      "modifiedTime": "2025-12-10T16:42:30.665Z",
+      "size": "2238",
+      "mimeType": "application/json",
+      "downloadedAt": "2025-12-11T17:27:03.794Z"
+    },
+    "Uvularia_grandiflora_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_LakeCounty.json": {
+      "id": "1MLfMCTU5tRQuI0digeEoY6kQehuk24S8",
+      "modifiedTime": "2025-12-10T16:42:29.263Z",
+      "size": "2078",
+      "mimeType": "application/json",
+      "downloadedAt": "2025-12-11T17:27:04.039Z"
+    },
+    "Trillium_recurvatum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_LakeCounty.json": {
+      "id": "1Mp5AlUFyddxwjLtAqVHKVj9a0tNFrptc",
+      "modifiedTime": "2025-12-10T16:42:27.849Z",
+      "size": "1799",
+      "mimeType": "application/json",
+      "downloadedAt": "2025-12-11T17:27:04.310Z"
+    },
+    "Trillium_grandiflorum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_LakeCounty.json": {
+      "id": "1_qVhJiGttkCq8Gi1bKmJTvowmy_FcB1R",
+      "modifiedTime": "2025-12-10T16:42:26.774Z",
+      "size": "1749",
+      "mimeType": "application/json",
+      "downloadedAt": "2025-12-11T17:27:04.516Z"
+    },
+    "Thalictrum_dioicum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_LakeCounty.json": {
+      "id": "1pEyHlbVUMucU5n9jNVAWGdRIsbsRuVYR",
+      "modifiedTime": "2025-12-10T16:42:25.471Z",
+      "size": "1627",
+      "mimeType": "application/json",
+      "downloadedAt": "2025-12-11T17:27:04.871Z"
+    },
+    "Silene_virginica_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_LakeCounty.json": {
+      "id": "1JFaMRozKRn1QvNLEPoAXkbC4J8_K_0qv",
+      "modifiedTime": "2025-12-10T16:42:24.297Z",
+      "size": "1583",
+      "mimeType": "application/json",
+      "downloadedAt": "2025-12-11T17:27:05.482Z"
+    },
+    "Scilla_siberica_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_LakeCounty.json": {
+      "id": "1hC4eR1CPJYpvajIBMLEcby5vuVO9ad2X",
+      "modifiedTime": "2025-12-10T16:42:22.662Z",
+      "size": "1682",
+      "mimeType": "application/json",
+      "downloadedAt": "2025-12-11T17:27:05.838Z"
+    },
+    "Sanguinaria_canadensis_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_LakeCounty.json": {
+      "id": "1BCqYhYOkH9imSmcN1rhE9QlWHcWSpZSU",
+      "modifiedTime": "2025-12-10T16:42:21.259Z",
+      "size": "1773",
+      "mimeType": "application/json",
+      "downloadedAt": "2025-12-11T17:27:06.123Z"
+    },
+    "Ranunculus_septentrionalis_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_LakeCounty.json": {
+      "id": "1dFtiNcrhrRlw8mg_JJy4OK4XPouCVaCY",
+      "modifiedTime": "2025-12-10T16:42:20.172Z",
+      "size": "1635",
+      "mimeType": "application/json",
+      "downloadedAt": "2025-12-11T17:27:06.439Z"
+    },
+    "Ranunculus_abortivus_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_LakeCounty.json": {
+      "id": "1nq1NNE2JA3enyUDtZ-6I3TZ0ah5_RmjS",
+      "modifiedTime": "2025-12-10T16:42:18.970Z",
+      "size": "1681",
+      "mimeType": "application/json",
+      "downloadedAt": "2025-12-11T17:27:06.792Z"
+    },
+    "Polemonium_reptans_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_LakeCounty.json": {
+      "id": "1vkwYRZ0wds4jtXOtzmU0E4YeblR8KIaY",
+      "modifiedTime": "2025-12-10T16:42:17.658Z",
+      "size": "1819",
+      "mimeType": "application/json",
+      "downloadedAt": "2025-12-11T17:27:07.582Z"
+    },
+    "Phlox_divaricata_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_LakeCounty.json": {
+      "id": "1nMANnhxKNVfVm3wdWv1Jnc1XvHb6pl9x",
+      "modifiedTime": "2025-12-10T16:42:16.291Z",
+      "size": "1871",
+      "mimeType": "application/json",
+      "downloadedAt": "2025-12-11T17:27:08.327Z"
+    },
+    "Moehringia_lateriflora_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_LakeCounty.json": {
+      "id": "1gnkd4gmotHRvRS0T-XQcSls-FHgNQBBL",
+      "modifiedTime": "2025-12-10T16:42:15.162Z",
+      "size": "2015",
+      "mimeType": "application/json",
+      "downloadedAt": "2025-12-11T17:27:08.953Z"
+    },
+    "Jeffersonia_diphylla_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_LakeCounty.json": {
+      "id": "1d9MfNZRIxyLuhZqPQ_qayFI2DY2ziqd_",
+      "modifiedTime": "2025-12-10T16:42:13.639Z",
+      "size": "2082",
+      "mimeType": "application/json",
+      "downloadedAt": "2025-12-11T17:27:09.258Z"
+    },
+    "Hepatica_americana_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_LakeCounty.json": {
+      "id": "1G6AuiDVsjN1TqWtIgxZvJATSw8YRgtiq",
+      "modifiedTime": "2025-12-10T16:42:12.467Z",
+      "size": "1651",
+      "mimeType": "application/json",
+      "downloadedAt": "2025-12-11T17:27:09.721Z"
+    },
+    "Hepatica_acutiloba_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_LakeCounty.json": {
+      "id": "1aeZNleNfW5QKMkPEyCwWN00dEppgOCe5",
+      "modifiedTime": "2025-12-10T16:42:11.148Z",
+      "size": "1586",
+      "mimeType": "application/json",
+      "downloadedAt": "2025-12-11T17:27:10.012Z"
+    },
+    "Geranium_maculatum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_LakeCounty.json": {
+      "id": "1pAGDLb16UvtNjGdjgsx9nxTBXUoPVfKe",
+      "modifiedTime": "2025-12-10T16:42:09.743Z",
+      "size": "1806",
+      "mimeType": "application/json",
+      "downloadedAt": "2025-12-11T17:27:10.584Z"
+    },
+    "Floerkea_proserpinacoides_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_LakeCounty.json": {
+      "id": "12u_EJma8MPtUfRGZB_IF0a4BideorWOu",
+      "modifiedTime": "2025-12-10T16:42:08.487Z",
+      "size": "1669",
+      "mimeType": "application/json",
+      "downloadedAt": "2025-12-11T17:27:10.856Z"
+    },
+    "Erythronium_albidum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_LakeCounty.json": {
+      "id": "1skSrY7o7hWte3KpX7qxUDaa4fi7d78F-",
+      "modifiedTime": "2025-12-10T16:42:07.346Z",
+      "size": "2023",
+      "mimeType": "application/json",
+      "downloadedAt": "2025-12-11T17:27:11.234Z"
+    },
+    "Enemion_biternatum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_LakeCounty.json": {
+      "id": "1rpnOPPkCow-B6BtbmXJIRXwGsVxiE72O",
+      "modifiedTime": "2025-12-10T16:42:06.086Z",
+      "size": "2038",
+      "mimeType": "application/json",
+      "downloadedAt": "2025-12-11T17:27:11.505Z"
+    },
+    "Dicentra_cucullaria_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_LakeCounty.json": {
+      "id": "1nIyAvVOx4e6T7z6Y7pE1VtUGgogWXvPV",
+      "modifiedTime": "2025-12-10T16:42:04.643Z",
+      "size": "2080",
+      "mimeType": "application/json",
+      "downloadedAt": "2025-12-11T17:27:11.926Z"
+    },
+    "Dentaria_laciniata_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_LakeCounty.json": {
+      "id": "1FNv2Z7jbeA7Z9tDFsat1dwXMrzEuiYla",
+      "modifiedTime": "2025-12-10T16:42:03.440Z",
+      "size": "1807",
+      "mimeType": "application/json",
+      "downloadedAt": "2025-12-11T17:27:12.438Z"
+    },
+    "Claytonia_virginica_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_LakeCounty.json": {
+      "id": "1Y5eX4ie5NOnvyD6glzR5Pxunqr4cWsMp",
+      "modifiedTime": "2025-12-10T16:42:02.186Z",
+      "size": "2071",
+      "mimeType": "application/json",
+      "downloadedAt": "2025-12-11T17:27:12.647Z"
+    },
+    "Camassia_scilloides_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_LakeCounty.json": {
+      "id": "18pRjfzjCBR922b4J5zIq6wcmQoFEEpf_",
+      "modifiedTime": "2025-12-10T16:42:01.070Z",
+      "size": "1672",
+      "mimeType": "application/json",
+      "downloadedAt": "2025-12-11T17:27:13.333Z"
+    },
+    "Asarum_canadense_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_LakeCounty.json": {
+      "id": "1Uv2kChmW-nAIOW9Ogz-8zSss2U0uu9oM",
+      "modifiedTime": "2025-12-10T16:41:59.797Z",
+      "size": "1748",
+      "mimeType": "application/json",
+      "downloadedAt": "2025-12-11T17:27:13.607Z"
+    },
+    "Aquilegia_canadensis_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_LakeCounty.json": {
+      "id": "1U-BD7XS5zLrwHArve2x2OVE_9QbPW4bQ",
+      "modifiedTime": "2025-12-10T16:41:58.646Z",
+      "size": "1678",
+      "mimeType": "application/json",
+      "downloadedAt": "2025-12-11T17:27:14.337Z"
+    },
+    "Anemonella_thalictroides_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_LakeCounty.json": {
+      "id": "12x7IpvLMoZHZbvE5fbNlbKNhCC8zulRE",
+      "modifiedTime": "2025-12-10T16:41:57.447Z",
+      "size": "1794",
+      "mimeType": "application/json",
+      "downloadedAt": "2025-12-11T17:27:14.800Z"
+    },
+    "Anemone_quinquefolia_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_LakeCounty.json": {
+      "id": "1PKNKwj3wmoDCCrTXuE4DpLbVkTunr2GT",
+      "modifiedTime": "2025-12-10T16:41:56.169Z",
+      "size": "1669",
+      "mimeType": "application/json",
+      "downloadedAt": "2025-12-11T17:27:15.076Z"
+    },
+    "viola_pubescens_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p9_5.png": {
+      "id": "1pG4EM2qZmt36LZdFb3dEaTwiOCp5hUgh",
+      "modifiedTime": "2025-12-10T16:41:54.486Z",
+      "size": "243451",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:15.368Z"
+    },
+    "viola_pubescens_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p9_4.png": {
+      "id": "1qwyI1Q9D3n7VnIFCPs548v2SYhGIlvFe",
+      "modifiedTime": "2025-12-10T16:41:53.134Z",
+      "size": "204206",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:15.905Z"
+    },
+    "viola_pubescens_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p9_3.png": {
+      "id": "1xtmr-Bxr9jF_7-7EZuLeH4_GZWpxHDdA",
+      "modifiedTime": "2025-12-10T16:41:51.278Z",
+      "size": "269653",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:16.762Z"
+    },
+    "viola_labradorica_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p9_2.png": {
+      "id": "1WsGVF_TU56gqv8uWOXnoARJHHeyuAG0B",
+      "modifiedTime": "2025-12-10T16:41:50.002Z",
+      "size": "226308",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:17.248Z"
+    },
+    "viola_labradorica_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p9_1.png": {
+      "id": "1Mq2FPq6SX6j0CGF_F_JZk5cIF9jaD2vw",
+      "modifiedTime": "2025-12-10T16:41:47.720Z",
+      "size": "429422",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:18.758Z"
+    },
+    "uvularia_grandiflora_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p11_9.png": {
+      "id": "1z982RkEQh9zL4T5fnJ_7FcErf6Pc7jPL",
+      "modifiedTime": "2025-12-10T16:41:46.264Z",
+      "size": "203065",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:19.169Z"
+    },
+    "uvularia_grandiflora_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p11_8.png": {
+      "id": "18LICDgtnBLpuVnVBPTvopcfpSd1S97wq",
+      "modifiedTime": "2025-12-10T16:41:44.877Z",
+      "size": "149946",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:19.573Z"
+    },
+    "uvularia_grandiflora_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p11_7.png": {
+      "id": "12v0B2MpQiELXcdRTjp8QUmhBjyMYnOgm",
+      "modifiedTime": "2025-12-10T16:41:43.287Z",
+      "size": "162838",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:19.811Z"
+    },
+    "trillium_recurvatum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p12_6.png": {
+      "id": "1HSeApIlrjApsDhYLONn3Z7LIBNo1MQvt",
+      "modifiedTime": "2025-12-10T16:41:41.761Z",
+      "size": "257303",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:20.045Z"
+    },
+    "trillium_recurvatum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p12_5.png": {
+      "id": "1_aZqtLY_9Cyqnb7_Qx5AiA1dDA2xs5cE",
+      "modifiedTime": "2025-12-10T16:41:40.346Z",
+      "size": "147763",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:20.389Z"
+    },
+    "trillium_recurvatum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p12_4.png": {
+      "id": "13YEmTZi8Dpcv0YQ7n6T-HE-2TaAyWo_z",
+      "modifiedTime": "2025-12-10T16:41:38.929Z",
+      "size": "188245",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:20.727Z"
+    },
+    "trillium_grandiflorum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p12_3.png": {
+      "id": "1ePOtki6dFLodoBFqQulzLPQPyVSfGImG",
+      "modifiedTime": "2025-12-10T16:41:37.122Z",
+      "size": "281962",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:21.244Z"
+    },
+    "trillium_grandiflorum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p12_2.png": {
+      "id": "1fac3syXOPQu6Ldf9gvucWAqIoVpnEmOb",
+      "modifiedTime": "2025-12-10T16:41:35.691Z",
+      "size": "138683",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:21.510Z"
+    },
+    "trillium_grandiflorum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p12_1.png": {
+      "id": "17_sDZFOKzaR8b31BoSfQn62Qog6XRqD6",
+      "modifiedTime": "2025-12-10T16:41:34.303Z",
+      "size": "183809",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:22.168Z"
+    },
+    "thalictrum_dioicum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p6_9.png": {
+      "id": "1Py8243KNdlOKlxGFrt8mdQfjrfqEj6ox",
+      "modifiedTime": "2025-12-10T16:41:32.791Z",
+      "size": "138608",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:22.610Z"
+    },
+    "thalictrum_dioicum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p6_8.png": {
+      "id": "1B4DoGGMoHJgWYGfYqMsn0CXW4T3SmJtX",
+      "modifiedTime": "2025-12-10T16:41:31.456Z",
+      "size": "200841",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:22.961Z"
+    },
+    "thalictrum_dioicum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p6_10.png": {
+      "id": "18O7hnZYQLN-_4esKNGYuhKljVwYK6qvH",
+      "modifiedTime": "2025-12-10T16:41:29.939Z",
+      "size": "250236",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:23.309Z"
+    },
+    "silene_virginica_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p11_3.png": {
+      "id": "1vGzeNldsTf_ngvEB53PWTqyIFagYeFKB",
+      "modifiedTime": "2025-12-10T16:41:28.615Z",
+      "size": "289841",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:23.728Z"
+    },
+    "silene_virginica_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p11_2.png": {
+      "id": "1fuDsxlYxa9Xr54sRArTOpdwwWKCPgapv",
+      "modifiedTime": "2025-12-10T16:41:26.866Z",
+      "size": "184100",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:24.180Z"
+    },
+    "silene_virginica_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p11_1.png": {
+      "id": "1QMwNTOSH10SQqK8y3vQ9MSk30DzivN2s",
+      "modifiedTime": "2025-12-10T16:41:25.523Z",
+      "size": "232728",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:24.539Z"
+    },
+    "scilla_siberica_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p4_6.png": {
+      "id": "10y5lrV0iv42ouCEd5pgdUUBfowxQQLU_",
+      "modifiedTime": "2025-12-10T16:41:23.764Z",
+      "size": "251463",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:25.221Z"
+    },
+    "scilla_siberica_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p4_5.png": {
+      "id": "1NzUCL1FLQaFFB5QQHDkRMi8YzW04uCF1",
+      "modifiedTime": "2025-12-10T16:41:21.603Z",
+      "size": "272267",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:25.894Z"
+    },
+    "scilla_siberica_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p4_4.png": {
+      "id": "1lAxSI3Ft17YXKE8kCylQvolvLQv8nGnB",
+      "modifiedTime": "2025-12-10T16:41:20.031Z",
+      "size": "295455",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:26.544Z"
+    },
+    "sanguinaria_canadensis_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p5_9.png": {
+      "id": "1q5_yNsbcyyqVRHAA3QDScsDYWMQD9gjD",
+      "modifiedTime": "2025-12-10T16:41:18.420Z",
+      "size": "277948",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:27.099Z"
+    },
+    "sanguinaria_canadensis_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p5_8.png": {
+      "id": "1cyeGiytSMU14Jgy2--Jx8M6Ejr1m6nXj",
+      "modifiedTime": "2025-12-10T16:41:16.965Z",
+      "size": "190852",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:27.530Z"
+    },
+    "sanguinaria_canadensis_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p5_7.png": {
+      "id": "1kI7zIvft5aFhDVUzOCLTYbgY-wmhdpw1",
+      "modifiedTime": "2025-12-10T16:41:15.378Z",
+      "size": "247229",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:27.788Z"
+    },
+    "ranunculus_septentrionalis_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p7_6.png": {
+      "id": "1-3_xMBFYNUwB7IKxiPjBBWle2Z_gqKnv",
+      "modifiedTime": "2025-12-10T16:41:13.663Z",
+      "size": "295083",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:28.370Z"
+    },
+    "ranunculus_septentrionalis_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p7_5.png": {
+      "id": "12AOjwWF_S1ThR9fAhCy3pW-r4yBTm1oT",
+      "modifiedTime": "2025-12-10T16:41:12.320Z",
+      "size": "123804",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:28.754Z"
+    },
+    "ranunculus_septentrionalis_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p7_4.png": {
+      "id": "18iiqy-6KlrhmHFsCXLYZxG-93dNDHvz0",
+      "modifiedTime": "2025-12-10T16:41:10.978Z",
+      "size": "193967",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:29.180Z"
+    },
+    "ranunculus_abortivus_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p7_3.png": {
+      "id": "19bLpf3MbK1Q7c7s5ldaArhpnWNqzlyo4",
+      "modifiedTime": "2025-12-10T16:41:09.515Z",
+      "size": "245809",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:29.444Z"
+    },
+    "ranunculus_abortivus_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p7_2.png": {
+      "id": "11W1bz19MS-hgASxF-4AyRCEwcPi35ngp",
+      "modifiedTime": "2025-12-10T16:41:08.168Z",
+      "size": "189444",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:29.851Z"
+    },
+    "ranunculus_abortivus_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p7_1.png": {
+      "id": "1pwxSgXQjuEEXuP-1dFIG-XG83FljgO2I",
+      "modifiedTime": "2025-12-10T16:41:06.636Z",
+      "size": "261885",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:30.650Z"
+    },
+    "polemonium_reptans_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p8_6.png": {
+      "id": "1A3eqrjvGo8N1HkIXv1aFA5AokolQn4Fn",
+      "modifiedTime": "2025-12-10T16:41:05.151Z",
+      "size": "233852",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:31.182Z"
+    },
+    "polemonium_reptans_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p8_5.png": {
+      "id": "1WGbWsZ5exjZBozuXQq1iH9d2HJHQkg9e",
+      "modifiedTime": "2025-12-10T16:41:03.290Z",
+      "size": "176174",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:31.590Z"
+    },
+    "polemonium_reptans_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p8_4.png": {
+      "id": "1iPrE8DtGH5-Mlf86dnx5L3ds7LwQUAtD",
+      "modifiedTime": "2025-12-10T16:41:01.874Z",
+      "size": "241153",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:32.149Z"
+    },
+    "phlox_divaricata_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p10_9.png": {
+      "id": "1qzXy9nt4k1_zkqxNQffHDoMr6I75Axd2",
+      "modifiedTime": "2025-12-10T16:41:00.464Z",
+      "size": "285664",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:32.865Z"
+    },
+    "phlox_divaricata_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p10_8.png": {
+      "id": "15my-Ld5xA_tqCoH1FwP9XAnAoQL2QHLd",
+      "modifiedTime": "2025-12-10T16:40:59.033Z",
+      "size": "216388",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:33.225Z"
+    },
+    "phlox_divaricata_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p10_7.png": {
+      "id": "1Ix9R-8i9rakjsh2CUIdCMVLSPIxTaVEW",
+      "modifiedTime": "2025-12-10T16:40:57.350Z",
+      "size": "192214",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:33.662Z"
+    },
+    "moehringia_lateriflora_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p11_6.png": {
+      "id": "1ONaO8-j5_WMODdK7VEkyQth6zdCELLn_",
+      "modifiedTime": "2025-12-10T16:40:55.739Z",
+      "size": "293274",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:34.112Z"
+    },
+    "moehringia_lateriflora_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p11_5.png": {
+      "id": "18J7DqLbRNXS0cD9ulJMv1E7Qif5obOF6",
+      "modifiedTime": "2025-12-10T16:40:54.263Z",
+      "size": "174661",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:34.563Z"
+    },
+    "moehringia_lateriflora_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p11_4.png": {
+      "id": "1kUAR2B9CxEmcfGPbk7oG2eQ2PfnZ-TQZ",
+      "modifiedTime": "2025-12-10T16:40:52.839Z",
+      "size": "229281",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:34.932Z"
+    },
+    "jeffersonia_diphylla_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p10_6.png": {
+      "id": "1CPgc_IzyX7kFGEJUUNZsjPoVIM01OPfQ",
+      "modifiedTime": "2025-12-10T16:40:50.749Z",
+      "size": "245819",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:35.440Z"
+    },
+    "jeffersonia_diphylla_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p10_5.png": {
+      "id": "10nJ4Kc8p1BDeENdIyjI-xS9mZxOk-Goj",
+      "modifiedTime": "2025-12-10T16:40:49.216Z",
+      "size": "193530",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:35.957Z"
+    },
+    "jeffersonia_diphylla_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p10_4.png": {
+      "id": "1qUCysPVVP8GNaj1omHlbreJ4jNi327eV",
+      "modifiedTime": "2025-12-10T16:40:47.784Z",
+      "size": "229050",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:36.472Z"
+    },
+    "hepatica_americana_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p3_8.png": {
+      "id": "1o0wsuqU7lFbkkfzS1BSGksQ3g8dQ6umu",
+      "modifiedTime": "2025-12-10T16:40:46.557Z",
+      "size": "239965",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:36.832Z"
+    },
+    "hepatica_americana_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p3_7.png": {
+      "id": "11ZENNiXnrVLRttWV3yLOQ3UfaCs5KM9Z",
+      "modifiedTime": "2025-12-10T16:40:45.266Z",
+      "size": "213764",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:37.221Z"
+    },
+    "hepatica_americana_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p3_6.png": {
+      "id": "1516I6KMC-BqBufELFUG_Ztax2OmWrx8a",
+      "modifiedTime": "2025-12-10T16:40:43.919Z",
+      "size": "262897",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:37.972Z"
+    },
+    "hepatica_acutiloba_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p3_5.png": {
+      "id": "1XvU1JwJnVcUVTufOcZ46yJTjC5HpYHWZ",
+      "modifiedTime": "2025-12-10T16:40:42.458Z",
+      "size": "270745",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:38.584Z"
+    },
+    "hepatica_acutiloba_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p3_4.png": {
+      "id": "1oP2LeXhmxuyrNBkiTTtbSHv-KvAKZNLV",
+      "modifiedTime": "2025-12-10T16:40:40.930Z",
+      "size": "481225",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:38.953Z"
+    },
+    "geranium_maculatum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p7_9.png": {
+      "id": "1jx-vfwAMRjXvDCg_TtdyYAgw50LIw-r8",
+      "modifiedTime": "2025-12-10T16:40:39.441Z",
+      "size": "156255",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:39.291Z"
+    },
+    "geranium_maculatum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p7_8.png": {
+      "id": "13SHlOf6S_tc_oBmNqY4YbrHH4-u5qaMC",
+      "modifiedTime": "2025-12-10T16:40:37.976Z",
+      "size": "217952",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:39.867Z"
+    },
+    "geranium_maculatum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p7_7.png": {
+      "id": "1GwzpIiKgCuPvpMHat6QdeTMFabjLe8w4",
+      "modifiedTime": "2025-12-10T16:40:36.557Z",
+      "size": "266500",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:40.585Z"
+    },
+    "floerkea_proserpinacoides_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p5_3.png": {
+      "id": "1blg77H7t1mungeC6NSjYRCewM4_wvphB",
+      "modifiedTime": "2025-12-10T16:40:34.624Z",
+      "size": "260238",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:41.034Z"
+    },
+    "floerkea_proserpinacoides_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p5_2.png": {
+      "id": "1YrRmW-zE90w29bZMrACeAMX6GrLDeLp-",
+      "modifiedTime": "2025-12-10T16:40:33.069Z",
+      "size": "212439",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:41.687Z"
+    },
+    "floerkea_proserpinacoides_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p5_1.png": {
+      "id": "1wKFQrPKT2yzRjxoA7z_Ocy4DlhQWwS1g",
+      "modifiedTime": "2025-12-10T16:40:31.646Z",
+      "size": "296412",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:42.212Z"
+    },
+    "erythronium_albidum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p5_6.png": {
+      "id": "17tNx_4AIq3atcgTV0OhhCMzWba6225j1",
+      "modifiedTime": "2025-12-10T16:40:30.215Z",
+      "size": "199216",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:42.962Z"
+    },
+    "erythronium_albidum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p5_5.png": {
+      "id": "1Mr339sPuakzhY8x6l5O-Ci8qHm5Gjt2S",
+      "modifiedTime": "2025-12-10T16:40:28.723Z",
+      "size": "183789",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:43.325Z"
+    },
+    "erythronium_albidum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p5_4.png": {
+      "id": "19ehdcdxBSj80WOnbTLSpWyqLdgrsCwfV",
+      "modifiedTime": "2025-12-10T16:40:27.161Z",
+      "size": "283255",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:43.843Z"
+    },
+    "enemion_biternatum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p6_3.png": {
+      "id": "1XguKwXCprRjFH-M899158uL-xLDoq0AX",
+      "modifiedTime": "2025-12-10T16:40:25.473Z",
+      "size": "226818",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:44.221Z"
+    },
+    "enemion_biternatum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p6_2.png": {
+      "id": "1m5PDdO9Wlivl7sEhtulmacpQFFYvYBib",
+      "modifiedTime": "2025-12-10T16:40:23.965Z",
+      "size": "193737",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:44.584Z"
+    },
+    "enemion_biternatum_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p6_1.png": {
+      "id": "1t22BNRCAkWxaBBeHzt_x8sfxza10dqBl",
+      "modifiedTime": "2025-12-10T16:40:22.516Z",
+      "size": "269262",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:45.128Z"
+    },
+    "dicentra_cucullaria_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p3_3.png": {
+      "id": "1WyphmaMJZbt35EC7xlaFemsvjK2bC0jY",
+      "modifiedTime": "2025-12-10T16:40:21.125Z",
+      "size": "241445",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:45.783Z"
+    },
+    "dicentra_cucullaria_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p3_2.png": {
+      "id": "10qrAM39RW8FGdmGbbnXvdl9QyET34F2K",
+      "modifiedTime": "2025-12-10T16:40:19.554Z",
+      "size": "174856",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:46.227Z"
+    },
+    "dicentra_cucullaria_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p3_1.png": {
+      "id": "1Tkp2lToyh586TapxOtstnTacEj-ltkr3",
+      "modifiedTime": "2025-12-10T16:40:18.001Z",
+      "size": "274503",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:47.619Z"
+    },
+    "dentaria_laciniata_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p8_3.png": {
+      "id": "1rjHBQqD3AvU15oxF-X26FmeqbZVJtoiF",
+      "modifiedTime": "2025-12-10T16:40:16.601Z",
+      "size": "236037",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:48.084Z"
+    },
+    "dentaria_laciniata_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p8_2.png": {
+      "id": "1oXwL6mAnFldBsi0Wf8gG4TeU3kUlyPh5",
+      "modifiedTime": "2025-12-10T16:40:15.104Z",
+      "size": "174112",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:48.391Z"
+    },
+    "dentaria_laciniata_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p8_1.png": {
+      "id": "1BT-9gthkhj_w2SLQY0bN92mUrrvyZjv0",
+      "modifiedTime": "2025-12-10T16:40:13.774Z",
+      "size": "222936",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:48.771Z"
+    },
+    "claytonia_virginica_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p4_3.png": {
+      "id": "1-sKL2QOTarbAizZRpWniE7rV-EHTGElP",
+      "modifiedTime": "2025-12-10T16:40:12.332Z",
+      "size": "211790",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:49.426Z"
+    },
+    "claytonia_virginica_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p4_2.png": {
+      "id": "115MQiCkYbLz4SbOSqhSrldHQGyj-Me5Q",
+      "modifiedTime": "2025-12-10T16:40:10.844Z",
+      "size": "168962",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:49.880Z"
+    },
+    "claytonia_virginica_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p4_1.png": {
+      "id": "1-9neWyuvD5aJAzIsNvi9_Qe7ngec_v-b",
+      "modifiedTime": "2025-12-10T16:40:09.408Z",
+      "size": "181941",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:50.222Z"
+    },
+    "camassia_scilloides_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p8_9.png": {
+      "id": "1cpF6tBAYJvW58lVeGD4NOU3ZAxDjJYy8",
+      "modifiedTime": "2025-12-10T16:40:07.737Z",
+      "size": "237577",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:50.639Z"
+    },
+    "camassia_scilloides_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p8_8.png": {
+      "id": "1EPGgNdsMOcgfL0FFyOJvb2bClALo4xik",
+      "modifiedTime": "2025-12-10T16:40:06.084Z",
+      "size": "138299",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:51.068Z"
+    },
+    "camassia_scilloides_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p8_7.png": {
+      "id": "1LGsj7WPwksesEkjK5b76Y4xjPiYJ-1-C",
+      "modifiedTime": "2025-12-10T16:40:04.592Z",
+      "size": "243784",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:51.448Z"
+    },
+    "asarum_canadense_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p10_3.png": {
+      "id": "1_uAi2lzoekUK3Iaj-t2rbHIr-6INYsuI",
+      "modifiedTime": "2025-12-10T16:40:03.092Z",
+      "size": "263861",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:51.842Z"
+    },
+    "asarum_canadense_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p10_2.png": {
+      "id": "1WQ_ksrIFycQz7u-yGEaQ1LWHRJ_Y5tbd",
+      "modifiedTime": "2025-12-10T16:40:01.572Z",
+      "size": "265892",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:52.212Z"
+    },
+    "asarum_canadense_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p10_1.png": {
+      "id": "1GJSf67l1QaPk0h1rwNgcPVhGpA3voMDY",
+      "modifiedTime": "2025-12-10T16:39:59.912Z",
+      "size": "248018",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:52.490Z"
+    },
+    "aquilegia_canadensis_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p9_8.png": {
+      "id": "1Q2kCgZzT3juCUSJC7LDV4KhECsYf9H9O",
+      "modifiedTime": "2025-12-10T16:39:58.345Z",
+      "size": "211207",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:52.884Z"
+    },
+    "aquilegia_canadensis_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p9_7.png": {
+      "id": "1kxel5WVH6uEsDzvQRuj-EsQUQqk94XB1",
+      "modifiedTime": "2025-12-10T16:39:56.961Z",
+      "size": "186256",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:53.226Z"
+    },
+    "aquilegia_canadensis_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p9_6.png": {
+      "id": "1AyOJxjqGXVmOAijVQe0xzFef4GXhsr-i",
+      "modifiedTime": "2025-12-10T16:39:55.655Z",
+      "size": "232898",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:53.633Z"
+    },
+    "anemonella_thalictroides_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p6_7.png": {
+      "id": "1DDHFuEE6ckZxHYmGedmnMwGF8zDEpx10",
+      "modifiedTime": "2025-12-10T16:39:54.252Z",
+      "size": "228948",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:53.991Z"
+    },
+    "anemonella_thalictroides_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p6_6.png": {
+      "id": "1-dqp8EPhyXdYGkxFYbadXuUdm9-W--jr",
+      "modifiedTime": "2025-12-10T16:39:52.653Z",
+      "size": "135205",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:54.803Z"
+    },
+    "anemonella_thalictroides_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p6_5.png": {
+      "id": "1aNRGt9xZl_04b94Nl3uH822qtm-uVtfd",
+      "modifiedTime": "2025-12-10T16:39:51.194Z",
+      "size": "203663",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:55.148Z"
+    },
+    "anemonella_thalictroides_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p6_4.png": {
+      "id": "1yoFiPVNsF-te3sBxHA70yryM7F09d43E",
+      "modifiedTime": "2025-12-10T16:39:49.683Z",
+      "size": "124665",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:55.643Z"
+    },
+    "anemone_quinquefolia_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p4_9.png": {
+      "id": "1k7IthxsaX69B28zeZDvlnlTdzqWQ5w-Y",
+      "modifiedTime": "2025-12-10T16:39:48.272Z",
+      "size": "273862",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:56.359Z"
+    },
+    "anemone_quinquefolia_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p4_8.png": {
+      "id": "1jx6vks7qOMCImzCvrgNnqAncHoAn8ly7",
+      "modifiedTime": "2025-12-10T16:39:46.924Z",
+      "size": "173271",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:56.757Z"
+    },
+    "anemone_quinquefolia_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_p4_7.png": {
+      "id": "1PZbqEAB7eNyRkWNt1xYGJPsBqzzPOsMl",
+      "modifiedTime": "2025-12-10T16:39:45.121Z",
+      "size": "215454",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:57.418Z"
+    },
+    "Shattering_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_page1_img1.png": {
+      "id": "1oo8koe8FIPQ12qbH1fZmTf85RcPRAYxT",
+      "modifiedTime": "2025-12-10T16:39:43.531Z",
+      "size": "12493",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:57.803Z"
+    },
+    "Shakers_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_page1_img1.png": {
+      "id": "1UmV4h2Rm3WQ-j94jJ8dl5YJSQ1wegH6n",
+      "modifiedTime": "2025-12-10T16:39:42.285Z",
+      "size": "13058",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:58.467Z"
+    },
+    "Milkweed_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_page1_img1.png": {
+      "id": "1m1H0A-WPnD93HyryIS65CjQ7GrdFx6WE",
+      "modifiedTime": "2025-12-10T16:39:40.829Z",
+      "size": "13708",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:58.886Z"
+    },
+    "Hitchhikers_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_page1_img1.png": {
+      "id": "1tzG617qEVI-jQh7rsxi_8xcliX9UBFvY",
+      "modifiedTime": "2025-12-10T16:39:39.484Z",
+      "size": "19018",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:27:59.376Z"
+    },
+    "Fluffy_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_page1_img1.png": {
+      "id": "1302NwMpfNIk2-gsD-dEAy48-QfWNdJU3",
+      "modifiedTime": "2025-12-10T16:39:38.103Z",
+      "size": "12016",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:28:00.048Z"
+    },
+    "Elaiosomes_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_page1_img1.png": {
+      "id": "1VBBIurtN8-jn_7b0kd-hEdhARV__YqZi",
+      "modifiedTime": "2025-12-10T16:39:36.637Z",
+      "size": "14295",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:28:00.373Z"
+    },
+    "CrumblyConeheads_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_page1_img1.png": {
+      "id": "180U9UoDZ3YTu_ZQPOdG-2VOKeNl7fQZF",
+      "modifiedTime": "2025-12-10T16:39:35.194Z",
+      "size": "14864",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:28:00.739Z"
+    },
+    "Coneheads_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_page1_img1.png": {
+      "id": "1m68RrOTfCeXE6gJaLR6IZJ99GpLUrUEq",
+      "modifiedTime": "2025-12-10T16:39:33.802Z",
+      "size": "18482",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:28:01.055Z"
+    },
+    "Berries_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_page1_img1.png": {
+      "id": "176wF4jN0Vssz0_hXg3LoaUI3SkejQOa5",
+      "modifiedTime": "2025-12-10T16:39:32.236Z",
+      "size": "15330",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:28:01.693Z"
+    },
+    "Beaks_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_page1_img1.png": {
+      "id": "1Mfr9tNP6YsXCMLA_-y9nicmQnFBzTgzb",
+      "modifiedTime": "2025-12-10T16:39:30.391Z",
+      "size": "13468",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:28:02.131Z"
+    },
+    "Ballistic_1277_usa_illinois_lakecounty_springwoodlandforbsv2_0_page1_img1.png": {
+      "id": "1YmxE4Cn6-d8yqWIRSE0o4VH7ilpxodst",
+      "modifiedTime": "2025-12-10T16:39:28.940Z",
+      "size": "16316",
+      "mimeType": "image/png",
+      "downloadedAt": "2025-12-11T17:28:02.501Z"
+    },
+    "1277_usa_illinois_lakecounty_springwoodlandforbsv2_0.json": {
+      "id": "1VgfmqJzOdLy0rMl6f0V7UB0h_jNeehZ7",
+      "modifiedTime": "2025-12-10T16:39:27.533Z",
+      "size": "42363",
+      "mimeType": "application/json",
+      "downloadedAt": "2025-12-11T17:28:02.842Z"
+    }
+  },
+  "lastSync": "2025-12-11T17:29:22.085Z"
+}
