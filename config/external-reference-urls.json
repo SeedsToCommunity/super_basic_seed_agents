@@ -45,5 +45,6 @@
   "retrySettings": {
     "startDelayMs": 10,
     "maxDelayMs": 1000
-  }
+  },
+  "numSearchResults": 5
 }

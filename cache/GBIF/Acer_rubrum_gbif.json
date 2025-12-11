@@ -1,0 +1,82 @@
+{
+  "genus": "Acer",
+  "species": "rubrum",
+  "matched": true,
+  "usageKey": 3189883,
+  "acceptedName": "Acer rubrum L.",
+  "synonyms": [
+    {
+      "scientificName": "Acer coccineum F.Michx.",
+      "canonicalName": "Acer coccineum",
+      "genus": "Acer",
+      "species": "coccineum",
+      "binomial": "Acer coccineum",
+      "status": "HETEROTYPIC_SYNONYM",
+      "publishedIn": "F. Michx. (1817). In: N. Amer. Sylv. 1: 203."
+    },
+    {
+      "scientificName": "Acer drummondii Hook. & Arn. ex Nutt.",
+      "canonicalName": "Acer drummondii",
+      "genus": "Acer",
+      "species": "drummondii",
+      "binomial": "Acer drummondii",
+      "status": "HETEROTYPIC_SYNONYM",
+      "publishedIn": "Hook. & Arn. ex Nutt. (1846). In: N. Amer. Sylv. 2: 83."
+    },
+    {
+      "scientificName": "Acer fulgens Dippel",
+      "canonicalName": "Acer fulgens",
+      "genus": "Acer",
+      "species": "fulgens",
+      "binomial": "Acer fulgens",
+      "status": "SYNONYM",
+      "publishedIn": "Dippel. (1892). In: Handb. Laubholzk. 2: 435."
+    },
+    {
+      "scientificName": "Acer glaucum K.Koch",
+      "canonicalName": "Acer glaucum",
+      "genus": "Acer",
+      "species": "glaucum",
+      "binomial": "Acer glaucum",
+      "status": "SYNONYM",
+      "publishedIn": "Koch, K. (1869). In: Dendrologie 1: 543."
+    },
+    {
+      "scientificName": "Acer glaucum Marshall",
+      "canonicalName": "Acer glaucum",
+      "genus": "Acer",
+      "species": "glaucum",
+      "binomial": "Acer glaucum",
+      "status": "SYNONYM",
+      "publishedIn": "Marshall. (1785). In: Arbust. Amer. 2."
+    },
+    {
+      "scientificName": "Acer hypoleucum K.Koch",
+      "canonicalName": "Acer hypoleucum",
+      "genus": "Acer",
+      "species": "hypoleucum",
+      "binomial": "Acer hypoleucum",
+      "status": "SYNONYM",
+      "publishedIn": "Koch, K. (1869). In: Dendrologie 1: 543."
+    },
+    {
+      "scientificName": "Acer leucophyllum Hort.",
+      "canonicalName": "Acer leucophyllum",
+      "genus": "Acer",
+      "species": "leucophyllum",
+      "binomial": "Acer leucophyllum",
+      "status": "SYNONYM",
+      "publishedIn": "Hort. (1894). In: Hand-List Trees Kew, Pt. 1: (Polypet.) 99."
+    },
+    {
+      "scientificName": "Acer microphyllum Pax",
+      "canonicalName": "Acer microphyllum",
+      "genus": "Acer",
+      "species": "microphyllum",
+      "binomial": "Acer microphyllum",
+      "status": "PROPARTE_SYNONYM",
+      "publishedIn": "Pax. (1885). In: Bot. Jahrb. Syst. 7: 180, Nom. Illeg."
+    }
+  ],
+  "cachedAt": "2025-12-11T14:09:09.775Z"
+}

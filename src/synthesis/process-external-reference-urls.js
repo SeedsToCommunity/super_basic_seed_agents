@@ -2,6 +2,8 @@ import { getJson } from 'serpapi';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { findValidUrl } from '../utils/species-url-validator.js';
+import { fetchAndCachePageContent } from '../utils/page-content-client.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -219,9 +221,10 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-async function searchWithRetry(searchQuery, site) {
+async function searchWithRetry(searchQuery, site, genus, species) {
   const cfg = loadConfig();
   const { startDelayMs, maxDelayMs } = cfg.retrySettings;
+  const numResults = cfg.numSearchResults || 5;
   
   let delay = startDelayMs;
   let attempts = 0;
@@ -245,15 +248,28 @@ async function searchWithRetry(searchQuery, site) {
       const params = {
         api_key: apiKey,
         q: searchQuery,
-        num: 1
+        num: numResults
       };
       
       const result = await getJson(params);
       
       if (result.organic_results && result.organic_results.length > 0) {
-        const topResult = result.organic_results[0];
-        console.log(`  ✓ Found URL for ${site.name}: ${topResult.link}`);
-        return topResult.link;
+        console.log(`  Found ${result.organic_results.length} results for ${site.name}, validating...`);
+        
+        const urls = result.organic_results.map(r => r.link);
+        const validResult = await findValidUrl(urls, genus, species);
+        
+        if (validResult) {
+          console.log(`  ✓ Validated URL for ${site.name}: ${validResult.url}`);
+          return {
+            url: validResult.url,
+            validatedBy: validResult.validatedBy,
+            html: validResult.html
+          };
+        } else {
+          console.log(`  ✗ No valid URL found for ${site.name} (all ${urls.length} results failed validation)`);
+          return null;
+        }
       } else {
         console.log(`  ✗ No results found for ${site.name}`);
         return null;
@@ -306,14 +322,15 @@ export async function discoverAllUrls(genus, species) {
   
   for (const site of sitesToDiscover) {
     let url;
+    let validatedBy = null;
+    let html = null;
     
     if (site.useDirectUrl) {
-      // Construct URL directly (e.g., for Google Images) - no API key needed
       const searchTerm = encodeURIComponent(`${genus} ${species}`);
       url = `https://www.${site.baseUrl}&q=${searchTerm}`;
+      validatedBy = 'direct_url';
       console.log(`Constructing direct URL for ${site.name}: ${url}`);
     } else {
-      // Use SerpApi to search for the URL - requires API key
       if (!apiKey) {
         console.log(`Skipping ${site.name} (requires SERPAPI_API_KEY)`);
         continue;
@@ -322,12 +339,26 @@ export async function discoverAllUrls(genus, species) {
       const searchQuery = `site:${site.baseUrl} ${genus} ${species}`;
       console.log(`Searching: ${searchQuery}`);
       
-      url = await searchWithRetry(searchQuery, site);
+      const result = await searchWithRetry(searchQuery, site, genus, species);
+      
+      if (result) {
+        url = result.url;
+        validatedBy = result.validatedBy;
+        html = result.html;
+      }
     }
     
     if (url) {
       urls[site.name] = url;
       newDiscoveries++;
+      
+      if (!site.useDirectUrl && validatedBy) {
+        try {
+          await fetchAndCachePageContent(genus, species, site.name, url, validatedBy, html);
+        } catch (cacheError) {
+          console.log(`  Note: Could not cache page content for ${site.name}: ${cacheError.message}`);
+        }
+      }
     }
   }
   
