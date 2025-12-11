@@ -12,8 +12,10 @@
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.69.0",
+    "@mozilla/readability": "^0.6.0",
     "@octokit/rest": "^22.0.1",
     "googleapis": "^166.0.0",
+    "jsdom": "^27.3.0",
     "serpapi": "^2.2.1",
     "tsx": "^4.21.0"
   },
