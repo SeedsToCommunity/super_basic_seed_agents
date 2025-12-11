@@ -48,7 +48,7 @@ All synthesis modules must export:
 
 **Runtime Validation:** The pipeline validates that all declared column IDs have values and no extra keys exist, preventing silent data corruption.
 
-### Current Synthesis Modules (8 Total)
+### Current Synthesis Modules (9 Total)
 -   **`process-botanical-name.js`**: Validates botanical names using Claude API with **strict validation** (fails if name isn't exactly current accepted nomenclature). Acts as critical validation gate.
 -   **`process-native-checker.js`**: Determines if plant is native to Southeast Michigan using Claude API, dependent on botanical name validation.
 -   **`process-external-reference-urls.js`**: Discovers and caches URLs from botanical reference websites using SerpApi, based on validated botanical name.
@@ -57,6 +57,7 @@ All synthesis modules must export:
 -   **`process-michigan-flora.js`**: Retrieves ecological metrics from the Michigan Flora local CSV dataset (~2,873 species). Outputs 4 columns: Coefficient of Conservatism (C), Coefficient of Wetness (CW), Physiognomy, and Duration. No network requests - reads from `cache/MichiganFlora/`. Depends on botanical-name.
 -   **`process-inaturalist.js`**: Enriches plant data from iNaturalist API. **Appends Wikipedia URL** to existing External Reference URLs column. Adds 2 new columns: SE Michigan Monthly Observations (JSON histogram like `{"January": 5, "February": 16, ...}`) and Wikipedia Summary. Uses file-based caching in `cache/iNaturalist/`. Depends on botanical-name AND external-reference-urls.
 -   **`process-bonap.js`**: Discovers BONAP (Biota of North America Program) county-level range map image URLs. Uses predictable URL pattern with HEAD request verification, falls back to SerpApi search if needed. Outputs 1 column: BONAP Range Map (direct URL to PNG image). Uses file-based caching in `cache/BONAP/`. Depends on botanical-name.
+-   **`process-similar-species.js`**: **NEW** - Extracts similar species and distinguishing features using a tiered data approach. Aggregates data from Google Drive parsed PDFs and PageContent cache, sends to Claude API with structured prompt. Output is a single JSON column with Tier 1 (source-backed) and Tier 2 (LLM-inferred) data, plus known unknowns. Uses reusable data collection utilities (`species-data-collector.js`) and external prompt templates (`prompts/similar-species.md`).
 
 ### Processing Pipeline (`src/output/plant-pipeline.js`)
 The pipeline dynamically loads, validates, and executes enabled modules using a dependency graph. It provides:
@@ -125,6 +126,7 @@ Centralized system settings are managed in `config/config.json`, covering Google
 - `cache/MichiganFlora/`: Static 2024 dataset cached locally in CSV format (~2,873 species with ecological data)
 - `cache/iNaturalist/`: Folder with individual JSON files per species and endpoint type (`Genus_species_inaturalist_taxa.json`, `Genus_species_inaturalist_histogram.json`)
 - `cache/BONAP/`: Folder with individual JSON files per species (`Genus_species_bonap.json`) containing range map URLs with source tracking (direct vs serpapi)
+- `cache/DriveParsedPdfs/`: Synced from Google Drive `SpeciesAppDataFiles_DoNotTouch/Parsed PDF Data/`. Contains structured JSON files extracted from seed collection PDFs. Includes `index.json` for freshness tracking. Auto-syncs with modifiedTime comparison.
 
 ## External Dependencies
 
