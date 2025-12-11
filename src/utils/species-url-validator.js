@@ -1,4 +1,5 @@
 import { JSDOM } from 'jsdom';
+import { fetchWithCache } from './html-cache.js';
 
 function normalizeForComparison(text) {
   return text.toLowerCase().replace(/[^a-z0-9]/g, '');
@@ -134,42 +135,14 @@ export function checkSchemaOrg(html, genus, species) {
   }
 }
 
-export async function validateUrl(url, genus, species, fetchHtml = null) {
+export async function validateUrl(url, genus, species) {
   const urlCheck = checkUrlPath(url, genus, species);
   if (urlCheck.passed) {
     console.log(`  ✓ URL validated by: ${urlCheck.method}`);
     return { valid: true, method: urlCheck.method, html: null };
   }
   
-  let html;
-  if (fetchHtml) {
-    html = await fetchHtml(url);
-  } else {
-    try {
-      const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 10000);
-      
-      const response = await fetch(url, {
-        signal: controller.signal,
-        headers: {
-          'User-Agent': 'Mozilla/5.0 (compatible; BotanicalDataAggregator/1.0)',
-          'Accept': 'text/html,application/xhtml+xml'
-        }
-      });
-      
-      clearTimeout(timeoutId);
-      
-      if (!response.ok) {
-        console.log(`  ✗ HTTP ${response.status} for ${url}`);
-        return { valid: false, method: null, html: null };
-      }
-      
-      html = await response.text();
-    } catch (error) {
-      console.log(`  ✗ Failed to fetch ${url}: ${error.message}`);
-      return { valid: false, method: null, html: null };
-    }
-  }
+  const html = await fetchWithCache(url);
   
   if (!html) {
     return { valid: false, method: null, html: null };

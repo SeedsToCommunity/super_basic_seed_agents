@@ -182,12 +182,30 @@ The module searches 8 botanical reference websites:
 }
 ```
 
+#### Raw HTML Cache (New in v2.0)
+**Cache Location**: `cache/RawHTML/` (URL-based, MD5 hash filenames)
+
+**File Naming**: `{md5-hash-of-url}.json`
+
+**Purpose**: Caches ALL fetched HTML to avoid re-fetching, even for pages that fail species validation
+
+**Cache Structure**:
+```json
+{
+  "url": "https://www.illinoiswildflowers.info/trees/plants/red_maple.html",
+  "fetchedAt": "2025-12-11T...",
+  "html": "<html>...</html>"
+}
+```
+
+**Behavior**: Every successful HTTP response is cached immediately after fetch, regardless of whether the page passes species validation. This ensures we never re-fetch the same URL.
+
 #### Page Content Cache (New in v2.0)
 **Cache Location**: `cache/PageContent/` (per-species per-source JSON files)
 
 **File Naming**: `Genus_species_source.json` (e.g., `Acer_rubrum_go_botany.json`)
 
-**Purpose**: Stores parsed page content for future data extraction
+**Purpose**: Stores parsed page content for validated URLs for future data extraction
 
 **Cache Structure**:
 ```json

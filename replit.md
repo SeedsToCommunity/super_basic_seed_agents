@@ -118,6 +118,7 @@ Centralized system settings are managed in `config/config.json`, covering Google
 
 **Caching System**: The `cache/` directory stores API results to minimize expensive operations:
 - `cache/ExternalReferences/`: Folder with individual JSON files per species (`Genus_species_refURLs.json`) containing discovered website URLs from SerpApi. URLs are validated before caching.
+- `cache/RawHTML/`: URL-based cache storing raw HTML of every fetched page (MD5 hash filenames). Caches ALL pages regardless of validation result to avoid re-fetching.
 - `cache/PageContent/`: Folder with parsed page content per species per source (`Genus_species_source.json`). Contains extracted text content from reference websites using Mozilla's Readability library. Used as data source for future synthesis modules.
 - `cache/GBIF/`: Folder with individual pretty-printed JSON files per species (`Genus_species_gbif.json`) containing synonym data
 - `cache/MichiganFlora/`: Static 2024 dataset cached locally in CSV format (~2,873 species with ecological data)
