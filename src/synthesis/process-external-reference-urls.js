@@ -280,9 +280,25 @@ async function searchWithRetry(searchQuery, site, genus, species) {
       };
       
       const result = await getJson(params);
+      
+      // Only cache if we got a valid response structure
+      // (result should have organic_results array OR search_information indicating valid search)
+      if (!result || typeof result !== 'object') {
+        console.log(`  ✗ Invalid response from SerpApi for ${site.name}`);
+        delay = delay * 2;
+        continue;
+      }
+      
+      // Check for API errors in response
+      if (result.error) {
+        console.log(`  ✗ SerpApi error for ${site.name}: ${result.error}`);
+        delay = delay * 2;
+        continue;
+      }
+      
       const organicResults = result.organic_results || [];
       
-      // Cache the search results (even if empty)
+      // Cache the search results (safe to cache - this is a valid response)
       writeSerpCache(searchQuery, organicResults, {
         site: site.name,
         genus,
