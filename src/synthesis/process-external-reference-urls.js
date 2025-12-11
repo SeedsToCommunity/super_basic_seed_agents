@@ -4,6 +4,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { findValidUrl } from '../utils/species-url-validator.js';
 import { fetchAndCachePageContent } from '../utils/page-content-client.js';
+import { readSerpCache, writeSerpCache } from '../utils/serpapi-cache.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -226,6 +227,33 @@ async function searchWithRetry(searchQuery, site, genus, species) {
   const { startDelayMs, maxDelayMs } = cfg.retrySettings;
   const numResults = cfg.numSearchResults || 5;
   
+  // Check SerpApi cache first
+  const cachedResults = readSerpCache(searchQuery);
+  if (cachedResults !== null) {
+    // Use cached search results
+    if (cachedResults.length > 0) {
+      console.log(`  Using ${cachedResults.length} cached results for ${site.name}, validating...`);
+      const urls = cachedResults.map(r => r.link);
+      const validResult = await findValidUrl(urls, genus, species);
+      
+      if (validResult) {
+        console.log(`  ✓ Validated URL for ${site.name}: ${validResult.url}`);
+        return {
+          url: validResult.url,
+          validatedBy: validResult.validatedBy,
+          html: validResult.html
+        };
+      } else {
+        console.log(`  ✗ No valid URL found for ${site.name} (all ${urls.length} cached results failed validation)`);
+        return null;
+      }
+    } else {
+      console.log(`  ✗ Cached: No results for ${site.name}`);
+      return null;
+    }
+  }
+  
+  // No cache - call SerpApi
   let delay = startDelayMs;
   let attempts = 0;
   
@@ -252,11 +280,19 @@ async function searchWithRetry(searchQuery, site, genus, species) {
       };
       
       const result = await getJson(params);
+      const organicResults = result.organic_results || [];
       
-      if (result.organic_results && result.organic_results.length > 0) {
-        console.log(`  Found ${result.organic_results.length} results for ${site.name}, validating...`);
+      // Cache the search results (even if empty)
+      writeSerpCache(searchQuery, organicResults, {
+        site: site.name,
+        genus,
+        species
+      });
+      
+      if (organicResults.length > 0) {
+        console.log(`  Found ${organicResults.length} results for ${site.name}, validating...`);
         
-        const urls = result.organic_results.map(r => r.link);
+        const urls = organicResults.map(r => r.link);
         const validResult = await findValidUrl(urls, genus, species);
         
         if (validResult) {
