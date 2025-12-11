@@ -5,9 +5,9 @@ import { refreshParsedPdfCache, getCacheStats } from '../utils/drive-pdf-sync.js
 import { collectSpeciesData } from '../utils/species-data-collector.js';
 
 const TEST_SPECIES = [
-  { genus: 'Trillium', species: 'grandiflorum' },
-  { genus: 'Geranium', species: 'maculatum' },
-  { genus: 'Sanguinaria', species: 'canadensis' }
+//  { genus: 'Trillium', species: 'grandiflorum' },
+  { genus: 'Geranium', species: 'maculatum' }//,
+//  { genus: 'Sanguinaria', species: 'canadensis' }
 ];
 
 async function runTest() {
