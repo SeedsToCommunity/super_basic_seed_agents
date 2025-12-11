@@ -280,7 +280,7 @@ This module populates **1 column** in the output spreadsheet:
 - Check if any URLs exist in cache for this species
 - Identify which sites are missing from cache
 
-#### Step 2: URL Discovery
+#### Step 2: URL Discovery with Validation (v2.0)
 
 **For Cached Sites**: Return immediately (no API call)
 
@@ -290,6 +290,7 @@ This module populates **1 column** in the output spreadsheet:
 ```javascript
 searchQuery = `site:${domain} ${genus} ${species}`
 // Example: "site:illinoiswildflowers.info Quercus alba"
+// Request 5 results instead of 1
 ```
 
 *Direct URL Sites (no API call)*:
@@ -297,20 +298,55 @@ searchQuery = `site:${domain} ${genus} ${species}`
 url = `https://www.google.com/search?tbm=isch&q=${encodeURIComponent(genus + ' ' + species)}`
 ```
 
-#### Step 3: Retry Logic
+#### Step 3: URL Validation (New in v2.0)
+For each SerpApi result (starting from top), validate that the page is about the correct species:
+
+**Validation Checks (first pass wins)**:
+1. **URL Path Check** (no fetch required):
+   - Does URL contain genus AND species?
+   - Checks variations: `/acer/rubrum/`, `acer-rubrum`, `acer_rubrum`
+
+2. **Title Check** (requires page fetch):
+   - Does `<title>` element contain genus AND species?
+   - Example: `<title>Acer rubrum (red maple): Go Botany</title>` → ✓ PASS
+
+3. **H1 Check** (uses same fetched page):
+   - Does `<h1>` element contain genus AND species?
+   - Example: `<h1>Acer rubrum</h1>` → ✓ PASS
+
+4. **Schema.org Check** (uses same fetched page):
+   - Does JSON-LD structured data have matching `scientificName`?
+   - Looks for `@type: "Taxon"` with matching name
+
+**Result**: First URL that passes any check is accepted. If all 5 results fail, no URL is cached for that site.
+
+#### Step 4: Page Content Extraction (New in v2.0)
+When a URL passes validation:
+1. Use already-fetched HTML (if available) or fetch the page
+2. Extract content using Mozilla's `@mozilla/readability` library
+3. Cache to `cache/PageContent/Genus_species_source.json`
+
+**Extracted Content**:
+- `title`: Page title element
+- `h1`: Main heading
+- `schemaOrg`: Structured data (if present)
+- `excerpt`: Brief summary from Readability
+- `textContent`: Full readable text content
+
+#### Step 5: Retry Logic
 For each missing site:
 - Start with 10ms delay
 - Exponential backoff on errors: 10ms → 20ms → 40ms → 80ms → 160ms → 320ms → 640ms
 - Stop at 1000ms max delay
 - Handle rate limits (HTTP 429) with backoff
 
-#### Step 4: Cache Update
+#### Step 6: Cache Update
 If new URLs discovered:
-- Merge with existing cache entry
-- Save to `cache/external-reference-urls.json`
-- Sort alphabetically (species keys and site names)
+- Save URL to `cache/ExternalReferences/genus_species_refURLs.json`
+- Save page content to `cache/PageContent/Genus_species_source.json`
+- Sort alphabetically (site names)
 
-#### Step 5: Return Combined Results
+#### Step 7: Return Combined Results
 Merge cached URLs + newly discovered URLs
 
 ### Example Output

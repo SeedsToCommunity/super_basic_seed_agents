@@ -127,9 +127,24 @@ This document describes all external APIs and data sources that the Seed and Spe
 {
   api_key: process.env.SERPAPI_API_KEY,
   q: searchQuery,
-  num: 1  // Return only top result
+  num: 5  // Return top 5 results for validation
 }
 ```
+
+### URL Validation (New in v2.0)
+SerpApi results are validated before caching to ensure pages are about the correct species:
+
+**Validation Checks (in order, first pass wins)**:
+1. **URL Path**: Does URL contain genus AND species? (e.g., `/acer/rubrum/`)
+2. **Title Element**: Does `<title>` contain genus AND species?
+3. **H1 Heading**: Does `<h1>` contain genus AND species?
+4. **Schema.org**: Does JSON-LD have matching `scientificName`?
+
+**Process**:
+- Request 5 results from SerpApi
+- Check each result starting from top
+- Accept first URL that passes any validation check
+- Skip URLs that fail all checks (may be about related but wrong species)
 
 ### Targeted Websites
 The module searches 8 botanical reference websites:
@@ -146,23 +161,63 @@ The module searches 8 botanical reference websites:
 - Google Images (direct URL construction, no API call required)
 
 ### Caching Strategy
-**Cache Location**: `cache/external-reference-urls.json`
+
+#### URL Cache
+**Cache Location**: `cache/ExternalReferences/` (per-species JSON files)
+
+**File Naming**: `genus_species_refURLs.json`
 
 **Cache Structure**:
 ```json
 {
-  "Genus species": {
-    "Site Name": "https://url...",
-    "Another Site": "https://url..."
+  "_meta": {
+    "genus": "Acer",
+    "species": "rubrum",
+    "cachedAt": "2025-12-11T..."
+  },
+  "urls": {
+    "Go Botany": "https://gobotany.nativeplanttrust.org/species/acer/rubrum/",
+    "Illinois Wildflowers": "https://www.illinoiswildflowers.info/trees/plants/red_maple.html"
   }
 }
 ```
+
+#### Page Content Cache (New in v2.0)
+**Cache Location**: `cache/PageContent/` (per-species per-source JSON files)
+
+**File Naming**: `Genus_species_source.json` (e.g., `Acer_rubrum_go_botany.json`)
+
+**Purpose**: Stores parsed page content for future data extraction
+
+**Cache Structure**:
+```json
+{
+  "_meta": {
+    "genus": "Acer",
+    "species": "rubrum",
+    "source": "Go Botany",
+    "url": "https://gobotany.nativeplanttrust.org/species/acer/rubrum/",
+    "fetchedAt": "2025-12-11T...",
+    "validatedBy": "url_path"
+  },
+  "content": {
+    "title": "Acer rubrum (red maple): Go Botany",
+    "h1": "Acer rubrum",
+    "schemaOrg": null,
+    "excerpt": "Red maple is a deciduous tree...",
+    "textContent": "Full readable text extracted by Mozilla Readability..."
+  }
+}
+```
+
+**Content Extraction**: Uses Mozilla's `@mozilla/readability` library (same algorithm as Firefox Reader View) to extract main page content, stripping navigation, ads, and boilerplate.
 
 **Behavior**:
 - Cache hit: Returns all URLs immediately (no API calls)
 - Partial cache: Only searches missing sites
 - Cache miss: Searches all configured sites
 - Empty results NOT cached (allows retry on next run)
+- Page content cached after URL validation passes
 
 ### Retry & Rate Limiting
 **Exponential Backoff**:

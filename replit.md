@@ -117,7 +117,8 @@ The system follows a "validation-first" approach, ensuring data quality before f
 Centralized system settings are managed in `config/config.json`, covering Google Drive settings, output preferences, synthesis parameters (e.g., native check region, merge strategy), and validation rules. Individual synthesis modules have their own configuration files (e.g., `config/external-reference-urls.json`). 
 
 **Caching System**: The `cache/` directory stores API results to minimize expensive operations:
-- `cache/ExternalReferences/`: Folder with individual JSON files per species (`Genus_species_refURLs.json`) containing discovered website URLs from SerpApi
+- `cache/ExternalReferences/`: Folder with individual JSON files per species (`Genus_species_refURLs.json`) containing discovered website URLs from SerpApi. URLs are validated before caching.
+- `cache/PageContent/`: Folder with parsed page content per species per source (`Genus_species_source.json`). Contains extracted text content from reference websites using Mozilla's Readability library. Used as data source for future synthesis modules.
 - `cache/GBIF/`: Folder with individual pretty-printed JSON files per species (`Genus_species_gbif.json`) containing synonym data
 - `cache/MichiganFlora/`: Static 2024 dataset cached locally in CSV format (~2,873 species with ecological data)
 - `cache/iNaturalist/`: Folder with individual JSON files per species and endpoint type (`Genus_species_inaturalist_taxa.json`, `Genus_species_inaturalist_histogram.json`)
@@ -136,3 +137,6 @@ Centralized system settings are managed in `config/config.json`, covering Google
 ### Key NPM Packages
 -   `@anthropic-ai/sdk`: Integration with Anthropic Claude API.
 -   `googleapis`: Google Drive and Sheets API integration.
+-   `serpapi`: SerpApi client for Google Search integration.
+-   `@mozilla/readability`: Mozilla's Readability library for extracting main content from web pages (same algorithm as Firefox Reader View).
+-   `jsdom`: DOM implementation for Node.js, used for HTML parsing and Readability integration.
