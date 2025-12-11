@@ -276,9 +276,10 @@ async function searchWithRetry(searchQuery, site, genus, species) {
       }
       
     } catch (error) {
-      console.error(`  Error searching ${site.name}:`, error.message);
+      const errorMsg = error?.message || String(error) || 'Unknown error';
+      console.error(`  Error searching ${site.name}:`, errorMsg);
       
-      if (error.message.includes('rate limit') || error.message.includes('429')) {
+      if (errorMsg.includes('rate limit') || errorMsg.includes('429')) {
         console.log(`  Rate limited, backing off...`);
         delay = delay * 2;
         continue;
