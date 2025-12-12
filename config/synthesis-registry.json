@@ -49,6 +49,18 @@
       "description": "Discovers BONAP county-level range map image URL"
     },
     {
+      "id": "lakecounty-cache",
+      "path": "../synthesis/process-lakecounty-cache.js",
+      "enabled": true,
+      "description": "Syncs Google Drive parsed PDF files to local cache for Lake County data"
+    },
+    {
+      "id": "lakecounty-images",
+      "path": "../synthesis/process-lakecounty-images.js",
+      "enabled": true,
+      "description": "Extracts image filenames from Lake County parsed PDF JSON files"
+    },
+    {
       "id": "similar-species",
       "path": "../synthesis/process-similar-species.js",
       "enabled": true,

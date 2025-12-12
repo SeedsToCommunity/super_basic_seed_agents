@@ -12,7 +12,7 @@ export const metadata = {
   columns: [
     { id: 'similarSpeciesJson', header: 'Similar Species JSON' }
   ],
-  dependencies: ['botanical-name'],
+  dependencies: ['botanical-name', 'lakecounty-cache'],
   description: 'Identifies similar species and distinguishing features using tiered source-backed and inferred data'
 };
 
@@ -42,7 +42,7 @@ export async function findSimilarSpecies(genus, species) {
   const speciesName = `${genus} ${species}`;
   
   console.log(`  Collecting data sources for ${speciesName}...`);
-  const payload = await getClaudePayload(genus, species, { syncDrive: true, verbose: false });
+  const payload = await getClaudePayload(genus, species, { syncDrive: false, verbose: false });
   
   console.log(`  Found ${payload.summary.parsedPdfCount} parsed PDFs, ${payload.summary.pageContentCount} web pages`);
   
