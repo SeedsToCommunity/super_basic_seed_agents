@@ -10,9 +10,9 @@ SPECIES: {{species_name}}
 
 Extract Similar Species and Distinguishing Feature information. For each similar species commonly confused with {{species_name}}, provide:
 - The similar species name (botanical name preferred, with common name if known)
-- One paragraph describing the distinguishing features that differentiate {{species_name}} from that similar species
+- One short paragraph describing the distinguishing features that differentiate {{species_name}} from that similar species
 - Focus on practical field identification characteristics (leaf shape, flower color, bloom time, habitat preferences, geographic range, etc.)
-- Speak in common language, with no botanical terms. Assume the reader will not have no botanical training. Assume that pictures of the focus species are readily available. No words like glandular.
+- Speak in common language, with no botanical terms. Assume the reader will not have no botanical training. Assume that pictures of the focus species are readily available. No words like glandular. Exclude design, layout, and pairing information. 
 - Response should be geared towards a user in SE Michigan. 
 - Shorter descriptions are better. 
 
