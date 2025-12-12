@@ -21,14 +21,6 @@ export async function run(genus, species, priorResults) {
     if (content?.species?.images && Array.isArray(content.species.images)) {
       allImages.push(...content.species.images);
     }
-    
-    if (content?.seedGroups && Array.isArray(content.seedGroups)) {
-      for (const group of content.seedGroups) {
-        if (group.images && Array.isArray(group.images)) {
-          allImages.push(...group.images);
-        }
-      }
-    }
   }
   
   const uniqueImages = [...new Set(allImages)];
