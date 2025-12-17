@@ -1,6 +1,6 @@
 import Anthropic from '@anthropic-ai/sdk';
 import { getClaudePayload } from '../utils/species-data-collector.js';
-import { renderPrompt } from '../utils/prompt-loader.js';
+import { renderPrompt, savePromptDebug } from '../utils/prompt-loader.js';
 
 const client = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY,
@@ -21,7 +21,7 @@ export async function run(genus, species, priorResults) {
   
   return {
     columnValues: {
-      similarSpeciesJson: JSON.stringify(result)
+      similarSpeciesJson: JSON.stringify(result, null, 2)
     }
   };
 }
@@ -50,6 +50,8 @@ export async function findSimilarSpecies(genus, species) {
     species_name: speciesName,
     data_inputs: payload.formattedText
   });
+  
+  savePromptDebug('similar-species', genus, species, prompt);
   
   console.log(`  Sending to Claude API...`);
   

@@ -1,4 +1,5 @@
 import Anthropic from '@anthropic-ai/sdk';
+import { savePromptDebug } from '../utils/prompt-loader.js';
 
 const client = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY,
@@ -79,6 +80,8 @@ Southeast Michigan context:
 - Region includes Wayne, Oakland, Macomb, Washtenaw, Livingston, and surrounding counties
 
 Respond with ONLY the JSON object, no markdown, no explanations.`;
+
+    savePromptDebug('native-checker', genus, species, prompt);
 
     const message = await client.messages.create({
       model: 'claude-sonnet-4-5',

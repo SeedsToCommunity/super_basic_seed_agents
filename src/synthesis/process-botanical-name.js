@@ -1,4 +1,5 @@
 import Anthropic from '@anthropic-ai/sdk';
+import { savePromptDebug } from '../utils/prompt-loader.js';
 
 const client = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY,
@@ -117,6 +118,9 @@ Important: Distinguish carefully between:
   - Likely misspellings (typos or minor spelling errors) → status="likely_misspelled"
 
 Respond with ONLY the JSON object, no markdown, no explanations.`;
+
+    const parts = botanicalName.split(' ');
+    savePromptDebug('botanical-name', parts[0] || 'unknown', parts[1] || 'unknown', prompt);
 
     const message = await client.messages.create({
       model: 'claude-sonnet-4-5',

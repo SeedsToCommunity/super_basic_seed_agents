@@ -1,4 +1,5 @@
 import Anthropic from '@anthropic-ai/sdk';
+import { savePromptDebug } from '../utils/prompt-loader.js';
 
 const client = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY,
@@ -86,6 +87,8 @@ Examples of what NOT to include:
 - Former scientific names like "Acer saccharophorum"
 
 Respond with ONLY the JSON object, no markdown, no explanations.`;
+
+    savePromptDebug('common-names', genus, species, prompt);
 
     const message = await client.messages.create({
       model: 'claude-sonnet-4-5',
