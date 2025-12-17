@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 
 const PROMPTS_DIR = 'prompts';
+const PROMPT_DEBUG_DIR = 'cache/PromptDebug';
 
 export function loadPrompt(promptName) {
   const extensions = ['.md', '.txt', '.prompt'];
@@ -49,4 +50,26 @@ export function listAvailablePrompts() {
   return files
     .filter(f => f.endsWith('.md') || f.endsWith('.txt') || f.endsWith('.prompt'))
     .map(f => path.basename(f, path.extname(f)));
+}
+
+export function savePromptDebug(promptName, genus, species, renderedPrompt) {
+  if (!fs.existsSync(PROMPT_DEBUG_DIR)) {
+    fs.mkdirSync(PROMPT_DEBUG_DIR, { recursive: true });
+  }
+  
+  const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+  const filename = `${genus}_${species}_${promptName}_${timestamp}.md`;
+  const filePath = path.join(PROMPT_DEBUG_DIR, filename);
+  
+  const header = `# Prompt Debug: ${promptName}
+## Species: ${genus} ${species}
+## Generated: ${new Date().toISOString()}
+
+---
+
+`;
+  
+  fs.writeFileSync(filePath, header + renderedPrompt, 'utf-8');
+  console.log(`  Saved prompt debug to ${filePath}`);
+  return filePath;
 }

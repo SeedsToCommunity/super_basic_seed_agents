@@ -4,3 +4,6 @@ dist
 server/public
 vite.config.ts.*
 *.tar.gz
+
+# Prompt debugging (not committed to repo)
+cache/PromptDebug/
