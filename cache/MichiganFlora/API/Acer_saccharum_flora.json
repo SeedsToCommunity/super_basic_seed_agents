@@ -1,0 +1,20 @@
+{
+  "found": true,
+  "data": {
+    "plant_id": 2650,
+    "scientific_name": "Acer nigrum",
+    "c": "4",
+    "st": "NULL",
+    "w": 3,
+    "wet": "FACU",
+    "phys": "Nt Tree",
+    "na": "N",
+    "family_name": "Sapindaceae",
+    "author": "F. Michx.",
+    "acronym": "ACENIG",
+    "common_name": [
+      "BLACK MAPLE"
+    ]
+  },
+  "fetchedAt": "2025-12-21T15:22:42.392Z"
+}

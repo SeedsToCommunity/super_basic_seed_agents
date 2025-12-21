@@ -1,0 +1,63 @@
+{
+  "_meta": {
+    "query": "site:illinoiswildflowers.info Acer saccharum",
+    "cachedAt": "2025-12-21T15:22:22.067Z",
+    "numResults": 4,
+    "site": "Illinois Wildflowers",
+    "genus": "Acer",
+    "species": "saccharum"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Sugar Maple (Acer saccharum)",
+      "link": "https://www.illinoiswildflowers.info/trees/plants/sugar_maple.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.illinoiswildflowers.info/trees/plants/sugar_maple.html&ved=2ahUKEwjs5eyD_s6RAxXIEmIAHVVyEykQFnoECB4QAQ",
+      "displayed_link": "https://www.illinoiswildflowers.info › trees › plants › sug...",
+      "thumbnail": "https://serpapi.com/searches/694810ad792d6879b36cf8c1/images/3acf983cb06f7b52ae3f1b895ad53b09553863e8388f67a3bcc7580c42dbe590.jpeg",
+      "snippet": "Sugar Maple is a tree of economic importance because it is the source of maple syrup. The wood of Sugar Maple is also important economically.",
+      "snippet_highlighted_words": [
+        "Sugar Maple is a tree of economic importance"
+      ],
+      "source": "Illinois Wildflowers"
+    },
+    {
+      "position": 2,
+      "title": "Silver Maple (Acer saccharinum)",
+      "link": "https://www.illinoiswildflowers.info/trees/plants/silver_maple.htm",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.illinoiswildflowers.info/trees/plants/silver_maple.htm&ved=2ahUKEwjs5eyD_s6RAxXIEmIAHVVyEykQFnoECBsQAQ",
+      "displayed_link": "https://www.illinoiswildflowers.info › trees › plants › silv...",
+      "thumbnail": "https://serpapi.com/searches/694810ad792d6879b36cf8c1/images/3acf983cb06f7b52ae3f1b895ad53b094973ce78ee7668a72048b4e3b5aeeeb2.jpeg",
+      "snippet": "This tree is 60-100' tall at maturity, forming a short broad trunk and an ovoid to obovoid crown that is defined by long ascending branches of considerable ...",
+      "snippet_highlighted_words": [
+        "60-100' tall at maturity"
+      ],
+      "source": "Illinois Wildflowers"
+    },
+    {
+      "position": 3,
+      "title": "Insect Table (Acer saccharum)",
+      "link": "https://www.illinoiswildflowers.info/trees/tables/table170.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.illinoiswildflowers.info/trees/tables/table170.html&ved=2ahUKEwjs5eyD_s6RAxXIEmIAHVVyEykQFnoECBgQAQ",
+      "displayed_link": "https://www.illinoiswildflowers.info › tables › table170",
+      "snippet": "Insects Feeding on Sugar Maple (Acer saccharum). Insect & Family Names ( ...",
+      "snippet_highlighted_words": [
+        "Sugar Maple"
+      ],
+      "source": "Illinois Wildflowers"
+    },
+    {
+      "position": 4,
+      "title": "Norway Maple (Acer platanoides)",
+      "link": "https://www.illinoiswildflowers.info/trees/plants/norway_maple.htm",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.illinoiswildflowers.info/trees/plants/norway_maple.htm&ved=2ahUKEwjs5eyD_s6RAxXIEmIAHVVyEykQFnoECDMQAQ",
+      "displayed_link": "https://www.illinoiswildflowers.info › trees › plants › nor...",
+      "thumbnail": "https://serpapi.com/searches/694810ad792d6879b36cf8c1/images/3acf983cb06f7b52ae3f1b895ad53b094eed90d8b820c7230b5bcfc12fcf4e95.jpeg",
+      "snippet": "Norway Maple prefers full sun to light shade, more or less mesic conditions, and a fertile loam or clay-loam soil. It tolerates urban pollution and compacted ...",
+      "snippet_highlighted_words": [
+        "Norway Maple prefers full sun to light shade"
+      ],
+      "source": "Illinois Wildflowers"
+    }
+  ]
+}

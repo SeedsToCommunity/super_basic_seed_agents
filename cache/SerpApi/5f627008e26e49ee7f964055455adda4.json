@@ -1,0 +1,69 @@
+{
+  "_meta": {
+    "query": "site:wildflower.org Acer saccharum",
+    "cachedAt": "2025-12-21T15:22:24.980Z",
+    "numResults": 4,
+    "site": "Lady Bird Johnson Wildflower Center",
+    "genus": "Acer",
+    "species": "saccharum"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Acer saccharum (Sugar maple) | Native Plants of North ...",
+      "link": "https://www.wildflower.org/plants/result.php?id_plant=acsa3",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/plants/result.php%3Fid_plant%3Dacsa3&ved=2ahUKEwjLy4aF_s6RAxWCKlkFHQ0ODkkQFnoECBsQAQ",
+      "displayed_link": "https://www.wildflower.org › plants › result",
+      "thumbnail": "https://serpapi.com/searches/694810ae2ddc43239ca23cc4/images/19e091b8502cc15d285f89c2c122b8d46f6d0804fd051ccb94f13b712f91da43.jpeg",
+      "favicon": "https://serpapi.com/searches/694810ae2ddc43239ca23cc4/images/19e091b8502cc15d285f89c2c122b8d4083fbbc8547d6ad925bc98dde67baeb5.png",
+      "date": "Jun 18, 2025",
+      "snippet": "Large tree with rounded, dense crown and striking, multicolored foliage in autumn. Sugar maple's landscape size is 60-75 ft. but this popular ...",
+      "snippet_highlighted_words": [
+        "Large tree with rounded, dense crown and striking, multicolored foliage in autumn"
+      ],
+      "source": "Lady Bird Johnson Wildflower Center"
+    },
+    {
+      "position": 2,
+      "title": "Acer saccharum var. saccharum (Sugar maple)",
+      "link": "https://www.wildflower.org/plants/result.php?id_plant=ACSAS",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/plants/result.php%3Fid_plant%3DACSAS&ved=2ahUKEwjLy4aF_s6RAxWCKlkFHQ0ODkkQFnoECBkQAQ",
+      "displayed_link": "https://www.wildflower.org › plants › result",
+      "favicon": "https://serpapi.com/searches/694810ae2ddc43239ca23cc4/images/19e091b8502cc15d285f89c2c122b8d47b4c9d475f84be7ad217384112fff46a.png",
+      "date": "Apr 26, 2023",
+      "snippet": "Plant Characteristics ... Size Notes: Up to about 100 feet tall. Trunk up to almost 6 feet in diameter. ... Fruit: Two joined samaras. Bloom ...",
+      "snippet_highlighted_words": [
+        "Up to about 100 feet tall"
+      ],
+      "source": "Lady Bird Johnson Wildflower Center"
+    },
+    {
+      "position": 3,
+      "title": "Acer saccharinum (Silver maple) | Native Plants of North ...",
+      "link": "https://www.wildflower.org/plants/result.php?id_plant=acsa2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/plants/result.php%3Fid_plant%3Dacsa2&ved=2ahUKEwjLy4aF_s6RAxWCKlkFHQ0ODkkQFnoECBgQAQ",
+      "displayed_link": "https://www.wildflower.org › plants › result",
+      "favicon": "https://serpapi.com/searches/694810ae2ddc43239ca23cc4/images/19e091b8502cc15d285f89c2c122b8d469ebf9c5008b6b99995a8ffbd96929fc.png",
+      "date": "Jun 27, 2013",
+      "snippet": "Large tree with short, stout trunk, few large forks, spreading, open, irregular crown of long, curving branches, and graceful cut-leaves. A ...",
+      "snippet_highlighted_words": [
+        "Large tree with short, stout trunk, few large forks"
+      ],
+      "source": "Lady Bird Johnson Wildflower Center"
+    },
+    {
+      "position": 4,
+      "title": "Acer saccharum var. schneckii (Sugar maple)",
+      "link": "https://www.wildflower.org/plants/result.php?id_plant=ACSAS2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wildflower.org/plants/result.php%3Fid_plant%3DACSAS2&ved=2ahUKEwjLy4aF_s6RAxWCKlkFHQ0ODkkQFnoECDQQAQ",
+      "displayed_link": "https://www.wildflower.org › plants › result",
+      "favicon": "https://serpapi.com/searches/694810ae2ddc43239ca23cc4/images/19e091b8502cc15d285f89c2c122b8d46dab4428a09635a52f14ec8fed71277b.png",
+      "date": "Dec 14, 2020",
+      "snippet": "Plant Characteristics ... Size Notes: Up to about 65 feet tall. Bloom Information. Bloom Color: Yellow , Green Bloom Time: Apr , May. Distribution.",
+      "snippet_highlighted_words": [
+        "Up to about 65 feet tall"
+      ],
+      "source": "Lady Bird Johnson Wildflower Center"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "plantId": 2650,
+  "synonyms": [
+    {
+      "syn_species": "saccharum",
+      "syn_genus": "Acer",
+      "syn_notes": "split from",
+      "synonym_id": 390
+    }
+  ],
+  "hasSynonyms": true,
+  "fetchedAt": "2025-12-21T15:22:42.553Z"
+}

@@ -1,0 +1,29 @@
+{
+  "found": true,
+  "scientificName": "Acer saccharum",
+  "taxonId": 52543,
+  "wikipediaSummary": "<i><b>Acer saccharum</b></i>, the <b>sugar maple</b> or <b>rock maple</b>, is a species of maple native to the hardwood forests of eastern Canada, from Nova Scotia west through Quebec and southern Ontario to southeastern Manitoba around Lake of the Woods, and the northern parts of the Central and Eastern United States, from Minnesota eastward to the highlands of the eastern states. Sugar maple is best known for its bright fall foliage and for being the primary source of...",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Acer saccharum",
+  "preferredCommonName": "sugar maple",
+  "commonNames": [
+    "sugar maple"
+  ],
+  "taxonomy": {
+    "rank": "species",
+    "ancestry": "48460/47126/211194/47125/47124/47729/58321/47727/1419769/1466282",
+    "iconicTaxonName": "Plantae"
+  },
+  "conservationStatus": null,
+  "establishmentMeans": [
+    {
+      "status": "introduced",
+      "place": "Europe"
+    },
+    {
+      "status": "native",
+      "place": "North America"
+    }
+  ],
+  "observationsCount": 76167,
+  "defaultPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/230661769/medium.jpeg"
+}

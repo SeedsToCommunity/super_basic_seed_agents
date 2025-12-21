@@ -1,0 +1,67 @@
+{
+  "_meta": {
+    "genus": "Acer",
+    "species": "saccharum",
+    "source": "Michigan Flora",
+    "recordUrl": "https://michiganflora.net/record/2650",
+    "plantId": 2650,
+    "fetchedAt": "2025-12-21T15:25:46.621Z"
+  },
+  "basicData": {
+    "scientificName": "Acer nigrum",
+    "familyName": "Sapindaceae",
+    "author": "F. Michx.",
+    "acronym": "ACENIG",
+    "commonNames": [
+      "BLACK MAPLE"
+    ]
+  },
+  "ecologicalData": {
+    "coefficientC": "4",
+    "wetnessCoefficient": 3,
+    "wetnessIndicator": "FACU",
+    "physiognomy": "Nt Tree",
+    "nativeStatus": "N",
+    "stateStatus": "NULL"
+  },
+  "description": "Included in A. saccharum in Michigan Flora . Most typically a species of floodplains, but also in moister lowland settings, mostly on calcareous soils; less often in drier sites and uplands. Black maple is often recognized as a distinct species, but we do so here with trepidation. Plants in the field in the southern half of the Lower Peninsula are distinctive, not only in their pubescent foliage, but also in their more rounded leaf lobing, &ldquo;drooping&rdquo; rather than flat leaves, and usually yellow fall color. Even relatively large trees have paler, sometimes even grayish-white bark more finely patterned than that of Acer saccharum . In the herbarium, distinctions are more difficult to apply, and we also acknowledge that stress on different characters may lead to different conclusions as to where any line between taxa should be drawn based on specimens. Occasional plants north of the middle of the Lower Peninsula with leaf blades somewhat pubescent beneath, but petioles essentially glabrous and leaves otherwise like A. saccharum are considered unusual A. saccharum , as are more common plants with glabrous foliage, but more rounded leaf lobes. A few, often late season, collections that appear to be A. nigrum , with leaves quite pubescent beneath, have the petioles essentially glabrous. Nevertheless, very few specimens appear to be fully intermediate; these perhaps hybrids.",
+  "descriptionHtml": "<p>Included in A. saccharum in <em>Michigan Flora</em>.</p>\n\n<p>Most typically a species of floodplains, but also in moister lowland settings, mostly on calcareous soils; less often in drier sites and uplands.</p>\n\n<p>Black maple is often recognized as a distinct species, but we do so here with trepidation. Plants in the field in the southern half of the Lower Peninsula are distinctive, not only in their pubescent foliage, but also in their more rounded leaf lobing, &ldquo;drooping&rdquo; rather than flat leaves, and usually yellow fall color. Even relatively large trees have paler, sometimes even grayish-white bark more finely patterned than that of <em>Acer saccharum</em>. In the herbarium, distinctions are more difficult to apply, and we also acknowledge that stress on different characters may lead to different conclusions as to where any line between taxa should be drawn based on specimens.</p>\n\n<p>Occasional plants north of the middle of the Lower Peninsula with leaf blades somewhat pubescent beneath, but petioles essentially glabrous and leaves otherwise like <em>A. saccharum</em> are considered unusual <em>A. saccharum</em>, as are more common plants with glabrous foliage, but more rounded leaf lobes. A few, often late season, collections that appear to be <em>A. nigrum</em>, with leaves quite pubescent beneath, have the petioles essentially glabrous. Nevertheless, very few specimens appear to be fully intermediate; these perhaps hybrids.</p>",
+  "synonyms": [
+    {
+      "syn_species": "saccharum",
+      "syn_genus": "Acer",
+      "syn_notes": "split from",
+      "synonym_id": 390
+    }
+  ],
+  "counties": [
+    "Allegan",
+    "Barry",
+    "Berrien",
+    "Branch",
+    "Calhoun",
+    "Cass",
+    "Eaton",
+    "Genesee",
+    "Gratiot",
+    "Hillsdale",
+    "Ingham",
+    "Ionia",
+    "Iosco",
+    "Isabella",
+    "Kalamazoo",
+    "Kent",
+    "Lapeer",
+    "Lenawee",
+    "Macomb",
+    "Midland",
+    "Newaygo",
+    "Oakland",
+    "Ottawa",
+    "Sanilac",
+    "Tuscola",
+    "Van Buren",
+    "Washtenaw",
+    "Wayne"
+  ]
+}

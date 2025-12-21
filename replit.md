@@ -54,7 +54,10 @@ All synthesis modules must export:
 -   **`process-external-reference-urls.js`**: Discovers and caches URLs from botanical reference websites using SerpApi, based on validated botanical name.
 -   **`process-common-names.js`**: Identifies all common/vernacular names used in Southeast Michigan and adjacent regions using Claude API. Excludes botanical synonyms and historical scientific names.
 -   **`process-previous-botanical.js`**: Retrieves botanical synonyms (legacy binomial names) from GBIF Backbone Taxonomy for cross-reference purposes. Returns comma-separated species-level synonyms only, excluding varieties and subspecies. Uses file-based caching in `cache/GBIF/` with pretty-printed JSON files. No authentication required.
--   **`process-michigan-flora.js`**: Retrieves ecological metrics from the Michigan Flora local CSV dataset (~2,873 species). Outputs 4 columns: Coefficient of Conservatism (C), Coefficient of Wetness (CW), Physiognomy, and Duration. No network requests - reads from `cache/MichiganFlora/`. Depends on botanical-name.
+-   **`process-michigan-flora.js`**: Retrieves ecological metrics using a **two-pronged approach**:
+    1. **CSV dataset** (~2,873 species): Coefficient of Conservatism (C), Wetness (CW), Physiognomy, Duration
+    2. **REST API** (https://michiganflora.net/api/v1.0/): Native status, detailed description, synonyms, county occurrences
+    Outputs 6 columns: C, CW, Physiognomy, Duration, Native-MIFlora, Michigan Flora Description. **Appends Michigan Flora record URL** to External Reference URLs column. Creates comprehensive species JSON files and uploads to Google Drive (`SpeciesAppDataFiles_DoNotTouch/MichiganFloraData/`). Uses file-based caching in `cache/MichiganFlora/API/` for API responses and `cache/MichiganFlora/SpeciesData/` for aggregated JSON files. Depends on botanical-name and external-reference-urls.
 -   **`process-inaturalist.js`**: Enriches plant data from iNaturalist API. **Appends Wikipedia URL** to existing External Reference URLs column. Adds 2 new columns: SE Michigan Monthly Observations (JSON histogram like `{"January": 5, "February": 16, ...}`) and Wikipedia Summary. Uses file-based caching in `cache/iNaturalist/`. Depends on botanical-name AND external-reference-urls.
 -   **`process-bonap.js`**: Discovers BONAP (Biota of North America Program) county-level range map image URLs. Uses predictable URL pattern with HEAD request verification, falls back to SerpApi search if needed. Outputs 1 column: BONAP Range Map (direct URL to PNG image). Uses file-based caching in `cache/BONAP/`. Depends on botanical-name.
 -   **`process-lakecounty-cache.js`**: Infrastructure module that syncs Google Drive parsed PDF files to `cache/DriveParsedPdfs/`. No output column - provides cached data for downstream modules. Depends on botanical-name.
@@ -125,7 +128,10 @@ Centralized system settings are managed in `config/config.json`, covering Google
 - `cache/RawHTML/`: URL-based cache storing raw HTML of every fetched page (MD5 hash filenames). Caches ALL pages regardless of validation result to avoid re-fetching.
 - `cache/PageContent/`: Folder with parsed page content per species per source (`Genus_species_source.json`). Contains extracted text content from reference websites using Mozilla's Readability library. Used as data source for future synthesis modules.
 - `cache/GBIF/`: Folder with individual pretty-printed JSON files per species (`Genus_species_gbif.json`) containing synonym data
-- `cache/MichiganFlora/`: Static 2024 dataset cached locally in CSV format (~2,873 species with ecological data)
+- `cache/MichiganFlora/`: Michigan Flora data with multiple subdirectories:
+  - CSV file: Static 2024 dataset (~2,873 species with ecological data)
+  - `API/`: REST API response cache with individual JSON files per species per endpoint
+  - `SpeciesData/`: Aggregated species JSON files combining all data sources, also uploaded to Google Drive
 - `cache/iNaturalist/`: Folder with individual JSON files per species and endpoint type (`Genus_species_inaturalist_taxa.json`, `Genus_species_inaturalist_histogram.json`)
 - `cache/BONAP/`: Folder with individual JSON files per species (`Genus_species_bonap.json`) containing range map URLs with source tracking (direct vs serpapi)
 - `cache/DriveParsedPdfs/`: Synced from Google Drive `SpeciesAppDataFiles_DoNotTouch/Parsed PDF Data/`. Contains structured JSON files extracted from seed collection PDFs. Includes `index.json` for freshness tracking. Auto-syncs with modifiedTime comparison.
@@ -137,7 +143,9 @@ Centralized system settings are managed in `config/config.json`, covering Google
 -   **Anthropic Claude API**: Used for AI-powered botanical validation, native status checking, and other advanced data processing.
 -   **SerpApi**: For external reference URL discovery.
 -   **GBIF Species API**: For retrieving botanical synonyms and taxonomic information. No authentication required.
--   **Michigan Flora CSV**: Local dataset (~2,873 species) with ecological data including Coefficient of Conservatism (C), Wetness Indicator (W), native status, and common names. No network required.
+-   **Michigan Flora**: Dual data sources for comprehensive botanical data:
+    - **CSV dataset** (~2,873 species): Local offline cache for ecological metrics (C value, wetness, physiognomy, duration). No network required.
+    - **REST API** (https://michiganflora.net/api/v1.0/): Real-time lookup for native status, descriptions, synonyms, county occurrences. 10 endpoints documented in `docs/michigan-flora-api.md`. No authentication required.
 -   **iNaturalist API**: For Wikipedia excerpts, taxonomic data, and phenology (observation histograms by month) for SE Michigan. No authentication required.
 
 ### Key NPM Packages

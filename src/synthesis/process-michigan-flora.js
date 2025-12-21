@@ -26,6 +26,9 @@ import {
   getRecordUrl,
   getCompleteSpeciesData 
 } from '../utils/michigan-flora-api-client.js';
+import { uploadJsonToDrive } from '../utils/drive-upload.js';
+
+const DRIVE_SUBFOLDER = 'MichiganFloraData';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -213,8 +216,17 @@ export async function run(genus, species, priorResults) {
       };
       
       const jsonPath = getJsonOutputPath(genus, species);
-      fs.writeFileSync(jsonPath, JSON.stringify(jsonOutput, null, 2), 'utf-8');
+      const jsonContent = JSON.stringify(jsonOutput, null, 2);
+      fs.writeFileSync(jsonPath, jsonContent, 'utf-8');
       console.log(`[process-michigan-flora] Wrote JSON: ${path.basename(jsonPath)}`);
+      
+      try {
+        const fileName = path.basename(jsonPath);
+        await uploadJsonToDrive(jsonContent, fileName, DRIVE_SUBFOLDER);
+        console.log(`[process-michigan-flora] Uploaded to Drive: ${DRIVE_SUBFOLDER}/${fileName}`);
+      } catch (uploadError) {
+        console.warn(`[process-michigan-flora] Drive upload failed (non-fatal): ${uploadError.message}`);
+      }
       
     } else {
       console.log(`[process-michigan-flora] Not found in API`);

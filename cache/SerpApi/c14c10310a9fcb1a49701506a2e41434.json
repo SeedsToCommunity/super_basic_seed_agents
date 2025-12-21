@@ -1,0 +1,73 @@
+{
+  "_meta": {
+    "query": "site:gobotany.nativeplanttrust.org Acer saccharum",
+    "cachedAt": "2025-12-21T15:22:19.516Z",
+    "numResults": 4,
+    "site": "Go Botany",
+    "genus": "Acer",
+    "species": "saccharum"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Acer saccharum (sugar maple) - Go Botany - Native Plant Trust",
+      "link": "https://gobotany.nativeplanttrust.org/species/acer/saccharum/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://gobotany.nativeplanttrust.org/species/acer/saccharum/&ved=2ahUKEwjpo7WC_s6RAxW9STABHfWoCxoQFnoECCoQAQ",
+      "displayed_link": "https://gobotany.nativeplanttrust.org › species › sacchar...",
+      "thumbnail": "https://serpapi.com/searches/694810a7a8dce6888a6e6cd9/images/b108c4cf349245de582f7cd5b1fe76cb3225d05a11290488c3845fd345b689b9.jpeg",
+      "favicon": "https://serpapi.com/searches/694810a7a8dce6888a6e6cd9/images/b108c4cf349245de582f7cd5b1fe76cb66f6c288d12cbe11fc1cab4617b6ee9f.png",
+      "snippet": "Sugar maple is an emblematic and common tree of the New England landscape, widely planted along roadsides and sugar bushes in order to harvest its maple syrup.",
+      "snippet_highlighted_words": [
+        "Sugar maple is an emblematic and common tree of the New England landscape"
+      ],
+      "images": [
+        "https://serpapi.com/searches/694810a7a8dce6888a6e6cd9/images/b108c4cf349245de582f7cd5b1fe76cb75cd0100309d62ed87134f91c3c2f06e.jpeg"
+      ],
+      "source": "Go Botany: Native Plant Trust"
+    },
+    {
+      "position": 2,
+      "title": "Acer saccharinum (silver maple) - Go Botany",
+      "link": "https://gobotany.nativeplanttrust.org/species/acer/saccharinum/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://gobotany.nativeplanttrust.org/species/acer/saccharinum/&ved=2ahUKEwjpo7WC_s6RAxW9STABHfWoCxoQFnoECBsQAQ",
+      "displayed_link": "https://gobotany.nativeplanttrust.org › species › sacchar...",
+      "thumbnail": "https://serpapi.com/searches/694810a7a8dce6888a6e6cd9/images/b108c4cf349245de582f7cd5b1fe76cb5f77d5701e534f7690d4729ec15c664e.jpeg",
+      "favicon": "https://serpapi.com/searches/694810a7a8dce6888a6e6cd9/images/b108c4cf349245de582f7cd5b1fe76cb7a0ff5a3e338ff9a88238e56d60ec18a.png",
+      "snippet": "Silver maple most commonly grows in river floodplains, and although the tree is not necessarily tall, the trunk can get very large in diameter.",
+      "snippet_highlighted_words": [
+        "Silver maple most commonly grows in river floodplains"
+      ],
+      "missing": [
+        "saccharum"
+      ],
+      "must_include": {
+        "word": "saccharum",
+        "link": "https://www.google.com/search?num=5&sca_esv=16151fc29b06a103&q=site:gobotany.nativeplanttrust.org+Acer+%22saccharum%22&sa=X&ved=2ahUKEwjpo7WC_s6RAxW9STABHfWoCxoQ5t4CegQILhAB"
+      },
+      "source": "Go Botany: Native Plant Trust"
+    },
+    {
+      "position": 3,
+      "title": "Sighting: Acer saccharum at 42.482, -72.530: PlantShare: Go Botany",
+      "link": "https://gobotany.nativeplanttrust.org/plantshare/sightings/2815/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://gobotany.nativeplanttrust.org/plantshare/sightings/2815/&ved=2ahUKEwjpo7WC_s6RAxW9STABHfWoCxoQFnoECBoQAQ",
+      "displayed_link": "https://gobotany.nativeplanttrust.org › sightings",
+      "favicon": "https://serpapi.com/searches/694810a7a8dce6888a6e6cd9/images/b108c4cf349245de582f7cd5b1fe76cb1fe15f30a7190416bbbecee7be796a92.png",
+      "snippet": "Comments: Sappling with approximate height of 5 ft and length of 3 ft. Winter buds noted. Leaves starting to change color as well. Photos.",
+      "snippet_highlighted_words": [
+        "Sappling with approximate height of 5 ft and length of 3 ft"
+      ],
+      "source": "Go Botany: Native Plant Trust"
+    },
+    {
+      "position": 4,
+      "title": "Sighting: Acer saccharum at 37-49 Reservation Rd, Sunderland MA ...",
+      "link": "https://gobotany.nativeplanttrust.org/plantshare/sightings/2727/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://gobotany.nativeplanttrust.org/plantshare/sightings/2727/&ved=2ahUKEwjpo7WC_s6RAxW9STABHfWoCxoQFnoECDgQAQ",
+      "displayed_link": "https://gobotany.nativeplanttrust.org › sightings",
+      "favicon": "https://serpapi.com/searches/694810a7a8dce6888a6e6cd9/images/b108c4cf349245de582f7cd5b1fe76cb6ee195a49522d3ec7f3ceb613d5ad755.png",
+      "snippet": "Location notes: This sugar maple located in the middle of the road. Comments: Sugar maple is a tree woody plant which lives in terrestrial habitat.",
+      "source": "Go Botany: Native Plant Trust"
+    }
+  ]
+}

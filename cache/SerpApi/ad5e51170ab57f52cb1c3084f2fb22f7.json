@@ -1,0 +1,74 @@
+{
+  "_meta": {
+    "query": "site:minnesotawildflowers.info Acer saccharum",
+    "cachedAt": "2025-12-21T15:22:39.356Z",
+    "numResults": 4,
+    "site": "Minnesota Wildflowers",
+    "genus": "Acer",
+    "species": "saccharum"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Acer saccharum (Sugar Maple)",
+      "link": "https://www.minnesotawildflowers.info/tree/sugar-maple",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.minnesotawildflowers.info/tree/sugar-maple&ved=2ahUKEwiUyoKM_s6RAxUzTDABHehNMCQQFnoECBoQAQ",
+      "displayed_link": "https://www.minnesotawildflowers.info › tree › sugar-ma...",
+      "thumbnail": "https://serpapi.com/searches/694810bb2f47f8df1db0e12f/images/b2c24e25b978e8777633158be060e197013b22ca908525866566d2c17a6f2aed.jpeg",
+      "favicon": "https://serpapi.com/searches/694810bb2f47f8df1db0e12f/images/b2c24e25b978e8777633158be060e197ad9ece73ca61eddd3c6a7fbb5cf5a42d.png",
+      "snippet": "Sugar Maple is the quintessential North American maple known for its hard premium wood, gorgeous fall color, and maple syrup.",
+      "snippet_highlighted_words": [
+        "Sugar Maple"
+      ],
+      "source": "Minnesota Wildflowers"
+    },
+    {
+      "position": 2,
+      "title": "Acer saccharinum (Silver Maple)",
+      "link": "https://www.minnesotawildflowers.info/tree/silver-maple",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.minnesotawildflowers.info/tree/silver-maple&ved=2ahUKEwiUyoKM_s6RAxUzTDABHehNMCQQFnoECBsQAQ",
+      "displayed_link": "https://www.minnesotawildflowers.info › tree › silver-ma...",
+      "thumbnail": "https://serpapi.com/searches/694810bb2f47f8df1db0e12f/images/b2c24e25b978e8777633158be060e197007aa992da631d1bb394c9c0cca9ae75.jpeg",
+      "favicon": "https://serpapi.com/searches/694810bb2f47f8df1db0e12f/images/b2c24e25b978e8777633158be060e1974178662c3770cc42c1579a9a57eeb026.png",
+      "snippet": "Silver maple is a large canopy tree that occupies a variety of moist to wet woodland habitats, especially floodplains where it can tolerate extensive periods ...",
+      "snippet_highlighted_words": [
+        "Silver maple is a large canopy tree that occupies a variety of moist to wet woodland habitats"
+      ],
+      "missing": [
+        "saccharum"
+      ],
+      "must_include": {
+        "word": "saccharum",
+        "link": "https://www.google.com/search?num=5&sca_esv=16151fc29b06a103&q=site:minnesotawildflowers.info+Acer+%22saccharum%22&sa=X&ved=2ahUKEwiUyoKM_s6RAxUzTDABHehNMCQQ5t4CegQILxAB"
+      },
+      "source": "Minnesota Wildflowers"
+    },
+    {
+      "position": 3,
+      "title": "Search: latin name contains 'Acer'",
+      "link": "https://www.minnesotawildflowers.info/search?scientific_name=Acer&wh",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.minnesotawildflowers.info/search%3Fscientific_name%3DAcer%26wh&ved=2ahUKEwiUyoKM_s6RAxUzTDABHehNMCQQFnoECBkQAQ",
+      "displayed_link": "https://www.minnesotawildflowers.info › search › scienti...",
+      "favicon": "https://serpapi.com/searches/694810bb2f47f8df1db0e12f/images/b2c24e25b978e8777633158be060e1978f41dcd82053c189da34f1ff5443b705.png",
+      "snippet": "Acer rubrumRed Maple; [photo of Silver Maple] Acer saccharinumSilver Maple; [photo of Sugar Maple] Acer saccharumSugar Maple; [photo of Mountain Maple] Acer ...",
+      "snippet_highlighted_words": [
+        "Acer saccharum"
+      ],
+      "source": "Minnesota Wildflowers"
+    },
+    {
+      "position": 4,
+      "title": "Acer nigrum (Black Maple)",
+      "link": "https://www.minnesotawildflowers.info/tree/black-maple",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.minnesotawildflowers.info/tree/black-maple&ved=2ahUKEwiUyoKM_s6RAxUzTDABHehNMCQQFnoECDsQAQ",
+      "displayed_link": "https://www.minnesotawildflowers.info › tree › black-ma...",
+      "thumbnail": "https://serpapi.com/searches/694810bb2f47f8df1db0e12f/images/b2c24e25b978e8777633158be060e197d46437a60798259a5e5d74d494fe3351.jpeg",
+      "favicon": "https://serpapi.com/searches/694810bb2f47f8df1db0e12f/images/b2c24e25b978e8777633158be060e197cee7fe2f47f89a8ae1bde196cb231fe7.png",
+      "snippet": "Black Maple is a large forest tree found only in Minnesota's southeast. It is somewhat cryptic in being very similar to the more widespread Sugar Maple.",
+      "snippet_highlighted_words": [
+        "Black Maple is a large forest tree found only in Minnesota's southeast"
+      ],
+      "source": "Minnesota Wildflowers"
+    }
+  ]
+}

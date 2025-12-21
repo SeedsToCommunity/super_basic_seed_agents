@@ -1,0 +1,25 @@
+{
+  "_meta": {
+    "query": "site:prairiemoon.com Acer saccharum",
+    "cachedAt": "2025-12-21T15:22:29.969Z",
+    "numResults": 1,
+    "site": "Prairie Moon Nursery",
+    "genus": "Acer",
+    "species": "saccharum"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "wetland code",
+      "link": "https://www.prairiemoon.com/catalogs/2013/Prairie-Moon-Cultural-Guide-All.xls",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.prairiemoon.com/catalogs/2013/Prairie-Moon-Cultural-Guide-All.xls&ved=2ahUKEwi4kMeH_s6RAxXH_8kDHW_pFQAQFnoECB0QAQ",
+      "displayed_link": "https://www.prairiemoon.com › catalogs › Prairie-...",
+      "favicon": "https://serpapi.com/searches/694810b457294814efb7072a/images/b2f68e3b71aabfa39a77d25a08e9ab3779ebd76b3e55731889ee0d95d9a4ee94.png",
+      "snippet": "Acer rubrum, Red Maple, L, W, WM, M, FAC, P, S, W, to 90', Red, A, M, Brilliant Fall Color. 4, ACE24T, Acer saccharum, Sugar Maple, L, -, -, M, DM, -, FACW, P ...",
+      "snippet_highlighted_words": [
+        "Acer saccharum"
+      ],
+      "source": "Prairie Moon Nursery"
+    }
+  ]
+}

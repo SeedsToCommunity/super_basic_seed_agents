@@ -1,0 +1,65 @@
+{
+  "_meta": {
+    "query": "site:plants.usda.gov Acer saccharum",
+    "cachedAt": "2025-12-21T15:22:33.901Z",
+    "numResults": 4,
+    "site": "USDA PLANTS",
+    "genus": "Acer",
+    "species": "saccharum"
+  },
+  "results": [
+    {
+      "position": 1,
+      "title": "Acer saccharum Marshall",
+      "link": "https://plants.usda.gov/plant-profile?symbol=ACSA3",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/plant-profile%3Fsymbol%3DACSA3&ved=2ahUKEwjf4bKJ_s6RAxXemIkEHUXpDiUQFnoECCMQAQ",
+      "displayed_link": "https://plants.usda.gov › plant-profile",
+      "thumbnail": "https://serpapi.com/searches/694810b60e4be053e75f6697/images/72b73d4e828d2e0d86c1a005b20ec1acef9ae3185e914bd4650403293d72920b.jpeg",
+      "favicon": "https://serpapi.com/searches/694810b60e4be053e75f6697/images/72b73d4e828d2e0d86c1a005b20ec1acd146855743ac2adfb3d03b5abc2a614e.png",
+      "snippet": "sugar maple. Classification. Kingdom. Plantae - Plants. Subkingdom. Tracheobionta - Vascular plants. Superdivision. Spermatophyta - Seed plants. Division.",
+      "snippet_highlighted_words": [
+        "sugar maple"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "Plant Profile - Characteristics",
+      "link": "https://plants.usda.gov/plant-profile/ACSA3/characteristics",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/plant-profile/ACSA3/characteristics&ved=2ahUKEwjf4bKJ_s6RAxXemIkEHUXpDiUQFnoECCIQAQ",
+      "displayed_link": "https://plants.usda.gov › plant-profile › ACSA3 › chara...",
+      "favicon": "https://serpapi.com/searches/694810b60e4be053e75f6697/images/72b73d4e828d2e0d86c1a005b20ec1ac529388e7c3d63c3e379d227b610b9cb1.png",
+      "snippet": "sugar maple ; Flower Conspicuous, No ; Foliage Color, Green ; Foliage Porosity Summer, Dense ; Foliage Porosity Winter, Porous.",
+      "snippet_highlighted_words": [
+        "sugar maple"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "doc",
+      "link": "https://plants.usda.gov/DocumentLibrary/plantguide/doc/pg_acsa3.docx",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/DocumentLibrary/plantguide/doc/pg_acsa3.docx&ved=2ahUKEwjf4bKJ_s6RAxXemIkEHUXpDiUQFnoECCAQAQ",
+      "displayed_link": "https://plants.usda.gov › doc › pg_acsa3",
+      "favicon": "https://serpapi.com/searches/694810b60e4be053e75f6697/images/72b73d4e828d2e0d86c1a005b20ec1acaff69cb3050b53d76c3dba7f958bfcae.png",
+      "snippet": "Acer saccharum Marsh. Plant Symbol = ACSA3. Contributed By: USDA ...",
+      "snippet_highlighted_words": [
+        "Acer saccharum Marsh"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "Down to Species - Acer saccharum Marshall",
+      "link": "https://plants.usda.gov/classification/92865",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://plants.usda.gov/classification/92865&ved=2ahUKEwjf4bKJ_s6RAxXemIkEHUXpDiUQFnoECDQQAQ",
+      "displayed_link": "https://plants.usda.gov › classification",
+      "favicon": "https://serpapi.com/searches/694810b60e4be053e75f6697/images/72b73d4e828d2e0d86c1a005b20ec1ac7c6807c2f2237a4a3267b484369c3aa9.png",
+      "snippet": "Classification for Kingdom Plantae Down to Species Acer saccharum Marshall ; Division, Magnoliophyta - Flowering plants ; Class, Magnoliopsida - Dicotyledons.",
+      "snippet_highlighted_words": [
+        "Acer saccharum Marshall"
+      ],
+      "source": "USDA Plants Database (.gov)"
+    }
+  ]
+}
