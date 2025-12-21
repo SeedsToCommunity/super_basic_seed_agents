@@ -88,9 +88,12 @@ export async function run(genus, species, priorResults) {
   try {
     console.log(`[process-inaturalist] Processing ${genus} ${species}`);
     
-    // Get existing URLs object from prior module (external-reference-urls)
-    // The prior module returns an object like { "Site Name": "url", ... }
-    const priorUrlData = priorResults?.['external-reference-urls']?.columnValues?.externalReferenceUrls;
+    // Get existing URLs object from prior modules
+    // michigan-flora runs after external-reference-urls and may have added its URL
+    // Use michigan-flora's output if available, otherwise fall back to external-reference-urls
+    const miFloraUrlData = priorResults?.['michigan-flora']?.columnValues?.externalReferenceUrls;
+    const extRefUrlData = priorResults?.['external-reference-urls']?.columnValues?.externalReferenceUrls;
+    const priorUrlData = miFloraUrlData || extRefUrlData;
     const urlsObject = cloneUrlsObject(priorUrlData);
     
     // Fetch taxa data (includes Wikipedia URL and summary)
@@ -127,7 +130,9 @@ export async function run(genus, species, priorResults) {
     console.error(`[process-inaturalist] Error processing ${genus} ${species}:`, error.message);
     
     // On error, preserve existing URLs object and return empty for new columns
-    const priorUrlData = priorResults?.['external-reference-urls']?.columnValues?.externalReferenceUrls;
+    const miFloraUrlData = priorResults?.['michigan-flora']?.columnValues?.externalReferenceUrls;
+    const extRefUrlData = priorResults?.['external-reference-urls']?.columnValues?.externalReferenceUrls;
+    const priorUrlData = miFloraUrlData || extRefUrlData;
     const urlsObject = cloneUrlsObject(priorUrlData);
     
     return {

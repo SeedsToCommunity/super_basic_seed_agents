@@ -1,10 +1,6 @@
 {
   "sites": [
     {
-      "name": "Michigan Flora",
-      "baseUrl": "michiganflora.net"
-    },
-    {
       "name": "Go Botany",
       "baseUrl": "gobotany.nativeplanttrust.org"
     },
