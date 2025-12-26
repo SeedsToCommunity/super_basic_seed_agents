@@ -10,7 +10,12 @@ export const metadata = {
   id: 'similar-species',
   name: 'Similar Species',
   columns: [
-    { id: 'similarSpeciesJson', header: 'Similar Species JSON' }
+    { 
+      id: 'similarSpeciesJson', 
+      header: 'Similar Species JSON',
+      source: 'Google Drive Parsed PDFs + PageContent cache + Claude API',
+      algorithmDescription: 'Tiered data approach: (1) Aggregates source-backed data from cached Lake County parsed PDFs and PageContent cache (validated reference website text) using species-data-collector utility; (2) Sends aggregated data to Claude API with structured prompt from prompts/similar-species.md; (3) Returns JSON with Tier 1 (source-backed similarities with citations), Tier 2 (LLM-inferred similarities), and known_unknowns (data gaps where sources were insufficient).'
+    }
   ],
   dependencies: ['botanical-name', 'lakecounty-cache'],
   description: 'Identifies similar species and distinguishing features using tiered source-backed and inferred data'

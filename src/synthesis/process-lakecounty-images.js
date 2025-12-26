@@ -4,7 +4,12 @@ export const metadata = {
   id: 'lakecounty-images',
   name: 'Lake County Images',
   columns: [
-    { id: 'lakeCountyImages', header: 'Lake County Images' }
+    { 
+      id: 'lakeCountyImages', 
+      header: 'Lake County Images',
+      source: 'Google Drive Parsed PDFs',
+      algorithmDescription: 'Reads parsed PDF JSON files from cache/DriveParsedPdfs/ (synced from Google Drive SpeciesAppDataFiles_DoNotTouch/Parsed PDF Data/). Extracts species.images array from each matching file (excludes seedGroups images). Returns comma-separated list of unique image filenames.'
+    }
   ],
   dependencies: ['lakecounty-cache'],
   description: 'Extracts image filenames from Lake County parsed PDF JSON files'

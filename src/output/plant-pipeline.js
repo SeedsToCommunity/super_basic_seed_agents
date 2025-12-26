@@ -144,6 +144,64 @@ function buildColumnDefinitions(modules) {
 }
 
 /**
+ * Build column source documentation from loaded modules
+ * Used to generate the "Column Sources" sheet with metadata about each column
+ * @param {Array<Object>} modules - Array of loaded synthesis modules (sorted by dependencies)
+ * @returns {Array<Array<string>>} 2D array of rows for the documentation sheet
+ */
+function buildColumnSourceDocumentation(modules) {
+  // Headers for the documentation sheet
+  const headers = ['Column', 'Source Module', 'Data Source', 'Algorithm Description'];
+  
+  // Track columns by ID - last writer wins (same logic as buildColumnDefinitions)
+  const columnDocs = new Map(); // columnId -> { header, moduleId, moduleName, source, algorithmDescription }
+  const columnOrder = []; // Ordered list of unique column IDs
+  
+  for (const module of modules) {
+    for (const column of module.metadata.columns) {
+      const id = typeof column === 'string' ? column : column.id;
+      const header = typeof column === 'string' ? column : column.header;
+      const source = column.source || 'Not specified';
+      const algorithmDescription = column.algorithmDescription || 'Not documented';
+      
+      if (!columnDocs.has(id)) {
+        // New column - add to order
+        columnOrder.push(id);
+      }
+      
+      // Update registry (last writer wins)
+      columnDocs.set(id, {
+        header,
+        moduleId: module.metadata.id,
+        moduleName: module.metadata.name,
+        source,
+        algorithmDescription
+      });
+    }
+  }
+  
+  // Build rows from deduplicated columns
+  const rows = [headers];
+  
+  // Add base columns first (Genus, Species)
+  rows.push(['Genus', 'Pipeline Core', 'Input Parameter', 'The genus portion of the botanical name provided as input to the pipeline.']);
+  rows.push(['Species', 'Pipeline Core', 'Input Parameter', 'The species epithet portion of the botanical name provided as input to the pipeline.']);
+  
+  // Add all module columns
+  for (const columnId of columnOrder) {
+    const doc = columnDocs.get(columnId);
+    rows.push([
+      doc.header,
+      doc.moduleName,
+      doc.source,
+      doc.algorithmDescription
+    ]);
+  }
+  
+  return rows;
+}
+
+/**
  * Validate that module's columnValues match its declared columns
  * @param {Object} module - The module with metadata
  * @param {Object} columnValues - The columnValues object returned by module.run()
@@ -381,12 +439,14 @@ function buildPlantRecord(genus, species, moduleResults) {
 /**
  * Create a new Google Sheet with datetime-stamped name
  * Always appends timestamp to ensure unique sheet names
+ * Creates two sheets: "Plant Data" for records and "Column Sources" for documentation
  * @param {string} folderId - The ID of the folder to create the sheet in
  * @param {string} [prefix] - Optional prefix for sheet name (defaults to config value)
  * @returns {Promise<Object>} Object with spreadsheetId and spreadsheetUrl
  */
 export async function createPlantSheet(folderId, prefix = config.output.filePrefix) {
   const sheets = await getUncachableGoogleSheetsClient();
+  const modules = await loadSynthesisModules();
   
   // Generate datetime stamp (always included for uniqueness)
   const now = new Date();
@@ -399,17 +459,26 @@ export async function createPlantSheet(folderId, prefix = config.output.filePref
   
   const sheetName = `${prefix}_${year}-${month}-${day}_${hours}-${minutes}-${seconds}`;
   
-  // Create the spreadsheet
+  // Create the spreadsheet with two sheets: Plant Data and Column Sources
   const createResponse = await sheets.spreadsheets.create({
     requestBody: {
       properties: {
         title: sheetName
       },
-      sheets: [{
-        properties: {
-          title: 'Plant Data'
+      sheets: [
+        {
+          properties: {
+            title: 'Plant Data',
+            index: 0
+          }
+        },
+        {
+          properties: {
+            title: 'Column Sources',
+            index: 1
+          }
         }
-      }]
+      ]
     }
   });
   
@@ -434,7 +503,7 @@ export async function createPlantSheet(folderId, prefix = config.output.filePref
     fields: 'id, parents'
   });
   
-  // Write headers
+  // Write Plant Data headers
   await sheets.spreadsheets.values.update({
     spreadsheetId,
     range: 'Plant Data!A1',
@@ -443,6 +512,19 @@ export async function createPlantSheet(folderId, prefix = config.output.filePref
       values: [PLANT_COLUMNS.HEADERS]
     }
   });
+  
+  // Build and write Column Sources documentation
+  const columnSourceDocs = buildColumnSourceDocumentation(modules);
+  await sheets.spreadsheets.values.update({
+    spreadsheetId,
+    range: 'Column Sources!A1',
+    valueInputOption: 'RAW',
+    requestBody: {
+      values: columnSourceDocs
+    }
+  });
+  
+  console.log(`Created spreadsheet with ${columnSourceDocs.length - 1} column source entries`);
   
   return {
     spreadsheetId,

@@ -10,8 +10,18 @@ export const metadata = {
   id: 'native-checker',
   name: 'Native Status Checker',
   columns: [
-    { id: 'seMiNative', header: 'SE MI Native' },
-    { id: 'nativeCheckNotes', header: 'Native Check Notes' }
+    { 
+      id: 'seMiNative', 
+      header: 'SE MI Native',
+      source: 'Claude API',
+      algorithmDescription: 'Prompts Claude with species name and region "Southeast Michigan" (Wayne, Oakland, Macomb, Washtenaw, Livingston counties). Returns Yes/No based on whether species is indigenous to the region.'
+    },
+    { 
+      id: 'nativeCheckNotes', 
+      header: 'Native Check Notes',
+      source: 'Claude API',
+      algorithmDescription: 'Additional context from Claude about the species native status, such as introduction history or range notes.'
+    }
   ],
   dependencies: ['botanical-name'], // Requires valid botanical name first
   description: 'Determines if a plant species is native to Southeast Michigan region'

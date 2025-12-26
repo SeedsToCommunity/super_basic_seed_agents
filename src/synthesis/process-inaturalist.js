@@ -19,9 +19,24 @@ export const metadata = {
   id: 'inaturalist-observations',
   name: 'iNaturalist Enrichment',
   columns: [
-    { id: 'externalReferenceUrls', header: 'External Reference URLs' },
-    { id: 'seMiMonthlyObservations', header: 'SE Michigan Monthly Observations' },
-    { id: 'wikipediaSummary', header: 'Wikipedia Summary' }
+    { 
+      id: 'externalReferenceUrls', 
+      header: 'External Reference URLs',
+      source: 'iNaturalist API (appended)',
+      algorithmDescription: 'Clones URL object from michigan-flora module (or external-reference-urls if michigan-flora unavailable). Appends Wikipedia URL if found in iNaturalist taxa data and not already present.'
+    },
+    { 
+      id: 'seMiMonthlyObservations', 
+      header: 'SE Michigan Monthly Observations',
+      source: 'iNaturalist API',
+      algorithmDescription: 'Queries /observations/histogram endpoint with place_id for SE Michigan counties (Wayne, Oakland, Macomb, Washtenaw, Livingston). Returns JSON object with monthly observation counts like {"January": 5, "February": 16, ...}. Indicates seasonal visibility/phenology. Uses file-based caching in cache/iNaturalist/.'
+    },
+    { 
+      id: 'wikipediaSummary', 
+      header: 'Wikipedia Summary',
+      source: 'iNaturalist API → Wikipedia',
+      algorithmDescription: 'Fetches /taxa endpoint with species name, extracts wikipedia_summary field (cached by iNaturalist from Wikipedia). Truncates to 2000 chars if needed. Uses file-based caching in cache/iNaturalist/.'
+    }
   ],
   dependencies: ['botanical-name', 'external-reference-urls'],
   description: 'Appends Wikipedia URL to references, adds SE Michigan observation histogram and Wikipedia summary from iNaturalist'

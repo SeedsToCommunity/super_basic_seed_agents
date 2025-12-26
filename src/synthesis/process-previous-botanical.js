@@ -23,7 +23,12 @@ export const metadata = {
   id: 'previous-botanical',
   name: 'Previous Botanical Names',
   columns: [
-    { id: 'previouslyKnownAs', header: 'Previously Known As' }
+    { 
+      id: 'previouslyKnownAs', 
+      header: 'Previously Known As',
+      source: 'GBIF Backbone Taxonomy API',
+      algorithmDescription: 'Queries GBIF /species/match to get taxonKey, then fetches /species/{key}/synonyms. Filters to species-level binomials only (excludes varieties, subspecies). Returns comma-separated list of historical scientific names. Uses file-based caching in cache/GBIF/.'
+    }
   ],
   dependencies: ['botanical-name'], // Requires valid botanical name first
   description: 'Retrieves botanical synonyms (legacy binomial names) from GBIF for cross-reference purposes'

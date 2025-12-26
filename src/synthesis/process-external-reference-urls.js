@@ -17,7 +17,12 @@ export const metadata = {
   id: 'external-reference-urls',
   name: 'External Reference URL Discovery',
   columns: [
-    { id: 'externalReferenceUrls', header: 'External Reference URLs' }
+    { 
+      id: 'externalReferenceUrls', 
+      header: 'External Reference URLs',
+      source: 'SerpApi + HTTP validation',
+      algorithmDescription: 'Searches SerpApi for "{Genus} {species} site:{domain}" for each configured botanical reference site. Fetches HTML from results, validates with Mozilla Readability that content relates to target species. Caches validated URLs per-species. Downstream modules (michigan-flora, inaturalist) append additional URLs.'
+    }
   ],
   dependencies: ['botanical-name'], // Requires valid botanical name for searching
   description: 'Discovers URLs for plant species across botanical reference websites with caching'

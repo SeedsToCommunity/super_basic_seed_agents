@@ -10,7 +10,12 @@ export const metadata = {
   id: 'common-names',
   name: 'Common Names',
   columns: [
-    { id: 'commonNames', header: 'Common Names' }
+    { 
+      id: 'commonNames', 
+      header: 'Common Names',
+      source: 'Claude API',
+      algorithmDescription: 'Prompts Claude for all vernacular names used in Southeast Michigan, adjacent Great Lakes states (Ohio, Indiana, Illinois, Wisconsin), and southern Ontario. Excludes botanical synonyms and cultivar names. Returns comma-separated list ordered from most to least common.'
+    }
   ],
   dependencies: ['botanical-name'], // Requires valid botanical name first
   description: 'Identifies all common/vernacular names used in Southeast Michigan and adjacent regions'

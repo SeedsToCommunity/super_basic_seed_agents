@@ -10,8 +10,18 @@ export const metadata = {
   id: 'botanical-name',
   name: 'Botanical Name Validator',
   columns: [
-    { id: 'family', header: 'Family' },
-    { id: 'botanicalNameNotes', header: 'Botanical Name Notes' }
+    { 
+      id: 'family', 
+      header: 'Family',
+      source: 'Claude API',
+      algorithmDescription: 'Extracted from Claude response during botanical name validation. Returns the taxonomic family (e.g., Sapindaceae, Fagaceae) for valid species.'
+    },
+    { 
+      id: 'botanicalNameNotes', 
+      header: 'Botanical Name Notes',
+      source: 'Claude API',
+      algorithmDescription: 'Validation notes from Claude. Empty if name is current and exact. Contains error messages if name is outdated, misspelled, or invalid. Acts as pipeline gate - downstream modules only run if validation passes.'
+    }
   ],
   dependencies: [], // No dependencies - runs first
   description: 'Validates botanical names and returns current nomenclature status, family classification'

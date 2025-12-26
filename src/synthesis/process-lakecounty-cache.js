@@ -3,9 +3,9 @@ import { refreshParsedPdfCache, getSpeciesParsedPdfPaths } from '../utils/drive-
 export const metadata = {
   id: 'lakecounty-cache',
   name: 'Lake County Cache',
-  columns: [],
+  columns: [],  // Infrastructure module - no output columns
   dependencies: ['botanical-name'],
-  description: 'Syncs Google Drive parsed PDF files to local cache for Lake County data'
+  description: 'Syncs Google Drive parsed PDF files to local cache for Lake County data. Infrastructure module that provides cached data for downstream modules (lakecounty-images, similar-species).'
 };
 
 export async function run(genus, species, priorResults) {
