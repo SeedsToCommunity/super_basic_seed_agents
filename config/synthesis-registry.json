@@ -9,7 +9,7 @@
     {
       "id": "native-checker",
       "path": "../synthesis/process-native-checker.js",
-      "enabled": true,
+      "enabled": false,
       "description": "Determines if plant species is native to Southeast Michigan"
     },
     {
