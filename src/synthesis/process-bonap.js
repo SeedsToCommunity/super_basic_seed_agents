@@ -21,7 +21,7 @@ export const metadata = {
       id: 'bonapRangeMap', 
       header: 'BONAP Range Map',
       source: 'BONAP (bonap.net) + SerpApi fallback',
-      algorithmDescription: 'First attempts predictable BONAP image URL pattern (http://bonap.net/MapGallery/County/{Genus}%20{species}.png) with HEAD request verification. If direct URL fails (404), falls back to SerpApi search for "bonap {genus} {species} range map". Returns direct PNG image URL. Uses file-based caching in cache/BONAP/.'
+      algorithmDescription: 'First attempts predictable BONAP image URL pattern (http://bonap.net/MapGallery/County/{Genus}%20{species}.png) with HEAD request verification. If direct URL fails (404), falls back to SerpApi search for "bonap {genus} {species} range map". Returns direct PNG image URL.'
     }
   ],
   dependencies: ['botanical-name'],
