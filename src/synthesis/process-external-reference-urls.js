@@ -20,8 +20,8 @@ export const metadata = {
     { 
       id: 'externalReferenceUrls', 
       header: 'External Reference URLs',
-      source: 'SerpApi + HTTP validation',
-      algorithmDescription: 'Searches SerpApi for "{Genus} {species} site:{domain}" for each configured botanical reference site. Fetches HTML from results, validates with Mozilla Readability that content relates to target species. Caches validated URLs per-species. Downstream modules (michigan-flora, inaturalist) append additional URLs.'
+      source: 'Google Search + website validation',
+      algorithmDescription: 'Searches Google for the species on trusted botanical reference websites (Missouri Botanical Garden, Go Botany, Illinois Wildflowers, and others). Each result is checked to confirm the page actually contains information about this specific species before being included.'
     }
   ],
   dependencies: ['botanical-name'], // Requires valid botanical name for searching

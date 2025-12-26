@@ -22,20 +22,20 @@ export const metadata = {
     { 
       id: 'externalReferenceUrls', 
       header: 'External Reference URLs',
-      source: 'iNaturalist API (appended)',
-      algorithmDescription: 'Clones URL object from michigan-flora module (or external-reference-urls if michigan-flora unavailable). Appends Wikipedia URL if found in iNaturalist taxa data and not already present.'
+      source: 'Multiple sources (Google Search + Michigan Flora + iNaturalist)',
+      algorithmDescription: 'Reference links compiled from three sources: (1) botanical reference websites found via Google search and verified to contain species-specific information; (2) Michigan Flora species page from the University of Michigan Herbarium; (3) Wikipedia article link from iNaturalist.'
     },
     { 
       id: 'seMiMonthlyObservations', 
       header: 'SE Michigan Monthly Observations',
-      source: 'iNaturalist API',
-      algorithmDescription: 'Queries /observations/histogram endpoint with place_id for SE Michigan counties (Wayne, Oakland, Macomb, Washtenaw, Livingston). Returns JSON object with monthly observation counts like {"January": 5, "February": 16, ...}. Indicates seasonal visibility/phenology. Uses file-based caching in cache/iNaturalist/.'
+      source: 'iNaturalist (citizen science observations)',
+      algorithmDescription: 'Monthly observation counts from iNaturalist for Southeast Michigan (Wayne, Oakland, Macomb, Washtenaw, Livingston counties). Based on verified citizen science observations. Indicates when the species is most visible or identifiable throughout the year.'
     },
     { 
       id: 'wikipediaSummary', 
       header: 'Wikipedia Summary',
-      source: 'iNaturalist API → Wikipedia',
-      algorithmDescription: 'Fetches /taxa endpoint with species name, extracts wikipedia_summary field (cached by iNaturalist from Wikipedia). Truncates to 2000 chars if needed. Uses file-based caching in cache/iNaturalist/.'
+      source: 'Wikipedia (via iNaturalist)',
+      algorithmDescription: 'Summary text from the Wikipedia article for this species, retrieved through iNaturalist which maintains links to corresponding Wikipedia entries.'
     }
   ],
   dependencies: ['botanical-name', 'external-reference-urls'],

@@ -13,14 +13,14 @@ export const metadata = {
     { 
       id: 'seMiNative', 
       header: 'SE MI Native',
-      source: 'Claude API',
-      algorithmDescription: 'Prompts Claude with species name and region "Southeast Michigan" (Wayne, Oakland, Macomb, Washtenaw, Livingston counties). Returns Yes/No based on whether species is indigenous to the region.'
+      source: 'Claude AI',
+      algorithmDescription: 'Claude AI determines whether the species is native to Southeast Michigan (Wayne, Oakland, Macomb, Washtenaw, Livingston counties). Returns Yes or No.'
     },
     { 
       id: 'nativeCheckNotes', 
       header: 'Native Check Notes',
-      source: 'Claude API',
-      algorithmDescription: 'Additional context from Claude about the species native status, such as introduction history or range notes.'
+      source: 'Claude AI',
+      algorithmDescription: 'Additional context from Claude AI about the species native status, such as when it was introduced or notes about its natural range.'
     }
   ],
   dependencies: ['botanical-name'], // Requires valid botanical name first

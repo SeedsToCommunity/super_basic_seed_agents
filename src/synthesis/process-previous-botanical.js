@@ -26,8 +26,8 @@ export const metadata = {
     { 
       id: 'previouslyKnownAs', 
       header: 'Previously Known As',
-      source: 'GBIF Backbone Taxonomy API',
-      algorithmDescription: 'Queries GBIF /species/match to get taxonKey, then fetches /species/{key}/synonyms. Filters to species-level binomials only (excludes varieties, subspecies). Returns comma-separated list of historical scientific names. Uses file-based caching in cache/GBIF/.'
+      source: 'GBIF (Global Biodiversity Information Facility)',
+      algorithmDescription: 'Historical scientific names retrieved from GBIF, the international biodiversity database. Shows species-level synonyms only (excludes varieties and subspecies). Useful for cross-referencing older botanical literature.'
     }
   ],
   dependencies: ['botanical-name'], // Requires valid botanical name first

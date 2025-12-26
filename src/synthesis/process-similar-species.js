@@ -13,8 +13,8 @@ export const metadata = {
     { 
       id: 'similarSpeciesJson', 
       header: 'Similar Species JSON',
-      source: 'Google Drive Parsed PDFs + PageContent cache + Claude API',
-      algorithmDescription: 'Tiered data approach: (1) Aggregates source-backed data from cached Lake County parsed PDFs and PageContent cache (validated reference website text) using species-data-collector utility; (2) Sends aggregated data to Claude API with structured prompt from prompts/similar-species.md; (3) Returns JSON with Tier 1 (source-backed similarities with citations), Tier 2 (LLM-inferred similarities), and known_unknowns (data gaps where sources were insufficient).'
+      source: 'Lake County Seed Guide + botanical reference websites + Claude AI',
+      algorithmDescription: 'Species that may be confused with this one, along with distinguishing features. Data is gathered from the Lake County Seed Collection Guide and botanical reference websites, then analyzed by Claude AI. Results are organized into two tiers: (1) facts backed by specific sources with citations, and (2) additional insights inferred by the AI based on botanical knowledge.'
     }
   ],
   dependencies: ['botanical-name', 'lakecounty-cache'],

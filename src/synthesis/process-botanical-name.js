@@ -13,14 +13,14 @@ export const metadata = {
     { 
       id: 'family', 
       header: 'Family',
-      source: 'Claude API',
-      algorithmDescription: 'Extracted from Claude response during botanical name validation. Returns the taxonomic family (e.g., Sapindaceae, Fagaceae) for valid species.'
+      source: 'Claude AI',
+      algorithmDescription: 'The taxonomic family (e.g., Sapindaceae, Fagaceae) identified by Claude AI based on current botanical nomenclature.'
     },
     { 
       id: 'botanicalNameNotes', 
       header: 'Botanical Name Notes',
-      source: 'Claude API',
-      algorithmDescription: 'Validation notes from Claude. Empty if name is current and exact. Contains error messages if name is outdated, misspelled, or invalid. Acts as pipeline gate - downstream modules only run if validation passes.'
+      source: 'Claude AI',
+      algorithmDescription: 'Claude AI verifies the scientific name against current botanical nomenclature. Empty if the name is accepted and current. Contains notes if the name is outdated, a synonym, or has spelling issues.'
     }
   ],
   dependencies: [], // No dependencies - runs first

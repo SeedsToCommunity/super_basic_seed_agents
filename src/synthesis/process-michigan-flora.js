@@ -92,44 +92,44 @@ export const metadata = {
     { 
       id: 'coefficientC', 
       header: 'Coefficient of Conservatism (C)',
-      source: 'Michigan Flora CSV (2024)',
-      algorithmDescription: 'Direct lookup from static CSV dataset (~2,873 species). C values range 0-10, indicating species tolerance to disturbance. Higher values = more conservative species restricted to undisturbed habitats. Falls back to REST API if CSV lookup fails.'
+      source: 'Michigan Flora (University of Michigan Herbarium)',
+      algorithmDescription: 'Coefficient of Conservatism from Michigan Flora. Ranges 0-10, indicating how sensitive a species is to habitat disturbance. Higher values mean the species is found only in high-quality, undisturbed natural areas.'
     },
     { 
       id: 'wetlandIndicatorW', 
       header: 'Coefficient of Wetness (CW)',
-      source: 'Michigan Flora CSV (2024)',
-      algorithmDescription: 'Direct lookup from static CSV dataset. W values range -5 (obligate wetland) to +5 (obligate upland). Falls back to REST API if CSV lookup fails.'
+      source: 'Michigan Flora (University of Michigan Herbarium)',
+      algorithmDescription: 'Wetness indicator from Michigan Flora. Ranges from -5 (obligate wetland species) to +5 (obligate upland species). Values near 0 indicate species tolerant of both wet and dry conditions.'
     },
     { 
       id: 'physiognomy', 
       header: 'Physiognomy',
-      source: 'Michigan Flora CSV (2024)',
-      algorithmDescription: 'Growth form classification from CSV dataset. Values include: Forb, Graminoid, Shrub, Tree, Vine, etc.'
+      source: 'Michigan Flora (University of Michigan Herbarium)',
+      algorithmDescription: 'Growth form classification from Michigan Flora: Forb (herbaceous flowering plant), Graminoid (grass-like), Shrub, Tree, Vine, etc.'
     },
     { 
       id: 'duration', 
       header: 'Duration',
-      source: 'Michigan Flora CSV (2024)',
-      algorithmDescription: 'Life cycle from CSV dataset. Values: Annual, Biennial, Perennial, or combinations (e.g., "Annual/Biennial").'
+      source: 'Michigan Flora (University of Michigan Herbarium)',
+      algorithmDescription: 'Life cycle from Michigan Flora: Annual (one growing season), Biennial (two years), or Perennial (multiple years).'
     },
     { 
       id: 'nativeMIFlora', 
       header: 'Native-MIFlora',
-      source: 'Michigan Flora REST API',
-      algorithmDescription: 'Queries /api/v1.0/flora with scientific name, extracts "na" field from response. Returns "Native" (na=N) or "Non-native" (na=A). Uses file-based caching in cache/MichiganFlora/API/.'
+      source: 'Michigan Flora API (University of Michigan Herbarium)',
+      algorithmDescription: 'Native status according to Michigan Flora. "Native" means the species is indigenous to Michigan; "Non-native" means it was introduced from elsewhere.'
     },
     { 
       id: 'miFloraDescription', 
       header: 'Michigan Flora Description',
-      source: 'Michigan Flora REST API',
-      algorithmDescription: 'Fetches /api/v1.0/spec_text/{plant_id} endpoint using plant_id from flora search. Strips HTML tags and returns plain text description. Caches responses per species.'
+      source: 'Michigan Flora API (University of Michigan Herbarium)',
+      algorithmDescription: 'Species description text from the Michigan Flora API, maintained by the University of Michigan Herbarium.'
     },
     { 
       id: 'externalReferenceUrls', 
       header: 'External Reference URLs',
-      source: 'Michigan Flora REST API (appended)',
-      algorithmDescription: 'Clones URL object from external-reference-urls module and appends Michigan Flora record URL (e.g., https://michiganflora.net/species.aspx?id=2650). Also creates comprehensive JSON file and uploads to Google Drive MichiganFloraData/ folder.'
+      source: 'Multiple sources (Google Search + Michigan Flora)',
+      algorithmDescription: 'Adds the Michigan Flora species page URL to the reference list started by the initial Google search of botanical reference websites.'
     }
   ],
   dependencies: ['botanical-name', 'external-reference-urls'],
