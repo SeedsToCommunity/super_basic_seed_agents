@@ -10,12 +10,13 @@ export const metadata = {
 
 export async function run(genus, species, priorResults) {
   // Add timeout to prevent Drive sync from hanging indefinitely
-  const timeoutMs = 30000; // 30 seconds
+  // 90 seconds should be enough for 200+ JSON files
+  const timeoutMs = 90000;
   try {
     await Promise.race([
       refreshParsedPdfCache({ force: false, verbose: false }),
       new Promise((_, reject) => 
-        setTimeout(() => reject(new Error('Drive sync timed out after 30s')), timeoutMs)
+        setTimeout(() => reject(new Error('Drive sync timed out after 90s')), timeoutMs)
       )
     ]);
   } catch (err) {
