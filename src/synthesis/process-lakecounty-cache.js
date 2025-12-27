@@ -9,7 +9,18 @@ export const metadata = {
 };
 
 export async function run(genus, species, priorResults) {
-  await refreshParsedPdfCache({ force: false, verbose: false });
+  // Add timeout to prevent Drive sync from hanging indefinitely
+  const timeoutMs = 30000; // 30 seconds
+  try {
+    await Promise.race([
+      refreshParsedPdfCache({ force: false, verbose: false }),
+      new Promise((_, reject) => 
+        setTimeout(() => reject(new Error('Drive sync timed out after 30s')), timeoutMs)
+      )
+    ]);
+  } catch (err) {
+    console.log(`  [lakecounty-cache] ${err.message} - using existing cache`);
+  }
   
   const matchingFiles = getSpeciesParsedPdfPaths(genus, species);
   
