@@ -189,9 +189,12 @@ export async function refreshParsedPdfCache(options = {}) {
   }
   
   log(`   Scanning folder recursively...`);
-  const driveFiles = await collectFilesRecursive(subfolderId);
+  const allDriveFiles = await collectFilesRecursive(subfolderId);
   
-  log(`   Found ${driveFiles.length} files total`);
+  // Filter to JSON files only - we don't need image files
+  const driveFiles = allDriveFiles.filter(f => f.name.endsWith('.json'));
+  
+  log(`   Found ${driveFiles.length} JSON files (${allDriveFiles.length - driveFiles.length} images skipped)`);
   
   const index = loadIndex();
   let downloaded = 0;
