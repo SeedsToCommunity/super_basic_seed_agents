@@ -1,23 +1,22 @@
-Processing Time / Labor (DRAFT)
+# Processing Time / Labor (DRAFT)
+
+```json
 {
   "column_name": "Processing Time / Labor",
   "value": "",
   "Attribution": ""
 }
+```
 
+## Prompt Guidance
 
-Prompt guidance
+**Purpose:** Magnitude of effort required for processing.
 
-Purpose: Magnitude of effort required for processing.
+- Use selected vocabulary only.
+- Avoid precise times unless documented.
 
-Use selected vocabulary only.
+## Format & Caps
 
-Avoid precise times unless documented.
-
-Format & caps
-
-Enum-style short text
-
-Values: Minimal / Moderate / High
-
-Optional 1 short clarifying phrase
+- Enum-style short text
+- Values: Minimal / Moderate / High
+- Optional 1 short clarifying phrase

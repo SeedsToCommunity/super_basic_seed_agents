@@ -1,21 +1,21 @@
-Safe Storage Method – Room Temp
+# Safe Storage Method – Room Temp
+
+```json
 {
   "column_name": "Safe Storage Method – Room Temp",
   "value": "",
   "Attribution": ""
 }
+```
 
+## Prompt Guidance
 
-Prompt guidance
+**Purpose:** Short-term dry storage at home.
 
-Purpose: Short-term dry storage at home.
+- Emphasize dry, labeled, pest-safe.
+- Do not mention stratification or cold-moist methods.
 
-Emphasize dry, labeled, pest-safe.
+## Format & Caps
 
-Do not mention stratification or cold-moist methods.
-
-Format & caps
-
-Paragraph
-
-Max 4 sentences
+- Paragraph
+- Max 4 sentences

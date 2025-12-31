@@ -1,19 +1,20 @@
-Other Storage Hazards / Warnings (DRAFT)
+# Other Storage Hazards / Warnings (DRAFT)
+
+```json
 {
   "column_name": "Other Storage Hazards / Warnings",
   "value": "",
   "Attribution": ""
 }
+```
 
+## Prompt Guidance
 
-Prompt guidance
+**Purpose:** Non-mold storage hazards.
 
-Purpose: Non-mold storage hazards.
+- Phrase as characteristics, not speculation.
 
-Phrase as characteristics, not speculation.
+## Format & Caps
 
-Format & caps
-
-Short text
-
-Max 2 sentences
+- Short text
+- Max 2 sentences

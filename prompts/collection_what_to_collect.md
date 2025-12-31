@@ -1,23 +1,22 @@
-What You Collect
+# What You Collect
+
+```json
 {
   "column_name": "What You Collect",
   "value": "",
   "Attribution": ""
 }
+```
 
+## Prompt Guidance
 
-Prompt guidance
+**Purpose:** Identify the physical unit collected.
 
-Purpose: Identify the physical unit collected.
+- Use noun phrases only.
+- Multiple units allowed, comma-separated.
+- No clarifiers or processing language.
 
-Use noun phrases only.
+## Format & Caps
 
-Multiple units allowed, comma-separated.
-
-No clarifiers or processing language.
-
-Format & caps
-
-Short text
-
-Max 1 line
+- Short text
+- Max 1 line

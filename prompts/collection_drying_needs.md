@@ -1,25 +1,23 @@
-Seed Drying Needs
+# Seed Drying Needs
 
+```json
 {
   "column_name": "Seed Drying Needs",
   "value": "",
   "Attribution": ""
 }
+```
 
-Prompt guidance
+## Prompt Guidance
 
-Purpose: Describe container-based drying after collection.
+**Purpose:** Describe container-based drying after collection.
 
-Include containers that will maintain seed viability.
+- Include containers that will maintain seed viability.
+- Keep seeds/fluff contained.
+- Do not describe processing steps.
+- Do not suggest exposed surface drying (screens, trays, tarps).
 
-Keep seeds/fluff contained.
+## Format & Caps
 
-Do not describe processing steps.
-
-Do not suggest exposed surface drying (screens, trays, tarps).
-
-Format & caps
-
-Short text
-
-Max 2 sentences
+- Short text
+- Max 2 sentences

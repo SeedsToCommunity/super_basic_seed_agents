@@ -1,21 +1,21 @@
-Seed Cleaning Complexity
+# Seed Cleaning Complexity
+
+```json
 {
   "column_name": "Seed Cleaning Complexity",
   "value": "",
   "Attribution": ""
 }
+```
 
+## Prompt Guidance
 
-Prompt guidance
+**Purpose:** Core cleaning approach.
 
-Purpose: Core cleaning approach.
+- Mention chaff, mesh, or steps as applicable.
+- Keep concise and actionable.
 
-Mention chaff, mesh, or steps as applicable.
+## Format & Caps
 
-Keep concise and actionable.
-
-Format & caps
-
-Short text
-
-Max 1 sentence
+- Short text
+- Max 1 sentence

@@ -1,21 +1,21 @@
-Processing Nuggets (DRAFT)
+# Processing Nuggets (DRAFT)
+
+```json
 {
   "column_name": "Processing Nuggets",
   "value": "",
   "Attribution": ""
 }
+```
 
+## Prompt Guidance
 
-Prompt guidance
+**Purpose:** 1–2 high-leverage practical tips.
 
-Purpose: 1–2 high-leverage practical tips.
+- No full protocols.
+- Prefer species-specific tips.
 
-No full protocols.
+## Format & Caps
 
-Prefer species-specific tips.
-
-Format & caps
-
-Short text
-
-Max 2 sentences
+- Short text
+- Max 2 sentences

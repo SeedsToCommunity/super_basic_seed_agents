@@ -1,23 +1,22 @@
-Seed Visibility at Maturity
+# Seed Visibility at Maturity
+
+```json
 {
   "column_name": "Seed Visibility at Maturity",
   "value": "",
   "Attribution": ""
 }
+```
 
+## Prompt Guidance
 
-Prompt guidance
+**Purpose:** State whether seeds are visible and where.
 
-Purpose: State whether seeds are visible and where.
+- Begin with enum, followed by plain-language description.
+- Avoid botanical jargon.
 
-Begin with enum, followed by plain-language description.
+## Format & Caps
 
-Avoid botanical jargon.
-
-Format & caps
-
-Enum + explanation
-
-Enum values: Visible / Hidden / Partly visible
-
-Max 2 sentences after enum
+- Enum + explanation
+- Enum values: Visible / Hidden / Partly visible
+- Max 2 sentences after enum

@@ -1,21 +1,21 @@
-Germination Ecology / Real-World Behavior
+# Germination Ecology / Real-World Behavior
+
+```json
 {
   "column_name": "Germination Ecology / Real-World Behavior",
   "value": "",
   "Attribution": ""
 }
+```
 
+## Prompt Guidance
 
-Prompt guidance
+**Purpose:** Plain-language explanation of dormancy and seasonal cues.
 
-Purpose: Plain-language explanation of dormancy and seasonal cues.
+- Include dispersal timing, signals, dormancy mechanism(s), and natural germination season.
+- Distinguish dormancy from non-viability.
 
-Include dispersal timing, signals, dormancy mechanism(s), and natural germination season.
+## Format & Caps
 
-Distinguish dormancy from non-viability.
-
-Format & caps
-
-Paragraph
-
-3–6 sentences
+- Paragraph
+- 3–6 sentences

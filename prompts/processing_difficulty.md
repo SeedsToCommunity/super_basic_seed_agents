@@ -1,21 +1,21 @@
-Processing Difficulty (DRAFT)
+# Processing Difficulty (DRAFT)
+
+```json
 {
   "column_name": "Processing Difficulty",
   "value": "",
   "Attribution": ""
 }
+```
 
+## Prompt Guidance
 
-Prompt guidance
+**Purpose:** Overall difficulty of post-collection processing.
 
-Purpose: Overall difficulty of post-collection processing.
+- Reflect number of steps and fineness of cleaning required.
 
-Reflect number of steps and fineness of cleaning required.
+## Format & Caps
 
-Format & caps
-
-Enum + explanation
-
-Enum values: Easy / Moderate / Difficult
-
-Max 1 sentence after enum
+- Enum + explanation
+- Enum values: Easy / Moderate / Difficult
+- Max 1 sentence after enum

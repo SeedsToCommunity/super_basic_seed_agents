@@ -1,22 +1,21 @@
-Artificial Stratification Risks
+# Artificial Stratification Risks
 
+```json
 {
   "column_name": "Artificial Stratification Risks",
   "value": "",
   "Attribution": ""
 }
+```
 
+## Prompt Guidance
 
-Prompt guidance
+**Purpose:** Document pitfalls of fridge stratification.
 
-Purpose: Document pitfalls of fridge stratification.
+- Include premature germination, mold/rot if overwet, reduced germination if cues skipped.
+- Avoid "dead" unless documented.
 
-Include premature germination, mold/rot if overwet, reduced germination if cues skipped.
+## Format & Caps
 
-Avoid “dead” unless documented.
-
-Format & caps
-
-Paragraph or bullets
-
-Max 4 bullets or 4 sentences
+- Paragraph or bullets
+- Max 4 bullets or 4 sentences

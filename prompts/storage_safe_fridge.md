@@ -1,23 +1,22 @@
-Safe Storage Method – Dry Fridge
+# Safe Storage Method – Dry Fridge
+
+```json
 {
   "column_name": "Safe Storage Method – Dry Fridge",
   "value": "",
   "Attribution": ""
 }
+```
 
+## Prompt Guidance
 
-Prompt guidance
+**Purpose:** Dry refrigeration storage.
 
-Purpose: Dry refrigeration storage.
+- Describe dry container use.
+- Desiccant allowed if appropriate.
+- No moist media.
 
-Describe dry container use.
+## Format & Caps
 
-Desiccant allowed if appropriate.
-
-No moist media.
-
-Format & caps
-
-Paragraph
-
-Max 4 sentences
+- Paragraph
+- Max 4 sentences

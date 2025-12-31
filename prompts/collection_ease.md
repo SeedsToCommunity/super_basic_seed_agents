@@ -1,21 +1,21 @@
-Ease of Collection
+# Ease of Collection
+
+```json
 {
   "column_name": "Ease of Collection",
   "value": "",
   "Attribution": ""
 }
+```
 
+## Prompt Guidance
 
-Prompt guidance
+**Purpose:** At-a-glance effort rating to collect usable quantity.
 
-Purpose: At-a-glance effort rating to collect usable quantity.
+- Choose enum and add a short explanation.
 
-Choose enum and add a short explanation.
+## Format & Caps
 
-Format & caps
-
-Enum + explanation
-
-Enum values: Easy / Moderate / Difficult
-
-Max 1 sentence after enum
+- Enum + explanation
+- Enum values: Easy / Moderate / Difficult
+- Max 1 sentence after enum

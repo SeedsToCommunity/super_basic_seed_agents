@@ -1,19 +1,20 @@
-Mold Risk Notes
+# Mold Risk Notes
+
+```json
 {
   "column_name": "Mold Risk Notes",
   "value": "",
   "Attribution": ""
 }
+```
 
+## Prompt Guidance
 
-Prompt guidance
+**Purpose:** Note mold risk only when it exists.
 
-Purpose: Note mold risk only when it exists.
+- Leave value empty if not applicable.
 
-Leave value empty if not applicable.
+## Format & Caps
 
-Format & caps
-
-Short text or empty
-
-Max 1 sentence if filled
+- Short text or empty
+- Max 1 sentence if filled

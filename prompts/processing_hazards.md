@@ -1,21 +1,21 @@
-Processing Hazards (DRAFT)
+# Processing Hazards (DRAFT)
+
+```json
 {
   "column_name": "Processing Hazards",
   "value": "",
   "Attribution": ""
 }
+```
 
+## Prompt Guidance
 
-Prompt guidance
+**Purpose:** Hazards encountered during processing.
 
-Purpose: Hazards encountered during processing.
+- Include dust, spines, latex, toxins only if documented.
+- Non-alarmist tone.
 
-Include dust, spines, latex, toxins only if documented.
+## Format & Caps
 
-Non-alarmist tone.
-
-Format & caps
-
-Short text
-
-Max 2 sentences
+- Short text
+- Max 2 sentences
