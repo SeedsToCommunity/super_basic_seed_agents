@@ -438,3 +438,9 @@ export const seedColorModule = createFieldModule(
   'Seed Color at Maturity',
   'Uses 3-tier LLM prompting: Tier 1 uses trusted sources (Google Drive Tier 1 folder, Michigan Flora, Lake County Guide), Tier 2 adds secondary sources (Missouri Seedling Guide) plus Tier 1 output, Tier 3 uses model knowledge plus prior tiers. Returns merged JSON with all three tier responses.'
 );
+
+export const missRiskModule = createFieldModule(
+  'collection_miss_risk',
+  'Collection Miss Risk',
+  'Uses 3-tier LLM prompting to assess how easily seeds are lost before collection. Returns Low/Moderate/High enum with brief explanation.'
+);

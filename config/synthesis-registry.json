@@ -72,6 +72,13 @@
       "enabled": true,
       "description": "3-tier LLM prompting for Seed Color at Maturity field",
       "exportName": "seedColorModule"
+    },
+    {
+      "id": "3tier-collection_miss_risk",
+      "path": "../synthesis/process-3tier-field.js",
+      "enabled": true,
+      "description": "3-tier LLM prompting for Collection Miss Risk field",
+      "exportName": "missRiskModule"
     }
   ],
   "config": {
