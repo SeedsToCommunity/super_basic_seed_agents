@@ -311,8 +311,12 @@ export async function process3TierField(genus, species, fieldId, options = {}) {
   
   const prompts = {};
   
+  // Helper to extract filenames from sources array
+  const extractSourceFiles = (sources) => sources.map(s => s.fileName);
+  
   const tier1Prompt = buildTierPrompt(1, genus, species, fieldPromptContent, tier1Sources);
   prompts.tier1 = tier1Prompt;
+  const tier1SourceFiles = extractSourceFiles(tier1Sources);
   
   let tier1CacheResult = getCachedTierResponse(genus, species, fieldId, 1, tier1Prompt);
   if (tier1CacheResult.hit && !forceRefresh) {
@@ -321,7 +325,7 @@ export async function process3TierField(genus, species, fieldId, options = {}) {
   } else {
     log(`  [3tier] Tier 1: calling Claude API...`);
     const tier1Response = await callClaudeAPI(tier1Prompt);
-    cacheTierResponse(genus, species, fieldId, 1, tier1Prompt, tier1Response);
+    cacheTierResponse(genus, species, fieldId, 1, tier1Prompt, tier1Response, tier1SourceFiles);
     results.tier1 = parseResponse(tier1Response);
   }
   
@@ -331,6 +335,7 @@ export async function process3TierField(genus, species, fieldId, options = {}) {
   
   const tier2Prompt = buildTierPrompt(2, genus, species, fieldPromptContent, tier2Sources, { tier1: results.tier1 });
   prompts.tier2 = tier2Prompt;
+  const tier2SourceFiles = extractSourceFiles(tier2Sources);
   
   let tier2CacheResult = getCachedTierResponse(genus, species, fieldId, 2, tier2Prompt);
   if (tier2CacheResult.hit && !forceRefresh) {
@@ -339,7 +344,7 @@ export async function process3TierField(genus, species, fieldId, options = {}) {
   } else {
     log(`  [3tier] Tier 2: calling Claude API...`);
     const tier2Response = await callClaudeAPI(tier2Prompt);
-    cacheTierResponse(genus, species, fieldId, 2, tier2Prompt, tier2Response);
+    cacheTierResponse(genus, species, fieldId, 2, tier2Prompt, tier2Response, tier2SourceFiles);
     results.tier2 = parseResponse(tier2Response);
   }
   
@@ -357,7 +362,7 @@ export async function process3TierField(genus, species, fieldId, options = {}) {
   } else {
     log(`  [3tier] Tier 3: calling Claude API...`);
     const tier3Response = await callClaudeAPI(tier3Prompt);
-    cacheTierResponse(genus, species, fieldId, 3, tier3Prompt, tier3Response);
+    cacheTierResponse(genus, species, fieldId, 3, tier3Prompt, tier3Response, ['tier1_response', 'tier2_response']);
     results.tier3 = parseResponse(tier3Response);
   }
   

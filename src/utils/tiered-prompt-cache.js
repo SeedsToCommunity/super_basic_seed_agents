@@ -48,7 +48,7 @@ export function getCachedTierResponse(genus, species, fieldId, tier, promptText)
   return { hit: false };
 }
 
-export function cacheTierResponse(genus, species, fieldId, tier, promptText, responseText) {
+export function cacheTierResponse(genus, species, fieldId, tier, promptText, responseText, sourceFiles = []) {
   ensureCacheDir();
   const hash = promptToHash(promptText);
   const cachePath = getCachePath(genus, species, fieldId, tier, hash);
@@ -61,6 +61,7 @@ export function cacheTierResponse(genus, species, fieldId, tier, promptText, res
       tier
     },
     promptHash: hash,
+    sourceFiles,
     prompt: promptText,
     response: responseText,
     cachedAt: new Date().toISOString()
