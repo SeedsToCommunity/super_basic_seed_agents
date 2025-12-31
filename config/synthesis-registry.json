@@ -65,6 +65,13 @@
       "path": "../synthesis/process-similar-species.js",
       "enabled": true,
       "description": "Identifies similar species and distinguishing features using tiered source-backed and inferred data"
+    },
+    {
+      "id": "3tier-collection_mature_seed_color",
+      "path": "../synthesis/process-3tier-field.js",
+      "enabled": true,
+      "description": "3-tier LLM prompting for Seed Color at Maturity field",
+      "exportName": "seedColorModule"
     }
   ],
   "config": {

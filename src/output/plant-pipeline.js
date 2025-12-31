@@ -74,15 +74,25 @@ async function loadSynthesisModules() {
     if (!registryEntry.enabled) continue;
     
     const modulePath = join(__dirname, registryEntry.path);
-    const module = await import(modulePath);
+    const importedModule = await import(modulePath);
     
-    if (!module.metadata || !module.run) {
+    // Support named exports via exportName field in registry
+    // Default exports use 'metadata' and 'run' directly
+    // Named exports (like seedColorModule) contain metadata and run as properties
+    let moduleData;
+    if (registryEntry.exportName && importedModule[registryEntry.exportName]) {
+      moduleData = importedModule[registryEntry.exportName];
+    } else {
+      moduleData = importedModule;
+    }
+    
+    if (!moduleData.metadata || !moduleData.run) {
       throw new Error(`Invalid synthesis module: ${registryEntry.id} (missing metadata or run function)`);
     }
     
     modules.push({
-      metadata: module.metadata,
-      run: module.run,
+      metadata: moduleData.metadata,
+      run: moduleData.run,
       registryEntry
     });
   }
