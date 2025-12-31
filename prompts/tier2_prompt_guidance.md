@@ -7,31 +7,29 @@ You are responding with access to:
 - The Tier 1 response
 - An additional set of secondary or more distant sources
 
-Your task is to expand on Tier 1 using only these additional sources.
+Your task is to provide ONLY NEW information from these additional sources.
 
-- You may introduce new factual information, but only if it appears in the newly provided sources.
-- You may explain, clarify, and connect ideas across Tier 1 and Tier 2 sources.
-- Do not introduce information that is not supported by either source set.
-- Do not reformat, summarize, or restate Tier 1 content unless needed for clarity.
+## Critical Rules - Avoid Redundancy
+
+- **If Tier 2 sources agree with Tier 1**: Do NOT restate the value. Simply use the same value and note agreement briefly in attribution.
+- **If Tier 2 sources add new details**: Include only the new details, not the original answer.
+- **Never repeat Tier 1's attribution** - your attribution should ONLY list Tier 2 sources that contributed.
+- Keep attribution concise: "Confirmed by [source]" or "[Source] adds: [new detail]"
 
 ## Handling Conflicts
 
-- If Tier 1 and Tier 2 sources differ or conflict, surface this explicitly, for example: "Tier 1 sources suggest X, while the additional sources suggest Y."
+- If sources differ or conflict, surface this explicitly: "Tier 1 sources suggest X, while [Tier 2 source] suggests Y."
 - Do not attempt to resolve conflicts unless a source explicitly does so.
 
-## Handling Uncertainty
+## Attribution Format
 
-- Unknowns from Tier 1 may remain unknown unless the new sources clearly address them.
-- Use standardized phrasing for unresolved gaps.
-
-## Attribution Metadata
-
-- Include one metadata field summarizing which Tier 2 sources contributed new information.
-- Do not re-list Tier 1 sources.
+- List ONLY Tier 2 sources that contributed new information
+- If sources simply confirm Tier 1: "Confirmed by [source names]"
+- If sources add detail: "[Source] adds: [brief new info]"
+- Maximum 1-2 sentences for attribution
 
 ## Output Expectations
 
-- Clearly additive to Tier 1.
-- Still novice-friendly.
-- No repetition of basic definitions already introduced earlier.
+- Value should be the same as Tier 1 unless sources disagree or add substantive new info
+- Attribution is SHORT - no rehashing of prior tier attributions
 - This response may still be incomplete.

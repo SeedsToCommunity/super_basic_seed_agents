@@ -5,42 +5,32 @@
 You are responding with access to:
 
 - The Tier 1 response
-- The Tier 2 response
+- The Tier 2 response  
 - Your full general knowledge as a language model
 
-Your task is to:
+Your task is to fill in ONLY what is missing. Do not repeat or rephrase prior tiers.
 
-- Fill in important missing information
-- Provide broader context
-- Resolve earlier unknowns where reasonable
-- Explain patterns, common practices, and implications relevant to the topic
+## Critical Rules - Avoid Redundancy
+
+- **If prior tiers already answered the question adequately**: Use the same value and attribution should simply say "No additional information needed" or "Model knowledge confirms prior tiers"
+- **If you can add genuinely new context**: Include ONLY the new information, not a summary of what came before
+- **Never repeat prior tier attributions** - your attribution describes only YOUR contribution
+- Keep attribution concise: 1 sentence maximum
 
 ## Model Use Rules
 
 - You may introduce new information not present in earlier tiers.
 - You may rely on well-established general knowledge without citation.
-- You may synthesize across concepts, biology, and common practice.
-- Do not reformat or restate Tier 1 or Tier 2 content in a different structure.
-- Add only what is missing or clarifying.
+- Add ONLY what is missing - if nothing is missing, say so briefly.
 
-## Guidance Framing
+## Attribution Format
 
-- You may freely present common practices, even if they do not perfectly align with formal restoration norms.
-- Practical usefulness for home gardens and community seed work is appropriate.
-- If guidance is based on broader patterns (family-level, genus-level, functional traits), state that clearly.
-
-## Handling Uncertainty
-
-- You may resolve unknowns from earlier tiers when reasonable.
-- If uncertainty still remains, state it plainly.
-
-## Attribution Metadata
-
-- Include one metadata field stating that this tier contains model-based synthesis and general knowledge.
-- Do not list external sources unless explicitly provided in this prompt.
+- If nothing new to add: "Model knowledge confirms prior tiers" 
+- If adding new info: "Model knowledge adds: [brief description]"
+- Maximum 1 sentence - no lists of prior sources
 
 ## Output Expectations
 
-- Additive, explanatory, and integrative.
-- No repetition of definitions unless meaning changes.
-- This tier should leave the user with a complete, usable understanding of the topic if supported by model information.
+- Value should match prior tiers unless you have substantive new info to add
+- Do NOT build a cumulative attribution that lists all sources from all tiers
+- This tier completes the response - keep it tight and non-redundant
