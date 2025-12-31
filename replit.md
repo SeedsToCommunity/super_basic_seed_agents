@@ -35,6 +35,26 @@ Centralized settings are managed in `config/config.json`, covering Google Drive,
 ### Caching System
 The `cache/` directory stores API results and parsed data to minimize expensive operations, including caches for external references, SerpApi results, raw HTML, parsed page content, GBIF data, Michigan Flora data, iNaturalist data, BONAP data, and synced Google Drive parsed PDFs.
 
+### 3-Tier LLM Prompting System
+The project implements a trust-aware 3-tier LLM prompting system for synthesizing botanical guidance across ~26 new columns:
+
+**Source Tiers:**
+- **Tier 1 (Trusted)**: Google Drive "Tier 1 Sources" folder, Michigan Flora (CSV + API), Lake County PDFs
+- **Tier 2 (Secondary)**: All cached JSON artifacts (GBIF, iNaturalist, BONAP, External References, PageContent, Missouri Seedling Guide) + Tier 1 response for context
+- **Tier 3 (Model Knowledge)**: Claude's general botanical knowledge + prior tier responses
+
+**Core Files:**
+- `src/synthesis/process-3tier-field.js`: Shared orchestration module with source gatherers and prompt builder
+- `src/utils/drive-tier1-sync.js`: Syncs Google Drive "Tier 1 Sources" folder to local cache
+- `src/utils/tiered-prompt-cache.js`: MD5-based prompt/response caching to avoid redundant API calls
+- `prompts/`: Contains base prompt, tier-specific guidance, and field-specific prompts (e.g., `collection_mature_seed_color.md`)
+
+**Module Pattern:** New 3-tier fields are added by:
+1. Creating a field prompt file in `prompts/{field_id}.md`
+2. Adding a registry entry in `config/synthesis-registry.json` with `exportName` pointing to the field module
+
+**Output Format:** Each field produces a merged JSON with all 3 tier responses (value + attribution) for downstream display apps.
+
 ## External Dependencies
 
 ### Third-Party Services
