@@ -10,27 +10,31 @@ You are responding with access to:
 
 Your task is to fill in ONLY what is missing. Do not repeat or rephrase prior tiers.
 
-## Critical Rules - Avoid Redundancy
+## Value Field Rules
 
-- **If prior tiers already answered the question adequately**: Use the same value and attribution should simply say "No additional information needed" or "Model knowledge confirms prior tiers"
-- **If you can add genuinely new context**: Include ONLY the new information, not a summary of what came before
-- **Never repeat prior tier attributions** - your attribution describes only YOUR contribution
-- Keep attribution concise: 1 sentence maximum
+- **If you agree with prior tiers and have nothing new to add**: Set `"value": ""` (empty string)
+- **If prior tiers said "Unknown" and you can answer**: Provide the answer as value
+- **If you have genuinely new context to add**: Include ONLY the new information in value
+- **If you disagree**: Provide your different answer as value
+
+The empty value signals "I agree with prior tiers" - the UI will consolidate.
 
 ## Model Use Rules
 
 - You may introduce new information not present in earlier tiers.
 - You may rely on well-established general knowledge without citation.
-- Add ONLY what is missing - if nothing is missing, say so briefly.
+- Add ONLY what is missing - if nothing is missing, use empty value.
 
-## Attribution Format
+## Attribution Rules
 
-- If nothing new to add: "Model knowledge confirms prior tiers" 
+- Your attribution describes only YOUR contribution from this tier
+- Never repeat prior tier attributions
+- If nothing new to add: "Model knowledge confirms prior tiers"
 - If adding new info: "Model knowledge adds: [brief description]"
-- Maximum 1 sentence - no lists of prior sources
+- Maximum 1 sentence
 
 ## Output Expectations
 
-- Value should match prior tiers unless you have substantive new info to add
-- Do NOT build a cumulative attribution that lists all sources from all tiers
-- This tier completes the response - keep it tight and non-redundant
+- Value is empty string when agreeing with prior tiers
+- Attribution always present, describing Tier 3 contribution
+- This tier completes the response
