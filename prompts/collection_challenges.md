@@ -1,21 +1,21 @@
-# Collection Challenges
+Collection Challenges
 
-```json
 {
   "column_name": "Collection Challenges",
   "value": "",
   "Attribution": ""
 }
-```
 
-## Prompt Guidance
+Prompt guidance
 
-**Purpose:** Note practical obstacles to obtaining usable seed.
+Purpose: Note practical obstacles to obtaining usable seed.
 
-- Physical, ecological, or field-based issues only.
-- Duplication with safety allowed if clarifying.
+Physical, ecological, or field-based issues only.
 
-## Format & Caps
+Duplication with safety allowed if clarifying.
 
-- Short text
-- Max 2 sentences
+Format & caps
+
+Short text
+
+Max 2 sentences
