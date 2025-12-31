@@ -37,6 +37,19 @@ If information is:
 
 Accuracy and transparency take precedence over confidence.
 
+## Handling Missing Information
+
+When the provided sources do not contain information to answer the question:
+
+- **Value**: Use "Unknown" as the value. Do not write sentences explaining that sources don't have the answer.
+- **Attribution**: Briefly state which sources were checked, e.g., "Not specified in [source names]"
+
+Examples:
+- GOOD: `{"value": "Unknown", "attribution": "Not specified in Lake County Guide or Michigan Flora"}`
+- BAD: `{"value": "The provided sources do not give clear guidance on seed color at maturity.", "attribution": "..."}`
+
+The word "Unknown" signals that downstream tiers should attempt to fill this gap. Verbose explanations waste space and confuse the tiered system.
+
 ## Tone and Safety
 
 - Neutral, instructional, and conservative.
