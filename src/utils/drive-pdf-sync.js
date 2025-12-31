@@ -256,18 +256,19 @@ export async function refreshParsedPdfCache(options = {}) {
 }
 
 export function listCachedParsedPdfs() {
-  if (!fs.existsSync(INDEX_FILE)) {
+  if (!fs.existsSync(CACHE_DIR)) {
     return [];
   }
-  const index = loadIndex();
-  return Object.keys(index.files);
+  // Scan actual filesystem (not just index) to pick up all JSON files including manually added ones
+  return fs.readdirSync(CACHE_DIR)
+    .filter(name => name.endsWith('.json') && name !== 'index.json');
 }
 
 export function getSpeciesParsedPdfPaths(genus, species) {
-  const pattern = `${genus}_${species}_`;
+  const pattern = `${genus}_${species}_`.toLowerCase();
   const allFiles = listCachedParsedPdfs();
   return allFiles
-    .filter(name => name.startsWith(pattern))
+    .filter(name => name.toLowerCase().startsWith(pattern))
     .map(name => path.join(CACHE_DIR, name));
 }
 
