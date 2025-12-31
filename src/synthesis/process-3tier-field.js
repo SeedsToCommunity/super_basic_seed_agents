@@ -89,40 +89,30 @@ function gatherAllSecondarySourcesForSpecies(genus, species) {
     genus, species
   ));
   
-  // GBIF cache
-  sources.push(...getSpeciesJsonFromCacheDir(
-    path.join(cacheBase, 'GBIF'),
-    'GBIF Species API',
-    genus, species
-  ));
-  
-  // iNaturalist cache
-  sources.push(...getSpeciesJsonFromCacheDir(
-    path.join(cacheBase, 'iNaturalist'),
-    'iNaturalist API',
-    genus, species
-  ));
-  
-  // BONAP cache
-  sources.push(...getSpeciesJsonFromCacheDir(
-    path.join(cacheBase, 'BONAP'),
-    'BONAP',
-    genus, species
-  ));
-  
-  // External References cache
-  sources.push(...getSpeciesJsonFromCacheDir(
-    path.join(cacheBase, 'ExternalReferences'),
-    'External Reference URLs',
-    genus, species
-  ));
-  
-  // Page Content cache (validated web pages)
+  // Page Content cache (validated web pages - contains actual botanical descriptions)
   sources.push(...getSpeciesJsonFromCacheDir(
     path.join(cacheBase, 'PageContent'),
     'Validated Web Pages',
     genus, species
   ));
+  
+  // Missouri Dept Conservation files from DriveParsedPdfs (Tier 2)
+  const allParsedPdfs = readSpeciesParsedPdfs(genus, species);
+  for (const item of allParsedPdfs) {
+    if (item.fileName.includes('MissouriDepartmentConservation')) {
+      sources.push({
+        fileName: item.fileName,
+        source: 'Missouri Dept Conservation Seedling Guide',
+        content: item.content
+      });
+    }
+  }
+  
+  // NOTE: Excluded from Tier 2 (not useful for seed collection/botanical guidance):
+  // - GBIF (taxonomic synonyms only)
+  // - iNaturalist (observation histograms only)
+  // - BONAP (range map URLs only)
+  // - ExternalReferences (just URLs, no content)
   
   return sources;
 }
@@ -142,13 +132,16 @@ function gatherTier1Sources(genus, species) {
     });
   }
   
-  const lakeCountyData = readSpeciesParsedPdfs(genus, species);
-  for (const item of lakeCountyData) {
-    sources.push({
-      fileName: item.fileName,
-      source: 'Lake County Seed Collection Guide',
-      content: item.content
-    });
+  // Lake County files from DriveParsedPdfs (Tier 1 only - filter out Missouri)
+  const allParsedPdfs = readSpeciesParsedPdfs(genus, species);
+  for (const item of allParsedPdfs) {
+    if (item.fileName.includes('LakeCounty') || item.fileName.includes('lakecounty')) {
+      sources.push({
+        fileName: item.fileName,
+        source: 'Lake County Seed Collection Guide',
+        content: item.content
+      });
+    }
   }
   
   return sources;
