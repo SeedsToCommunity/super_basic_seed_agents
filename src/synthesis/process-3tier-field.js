@@ -240,7 +240,26 @@ async function callClaudeAPI(prompt) {
     }
     return null;
   } catch (error) {
-    console.error(`[3tier] Claude API error: ${error.message}`);
+    console.error(`[3tier] Claude API error details:`);
+    console.error(`  - Message: ${error.message}`);
+    console.error(`  - Type: ${error.constructor.name}`);
+    
+    if (error.status) {
+      console.error(`  - HTTP Status: ${error.status}`);
+    }
+    if (error.error) {
+      console.error(`  - Error body: ${JSON.stringify(error.error, null, 2)}`);
+    }
+    if (error.headers) {
+      const retryAfter = error.headers['retry-after'] || error.headers.get?.('retry-after');
+      const rateLimitRemaining = error.headers['x-ratelimit-remaining'] || error.headers.get?.('x-ratelimit-remaining');
+      const rateLimitReset = error.headers['x-ratelimit-reset'] || error.headers.get?.('x-ratelimit-reset');
+      
+      if (retryAfter) console.error(`  - Retry-After: ${retryAfter} seconds`);
+      if (rateLimitRemaining) console.error(`  - Rate Limit Remaining: ${rateLimitRemaining}`);
+      if (rateLimitReset) console.error(`  - Rate Limit Reset: ${rateLimitReset}`);
+    }
+    
     throw error;
   }
 }
