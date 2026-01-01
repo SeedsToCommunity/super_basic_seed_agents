@@ -510,3 +510,27 @@ export const collectionWhatToCollectModule = createFieldModule(
   'What You Collect',
   'Uses 3-tier LLM prompting to identify the physical unit collected (seeds, pods, etc.).'
 );
+
+export const collectionEaseModule = createFieldModule(
+  'collection_ease',
+  'Ease of Collection',
+  'Uses 3-tier LLM prompting to rate collection effort as Easy/Moderate/Difficult with brief explanation.'
+);
+
+export const collectionMatureSeedVisibilityModule = createFieldModule(
+  'collection_mature_seed_visibility',
+  'Seed Visibility at Maturity',
+  'Uses 3-tier LLM prompting to describe whether seeds are Visible/Hidden/Partly visible at maturity.'
+);
+
+export const identificationHabitatNotesModule = createFieldModule(
+  'identification_habitat_notes',
+  'Habitat Notes',
+  'Uses 3-tier LLM prompting to provide habitat context helpful for plant identification.'
+);
+
+export const collectionChallengesModule = createFieldModule(
+  'collection_challenges',
+  'Collection Challenges',
+  'Uses 3-tier LLM prompting to note practical obstacles to obtaining usable seed.'
+);

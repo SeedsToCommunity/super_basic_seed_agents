@@ -142,6 +142,34 @@
       "enabled": true,
       "description": "3-tier LLM prompting for What You Collect field",
       "exportName": "collectionWhatToCollectModule"
+    },
+    {
+      "id": "3tier-collection_ease",
+      "path": "../synthesis/process-3tier-field.js",
+      "enabled": true,
+      "description": "3-tier LLM prompting for Ease of Collection field",
+      "exportName": "collectionEaseModule"
+    },
+    {
+      "id": "3tier-collection_mature_seed_visibility",
+      "path": "../synthesis/process-3tier-field.js",
+      "enabled": true,
+      "description": "3-tier LLM prompting for Seed Visibility at Maturity field",
+      "exportName": "collectionMatureSeedVisibilityModule"
+    },
+    {
+      "id": "3tier-identification_habitat_notes",
+      "path": "../synthesis/process-3tier-field.js",
+      "enabled": true,
+      "description": "3-tier LLM prompting for Habitat Notes field",
+      "exportName": "identificationHabitatNotesModule"
+    },
+    {
+      "id": "3tier-collection_challenges",
+      "path": "../synthesis/process-3tier-field.js",
+      "enabled": true,
+      "description": "3-tier LLM prompting for Collection Challenges field",
+      "exportName": "collectionChallengesModule"
     }
   ],
   "config": {
