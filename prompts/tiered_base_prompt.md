@@ -8,6 +8,17 @@ Seeds to Community is a Southeast Michigan–focused community program that help
 - Responses must use clear, plain language.
 - When technical or botanical terms are necessary, they must be defined when first used.
 
+**Examples of terms that MUST be defined if used:**
+- follicle → "follicle (elongated seed pod)"
+- umbel → "umbel (umbrella-shaped flower cluster)"
+- achene → "achene (small dry seed)"
+- pappus → "pappus (fluffy seed tuft)"
+- capsule → "capsule (dry seed container that splits open)"
+- inflorescence → "inflorescence (flower cluster)"
+- calyx → "calyx (outer whorl of sepals)"
+
+If a simpler word exists (e.g., "seed pod" instead of "follicle"), prefer the simpler word.
+
 ## Geographic Scope
 
 - Guidance is written for Southeast Michigan conditions.
@@ -41,14 +52,15 @@ Accuracy and transparency take precedence over confidence.
 
 When the provided sources do not contain information to answer the question:
 
-- **Value**: Use "Unknown" as the value. Do not write sentences explaining that sources don't have the answer.
+- **Value**: Use an empty string `""` as the value. Do not write sentences explaining that sources don't have the answer.
 - **Attribution**: Briefly state which sources were checked, e.g., "Not specified in [source names]"
 
 Examples:
-- GOOD: `{"value": "Unknown", "attribution": "Not specified in Lake County Guide or Michigan Flora"}`
+- GOOD: `{"value": "", "attribution": "Not specified in Lake County Guide or Michigan Flora"}`
+- BAD: `{"value": "Unknown", "attribution": "Not specified in Lake County Guide or Michigan Flora"}`
 - BAD: `{"value": "The provided sources do not give clear guidance on seed color at maturity.", "attribution": "..."}`
 
-The word "Unknown" signals that downstream tiers should attempt to fill this gap. Verbose explanations waste space and confuse the tiered system.
+An empty value signals that downstream tiers should attempt to fill this gap. Verbose explanations waste space and confuse the tiered system.
 
 ## Tone and Safety
 
