@@ -86,6 +86,27 @@
       "enabled": true,
       "description": "3-tier LLM prompting for Processing Hazards field",
       "exportName": "processingHazardsModule"
+    },
+    {
+      "id": "3tier-stratification_ecology",
+      "path": "../synthesis/process-3tier-field.js",
+      "enabled": true,
+      "description": "3-tier LLM prompting for Germination Ecology field",
+      "exportName": "stratificationEcologyModule"
+    },
+    {
+      "id": "3tier-stratification_requirements",
+      "path": "../synthesis/process-3tier-field.js",
+      "enabled": true,
+      "description": "3-tier LLM prompting for Stratification Requirements field",
+      "exportName": "stratificationRequirementsModule"
+    },
+    {
+      "id": "3tier-stratification_risks",
+      "path": "../synthesis/process-3tier-field.js",
+      "enabled": true,
+      "description": "3-tier LLM prompting for Artificial Stratification Risks field",
+      "exportName": "stratificationRisksModule"
     }
   ],
   "config": {

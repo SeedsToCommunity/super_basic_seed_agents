@@ -443,3 +443,21 @@ export const processingHazardsModule = createFieldModule(
   'Processing Hazards',
   'Uses 3-tier LLM prompting to identify safety hazards during seed processing/handling. Notes irritants, toxins, spines, or allergenic properties.'
 );
+
+export const stratificationEcologyModule = createFieldModule(
+  'stratification_ecology',
+  'Germination Ecology / Real-World Behavior',
+  'Uses 3-tier LLM prompting to explain dormancy mechanisms, dispersal timing, and natural germination cues.'
+);
+
+export const stratificationRequirementsModule = createFieldModule(
+  'stratification_requirements',
+  'Stratification Requirements',
+  'Uses 3-tier LLM prompting to document artificial (fridge) stratification protocols with codes and plain-language explanation.'
+);
+
+export const stratificationRisksModule = createFieldModule(
+  'stratification_risks',
+  'Artificial Stratification Risks',
+  'Uses 3-tier LLM prompting to document pitfalls of fridge stratification including premature germination and mold risks.'
+);
