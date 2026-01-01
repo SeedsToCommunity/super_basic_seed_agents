@@ -107,6 +107,41 @@
       "enabled": true,
       "description": "3-tier LLM prompting for Artificial Stratification Risks field",
       "exportName": "stratificationRisksModule"
+    },
+    {
+      "id": "3tier-collection_quantity_notes",
+      "path": "../synthesis/process-3tier-field.js",
+      "enabled": true,
+      "description": "3-tier LLM prompting for Collection Quantity Notes field",
+      "exportName": "collectionQuantityNotesModule"
+    },
+    {
+      "id": "3tier-collection_readiness_cues",
+      "path": "../synthesis/process-3tier-field.js",
+      "enabled": true,
+      "description": "3-tier LLM prompting for Readiness Collection Cues field",
+      "exportName": "collectionReadinessCuesModule"
+    },
+    {
+      "id": "3tier-collection_safety_nuisances",
+      "path": "../synthesis/process-3tier-field.js",
+      "enabled": true,
+      "description": "3-tier LLM prompting for Collection Safety and Nuisance Notes field",
+      "exportName": "collectionSafetyNuisancesModule"
+    },
+    {
+      "id": "3tier-collection_tools",
+      "path": "../synthesis/process-3tier-field.js",
+      "enabled": true,
+      "description": "3-tier LLM prompting for Some Useful Collection Tools field",
+      "exportName": "collectionToolsModule"
+    },
+    {
+      "id": "3tier-collection_what_to_collect",
+      "path": "../synthesis/process-3tier-field.js",
+      "enabled": true,
+      "description": "3-tier LLM prompting for What You Collect field",
+      "exportName": "collectionWhatToCollectModule"
     }
   ],
   "config": {

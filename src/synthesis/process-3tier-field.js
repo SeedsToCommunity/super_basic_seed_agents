@@ -461,3 +461,33 @@ export const stratificationRisksModule = createFieldModule(
   'Artificial Stratification Risks',
   'Uses 3-tier LLM prompting to document pitfalls of fridge stratification including premature germination and mold risks.'
 );
+
+export const collectionQuantityNotesModule = createFieldModule(
+  'collection_quantity_notes',
+  'Collection Quantity Notes',
+  'Uses 3-tier LLM prompting to set expectations for typical seed yield per plant or stand.'
+);
+
+export const collectionReadinessCuesModule = createFieldModule(
+  'collection_readiness_cues',
+  'Readiness Collection Cues',
+  'Uses 3-tier LLM prompting to describe observable cues indicating harvest timing.'
+);
+
+export const collectionSafetyNuisancesModule = createFieldModule(
+  'collection_safety_nuisances',
+  'Collection Safety and Nuisance Notes',
+  'Uses 3-tier LLM prompting to document hazards and nuisances during seed collection.'
+);
+
+export const collectionToolsModule = createFieldModule(
+  'collection_tools',
+  'Some Useful Collection Tools',
+  'Uses 3-tier LLM prompting to list simple tools and containers for seed collection.'
+);
+
+export const collectionWhatToCollectModule = createFieldModule(
+  'collection_what_to_collect',
+  'What You Collect',
+  'Uses 3-tier LLM prompting to identify the physical unit collected (seeds, pods, etc.).'
+);
