@@ -79,6 +79,13 @@
       "enabled": true,
       "description": "3-tier LLM prompting for Collection Miss Risk field",
       "exportName": "missRiskModule"
+    },
+    {
+      "id": "3tier-processing_hazards",
+      "path": "../synthesis/process-3tier-field.js",
+      "enabled": true,
+      "description": "3-tier LLM prompting for Processing Hazards field",
+      "exportName": "processingHazardsModule"
     }
   ],
   "config": {

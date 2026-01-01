@@ -437,3 +437,9 @@ export const missRiskModule = createFieldModule(
   'Collection Miss Risk',
   'Uses 3-tier LLM prompting to assess how easily seeds are lost before collection. Returns Low/Moderate/High enum with brief explanation.'
 );
+
+export const processingHazardsModule = createFieldModule(
+  'processing_hazards',
+  'Processing Hazards',
+  'Uses 3-tier LLM prompting to identify safety hazards during seed processing/handling. Notes irritants, toxins, spines, or allergenic properties.'
+);

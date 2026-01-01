@@ -1,4 +1,4 @@
-# Processing Hazards (DRAFT)
+# Processing Hazards
 
 ```json
 {
