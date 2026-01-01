@@ -10,11 +10,14 @@
 
 ## Prompt Guidance
 
-**Purpose:** Set expectations for typical seed yield.
+**Purpose:** Set expectations for typical seed yield with specific quantities.
 
-- Describe amount per plant or stand.
-- May note year-to-year variability.
-- Do not describe patch density or where to find plants.
+- Provide approximate seed counts: seeds per pod/fruit, pods per plant, or seeds per plant
+- Use numeric estimates or ranges (e.g., "50-100 seeds per pod", "3-5 pods per stem")
+- May note year-to-year variability
+- Do not describe patch density or where to find plants
+
+If sources use vague terms like "many" or "numerous," provide typical counts based on botanical knowledge.
 
 ## Format & Caps
 
