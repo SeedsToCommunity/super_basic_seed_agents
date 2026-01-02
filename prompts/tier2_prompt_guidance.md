@@ -27,7 +27,7 @@ The empty value signals "I agree with prior tier" - the UI will show Tier 1's va
 
 - Your attribution should ONLY list Tier 2 sources that contributed
 - Never repeat Tier 1's attribution
-- Keep attribution concise: "Confirmed by [source]" or "[Source] adds: [new detail]"
+- Keep attribution concise: "Confirmed by [source]" or "[source] adds [brief topic]"
 - If sources confirm but add no new info: "Confirmed by [source names]"
 
 ## Output Expectations

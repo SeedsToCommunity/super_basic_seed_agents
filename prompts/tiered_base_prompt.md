@@ -48,6 +48,20 @@ If information is:
 
 Accuracy and transparency take precedence over confidence.
 
+## Value vs Attribution Separation
+
+The response JSON has two fields: `value` and `attribution`. Keep them strictly separate:
+
+- The `value` field contains ONLY the factual content — never mention source names within it.
+- The `attribution` field is the ONLY place source names should appear.
+- Do not write phrases like "According to [source]...", "[Source] notes that...", "[Source] adds that...", or "Per [source]..." in the value.
+
+Examples:
+- BAD: `{"value": "Go Botany adds that it grows in meadows...", "attribution": "Go Botany"}`
+- BAD: `{"value": "Prairie Moon Nursery notes that seeds need 30 days cold...", "attribution": "Prairie Moon"}`
+- GOOD: `{"value": "It also grows in meadows and fields.", "attribution": "Go Botany"}`
+- GOOD: `{"value": "Seeds need 30 days of cold treatment.", "attribution": "Prairie Moon Nursery"}`
+
 ## Handling Missing Information
 
 When the provided sources do not contain information to answer the question:
