@@ -20,6 +20,8 @@
 - Include one metadata field at the end of the response summarizing attribution.
 - Mention only sources that were actually used.
 - Do not mention unused sources.
+- Use the format: `Source Name (brief contribution summary)`
+- Example: `"Michigan Flora (SE Michigan highways); Lake County Guide (disturbed sites, clearings)"`
 
 ## Output Expectations
 

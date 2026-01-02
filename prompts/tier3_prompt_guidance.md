@@ -31,8 +31,9 @@ Vague descriptors like "many seeds" or "several pods" are gaps, not answers. If 
 
 - Your attribution describes only YOUR contribution from this tier
 - Never repeat prior tier attributions
-- If nothing new to add: "Model knowledge confirms prior tiers"
-- If adding new info: "Model knowledge adds: [brief description]"
+- Use the same parenthetical format as other tiers
+- If nothing new to add: `"Model knowledge (confirms prior tiers)"`
+- If adding new info: `"Model knowledge (typical seed counts, harvest timing)"`
 - Maximum 1 sentence
 
 ## Output Expectations

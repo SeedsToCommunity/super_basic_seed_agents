@@ -56,11 +56,22 @@ The response JSON has two fields: `value` and `attribution`. Keep them strictly 
 - The `attribution` field is the ONLY place source names should appear.
 - Do not write phrases like "According to [source]...", "[Source] notes that...", "[Source] adds that...", or "Per [source]..." in the value.
 
+## Attribution Format
+
+Use this format for attributions: `Source Name (≤6 word contribution summary)`
+
+Rules:
+- Each source gets a parenthetical summary of what it contributed
+- Keep summaries to 6 words or fewer
+- Separate multiple sources with semicolons
+- Only include sources that actually contributed information
+
 Examples:
-- BAD: `{"value": "Go Botany adds that it grows in meadows...", "attribution": "Go Botany"}`
-- BAD: `{"value": "Prairie Moon Nursery notes that seeds need 30 days cold...", "attribution": "Prairie Moon"}`
-- GOOD: `{"value": "It also grows in meadows and fields.", "attribution": "Go Botany"}`
-- GOOD: `{"value": "Seeds need 30 days of cold treatment.", "attribution": "Prairie Moon Nursery"}`
+- GOOD: `"Michigan Flora (Southeast MI highways, disturbed sites); Lake County Guide (rocky clearings)"`
+- GOOD: `"Go Botany (meadows, fields); Illinois Wildflowers (oak savannas, prairies)"`
+- GOOD: `"Prairie Moon Nursery (30-day cold stratification)"`
+- BAD: `"Go Botany, Illinois Wildflowers, Missouri Department of Conservation"` (no contribution summaries)
+- BAD: `{"value": "Go Botany adds that it grows in meadows...", "attribution": "Go Botany"}` (source name in value)
 
 ## Handling Missing Information
 
