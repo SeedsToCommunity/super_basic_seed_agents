@@ -170,6 +170,76 @@
       "enabled": true,
       "description": "3-tier LLM prompting for Collection Challenges field",
       "exportName": "collectionChallengesModule"
+    },
+    {
+      "id": "3tier-collection_cleaning_complexity",
+      "path": "../synthesis/process-3tier-field.js",
+      "enabled": true,
+      "description": "3-tier LLM prompting for Seed Cleaning Complexity field",
+      "exportName": "collectionCleaningComplexityModule"
+    },
+    {
+      "id": "3tier-collection_drying_needs",
+      "path": "../synthesis/process-3tier-field.js",
+      "enabled": true,
+      "description": "3-tier LLM prompting for Seed Drying Needs field",
+      "exportName": "collectionDryingNeedsModule"
+    },
+    {
+      "id": "3tier-collection_id_cautions",
+      "path": "../synthesis/process-3tier-field.js",
+      "enabled": true,
+      "description": "3-tier LLM prompting for Collection ID Cautions field",
+      "exportName": "collectionIdCautionsModule"
+    },
+    {
+      "id": "3tier-processing_difficulty",
+      "path": "../synthesis/process-3tier-field.js",
+      "enabled": true,
+      "description": "3-tier LLM prompting for Processing Difficulty field",
+      "exportName": "processingDifficultyModule"
+    },
+    {
+      "id": "3tier-processing_nuggets",
+      "path": "../synthesis/process-3tier-field.js",
+      "enabled": true,
+      "description": "3-tier LLM prompting for Processing Nuggets field",
+      "exportName": "processingNuggetsModule"
+    },
+    {
+      "id": "3tier-processing_time_labor",
+      "path": "../synthesis/process-3tier-field.js",
+      "enabled": true,
+      "description": "3-tier LLM prompting for Processing Time/Labor field",
+      "exportName": "processingTimeLaborModule"
+    },
+    {
+      "id": "3tier-storage_hazards",
+      "path": "../synthesis/process-3tier-field.js",
+      "enabled": true,
+      "description": "3-tier LLM prompting for Storage Hazards field",
+      "exportName": "storageHazardsModule"
+    },
+    {
+      "id": "3tier-storage_mold_risk",
+      "path": "../synthesis/process-3tier-field.js",
+      "enabled": true,
+      "description": "3-tier LLM prompting for Storage Mold Risk field",
+      "exportName": "storageMoldRiskModule"
+    },
+    {
+      "id": "3tier-storage_safe_fridge",
+      "path": "../synthesis/process-3tier-field.js",
+      "enabled": true,
+      "description": "3-tier LLM prompting for Safe Storage - Dry Fridge field",
+      "exportName": "storageSafeFridgeModule"
+    },
+    {
+      "id": "3tier-storage_safe_room_temperature",
+      "path": "../synthesis/process-3tier-field.js",
+      "enabled": true,
+      "description": "3-tier LLM prompting for Safe Storage - Room Temp field",
+      "exportName": "storageSafeRoomTempModule"
     }
   ],
   "config": {

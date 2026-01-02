@@ -534,3 +534,63 @@ export const collectionChallengesModule = createFieldModule(
   'Collection Challenges',
   'Uses 3-tier LLM prompting to note practical obstacles to obtaining usable seed.'
 );
+
+export const collectionCleaningComplexityModule = createFieldModule(
+  'collection_cleaning_complexity',
+  'Seed Cleaning Complexity',
+  'Uses 3-tier LLM prompting to describe core cleaning approach including chaff, mesh, or steps.'
+);
+
+export const collectionDryingNeedsModule = createFieldModule(
+  'collection_drying_needs',
+  'Seed Drying Needs',
+  'Uses 3-tier LLM prompting to describe container-based drying after collection.'
+);
+
+export const collectionIdCautionsModule = createFieldModule(
+  'collection_id_cautions',
+  'Collection ID Cautions',
+  'Uses 3-tier LLM prompting to describe observable traits on target species at collection time.'
+);
+
+export const processingDifficultyModule = createFieldModule(
+  'processing_difficulty',
+  'Processing Difficulty',
+  'Uses 3-tier LLM prompting to rate overall difficulty of post-collection processing as Easy/Moderate/Difficult.'
+);
+
+export const processingNuggetsModule = createFieldModule(
+  'processing_nuggets',
+  'Processing Nuggets',
+  'Uses 3-tier LLM prompting to provide 1-2 high-leverage practical tips for processing.'
+);
+
+export const processingTimeLaborModule = createFieldModule(
+  'processing_time_labor',
+  'Processing Time / Labor',
+  'Uses 3-tier LLM prompting to describe magnitude of effort required for processing as Minimal/Moderate/High.'
+);
+
+export const storageHazardsModule = createFieldModule(
+  'storage_hazards',
+  'Other Storage Hazards / Warnings',
+  'Uses 3-tier LLM prompting to document storage hazards like pest attraction or volatiles.'
+);
+
+export const storageMoldRiskModule = createFieldModule(
+  'storage_mold_risk',
+  'Storage Mold Risk',
+  'Uses 3-tier LLM prompting to assess mold risk during storage.'
+);
+
+export const storageSafeFridgeModule = createFieldModule(
+  'storage_safe_fridge',
+  'Safe Storage Method – Dry Fridge',
+  'Uses 3-tier LLM prompting to describe dry refrigeration storage approach.'
+);
+
+export const storageSafeRoomTempModule = createFieldModule(
+  'storage_safe_room_temperature',
+  'Safe Storage Method – Room Temp',
+  'Uses 3-tier LLM prompting to describe short-term dry storage at room temperature.'
+);
