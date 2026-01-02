@@ -1,0 +1,78 @@
+PRODUCTION BATCH PROCESSOR - HOW TO RUN
+=======================================
+
+BASIC USAGE
+-----------
+
+Run from the project root directory:
+
+    node production/run-batch.js "<sheet-name>" <species-list-file>
+
+Example:
+
+    node production/run-batch.js "Presentation_2026" production/species-list-presentation.txt
+
+
+WHAT IT DOES
+------------
+
+1. Looks for a Google Sheet with the exact name you provide in the output folder
+2. If found: reads which species are already in the sheet and skips them
+3. If not found: creates a new sheet with that name
+4. Processes each species and saves immediately to the sheet
+5. Safe to interrupt at any time - progress is saved after each species
+
+
+RESUMING AFTER INTERRUPTION
+---------------------------
+
+Just run the same command again:
+
+    node production/run-batch.js "Presentation_2026" production/species-list-presentation.txt
+
+The script will:
+- Find the existing sheet
+- Check which species are already there
+- Continue with the remaining species
+
+
+SPECIES LIST FILE FORMAT
+------------------------
+
+One species per line, with genus and species separated by space:
+
+    Echinacea pallida
+    Echinacea purpurea
+    Zizia aurea
+
+See production/species-list-presentation.txt for an example.
+
+
+CREATING A NEW SPECIES LIST
+---------------------------
+
+1. Create a new text file in the production folder
+2. Add one species per line (genus followed by species)
+3. Run the batch script with your new file
+
+
+ESTIMATED TIME
+--------------
+
+Each species takes approximately 4-5 minutes to process.
+52 species = approximately 4-5 hours total.
+
+If running in multiple sessions, progress is preserved between runs.
+
+
+TROUBLESHOOTING
+---------------
+
+"Folder not found" error:
+    Check that the output folder name in config/config.json matches your Google Drive folder.
+
+"Google Drive not connected" error:
+    The Google Drive integration needs to be reconnected in Replit.
+
+Script stops unexpectedly:
+    Just run the same command again to resume from where it stopped.
