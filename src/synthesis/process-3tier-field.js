@@ -594,3 +594,9 @@ export const storageSafeRoomTempModule = createFieldModule(
   'Safe Storage Method – Room Temp',
   'Uses 3-tier LLM prompting to describe short-term dry storage at room temperature.'
 );
+
+export const collectionSimilarSpeciesModule = createFieldModule(
+  'collection_similar_species',
+  'Similar Species / Distinguishing Features',
+  'Uses 3-tier LLM prompting to list species commonly confused with the target and how they differ.'
+);

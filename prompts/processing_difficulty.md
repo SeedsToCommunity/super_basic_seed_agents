@@ -13,6 +13,8 @@
 **Purpose:** Overall difficulty of post-collection processing.
 
 - Reflect number of steps and fineness of cleaning required.
+- Rate difficulty assuming hand processing only with basic household tools (scissors, sieves, fingers).
+- Do not reference machine processing.
 
 ## Format & Caps
 

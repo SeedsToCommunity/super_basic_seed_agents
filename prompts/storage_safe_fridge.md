@@ -10,11 +10,14 @@
 
 ## Prompt Guidance
 
-**Purpose:** Dry refrigeration storage.
+**Purpose:** Dry refrigeration storage for maintaining viability without breaking dormancy (weeks to one season).
 
-- Describe dry container use.
-- Desiccant allowed if appropriate.
-- No moist media.
+- Describe sealed container use (glass jars, airtight plastic containers).
+- Do not recommend paper containers (fridge humidity damages seeds).
+- Do not recommend desiccants or moisture absorbers.
+- Seeds must be thoroughly dried before sealing—unless this species cannot tolerate drying.
+- If this species is recalcitrant (loses viability when dried), state that dry fridge storage is not appropriate and suggest alternatives.
+- This is storage only—not stratification. Avoid moist media or dormancy-breaking context.
 
 ## Format & Caps
 

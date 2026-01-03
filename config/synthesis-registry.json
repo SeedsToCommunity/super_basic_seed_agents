@@ -240,6 +240,13 @@
       "enabled": true,
       "description": "3-tier LLM prompting for Safe Storage - Room Temp field",
       "exportName": "storageSafeRoomTempModule"
+    },
+    {
+      "id": "3tier-collection_similar_species",
+      "path": "../synthesis/process-3tier-field.js",
+      "enabled": true,
+      "description": "3-tier LLM prompting for Similar Species / Distinguishing Features field",
+      "exportName": "collectionSimilarSpeciesModule"
     }
   ],
   "config": {

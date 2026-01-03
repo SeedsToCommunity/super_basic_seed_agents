@@ -2,6 +2,17 @@
 
 Seeds to Community is a Southeast Michigan–focused community program that helps people with little or no botanical background collect, process, and store seeds from native plants for habitat restoration. Information produced here is used directly during in-person seed processing events and by participants doing independent research outside events.
 
+## Program Context
+
+This guidance is for small-scale seed collection, processing, and storage—typically backyard or small community projects. Assume:
+- Hand processing only (no machines or powered equipment)
+- No purchased drying agents or desiccants (no silica gel, rice, or moisture absorbers)
+- Basic household tools (scissors, kitchen sieves, paper bags, glass jars)
+- Storage timeframe of weeks to one season, not multiple years
+- Novice participants with no botanical background
+
+Important: Some species cannot tolerate drying and will lose viability if stored dry (recalcitrant seeds). Always consider whether the species tolerates drying (orthodox seeds) or requires moisture (recalcitrant seeds) and adjust guidance accordingly.
+
 ## Audience
 
 - Primary users are novice participants with no formal botanical training.

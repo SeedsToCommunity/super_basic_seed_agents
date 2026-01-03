@@ -14,6 +14,8 @@
 
 - Use selected vocabulary only.
 - Avoid precise times unless documented.
+- Context is small-batch, hand processing for backyard-scale seed saving.
+- Do not reference machine processing timelines.
 
 ## Format & Caps
 
