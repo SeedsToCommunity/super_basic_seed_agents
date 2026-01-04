@@ -177,6 +177,30 @@ function parseSpeciesList(filePath) {
   }).filter(Boolean);
 }
 
+async function ensureDurationHeader(spreadsheetId) {
+  const sheets = await getSheetsClient();
+  const { PLANT_COLUMNS } = await import('../src/output/plant-pipeline.js');
+  
+  const response = await sheets.spreadsheets.values.get({
+    spreadsheetId,
+    range: 'Plant Data!1:1'
+  });
+  
+  const headers = response.data.values?.[0] || [];
+  const expectedColumns = PLANT_COLUMNS.HEADERS.length + 1;
+  
+  if (headers.length < expectedColumns || headers[headers.length - 1] !== 'Processing Duration') {
+    const durationColLetter = String.fromCharCode(65 + PLANT_COLUMNS.HEADERS.length);
+    await sheets.spreadsheets.values.update({
+      spreadsheetId,
+      range: `Plant Data!${durationColLetter}1`,
+      valueInputOption: 'RAW',
+      requestBody: { values: [['Processing Duration']] }
+    });
+    console.log('Added Processing Duration header to existing sheet');
+  }
+}
+
 async function appendPlantRowWithDuration(spreadsheetId, record) {
   const sheets = await getSheetsClient();
   const { PLANT_COLUMNS } = await import('../src/output/plant-pipeline.js');
@@ -253,6 +277,8 @@ async function runBatch(sheetName, speciesListFile) {
     console.log(`\nFound existing sheet: ${sheetName}`);
     spreadsheetId = existingSheet.id;
     spreadsheetUrl = `https://docs.google.com/spreadsheets/d/${spreadsheetId}`;
+    
+    await ensureDurationHeader(spreadsheetId);
     
     existingSpecies = await getExistingSpecies(spreadsheetId);
     console.log(`Species already in sheet: ${existingSpecies.size}`);
