@@ -9,6 +9,16 @@ const __dirname = dirname(__filename);
 const configPath = join(__dirname, '../config/config.json');
 const config = JSON.parse(readFileSync(configPath, 'utf-8'));
 
+const batchConfigPath = join(__dirname, 'batch-config.json');
+
+function formatDuration(ms) {
+  const totalSeconds = Math.floor(ms / 1000);
+  const hours = Math.floor(totalSeconds / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+  const seconds = totalSeconds % 60;
+  return `${hours}h ${minutes}m ${seconds}s`;
+}
+
 let connectionSettings;
 
 async function getAccessToken() {
@@ -139,11 +149,13 @@ async function createNewSheet(sheetName, folderId) {
     fields: 'id, parents'
   });
   
+  const headersWithDuration = [...PLANT_COLUMNS.HEADERS, 'Processing Duration'];
+  
   await sheets.spreadsheets.values.update({
     spreadsheetId,
     range: 'Plant Data!A1',
     valueInputOption: 'RAW',
-    requestBody: { values: [PLANT_COLUMNS.HEADERS] }
+    requestBody: { values: [headersWithDuration] }
   });
   
   return {
@@ -163,6 +175,47 @@ function parseSpeciesList(filePath) {
     }
     return null;
   }).filter(Boolean);
+}
+
+async function appendPlantRowWithDuration(spreadsheetId, record) {
+  const sheets = await getSheetsClient();
+  const { PLANT_COLUMNS } = await import('../src/output/plant-pipeline.js');
+  
+  const row = [];
+  
+  row.push(record.genus);
+  row.push(record.species);
+  
+  for (const columnId of PLANT_COLUMNS.COLUMN_ORDER) {
+    const { moduleId } = PLANT_COLUMNS.COLUMN_REGISTRY.get(columnId);
+    const moduleResult = record.moduleResults[moduleId];
+    
+    if (moduleResult && moduleResult.columnValues && columnId in moduleResult.columnValues) {
+      const value = moduleResult.columnValues[columnId];
+      
+      if (value !== null && typeof value === 'object') {
+        row.push(JSON.stringify(value, null, 2));
+      } else if (value == null) {
+        row.push('');
+      } else {
+        row.push(value);
+      }
+    } else {
+      row.push('');
+    }
+  }
+  
+  row.push(record.processingDuration || '');
+  
+  await sheets.spreadsheets.values.append({
+    spreadsheetId,
+    range: 'Plant Data!A2',
+    valueInputOption: 'RAW',
+    insertDataOption: 'INSERT_ROWS',
+    requestBody: {
+      values: [row]
+    }
+  });
 }
 
 async function runBatch(sheetName, speciesListFile) {
@@ -235,22 +288,28 @@ async function runBatch(sheetName, speciesListFile) {
     const { genus, species } = remainingSpecies[i];
     const overallIndex = allSpecies.findIndex(s => s.genus === genus && s.species === species) + 1;
     
+    const startTime = Date.now();
     console.log(`[${overallIndex}/${allSpecies.length}] Processing ${genus} ${species}...`);
     
     try {
       const record = await getPlantRecord(genus, species);
+      const duration = Date.now() - startTime;
+      const durationStr = formatDuration(duration);
       
       if (record) {
-        await appendPlantRows(spreadsheetId, [record]);
+        record.processingDuration = durationStr;
+        await appendPlantRowWithDuration(spreadsheetId, record);
         successCount++;
-        console.log(`  ✓ Saved (Native: ${record.isNative}, Family: ${record.family})`);
+        console.log(`  ✓ Saved (Native: ${record.isNative}, Family: ${record.family}) [${durationStr}]`);
       } else {
         failures.push({ genus, species, reason: 'Not a current botanical name' });
-        console.log(`  ✗ Skipped - Not a current botanical name`);
+        console.log(`  ✗ Skipped - Not a current botanical name [${durationStr}]`);
       }
     } catch (error) {
+      const duration = Date.now() - startTime;
+      const durationStr = formatDuration(duration);
       failures.push({ genus, species, reason: error.message });
-      console.log(`  ✗ Failed - ${error.message}`);
+      console.log(`  ✗ Failed - ${error.message} [${durationStr}]`);
     }
     
     console.log();
@@ -276,11 +335,23 @@ async function runBatch(sheetName, speciesListFile) {
 
 const args = process.argv.slice(2);
 
-if (args.length !== 2) {
-  console.error('Usage: node production/run-batch.js <sheet-name> <species-list-file>');
+let sheetName, speciesListFile;
+
+if (args.length === 2) {
+  [sheetName, speciesListFile] = args;
+} else if (args.length === 0 && existsSync(batchConfigPath)) {
+  const batchConfig = JSON.parse(readFileSync(batchConfigPath, 'utf-8'));
+  sheetName = batchConfig.sheetName;
+  speciesListFile = batchConfig.speciesListFile;
+  console.log('Using batch-config.json settings');
+} else {
+  console.error('Usage: node production/run-batch.js [<sheet-name> <species-list-file>]');
+  console.error('');
+  console.error('If no arguments provided, reads from production/batch-config.json');
   console.error('');
   console.error('Example:');
   console.error('  node production/run-batch.js "Presentation_2026" production/species-list-presentation.txt');
+  console.error('  node production/run-batch.js  # uses batch-config.json');
   console.error('');
   console.error('The script will:');
   console.error('  - Find or create a Google Sheet with the given name');
@@ -290,5 +361,4 @@ if (args.length !== 2) {
   process.exit(1);
 }
 
-const [sheetName, speciesListFile] = args;
 runBatch(sheetName, speciesListFile);
