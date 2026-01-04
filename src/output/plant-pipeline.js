@@ -1,5 +1,5 @@
 import { google } from 'googleapis';
-import { readFileSync } from 'fs';
+import { readFileSync, existsSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 
@@ -13,6 +13,39 @@ const config = JSON.parse(readFileSync(configPath, 'utf-8'));
 // Load synthesis registry
 const registryPath = join(__dirname, '../../config/synthesis-registry.json');
 const registry = JSON.parse(readFileSync(registryPath, 'utf-8'));
+
+// Prompts directory
+const PROMPTS_DIR = join(__dirname, '../../prompts');
+
+/**
+ * Read a prompt file from the prompts directory
+ * @param {string} fileName - The name of the prompt file
+ * @returns {string} The contents of the file, or empty string if not found
+ */
+function readPromptFile(fileName) {
+  const filePath = join(PROMPTS_DIR, fileName);
+  if (existsSync(filePath)) {
+    return readFileSync(filePath, 'utf-8');
+  }
+  return '';
+}
+
+/**
+ * Build the "Prompts" tab content with base prompt and tier guidance prompts
+ * @returns {Array<Array<string>>} 2D array of rows for the Prompts sheet
+ */
+function buildPromptsTabContent() {
+  const rows = [
+    ['Prompt Type', 'Content']
+  ];
+  
+  rows.push(['Base Prompt', readPromptFile('tiered_base_prompt.md')]);
+  rows.push(['Tier 1 Guidance', readPromptFile('tier1_prompt_guidance.md')]);
+  rows.push(['Tier 2 Guidance', readPromptFile('tier2_prompt_guidance.md')]);
+  rows.push(['Tier 3 Guidance', readPromptFile('tier3_prompt_guidance.md')]);
+  
+  return rows;
+}
 
 let connectionSettings;
 let folderCache = {}; // Cache for folder IDs to avoid repeated Drive API calls
@@ -156,15 +189,16 @@ function buildColumnDefinitions(modules) {
 /**
  * Build column source documentation from loaded modules
  * Used to generate the "Column Sources" sheet with metadata about each column
+ * Includes "Field Prompt" column for 3-tier modules showing their field-specific prompt
  * @param {Array<Object>} modules - Array of loaded synthesis modules (sorted by dependencies)
  * @returns {Array<Array<string>>} 2D array of rows for the documentation sheet
  */
 function buildColumnSourceDocumentation(modules) {
-  // Headers for the documentation sheet
-  const headers = ['Column', 'Source Module', 'Data Source', 'Algorithm Description'];
+  // Headers for the documentation sheet - includes Field Prompt for 3-tier modules
+  const headers = ['Column', 'Source Module', 'Data Source', 'Algorithm Description', 'Field Prompt'];
   
   // Track columns by ID - last writer wins (same logic as buildColumnDefinitions)
-  const columnDocs = new Map(); // columnId -> { header, moduleId, moduleName, source, algorithmDescription }
+  const columnDocs = new Map(); // columnId -> { header, moduleId, moduleName, source, algorithmDescription, fieldPrompt }
   const columnOrder = []; // Ordered list of unique column IDs
   
   for (const module of modules) {
@@ -173,6 +207,14 @@ function buildColumnSourceDocumentation(modules) {
       const header = typeof column === 'string' ? column : column.header;
       const source = column.source || 'Not specified';
       const algorithmDescription = column.algorithmDescription || 'Not documented';
+      
+      // For 3-tier modules, extract fieldId from moduleId (format: "3tier-{fieldId}")
+      // and read the corresponding field prompt file
+      let fieldPrompt = '';
+      if (module.metadata.id.startsWith('3tier-')) {
+        const fieldId = module.metadata.id.replace('3tier-', '');
+        fieldPrompt = readPromptFile(`${fieldId}.md`);
+      }
       
       if (!columnDocs.has(id)) {
         // New column - add to order
@@ -185,7 +227,8 @@ function buildColumnSourceDocumentation(modules) {
         moduleId: module.metadata.id,
         moduleName: module.metadata.name,
         source,
-        algorithmDescription
+        algorithmDescription,
+        fieldPrompt
       });
     }
   }
@@ -193,9 +236,9 @@ function buildColumnSourceDocumentation(modules) {
   // Build rows from deduplicated columns
   const rows = [headers];
   
-  // Add base columns first (Genus, Species)
-  rows.push(['Genus', 'Pipeline Core', 'Input Parameter', 'The genus portion of the botanical name provided as input to the pipeline.']);
-  rows.push(['Species', 'Pipeline Core', 'Input Parameter', 'The species epithet portion of the botanical name provided as input to the pipeline.']);
+  // Add base columns first (Genus, Species) - no field prompt for these
+  rows.push(['Genus', 'Pipeline Core', 'Input Parameter', 'The genus portion of the botanical name provided as input to the pipeline.', '']);
+  rows.push(['Species', 'Pipeline Core', 'Input Parameter', 'The species epithet portion of the botanical name provided as input to the pipeline.', '']);
   
   // Add all module columns
   for (const columnId of columnOrder) {
@@ -204,7 +247,8 @@ function buildColumnSourceDocumentation(modules) {
       doc.header,
       doc.moduleName,
       doc.source,
-      doc.algorithmDescription
+      doc.algorithmDescription,
+      doc.fieldPrompt
     ]);
   }
   
@@ -469,7 +513,7 @@ export async function createPlantSheet(folderId, prefix = config.output.filePref
   
   const sheetName = `${prefix}_${year}-${month}-${day}_${hours}-${minutes}-${seconds}`;
   
-  // Create the spreadsheet with two sheets: Plant Data and Column Sources
+  // Create the spreadsheet with three sheets: Plant Data, Column Sources, and Prompts
   const createResponse = await sheets.spreadsheets.create({
     requestBody: {
       properties: {
@@ -486,6 +530,12 @@ export async function createPlantSheet(folderId, prefix = config.output.filePref
           properties: {
             title: 'Column Sources',
             index: 1
+          }
+        },
+        {
+          properties: {
+            title: 'Prompts',
+            index: 2
           }
         }
       ]
@@ -534,7 +584,18 @@ export async function createPlantSheet(folderId, prefix = config.output.filePref
     }
   });
   
-  console.log(`Created spreadsheet with ${columnSourceDocs.length - 1} column source entries`);
+  // Build and write Prompts tab (base prompt + tier guidance)
+  const promptsContent = buildPromptsTabContent();
+  await sheets.spreadsheets.values.update({
+    spreadsheetId,
+    range: 'Prompts!A1',
+    valueInputOption: 'RAW',
+    requestBody: {
+      values: promptsContent
+    }
+  });
+  
+  console.log(`Created spreadsheet with ${columnSourceDocs.length - 1} column source entries and ${promptsContent.length - 1} prompt entries`);
   
   return {
     spreadsheetId,
