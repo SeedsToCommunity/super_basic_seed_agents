@@ -7,9 +7,10 @@ channel = "stable-24_05"
 packages = ["q-text-as-data"]
 
 [deployment]
-deploymentTarget = "autoscale"
-build = ["npm", "run", "build"]
-run = ["npm", "run", "start"]
+deploymentTarget = "gce"
+build = ["sh", "-c", "npm install"]
+run = ["sh", "-c", "node production/run-batch.js"]
+ignorePorts = true
 
 [[ports]]
 localPort = 5000
