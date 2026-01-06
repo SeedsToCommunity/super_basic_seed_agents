@@ -2,7 +2,7 @@
 
 ```json
 {
-  "column_name": "Habitat Notes",
+  "column_name": "Habitat Notes and Dispersal Mechanism",
   "value": "",
   "Attribution": ""
 }
