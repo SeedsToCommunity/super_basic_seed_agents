@@ -25,6 +25,16 @@ New modules are added by creating a module file following the interface contract
 ### CLI Tools
 - `src/output/process-plant.js`: Processes a single plant.
 - `src/output/batch-process-plants.js`: Processes multiple plants with an incremental save strategy to preserve partial progress.
+- `production/run-batch.js`: Production batch processor (resumable, outputs to Google Sheets).
+- `test/test-single-field.js`: Debug tool for testing individual 3-tier fields.
+
+### Production Deployment
+See `docs/replit-batch-deployment.md` for complete instructions on:
+- Configuring `production/batch-config.json`
+- Setting up Replit Scheduled deployments
+- Cron expressions for one-time vs. recurring runs
+- Build vs. Run command configuration
+- Caching implications for deployed machines
 
 ### Data Processing Philosophy
 The system employs a "validation-first" approach for data quality, supports configurable merge strategies, outputs synthesized data in JSON, and uses Anthropic Claude API for advanced tasks.
