@@ -326,38 +326,56 @@ export async function process3TierField(genus, species, fieldId, options = {}) {
   // Helper to extract filenames from sources array
   const extractSourceFiles = (sources) => sources.map(s => s.fileName);
   
-  const tier1Prompt = buildTierPrompt(1, genus, species, fieldPromptContent, tier1Sources);
-  prompts.tier1 = tier1Prompt;
-  const tier1SourceFiles = extractSourceFiles(tier1Sources);
+  // Synthetic empty responses for tiers with no sources (saves API costs)
+  const EMPTY_TIER1_RESPONSE = { value: '', attribution: 'No Tier 1 source data available' };
+  const EMPTY_TIER2_RESPONSE = { value: '', attribution: 'No additional Tier 2 sources available' };
   
-  let tier1CacheResult = getCachedTierResponse(genus, species, fieldId, 1, tier1Prompt);
-  if (tier1CacheResult.hit && !forceRefresh) {
-    log(`  [3tier] Tier 1: cache hit`);
-    results.tier1 = parseResponse(tier1CacheResult.response);
+  // Tier 1: Short-circuit if no sources
+  if (tier1Sources.length === 0) {
+    log(`  [3tier] Tier 1: no sources, using synthetic empty response`);
+    results.tier1 = EMPTY_TIER1_RESPONSE;
+    prompts.tier1 = null; // No prompt built for empty tier
   } else {
-    log(`  [3tier] Tier 1: calling Claude API...`);
-    const tier1Response = await callClaudeAPI(tier1Prompt);
-    cacheTierResponse(genus, species, fieldId, 1, tier1Prompt, tier1Response, tier1SourceFiles);
-    results.tier1 = parseResponse(tier1Response);
+    const tier1Prompt = buildTierPrompt(1, genus, species, fieldPromptContent, tier1Sources);
+    prompts.tier1 = tier1Prompt;
+    const tier1SourceFiles = extractSourceFiles(tier1Sources);
+    
+    let tier1CacheResult = getCachedTierResponse(genus, species, fieldId, 1, tier1Prompt);
+    if (tier1CacheResult.hit && !forceRefresh) {
+      log(`  [3tier] Tier 1: cache hit`);
+      results.tier1 = parseResponse(tier1CacheResult.response);
+    } else {
+      log(`  [3tier] Tier 1: calling Claude API...`);
+      const tier1Response = await callClaudeAPI(tier1Prompt);
+      cacheTierResponse(genus, species, fieldId, 1, tier1Prompt, tier1Response, tier1SourceFiles);
+      results.tier1 = parseResponse(tier1Response);
+    }
   }
   
   // Pass full tier 1 response object (value + attribution) for transparency
   const tier2Sources = gatherTier2Sources(genus, species, results.tier1);
   log(`  [3tier] Tier 2 sources: ${tier2Sources.length} files`);
   
-  const tier2Prompt = buildTierPrompt(2, genus, species, fieldPromptContent, tier2Sources, { tier1: results.tier1 });
-  prompts.tier2 = tier2Prompt;
-  const tier2SourceFiles = extractSourceFiles(tier2Sources);
-  
-  let tier2CacheResult = getCachedTierResponse(genus, species, fieldId, 2, tier2Prompt);
-  if (tier2CacheResult.hit && !forceRefresh) {
-    log(`  [3tier] Tier 2: cache hit`);
-    results.tier2 = parseResponse(tier2CacheResult.response);
+  // Tier 2: Short-circuit if no sources
+  if (tier2Sources.length === 0) {
+    log(`  [3tier] Tier 2: no sources, using synthetic empty response`);
+    results.tier2 = EMPTY_TIER2_RESPONSE;
+    prompts.tier2 = null; // No prompt built for empty tier
   } else {
-    log(`  [3tier] Tier 2: calling Claude API...`);
-    const tier2Response = await callClaudeAPI(tier2Prompt);
-    cacheTierResponse(genus, species, fieldId, 2, tier2Prompt, tier2Response, tier2SourceFiles);
-    results.tier2 = parseResponse(tier2Response);
+    const tier2Prompt = buildTierPrompt(2, genus, species, fieldPromptContent, tier2Sources, { tier1: results.tier1 });
+    prompts.tier2 = tier2Prompt;
+    const tier2SourceFiles = extractSourceFiles(tier2Sources);
+    
+    let tier2CacheResult = getCachedTierResponse(genus, species, fieldId, 2, tier2Prompt);
+    if (tier2CacheResult.hit && !forceRefresh) {
+      log(`  [3tier] Tier 2: cache hit`);
+      results.tier2 = parseResponse(tier2CacheResult.response);
+    } else {
+      log(`  [3tier] Tier 2: calling Claude API...`);
+      const tier2Response = await callClaudeAPI(tier2Prompt);
+      cacheTierResponse(genus, species, fieldId, 2, tier2Prompt, tier2Response, tier2SourceFiles);
+      results.tier2 = parseResponse(tier2Response);
+    }
   }
   
   // Pass full tier response objects (value + attribution) for transparency
