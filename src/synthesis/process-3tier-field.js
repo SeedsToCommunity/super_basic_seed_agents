@@ -148,22 +148,28 @@ function gatherTier1Sources(genus, species) {
 }
 
 function gatherTier2Sources(genus, species, tier1ResponseObj) {
-  const sources = [];
-  
-  // Gather ALL secondary sources (GBIF, iNaturalist, BONAP, etc.)
+  // Gather actual Tier 2 secondary sources (GBIF, iNaturalist, BONAP, etc.)
   const secondarySources = gatherAllSecondarySourcesForSpecies(genus, species);
-  sources.push(...secondarySources);
+  
+  // Return object with separate counts for optimization
+  // - actualSources: the real Tier 2 sources (used for short-circuit decision)
+  // - allSources: includes Tier 1 context for prompt building
+  const allSources = [...secondarySources];
   
   // Include full Tier 1 response object (value + attribution) for context
+  // Note: This is context, NOT a Tier 2 trusted source
   if (tier1ResponseObj) {
-    sources.push({
+    allSources.push({
       fileName: 'tier1_response',
       source: 'Tier 1 Response (for context)',
       content: tier1ResponseObj
     });
   }
   
-  return sources;
+  return {
+    actualSourceCount: secondarySources.length,
+    allSources
+  };
 }
 
 function formatSourcesForPrompt(sources) {
@@ -353,12 +359,13 @@ export async function process3TierField(genus, species, fieldId, options = {}) {
   }
   
   // Pass full tier 1 response object (value + attribution) for transparency
-  const tier2Sources = gatherTier2Sources(genus, species, results.tier1);
-  log(`  [3tier] Tier 2 sources: ${tier2Sources.length} files`);
+  const tier2Result = gatherTier2Sources(genus, species, results.tier1);
+  const { actualSourceCount: tier2ActualCount, allSources: tier2Sources } = tier2Result;
+  log(`  [3tier] Tier 2 sources: ${tier2ActualCount} actual files (+ Tier 1 context)`);
   
-  // Tier 2: Short-circuit if no sources
-  if (tier2Sources.length === 0) {
-    log(`  [3tier] Tier 2: no sources, using synthetic empty response`);
+  // Tier 2: Short-circuit if no ACTUAL Tier 2 sources (Tier 1 context doesn't count)
+  if (tier2ActualCount === 0) {
+    log(`  [3tier] Tier 2: no actual sources, using synthetic empty response`);
     results.tier2 = EMPTY_TIER2_RESPONSE;
     prompts.tier2 = null; // No prompt built for empty tier
   } else {
@@ -415,7 +422,7 @@ export async function process3TierField(genus, species, fieldId, options = {}) {
     prompts,
     sourceStats: {
       tier1Count: tier1Sources.length,
-      tier2Count: tier2Sources.length
+      tier2Count: tier2ActualCount  // Actual Tier 2 sources, not including Tier 1 context
     }
   };
 }
