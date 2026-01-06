@@ -63,7 +63,7 @@
     {
       "id": "similar-species",
       "path": "../synthesis/process-similar-species.js",
-      "enabled": true,
+      "enabled": false,
       "description": "Identifies similar species and distinguishing features using tiered source-backed and inferred data"
     },
     {
