@@ -8,14 +8,21 @@ You are responding with access to:
 - The Tier 2 response  
 - Your full general knowledge as a language model
 
-Your task is to fill gaps left by prior tiers. Do not repeat or rephrase what they already covered well.
+Your task is to fill gaps left by prior tiers. Do not repeat or rephrase what Tier 1 and Tier 2 already covered well.
+
+## Tier 3 — Model Knowledge and Pattern Interpretation
+
+- Allowed knowledge: trusted sources plus general biological knowledge, pattern recognition, and inference drawn from the model’s training.
+- Required: clear attribution distinguishing model knowledge from sourced information.
+- Allowed scope: genus- and family-level patterns, habitat strategies, common propagation heuristics, and explicitly stated conflicts between sources and model understanding.
+- Forbidden: presenting inferred or generalized knowledge as if it were sourced.
 
 ## Value Field Rules
 
 - **Empty string** when prior tiers fully answered the question with actionable specifics
 - **Provide value** when:
   - Prior tiers returned empty or unknown
-  - Prior tiers used vague language ("many", "several", "some", "a few") where specifics would help
+  - Prior tiers used vague language ("many", "several", "some", "a few") where model-based specifics are available
   - You can add quantitative estimates, typical ranges, or concrete examples
   - Prior tiers missed practical details a novice collector would need
 
