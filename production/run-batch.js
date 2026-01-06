@@ -89,26 +89,49 @@ async function findSheetByName(sheetName, folderId) {
   return response.data.files?.[0] || null;
 }
 
-async function getExistingSpecies(spreadsheetId) {
+async function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function getExistingSpecies(spreadsheetId, maxRetries = 3) {
   const sheets = await getSheetsClient();
-  try {
-    const response = await sheets.spreadsheets.values.get({
-      spreadsheetId,
-      range: 'Plant Data!A:B'
-    });
-    
-    const rows = response.data.values || [];
-    const species = new Set();
-    
-    for (let i = 1; i < rows.length; i++) {
-      if (rows[i] && rows[i][0] && rows[i][1]) {
-        species.add(`${rows[i][0]} ${rows[i][1]}`);
+  
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      const response = await sheets.spreadsheets.values.get({
+        spreadsheetId,
+        range: 'Plant Data!A:B'
+      });
+      
+      const rows = response.data.values || [];
+      const species = new Set();
+      
+      for (let i = 1; i < rows.length; i++) {
+        if (rows[i] && rows[i][0] && rows[i][1]) {
+          const speciesName = `${rows[i][0]} ${rows[i][1]}`.toLowerCase().trim();
+          species.add(speciesName);
+        }
+      }
+      
+      return species;
+    } catch (error) {
+      const errorDetails = {
+        message: error.message,
+        code: error.code,
+        status: error.status,
+        attempt
+      };
+      console.warn(`[WARN] Sheet read failed (attempt ${attempt}/${maxRetries}):`, JSON.stringify(errorDetails));
+      
+      if (attempt < maxRetries) {
+        const delay = Math.pow(2, attempt) * 1000;
+        console.warn(`[WARN] Retrying in ${delay/1000}s...`);
+        await sleep(delay);
+      } else {
+        console.error(`[FATAL] Failed to read existing species after ${maxRetries} attempts`);
+        throw new Error(`Cannot read sheet to check existing species: ${error.message}. Stopping to prevent duplicate processing.`);
       }
     }
-    
-    return species;
-  } catch (error) {
-    return new Set();
   }
 }
 
@@ -292,7 +315,10 @@ async function runBatch(sheetName, speciesListFile) {
   
   console.log(`Sheet URL: ${spreadsheetUrl}`);
   
-  const remainingSpecies = allSpecies.filter(s => !existingSpecies.has(`${s.genus} ${s.species}`));
+  const remainingSpecies = allSpecies.filter(s => {
+    const speciesKey = `${s.genus} ${s.species}`.toLowerCase().trim();
+    return !existingSpecies.has(speciesKey);
+  });
   
   console.log(`\nRemaining species to process: ${remainingSpecies.length}`);
   
@@ -387,4 +413,19 @@ if (args.length === 2) {
   process.exit(1);
 }
 
-runBatch(sheetName, speciesListFile);
+runBatch(sheetName, speciesListFile).then(() => {
+  console.log('\n[STAY-ALIVE] Batch complete. Keeping process alive to prevent VM restart...');
+  console.log('[STAY-ALIVE] Press Ctrl+C or stop the deployment to exit.\n');
+  
+  setInterval(() => {
+    // Keep process alive - do nothing
+  }, 60000);
+}).catch(error => {
+  console.error('[FATAL] Batch failed:', error.message);
+  console.log('\n[STAY-ALIVE] Error occurred. Keeping process alive to prevent restart loop...');
+  console.log('[STAY-ALIVE] Fix the issue and redeploy, or stop this deployment.\n');
+  
+  setInterval(() => {
+    // Keep process alive even on error - do nothing
+  }, 60000);
+});

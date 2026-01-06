@@ -1,6 +1,7 @@
 import { google } from 'googleapis';
 import fs from 'fs';
 import path from 'path';
+import { Readable } from 'stream';
 
 const PARENT_FOLDER_NAME = 'SpeciesAppDataFiles_DoNotTouch';
 
@@ -113,14 +114,14 @@ export async function uploadJsonToDrive(content, fileName, subfolderName) {
   
   const existingFileId = await findFileByName(drive, fileName, subfolderId);
   
-  const jsonBuffer = Buffer.from(jsonContent, 'utf-8');
+  const createReadableStream = () => Readable.from([jsonContent]);
   
   if (existingFileId) {
     await drive.files.update({
       fileId: existingFileId,
       media: {
         mimeType: 'application/json',
-        body: jsonBuffer
+        body: createReadableStream()
       }
     });
     console.log(`[drive-upload] Updated: ${fileName}`);
@@ -135,7 +136,7 @@ export async function uploadJsonToDrive(content, fileName, subfolderName) {
       resource: fileMetadata,
       media: {
         mimeType: 'application/json',
-        body: jsonBuffer
+        body: createReadableStream()
       },
       fields: 'id'
     });

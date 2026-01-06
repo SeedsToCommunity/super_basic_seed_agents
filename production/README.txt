@@ -66,29 +66,66 @@ Resume Capability:
   It will pick up where it left off, skipping already-processed species.
 
 --------------------------------------------------------------------------------
-WHY A RESERVED VM IS REQUIRED
+DEPLOYMENT OPTIONS
 --------------------------------------------------------------------------------
 
 Processing 166 species with 26 LLM-powered fields takes several hours.
-The development environment has limitations:
+The development environment has limitations (browser must stay connected,
+agent timeout limits). Use one of these deployment options:
 
-PROBLEM: Browser Connection Required
-  In the development Shell, your browser must stay connected.
-  If your device locks, loses focus, or disconnects, the script stops.
+>>> RECOMMENDED: SCHEDULED DEPLOYMENT <<<
 
-PROBLEM: Agent Timeout
-  The AI agent has a 10-minute command timeout.
-  Large batch runs cannot complete within this limit.
+  Scheduled Deployment runs your script ONCE and then stops.
+  This is the best choice for batch processing jobs.
+  
+  ADVANTAGES:
+  - Runs once, completes, stops (no restart loop)
+  - Pay only for execution time used
+  - No risk of duplicate processing
+  - No need for stay-alive workarounds
+  
+  DISADVANTAGES:
+  - Cache is lost between runs (must rebuild from APIs)
+  - For very long jobs, may need multiple scheduled runs
 
-SOLUTION: Reserved VM Deployment
-  A Reserved VM runs continuously on Replit's cloud infrastructure.
-  - No browser connection required
-  - No timeout limits
-  - Script runs to completion even if you close everything
-  - You can monitor progress via the Deployment logs panel
+>>> ALTERNATIVE: RESERVED VM <<<
+
+  Reserved VMs run continuously and auto-restart when your script exits.
+  Use this for development/testing or when you need persistent cache.
+  
+  IMPORTANT: Reserved VMs AUTO-RESTART when your script exits!
+  This script now includes a "stay-alive" loop to prevent restart.
+  After batch completion, it prints "[STAY-ALIVE]" and idles.
+  
+  ADVANTAGES:
+  - Cache persists as long as VM runs (no redeployment)
+  - Can run multiple batches without losing cached data
+  
+  DISADVANTAGES:
+  - Costs ~$7/month even when idle
+  - Auto-restart can cause duplicate processing if bugs exist
+  - Must manually stop deployment when done
 
 --------------------------------------------------------------------------------
-HOW TO DEPLOY TO RESERVED VM
+HOW TO DEPLOY (SCHEDULED - RECOMMENDED)
+--------------------------------------------------------------------------------
+
+1. Click the Deploy button (rocket icon) in the left panel
+2. Select "Scheduled Deployment"
+3. Configure:
+   - Schedule: Run now (or set a time)
+   - Run command: node production/run-batch.js
+4. Click Deploy
+
+The script runs once, processes all species, and stops.
+Check Deployment > Logs to monitor progress.
+
+If the run times out or is interrupted:
+  - Just schedule another run
+  - Resume capability will skip already-processed species
+
+--------------------------------------------------------------------------------
+HOW TO DEPLOY (RESERVED VM)
 --------------------------------------------------------------------------------
 
 1. Click the Deploy button (rocket icon) in the left panel
@@ -102,6 +139,9 @@ HOW TO DEPLOY TO RESERVED VM
 5. Click Deploy
 
 The script starts automatically. Monitor progress in Deployment > Logs.
+
+IMPORTANT: After batch completes, the script will stay alive (print 
+"[STAY-ALIVE]"). Stop the deployment manually when done to avoid charges.
 
 --------------------------------------------------------------------------------
 SWITCHING BETWEEN BATCH RUNS (WITHOUT REDEPLOYING)
