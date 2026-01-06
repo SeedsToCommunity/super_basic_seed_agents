@@ -1,0 +1,148 @@
+2026-01-06 00:52:08.67
+73a0203d
+User
+[3tier] Processing collection_miss_risk for Geranium maculatum
+2026-01-06 00:52:08.67
+73a0203d
+User
+Executing module: 3tier-collection_miss_risk for Geranium maculatum
+2026-01-06 00:52:08.67
+73a0203d
+User
+[3tier] Complete: collection_mature_seed_color
+2026-01-06 00:52:08.69
+73a0203d
+User
+[3tier] Tier 1 sources: 3 files
+2026-01-06 00:52:08.69
+73a0203d
+User
+[3tier] Tier 1: calling Claude API...
+2026-01-06 00:52:12.59
+73a0203d
+User
+[3tier] Tier 2 sources: 7 files
+2026-01-06 00:52:12.59
+73a0203d
+User
+[3tier] Tier 2: calling Claude API...
+2026-01-06 00:52:16.41
+73a0203d
+User
+[3tier] Tier 3: calling Claude API...
+2026-01-06 00:52:19.04
+73a0203d
+User
+[3tier] Processing processing_hazards for Geranium maculatum
+2026-01-06 00:52:19.04
+73a0203d
+User
+Executing module: 3tier-processing_hazards for Geranium maculatum
+2026-01-06 00:52:19.04
+73a0203d
+User
+[3tier] Complete: collection_miss_risk
+2026-01-06 00:52:19.05
+73a0203d
+User
+[3tier] Tier 1 sources: 3 files
+2026-01-06 00:52:19.05
+73a0203d
+User
+[3tier] Tier 1: calling Claude API...
+2026-01-06 00:52:21.21
+73a0203d
+User
+[3tier] Tier 2 sources: 7 files
+2026-01-06 00:52:21.22
+73a0203d
+User
+[3tier] Tier 2: calling Claude API...
+2026-01-06 00:52:24.39
+73a0203d
+User
+[3tier] Tier 3: calling Claude API...
+2026-01-06 00:52:26.39
+73a0203d
+User
+[3tier] Complete: processing_hazards
+2026-01-06 00:52:26.39
+73a0203d
+User
+[3tier] Processing stratification_ecology for Geranium maculatum
+2026-01-06 00:52:26.39
+73a0203d
+User
+Executing module: 3tier-stratification_ecology for Geranium maculatum
+2026-01-06 00:52:26.40
+73a0203d
+User
+[3tier] Tier 1 sources: 3 files
+2026-01-06 00:52:26.41
+73a0203d
+User
+[3tier] Tier 1: calling Claude API...
+2026-01-06 00:52:33.52
+73a0203d
+User
+[3tier] Tier 2 sources: 7 files
+2026-01-06 00:52:33.52
+73a0203d
+User
+[3tier] Tier 2: calling Claude API...
+2026-01-06 00:52:40.84
+73a0203d
+User
+[3tier] Tier 3: calling Claude API...
+2026-01-06 00:52:43.42
+73a0203d
+User
+[3tier] Processing stratification_requirements for Geranium maculatum
+2026-01-06 00:52:43.42
+73a0203d
+User
+[3tier] Complete: stratification_ecology
+2026-01-06 00:52:43.42
+73a0203d
+User
+Executing module: 3tier-stratification_requirements for Geranium maculatum
+2026-01-06 00:52:43.43
+73a0203d
+User
+[3tier] Tier 1 sources: 3 files
+2026-01-06 00:52:43.43
+73a0203d
+User
+[3tier] Tier 1: calling Claude API...
+2026-01-06 00:52:49.90
+73a0203d
+User
+[3tier] Tier 2 sources: 7 files
+2026-01-06 00:52:49.91
+73a0203d
+User
+[3tier] Tier 2: calling Claude API...
+2026-01-06 00:52:54.68
+73a0203d
+User
+[3tier] Tier 3: calling Claude API...
+2026-01-06 00:52:57.40
+73a0203d
+User
+Executing module: 3tier-stratification_risks for Geranium maculatum
+2026-01-06 00:52:57.40
+73a0203d
+User
+[3tier] Complete: stratification_requirements
+2026-01-06 00:52:57.40
+73a0203d
+User
+[3tier] Processing stratification_risks for Geranium maculatum
+2026-01-06 00:52:57.42
+73a0203d
+User
+[3tier] Tier 1 sources: 3 files
+2026-01-06 00:52:57.42
+73a0203d
+User
+[3tier] Tier 1: calling Claude API...

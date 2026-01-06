@@ -1,0 +1,112 @@
+2026-01-06 00:50:55.01
+73a0203d
+User
+Production Batch Processor (Resumable)
+2026-01-06 00:50:55.02
+73a0203d
+User
+Looking for folder: SpeciesAppDataFiles_DoNotTouch
+2026-01-06 00:50:55.02
+73a0203d
+User
+Total species in input file: 4
+2026-01-06 00:50:55.65
+73a0203d
+User
+Found folder (ID: 1oQq7kjAn1yV2--e9p3pUi9XsEwDvIr7G)
+2026-01-06 00:50:55.97
+73a0203d
+User
+Found existing sheet: PlantData_202501_round1
+2026-01-06 00:50:58.40
+73a0203d
+User
+All species already processed!
+2026-01-06 00:50:58.40
+73a0203d
+User
+Sheet URL: https://docs.google.com/spreadsheets/d/1xwc6UOU_vT2Tl38LrQSjjsiUQH6lHS0q755DIZr7PGk
+2026-01-06 00:50:58.40
+73a0203d
+User
+Species already in sheet: 4
+2026-01-06 00:50:58.40
+73a0203d
+User
+Remaining species to process: 0
+2026-01-06 00:50:58.43
+73a0203d
+System
+command finished successfully with exit code 0
+2026-01-06 00:50:58.43
+73a0203d
+System
+main done, exiting
+2026-01-06 00:51:12.09
+73a0203d
+System
+starting up user application
+2026-01-06 00:51:12.09
+73a0203d
+System
+metasidecar: loaded enterprise status from environment is_enterprise=false
+2026-01-06 00:51:15.33
+73a0203d
+User
+Using batch-config.json settings
+2026-01-06 00:51:15.33
+73a0203d
+User
+================================================================================
+2026-01-06 00:51:15.33
+73a0203d
+User
+Species list: production/species-list-basic-4.txt
+2026-01-06 00:51:15.33
+73a0203d
+User
+Production Batch Processor (Resumable)
+2026-01-06 00:51:15.33
+73a0203d
+User
+Sheet name: PlantData_202501_round1
+2026-01-06 00:51:15.33
+73a0203d
+User
+================================================================================
+2026-01-06 00:51:15.34
+73a0203d
+User
+Looking for folder: SpeciesAppDataFiles_DoNotTouch
+2026-01-06 00:51:15.34
+73a0203d
+User
+Total species in input file: 4
+2026-01-06 00:51:16.04
+73a0203d
+User
+Found folder (ID: 1oQq7kjAn1yV2--e9p3pUi9XsEwDvIr7G)
+2026-01-06 00:51:16.30
+73a0203d
+User
+Found existing sheet: PlantData_202501_round1
+2026-01-06 00:51:20.78
+73a0203d
+User
+Species already in sheet: 0
+2026-01-06 00:51:20.78
+73a0203d
+User
+Sheet URL: https://docs.google.com/spreadsheets/d/1xwc6UOU_vT2Tl38LrQSjjsiUQH6lHS0q755DIZr7PGk
+2026-01-06 00:51:20.78
+73a0203d
+User
+Remaining species to process: 4
+2026-01-06 00:51:20.78
+73a0203d
+User
+================================================================================
+2026-01-06 00:51:20.78
+73a0203d
+User
+================================================================================

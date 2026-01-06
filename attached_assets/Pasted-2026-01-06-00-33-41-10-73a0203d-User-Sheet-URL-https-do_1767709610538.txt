@@ -1,0 +1,148 @@
+2026-01-06 00:33:41.10
+73a0203d
+User
+Sheet URL: https://docs.google.com/spreadsheets/d/1xwc6UOU_vT2Tl38LrQSjjsiUQH6lHS0q755DIZr7PGk
+2026-01-06 00:33:41.10
+73a0203d
+User
+All species already processed!
+2026-01-06 00:33:41.10
+73a0203d
+User
+Remaining species to process: 0
+2026-01-06 00:33:41.10
+73a0203d
+User
+Species already in sheet: 4
+2026-01-06 00:33:41.13
+73a0203d
+System
+command finished successfully with exit code 0
+2026-01-06 00:33:41.13
+73a0203d
+System
+main done, exiting
+2026-01-06 00:33:54.25
+73a0203d
+System
+starting up user application
+2026-01-06 00:33:54.25
+73a0203d
+System
+metasidecar: loaded enterprise status from environment is_enterprise=false
+2026-01-06 00:33:57.57
+73a0203d
+User
+Using batch-config.json settings
+2026-01-06 00:33:57.57
+73a0203d
+User
+================================================================================
+2026-01-06 00:33:57.57
+73a0203d
+User
+Production Batch Processor (Resumable)
+2026-01-06 00:33:57.57
+73a0203d
+User
+Sheet name: PlantData_202501_round1
+2026-01-06 00:33:57.57
+73a0203d
+User
+================================================================================
+2026-01-06 00:33:57.57
+73a0203d
+User
+Species list: production/species-list-basic-4.txt
+2026-01-06 00:33:57.57
+73a0203d
+User
+Looking for folder: SpeciesAppDataFiles_DoNotTouch
+2026-01-06 00:33:57.57
+73a0203d
+User
+Total species in input file: 4
+2026-01-06 00:33:58.25
+73a0203d
+User
+Found folder (ID: 1oQq7kjAn1yV2--e9p3pUi9XsEwDvIr7G)
+2026-01-06 00:33:58.53
+73a0203d
+User
+Found existing sheet: PlantData_202501_round1
+2026-01-06 00:34:01.47
+73a0203d
+User
+Species already in sheet: 4
+2026-01-06 00:34:01.47
+73a0203d
+User
+Sheet URL: https://docs.google.com/spreadsheets/d/1xwc6UOU_vT2Tl38LrQSjjsiUQH6lHS0q755DIZr7PGk
+2026-01-06 00:34:01.47
+73a0203d
+User
+All species already processed!
+2026-01-06 00:34:01.47
+73a0203d
+User
+Remaining species to process: 0
+2026-01-06 00:34:01.50
+73a0203d
+System
+command finished successfully with exit code 0
+2026-01-06 00:34:01.50
+73a0203d
+System
+main done, exiting
+2026-01-06 00:34:34.42
+73a0203d
+System
+starting up user application
+2026-01-06 00:34:34.42
+73a0203d
+System
+metasidecar: loaded enterprise status from environment is_enterprise=false
+2026-01-06 00:34:38.07
+73a0203d
+User
+Using batch-config.json settings
+2026-01-06 00:34:38.07
+73a0203d
+User
+Production Batch Processor (Resumable)
+2026-01-06 00:34:38.07
+73a0203d
+User
+================================================================================
+2026-01-06 00:34:38.07
+73a0203d
+User
+Sheet name: PlantData_202501_round1
+2026-01-06 00:34:38.07
+73a0203d
+User
+================================================================================
+2026-01-06 00:34:38.07
+73a0203d
+User
+Species list: production/species-list-basic-4.txt
+2026-01-06 00:34:38.07
+73a0203d
+User
+Looking for folder: SpeciesAppDataFiles_DoNotTouch
+2026-01-06 00:34:38.07
+73a0203d
+User
+Total species in input file: 4
+2026-01-06 00:34:38.78
+73a0203d
+User
+Found folder (ID: 1oQq7kjAn1yV2--e9p3pUi9XsEwDvIr7G)
+2026-01-06 00:34:39.02
+73a0203d
+User
+Found existing sheet: PlantData_202501_round1
+2026-01-06 00:34:41.39
+73a0203d
+User
+All species already processed!

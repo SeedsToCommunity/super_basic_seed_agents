@@ -1,0 +1,148 @@
+2026-01-04 03:19:35.24
+73a0203d
+User
+Could not parse CSS stylesheet
+2026-01-04 03:19:35.50
+73a0203d
+User
+Could not parse CSS stylesheet
+2026-01-04 03:19:35.87
+73a0203d
+User
+Could not parse CSS stylesheet
+2026-01-04 03:19:41.13
+73a0203d
+User
+[process-michigan-flora] Drive upload failed (non-fatal): part.body.pipe is not a function
+2026-01-04 03:38:19.77
+73a0203d
+User
+[process-michigan-flora] Drive upload failed (non-fatal): part.body.pipe is not a function
+2026-01-04 03:58:10.41
+73a0203d
+User
+[process-michigan-flora] Drive upload failed (non-fatal): part.body.pipe is not a function
+2026-01-05 03:47:55.30
+73a0203d
+User
+'@type': 'type.googleapis.com/google.rpc.ErrorInfo',
+2026-01-05 03:47:55.30
+73a0203d
+User
+domain: 'googleapis.com',
+2026-01-05 03:47:55.30
+73a0203d
+User
+maxRetryDelay: 9007199254740991,
+2026-01-05 03:47:55.30
+73a0203d
+User
+{
+2026-01-05 03:47:55.30
+73a0203d
+User
+url: URL {},
+2026-01-05 03:47:55.30
+73a0203d
+User
+retry: true,
+2026-01-05 03:47:55.30
+73a0203d
+User
+httpMethodsToRetry: [ 'GET', 'HEAD', 'PUT', 'OPTIONS', 'DELETE' ],
+2026-01-05 03:47:55.30
+73a0203d
+User
+method: 'GET',
+2026-01-05 03:47:55.30
+73a0203d
+User
+message: "Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute' of service 'sheets.googleapis.com' for consumer 'project_number:1012035106355'.",
+2026-01-05 03:47:55.30
+73a0203d
+User
+{
+2026-01-05 03:47:55.30
+73a0203d
+User
+response: Response {
+2026-01-05 03:47:55.30
+73a0203d
+User
+data: {
+2026-01-05 03:47:55.30
+73a0203d
+User
+details: [
+2026-01-05 03:47:55.30
+73a0203d
+User
+at async createAPIRequestAsync (/home/runner/workspace/node_modules/googleapis-common/build/src/apirequest.js:308:25)
+2026-01-05 03:47:55.30
+73a0203d
+User
+reason: 'RATE_LIMIT_EXCEEDED',
+2026-01-05 03:47:55.30
+73a0203d
+User
+size: 0,
+2026-01-05 03:47:55.30
+73a0203d
+User
+/home/runner/workspace/node_modules/gaxios/build/cjs/src/gaxios.js:155
+2026-01-05 03:47:55.30
+73a0203d
+User
+},
+2026-01-05 03:47:55.30
+73a0203d
+User
+statusCodesToRetry: [ [ 100, 199 ], [ 408, 408 ], [ 429, 429 ], [ 500, 599 ] ]
+2026-01-05 03:47:55.30
+73a0203d
+User
+timeOfFirstRequest: 1767602873031,
+2026-01-05 03:47:55.30
+73a0203d
+User
+comment: 'gzip'
+2026-01-05 03:47:55.30
+73a0203d
+User
+retryDelayMultiplier: 2,
+2026-01-05 03:47:55.30
+73a0203d
+User
+noResponseRetries: 2,
+2026-01-05 03:47:55.30
+73a0203d
+User
+config: {
+2026-01-05 03:47:55.30
+73a0203d
+User
+at async ensureDurationHeader (file:///home/runner/workspace/production/run-batch.js:184:20)
+2026-01-05 03:47:55.30
+73a0203d
+User
+version: '8.0.1',
+2026-01-05 03:47:55.30
+73a0203d
+User
+headers: Headers {},
+2026-01-05 03:47:55.30
+73a0203d
+User
+],
+2026-01-05 03:47:55.30
+73a0203d
+User
+at async runBatch (file:///home/runner/workspace/production/run-batch.js:281:5) {
+2026-01-05 03:47:55.30
+73a0203d
+User
+apiVersion: '',
+2026-01-05 03:47:55.30
+73a0203d
+User
+GaxiosError: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute' of service 'sheets.googleapis.com' for consumer 'project_number:1012035106355'.

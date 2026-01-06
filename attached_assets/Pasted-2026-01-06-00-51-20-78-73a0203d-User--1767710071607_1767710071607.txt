@@ -1,0 +1,88 @@
+2026-01-06 00:51:20.78
+73a0203d
+User
+================================================================================
+2026-01-06 00:51:20.78
+73a0203d
+User
+================================================================================
+2026-01-06 00:51:20.78
+73a0203d
+User
+Starting processing...
+2026-01-06 00:51:20.78
+73a0203d
+User
+Executing module: botanical-name for Geranium maculatum
+2026-01-06 00:51:20.78
+73a0203d
+User
+[1/4] Processing Geranium maculatum...
+2026-01-06 00:51:21.18
+73a0203d
+User
+Saved prompt debug to cache/PromptDebug/Geranium_maculatum_botanical-name_2026-01-06T05-51-20-855Z.md
+2026-01-06 00:51:22.09
+73a0203d
+System
+initializing deployment without listening for application ports
+2026-01-06 00:51:23.99
+73a0203d
+User
+Executing module: external-reference-urls for Geranium maculatum
+2026-01-06 00:51:24.06
+73a0203d
+User
+Discovering 2 missing URLs...
+2026-01-06 00:51:24.06
+73a0203d
+User
+Searching: site:wildflower.org Geranium maculatum
+2026-01-06 00:51:24.06
+73a0203d
+User
+Partial cache for Geranium maculatum: 7/8 sites cached
+2026-01-06 00:51:24.09
+73a0203d
+User
+Using 4 cached results for Lady Bird Johnson Wildflower Center, validating...
+2026-01-06 00:51:24.09
+73a0203d
+User
+[serpapi-cache] Cache hit for: site:wildflower.org Geranium maculatum
+2026-01-06 00:51:24.09
+73a0203d
+User
+Checking result 1/4: https://www.wildflower.org/plants/result.php?id_plant=gema
+2026-01-06 00:51:24.13
+73a0203d
+User
+[cache] Using cached HTML for https://www.wildflower.org/plants/result.php?id_plant=gema
+2026-01-06 00:51:25.26
+73a0203d
+User
+✗ URL failed all validation checks
+2026-01-06 00:51:25.26
+73a0203d
+User
+Checking result 2/4: https://www.wildflower.org/gallery/result.php?id_image=31905
+2026-01-06 00:51:25.27
+73a0203d
+User
+[cache] Using cached HTML for https://www.wildflower.org/gallery/result.php?id_image=31905
+2026-01-06 00:51:26.00
+73a0203d
+User
+✗ URL failed all validation checks
+2026-01-06 00:51:26.00
+73a0203d
+User
+Checking result 3/4: https://www.wildflower.org/gallery/result.php?id_image=27398
+2026-01-06 00:51:26.08
+73a0203d
+User
+[cache] Using cached HTML for https://www.wildflower.org/gallery/result.php?id_image=27398
+2026-01-06 00:51:26.79
+73a0203d
+User
+✗ URL failed all validation checks
