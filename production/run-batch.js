@@ -136,22 +136,24 @@ async function getExistingSpecies(spreadsheetId, maxRetries = 3) {
 }
 
 async function createNewSheet(sheetName, folderId) {
-  const { createPlantSheet } = await import('../src/output/plant-pipeline.js');
+  const { 
+    PLANT_COLUMNS, 
+    loadSynthesisModules, 
+    buildColumnSourceDocumentation, 
+    buildPromptsTabContent 
+  } = await import('../src/output/plant-pipeline.js');
   
   const sheets = await getSheetsClient();
   const drive = await getDriveClient();
   
-  const { PLANT_COLUMNS } = await import('../src/output/plant-pipeline.js');
-  
-  const registryPath = join(__dirname, '../config/synthesis-registry.json');
-  const registry = JSON.parse(readFileSync(registryPath, 'utf-8'));
-  
+  // Create spreadsheet with 3 tabs
   const createResponse = await sheets.spreadsheets.create({
     requestBody: {
       properties: { title: sheetName },
       sheets: [
         { properties: { title: 'Plant Data', index: 0 } },
-        { properties: { title: 'Column Sources', index: 1 } }
+        { properties: { title: 'Column Sources', index: 1 } },
+        { properties: { title: 'Prompts', index: 2 } }
       ]
     }
   });
@@ -172,6 +174,7 @@ async function createNewSheet(sheetName, folderId) {
     fields: 'id, parents'
   });
   
+  // Write Plant Data headers
   const headersWithDuration = [...PLANT_COLUMNS.HEADERS, 'Processing Duration'];
   
   await sheets.spreadsheets.values.update({
@@ -180,6 +183,29 @@ async function createNewSheet(sheetName, folderId) {
     valueInputOption: 'RAW',
     requestBody: { values: [headersWithDuration] }
   });
+  
+  // Write Column Sources documentation
+  const modules = await loadSynthesisModules();
+  const columnSourceDocs = buildColumnSourceDocumentation(modules);
+  
+  await sheets.spreadsheets.values.update({
+    spreadsheetId,
+    range: 'Column Sources!A1',
+    valueInputOption: 'RAW',
+    requestBody: { values: columnSourceDocs }
+  });
+  
+  // Write Prompts tab (base prompt + tier guidance)
+  const promptsContent = buildPromptsTabContent();
+  
+  await sheets.spreadsheets.values.update({
+    spreadsheetId,
+    range: 'Prompts!A1',
+    valueInputOption: 'RAW',
+    requestBody: { values: promptsContent }
+  });
+  
+  console.log(`Created spreadsheet with ${columnSourceDocs.length - 1} column source entries and ${promptsContent.length - 1} prompt entries`);
   
   return {
     spreadsheetId,
@@ -222,6 +248,74 @@ async function ensureDurationHeader(spreadsheetId) {
     });
     console.log('Added Processing Duration header to existing sheet');
   }
+}
+
+async function ensureDocumentationTabs(spreadsheetId) {
+  const sheets = await getSheetsClient();
+  const { 
+    loadSynthesisModules, 
+    buildColumnSourceDocumentation, 
+    buildPromptsTabContent 
+  } = await import('../src/output/plant-pipeline.js');
+  
+  // Get existing sheets in the spreadsheet
+  const spreadsheet = await sheets.spreadsheets.get({
+    spreadsheetId,
+    fields: 'sheets.properties.title'
+  });
+  
+  const existingSheets = spreadsheet.data.sheets.map(s => s.properties.title);
+  const requests = [];
+  
+  // Add Column Sources tab if missing
+  if (!existingSheets.includes('Column Sources')) {
+    requests.push({
+      addSheet: {
+        properties: { title: 'Column Sources', index: 1 }
+      }
+    });
+  }
+  
+  // Add Prompts tab if missing
+  if (!existingSheets.includes('Prompts')) {
+    requests.push({
+      addSheet: {
+        properties: { title: 'Prompts', index: 2 }
+      }
+    });
+  }
+  
+  // Create any missing tabs
+  if (requests.length > 0) {
+    await sheets.spreadsheets.batchUpdate({
+      spreadsheetId,
+      requestBody: { requests }
+    });
+    console.log(`Created missing tabs: ${requests.map(r => r.addSheet.properties.title).join(', ')}`);
+  }
+  
+  // Always update Column Sources (may have new modules/prompts)
+  const modules = await loadSynthesisModules();
+  const columnSourceDocs = buildColumnSourceDocumentation(modules);
+  
+  await sheets.spreadsheets.values.update({
+    spreadsheetId,
+    range: 'Column Sources!A1',
+    valueInputOption: 'RAW',
+    requestBody: { values: columnSourceDocs }
+  });
+  
+  // Always update Prompts (may have updated prompts)
+  const promptsContent = buildPromptsTabContent();
+  
+  await sheets.spreadsheets.values.update({
+    spreadsheetId,
+    range: 'Prompts!A1',
+    valueInputOption: 'RAW',
+    requestBody: { values: promptsContent }
+  });
+  
+  console.log(`Updated Column Sources (${columnSourceDocs.length - 1} entries) and Prompts (${promptsContent.length - 1} entries)`);
 }
 
 async function appendPlantRowWithDuration(spreadsheetId, record) {
@@ -302,6 +396,7 @@ async function runBatch(sheetName, speciesListFile) {
     spreadsheetUrl = `https://docs.google.com/spreadsheets/d/${spreadsheetId}`;
     
     await ensureDurationHeader(spreadsheetId);
+    await ensureDocumentationTabs(spreadsheetId);
     
     existingSpecies = await getExistingSpecies(spreadsheetId);
     console.log(`Species already in sheet: ${existingSpecies.size}`);

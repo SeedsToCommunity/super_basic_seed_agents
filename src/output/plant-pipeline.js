@@ -34,7 +34,7 @@ function readPromptFile(fileName) {
  * Build the "Prompts" tab content with base prompt and tier guidance prompts
  * @returns {Array<Array<string>>} 2D array of rows for the Prompts sheet
  */
-function buildPromptsTabContent() {
+export function buildPromptsTabContent() {
   const rows = [
     ['Prompt Type', 'Content']
   ];
@@ -96,7 +96,7 @@ function sortModulesByDependencies(modules) {
  * Dynamically load synthesis modules from registry
  * @returns {Promise<Array<Object>>} Sorted array of loaded modules
  */
-async function loadSynthesisModules() {
+export async function loadSynthesisModules() {
   if (loadedModules) {
     return loadedModules;
   }
@@ -193,7 +193,7 @@ function buildColumnDefinitions(modules) {
  * @param {Array<Object>} modules - Array of loaded synthesis modules (sorted by dependencies)
  * @returns {Array<Array<string>>} 2D array of rows for the documentation sheet
  */
-function buildColumnSourceDocumentation(modules) {
+export function buildColumnSourceDocumentation(modules) {
   // Headers for the documentation sheet - includes Field Prompt for 3-tier modules
   const headers = ['Column', 'Source Module', 'Data Source', 'Algorithm Description', 'Field Prompt'];
   
