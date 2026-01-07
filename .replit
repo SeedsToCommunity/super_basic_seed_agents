@@ -10,7 +10,6 @@ packages = ["q-text-as-data"]
 deploymentTarget = "scheduled"
 build = ["sh", "-c", "npm install"]
 run = ["sh", "-c", "node production/run-batch.js"]
-ignorePorts = true
 
 [[ports]]
 localPort = 5000
