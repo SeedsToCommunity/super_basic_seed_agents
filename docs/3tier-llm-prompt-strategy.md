@@ -56,15 +56,17 @@ Explicitly surfaces conflicts between sources
 
 Remains source-constrained and additive
 
-Tier 3 — Full Model Completion
+Tier 3 — Independent Model Knowledge (Diagnostic)
 
-Uses Tier 1 and Tier 2 outputs as context
+Operates independently without access to Tier 1 or Tier 2 outputs
 
-May draw on the model’s general knowledge
+Reports what the model knows based solely on training and general biological knowledge
 
-Fills gaps, resolves unknowns where reasonable, and provides broader context
+Does not attempt to complete, fill gaps, or synthesize prior tier responses
 
-Clearly understood to contain model-based synthesis
+Serves as a diagnostic instrument to reveal model knowledge and its limits
+
+Attribution describes the nature of knowledge (species-level, genus-level, family-level patterns)
 
 This structure allows the application to demonstrate how knowledge expands from documented sources to broader understanding, while keeping each stage transparent.
 

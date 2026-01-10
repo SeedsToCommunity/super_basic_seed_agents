@@ -213,12 +213,8 @@ function buildTierPrompt(tier, genus, species, fieldPromptContent, sources, prio
     prompt += `## Tier 2 Additional Source Data\n\n`;
     prompt += formatSourcesForPrompt(sources);
   } else if (tier === 3) {
-    prompt += `## Tier 1 Response (for reference)\n\n`;
-    prompt += `${formatTierResponse(priorTierResponses.tier1)}\n\n`;
-    prompt += `## Tier 2 Response (for reference)\n\n`;
-    prompt += `${formatTierResponse(priorTierResponses.tier2)}\n\n`;
     prompt += `## Your Task\n\n`;
-    prompt += `Using your general botanical knowledge and the context from Tier 1 and Tier 2, provide additional information to complete the response for this field.\n`;
+    prompt += `Using only your general botanical knowledge and pattern recognition, independently report what you know about this topic for ${genus} ${species}. Do not attempt to complete or reference prior tier responses—this tier operates in isolation as a diagnostic of model knowledge.\n`;
   }
   
   prompt += `\n## Output Format\n\n`;
@@ -385,11 +381,8 @@ export async function process3TierField(genus, species, fieldId, options = {}) {
     }
   }
   
-  // Pass full tier response objects (value + attribution) for transparency
-  const tier3Prompt = buildTierPrompt(3, genus, species, fieldPromptContent, [], { 
-    tier1: results.tier1, 
-    tier2: results.tier2 
-  });
+  // Tier 3 operates independently - no prior tier context provided
+  const tier3Prompt = buildTierPrompt(3, genus, species, fieldPromptContent, [], {});
   prompts.tier3 = tier3Prompt;
   
   let tier3CacheResult = getCachedTierResponse(genus, species, fieldId, 3, tier3Prompt);
@@ -397,9 +390,9 @@ export async function process3TierField(genus, species, fieldId, options = {}) {
     log(`  [3tier] Tier 3: cache hit`);
     results.tier3 = parseResponse(tier3CacheResult.response);
   } else {
-    log(`  [3tier] Tier 3: calling Claude API...`);
+    log(`  [3tier] Tier 3: calling Claude API (independent model knowledge)...`);
     const tier3Response = await callClaudeAPI(tier3Prompt);
-    cacheTierResponse(genus, species, fieldId, 3, tier3Prompt, tier3Response, ['tier1_response', 'tier2_response']);
+    cacheTierResponse(genus, species, fieldId, 3, tier3Prompt, tier3Response, ['model_knowledge_only']);
     results.tier3 = parseResponse(tier3Response);
   }
   
@@ -436,12 +429,12 @@ export function createFieldModule(fieldId, columnName, algorithmDescription) {
         {
           id: `${fieldId}`,
           header: columnName,
-          source: 'Tiered LLM synthesis (Tier 1 trusted sources, Tier 2 secondary sources, Tier 3 model knowledge)',
+          source: 'Tiered LLM synthesis (Tier 1 trusted sources, Tier 2 secondary sources, Tier 3 independent model knowledge)',
           algorithmDescription
         }
       ],
       dependencies: ['botanical-name', 'michigan-flora', 'lakecounty-cache'],
-      description: `3-tier LLM prompting for ${columnName}. Combines trusted sources (Tier 1), secondary sources (Tier 2), and model knowledge (Tier 3).`
+      description: `3-tier LLM prompting for ${columnName}. Tier 1 uses trusted sources, Tier 2 uses secondary sources, Tier 3 independently reports model knowledge as a diagnostic instrument.`
     },
     
     run: async function(genus, species, priorResults) {
@@ -473,7 +466,7 @@ export function createFieldModule(fieldId, columnName, algorithmDescription) {
 export const seedColorModule = createFieldModule(
   'collection_mature_seed_color',
   'Seed Color at Maturity',
-  'Uses 3-tier LLM prompting: Tier 1 uses trusted sources (Google Drive Tier 1 folder, Michigan Flora, Lake County Guide), Tier 2 adds secondary sources (Missouri Seedling Guide) plus Tier 1 output, Tier 3 uses model knowledge plus prior tiers. Returns merged JSON with all three tier responses.'
+  'Uses 3-tier LLM prompting: Tier 1 uses trusted sources (Google Drive Tier 1 folder, Michigan Flora, Lake County Guide), Tier 2 adds secondary sources (Missouri Seedling Guide) plus Tier 1 context, Tier 3 independently reports model knowledge. Returns merged JSON with all three tier responses.'
 );
 
 export const missRiskModule = createFieldModule(

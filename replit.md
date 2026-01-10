@@ -94,7 +94,7 @@ The project implements a trust-aware 3-tier LLM prompting system for synthesizin
 **Source Tiers:**
 - **Tier 1 (Trusted)**: Google Drive "Tier 1 Sources" folder, Michigan Flora (CSV + API), Lake County PDFs
 - **Tier 2 (Secondary)**: All cached JSON artifacts (GBIF, iNaturalist, BONAP, External References, PageContent, Missouri Seedling Guide) + Tier 1 response for context
-- **Tier 3 (Model Knowledge)**: Claude's general botanical knowledge + prior tier responses
+- **Tier 3 (Model Knowledge - Independent Diagnostic)**: Claude's general botanical knowledge, operating independently without access to Tier 1/2 outputs. Serves as a diagnostic instrument to reveal model knowledge and its limits. Attribution describes knowledge type (species-level, genus-level, family-level patterns).
 
 **Core Files:**
 - `src/synthesis/process-3tier-field.js`: Shared orchestration module with source gatherers and prompt builder
