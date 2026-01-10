@@ -1,5 +1,51 @@
 import { JSDOM } from 'jsdom';
 import { fetchWithCache } from './html-cache.js';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const DOMAIN_CONFIG_PATH = path.join(__dirname, '../../config/domain-extraction-config.json');
+
+let domainConfig = null;
+
+function loadDomainConfig() {
+  if (!domainConfig) {
+    try {
+      const configData = fs.readFileSync(DOMAIN_CONFIG_PATH, 'utf-8');
+      domainConfig = JSON.parse(configData);
+    } catch (error) {
+      console.warn(`[validator] Could not load domain config: ${error.message}`);
+      domainConfig = { domains: {} };
+    }
+  }
+  return domainConfig;
+}
+
+function getDomainFromUrl(url) {
+  try {
+    const urlObj = new URL(url);
+    return urlObj.hostname.replace(/^www\./, '');
+  } catch {
+    return null;
+  }
+}
+
+function getDomainConfig(url) {
+  const config = loadDomainConfig();
+  const hostname = getDomainFromUrl(url);
+  if (!hostname) return null;
+  
+  for (const [domain, domainCfg] of Object.entries(config.domains)) {
+    const normalizedDomain = domain.replace(/^www\./, '');
+    if (hostname === normalizedDomain || hostname.endsWith('.' + normalizedDomain)) {
+      return domainCfg;
+    }
+  }
+  return null;
+}
 
 function normalizeForComparison(text) {
   return text.toLowerCase().replace(/[^a-z0-9]/g, '');
@@ -78,6 +124,28 @@ export function checkH1(html, genus, species) {
   }
 }
 
+export function checkCustomSelector(html, genus, species, selector) {
+  try {
+    const dom = new JSDOM(html);
+    const selectors = selector.split(',').map(s => s.trim());
+    
+    for (const sel of selectors) {
+      const elements = dom.window.document.querySelectorAll(sel);
+      
+      for (const element of elements) {
+        const text = element.textContent || '';
+        if (containsSpeciesName(text, genus, species)) {
+          return { passed: true, method: `selector:${sel}`, value: text.trim().substring(0, 100) };
+        }
+      }
+    }
+    
+    return { passed: false, method: null };
+  } catch (error) {
+    return { passed: false, method: null };
+  }
+}
+
 export function checkSchemaOrg(html, genus, species) {
   try {
     const dom = new JSDOM(html);
@@ -146,6 +214,46 @@ export async function validateUrl(url, genus, species) {
   
   if (!html) {
     return { valid: false, method: null, html: null };
+  }
+  
+  const domainCfg = getDomainConfig(url);
+  
+  if (domainCfg && domainCfg.validation) {
+    const { primarySelector, fallbackSelectors = [] } = domainCfg.validation;
+    const allSelectors = [primarySelector, ...fallbackSelectors];
+    
+    for (const selector of allSelectors) {
+      if (!selector) continue;
+      
+      if (selector === 'title') {
+        const titleCheck = checkTitle(html, genus, species);
+        if (titleCheck.passed) {
+          console.log(`  ✓ URL validated by: ${titleCheck.method} - "${titleCheck.value}"`);
+          return { valid: true, method: titleCheck.method, html };
+        }
+      } else if (selector === 'h1') {
+        const h1Check = checkH1(html, genus, species);
+        if (h1Check.passed) {
+          console.log(`  ✓ URL validated by: ${h1Check.method} - "${h1Check.value}"`);
+          return { valid: true, method: h1Check.method, html };
+        }
+      } else {
+        const customCheck = checkCustomSelector(html, genus, species, selector);
+        if (customCheck.passed) {
+          console.log(`  ✓ URL validated by: ${customCheck.method} - "${customCheck.value}"`);
+          return { valid: true, method: customCheck.method, html };
+        }
+      }
+    }
+    
+    const schemaCheck = checkSchemaOrg(html, genus, species);
+    if (schemaCheck.passed) {
+      console.log(`  ✓ URL validated by: ${schemaCheck.method}`);
+      return { valid: true, method: schemaCheck.method, html };
+    }
+    
+    console.log(`  ✗ URL failed domain-specific validation for ${domainCfg.name}`);
+    return { valid: false, method: null, html };
   }
   
   const titleCheck = checkTitle(html, genus, species);

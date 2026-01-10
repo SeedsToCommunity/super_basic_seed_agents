@@ -1,0 +1,216 @@
+{
+  "domains": {
+    "gobotany.nativeplanttrust.org": {
+      "name": "Go Botany",
+      "validation": {
+        "primarySelector": "h1",
+        "fallbackSelectors": ["title"]
+      },
+      "extraction": {
+        "captureSelectors": [
+          "main",
+          "#content",
+          "article"
+        ],
+        "excludeSelectors": [
+          "header",
+          "footer",
+          "nav",
+          ".breadcrumb",
+          ".sidebar",
+          "#sidebar",
+          "script",
+          "style",
+          "noscript",
+          "form"
+        ]
+      }
+    },
+    "illinoiswildflowers.info": {
+      "name": "Illinois Wildflowers",
+      "validation": {
+        "primarySelector": "title",
+        "fallbackSelectors": []
+      },
+      "extraction": {
+        "captureSelectors": [
+          "table[width='700'] td",
+          "table[width='700']",
+          "body > table td"
+        ],
+        "excludeSelectors": [
+          "table[width='700'] td a[href*='index']",
+          "img[src*='banner']",
+          "a[href*='home']"
+        ]
+      }
+    },
+    "wildflower.org": {
+      "name": "Lady Bird Johnson Wildflower Center",
+      "validation": {
+        "primarySelector": "h2",
+        "fallbackSelectors": ["h3", "title"]
+      },
+      "extraction": {
+        "captureSelectors": [
+          "main"
+        ],
+        "excludeSelectors": [
+          "nav",
+          "header",
+          "footer",
+          "select",
+          "option",
+          "form",
+          "script",
+          "style",
+          "noscript"
+        ]
+      }
+    },
+    "prairiemoon.com": {
+      "name": "Prairie Moon Nursery",
+      "validation": {
+        "primarySelector": "h1.product-title, h1",
+        "fallbackSelectors": ["title"]
+      },
+      "extraction": {
+        "captureSelectors": [
+          "#product-info",
+          ".product-single",
+          ".product-description",
+          ".growing-info",
+          ".product-details"
+        ],
+        "excludeSelectors": [
+          "header",
+          "footer",
+          "nav",
+          ".cart",
+          ".add-to-cart",
+          ".breadcrumb",
+          ".related-products",
+          ".reviews",
+          ".product-form",
+          "form",
+          ".price",
+          ".quantity-selector"
+        ]
+      }
+    },
+    "plants.usda.gov": {
+      "name": "USDA PLANTS",
+      "validation": {
+        "primarySelector": "h1",
+        "fallbackSelectors": ["title", ".scientific-name"]
+      },
+      "extraction": {
+        "captureSelectors": [
+          "#main-content",
+          ".plant-profile",
+          ".characteristics"
+        ],
+        "excludeSelectors": [
+          "header",
+          "footer",
+          "nav",
+          ".sidebar",
+          ".search-form"
+        ]
+      }
+    },
+    "www.missouriplants.com": {
+      "name": "Missouri Native Plant Society",
+      "validation": {
+        "primarySelector": "h1",
+        "fallbackSelectors": ["title"]
+      },
+      "extraction": {
+        "captureSelectors": [
+          ".entry-content",
+          "article",
+          "#content"
+        ],
+        "excludeSelectors": [
+          "header",
+          "footer",
+          "nav",
+          ".sidebar",
+          ".widget",
+          ".newsletter",
+          ".menu",
+          ".comments"
+        ]
+      }
+    },
+    "minnesotawildflowers.info": {
+      "name": "Minnesota Wildflowers",
+      "validation": {
+        "primarySelector": "h2.latin, h2",
+        "fallbackSelectors": ["title"]
+      },
+      "extraction": {
+        "captureSelectors": [
+          "article",
+          "#content",
+          ".content"
+        ],
+        "excludeSelectors": [
+          "header",
+          "footer",
+          "nav",
+          "script",
+          "style",
+          "noscript",
+          "form"
+        ]
+      }
+    },
+    "tropicos.org": {
+      "name": "Tropicos",
+      "validation": {
+        "primarySelector": "#content h1, h1",
+        "fallbackSelectors": ["title"]
+      },
+      "extraction": {
+        "captureSelectors": [
+          "#content .record",
+          "#content table",
+          ".specimen-data"
+        ],
+        "excludeSelectors": [
+          "header",
+          "footer",
+          "nav",
+          ".search-tools",
+          "#global-nav"
+        ]
+      }
+    }
+  },
+  "defaultExtraction": {
+    "captureSelectors": ["main", "article", "#content", ".content", "body"],
+    "excludeSelectors": [
+      "header",
+      "footer", 
+      "nav",
+      "aside",
+      ".sidebar",
+      ".navigation",
+      ".menu",
+      ".breadcrumb",
+      "script",
+      "style",
+      "noscript",
+      "iframe",
+      "form",
+      "select",
+      "option"
+    ]
+  },
+  "whitespaceNormalization": {
+    "maxConsecutiveNewlines": 2,
+    "trimLines": true,
+    "collapseSpaces": true
+  }
+}

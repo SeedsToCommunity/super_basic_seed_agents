@@ -8,6 +8,77 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const CACHE_DIR = path.join(__dirname, '../../cache/PageContent');
+const DOMAIN_CONFIG_PATH = path.join(__dirname, '../../config/domain-extraction-config.json');
+
+let domainConfig = null;
+
+function loadDomainConfig() {
+  if (!domainConfig) {
+    try {
+      const configData = fs.readFileSync(DOMAIN_CONFIG_PATH, 'utf-8');
+      domainConfig = JSON.parse(configData);
+    } catch (error) {
+      console.warn(`[page-content] Could not load domain config: ${error.message}`);
+      domainConfig = { domains: {}, defaultExtraction: {}, whitespaceNormalization: {} };
+    }
+  }
+  return domainConfig;
+}
+
+function getDomainFromUrl(url) {
+  try {
+    const urlObj = new URL(url);
+    return urlObj.hostname.replace(/^www\./, '');
+  } catch {
+    return null;
+  }
+}
+
+function getDomainExtraction(url) {
+  const config = loadDomainConfig();
+  const hostname = getDomainFromUrl(url);
+  if (!hostname) return config.defaultExtraction || {};
+  
+  for (const [domain, domainCfg] of Object.entries(config.domains)) {
+    const normalizedDomain = domain.replace(/^www\./, '');
+    if (hostname === normalizedDomain || hostname.endsWith('.' + normalizedDomain)) {
+      return domainCfg.extraction || config.defaultExtraction || {};
+    }
+  }
+  return config.defaultExtraction || {};
+}
+
+function getWhitespaceConfig() {
+  const config = loadDomainConfig();
+  return config.whitespaceNormalization || {
+    maxConsecutiveNewlines: 2,
+    trimLines: true,
+    collapseSpaces: true
+  };
+}
+
+function normalizeWhitespace(text) {
+  if (!text) return '';
+  
+  const wsConfig = getWhitespaceConfig();
+  let result = text;
+  
+  if (wsConfig.collapseSpaces) {
+    result = result.replace(/[ \t]+/g, ' ');
+  }
+  
+  if (wsConfig.trimLines) {
+    result = result.split('\n').map(line => line.trim()).join('\n');
+  }
+  
+  if (wsConfig.maxConsecutiveNewlines) {
+    const maxNewlines = wsConfig.maxConsecutiveNewlines;
+    const pattern = new RegExp(`\n{${maxNewlines + 1},}`, 'g');
+    result = result.replace(pattern, '\n'.repeat(maxNewlines));
+  }
+  
+  return result.trim();
+}
 
 function ensureCacheDir() {
   if (!fs.existsSync(CACHE_DIR)) {
@@ -111,6 +182,35 @@ export async function fetchPage(url, timeoutMs = 10000) {
   }
 }
 
+function extractWithDomainSelectors(document, extractionConfig) {
+  const { captureSelectors = [], excludeSelectors = [] } = extractionConfig;
+  
+  for (const excludeSelector of excludeSelectors) {
+    try {
+      const elements = document.querySelectorAll(excludeSelector);
+      for (const el of elements) {
+        el.remove();
+      }
+    } catch (e) {
+    }
+  }
+  
+  for (const captureSelector of captureSelectors) {
+    try {
+      const element = document.querySelector(captureSelector);
+      if (element) {
+        const text = element.textContent?.trim();
+        if (text && text.length > 100) {
+          return text;
+        }
+      }
+    } catch (e) {
+    }
+  }
+  
+  return null;
+}
+
 export function parseWithReadability(html, url) {
   try {
     const dom = new JSDOM(html, { url });
@@ -140,19 +240,47 @@ export function parseWithReadability(html, url) {
       }
     }
     
-    const documentClone = document.cloneNode(true);
-    const reader = new Readability(documentClone);
-    const article = reader.parse();
+    const extractionConfig = getDomainExtraction(url);
+    let textContent = null;
+    let extractionMethod = 'readability';
+    
+    if (extractionConfig.captureSelectors && extractionConfig.captureSelectors.length > 0) {
+      const domainExtracted = extractWithDomainSelectors(document.cloneNode(true), extractionConfig);
+      if (domainExtracted) {
+        textContent = normalizeWhitespace(domainExtracted);
+        extractionMethod = 'domain-specific';
+        console.log(`[page-content] Used domain-specific extraction for ${getDomainFromUrl(url)}`);
+      }
+    }
+    
+    if (!textContent) {
+      const documentClone = document.cloneNode(true);
+      const defaultConfig = loadDomainConfig().defaultExtraction || {};
+      for (const excludeSelector of (defaultConfig.excludeSelectors || [])) {
+        try {
+          const elements = documentClone.querySelectorAll(excludeSelector);
+          for (const el of elements) {
+            el.remove();
+          }
+        } catch (e) {
+        }
+      }
+      
+      const reader = new Readability(documentClone);
+      const article = reader.parse();
+      textContent = normalizeWhitespace(article?.textContent?.substring(0, 50000) || '');
+    }
     
     return {
       title,
       h1,
       schemaOrg,
-      readability: article ? {
-        title: article.title,
-        excerpt: article.excerpt,
-        textContent: article.textContent?.substring(0, 50000) || ''
-      } : null
+      extractionMethod,
+      readability: {
+        title,
+        excerpt: '',
+        textContent
+      }
     };
   } catch (error) {
     console.error(`[page-content] Error parsing HTML: ${error.message}`);
@@ -192,7 +320,8 @@ export async function fetchAndCachePageContent(genus, species, source, url, vali
       source,
       url,
       fetchedAt: new Date().toISOString(),
-      validatedBy
+      validatedBy,
+      extractionMethod: parsed.extractionMethod || 'readability'
     },
     content: {
       title: parsed.title,

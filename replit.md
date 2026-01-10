@@ -45,6 +45,49 @@ Centralized settings are managed in `config/config.json`, covering Google Drive,
 ### Caching System
 The `cache/` directory stores API results and parsed data to minimize expensive operations, including caches for external references, SerpApi results, raw HTML, parsed page content, GBIF data, Michigan Flora data, iNaturalist data, BONAP data, and synced Google Drive parsed PDFs.
 
+### Domain-Specific Extraction System
+The project uses a configurable domain extraction system (`config/domain-extraction-config.json`) that provides:
+
+**Per-Domain Validation:**
+- Each external reference domain can specify which HTML element contains the species name
+- Wildflower.org uses H2 (not H1) for species names
+- Minnesota Wildflowers uses `h2.latin` class
+- Illinois Wildflowers uses the `<title>` tag
+- Other domains use standard H1 validation
+
+**Per-Domain Content Extraction:**
+- Each domain can specify CSS selectors for content to capture vs exclude
+- Reduces token waste by stripping navigation, sidebars, dropdowns, and boilerplate
+- Falls back to generic Readability extraction for unconfigured domains
+
+**Whitespace Normalization:**
+- Collapses multiple spaces/tabs to single space
+- Trims whitespace from line ends
+- Limits consecutive newlines to max 2 (preserves paragraph structure)
+
+**Configuration Format:**
+```json
+{
+  "domains": {
+    "wildflower.org": {
+      "name": "Lady Bird Johnson Wildflower Center",
+      "validation": {
+        "primarySelector": "h2",
+        "fallbackSelectors": ["h3", "title"]
+      },
+      "extraction": {
+        "captureSelectors": [".plant-characteristics", ...],
+        "excludeSelectors": ["nav", "select", ...]
+      }
+    }
+  },
+  "defaultExtraction": { ... },
+  "whitespaceNormalization": { ... }
+}
+```
+
+**Testing:** Run `node test/test-domain-extraction.js` to verify validation and extraction across all configured domains.
+
 ### 3-Tier LLM Prompting System
 The project implements a trust-aware 3-tier LLM prompting system for synthesizing botanical guidance across ~26 new columns:
 
