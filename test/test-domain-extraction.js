@@ -33,7 +33,7 @@ const TEST_CASES = [
   },
   {
     domain: 'prairiemoon.com',
-    url: 'https://www.prairiemoon.com/asclepias-tuberosa-butterfly-milkweed.html',
+    url: 'https://www.prairiemoon.com/asclepias-tuberosa-butterfly-weed',
     genus: 'Asclepias',
     species: 'tuberosa',
     expectedValidation: 'h1'
