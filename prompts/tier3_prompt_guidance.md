@@ -42,6 +42,41 @@ This tier exists to **reveal model knowledge and its limits**, not to produce a 
   - patterns vary widely across taxa or contexts
   - knowledge is fragmented or inconsistent
 
+## Value Framing Rules (Critical)
+
+Each knowledge claim in the value must be **explicitly prefixed** with the level from which the pattern is derived. This ensures the value and attribution are consistent.
+
+### Required Prefixes
+
+Use one of these prefixes before each distinct knowledge claim:
+
+- `Based on species patterns:` — when you have stable, species-specific knowledge
+- `Based on genus patterns:` — when extrapolating from the genus
+- `Based on family patterns:` — when extrapolating from the family (e.g., Asteraceae)
+- `Based on life-history patterns:` — when using ecological strategy (e.g., wetland obligate, wind-dispersed)
+- `Based on general practice:` — when using common restoration or seed-handling heuristics
+
+### Multi-Level Responses
+
+When knowledge genuinely comes from **multiple levels**, include multiple prefixed segments. This honestly represents the layered nature of model knowledge.
+
+**Single-level example:**
+```
+Based on genus patterns: Seeds disperse via wind-carried pappus in late fall. Light typically required for germination. Cold-moist stratification improves germination rates.
+```
+
+**Multi-level example:**
+```
+Based on family patterns: Seeds are small and wind-dispersed with pappus structures typical of Asteraceae. Based on genus patterns: Pappus is white and persistent, remaining attached through winter. Based on general practice: Cold stratification for 60-90 days typically improves germination uniformity.
+```
+
+### Consistency Rule
+
+Do **not** write the value as if species-specific knowledge exists when you are extrapolating from broader patterns. The prefix must honestly reflect the source level of each claim.
+
+**Wrong:** "Anaphalis margaritacea seeds disperse in late fall..."
+**Right:** "Based on genus patterns: Seeds disperse in late fall..."
+
 ## Numeric estimates and ranges
 
 - Numeric values, ranges, or concrete examples **may be included**
@@ -58,33 +93,38 @@ This tier exists to **reveal model knowledge and its limits**, not to produce a 
 
 ## Model Knowledge Framing Requirements
 
-When providing information, implicitly or explicitly indicate **the level at which the pattern exists**, such as:
-
-- species-level
-- genus-level
-- family-level
-- life-history strategy–level
-- general ecological or restoration heuristic
-
 This tier is expected to surface:
 - where patterns are strong
 - where they break down
 - where the model lacks clarity
+- **at which level(s) the knowledge exists** (via explicit prefixes in the value)
 
 ## Attribution Rules
 
 - Attribution describes **model knowledge only**.
 - Do not reference external sources or prior tiers.
+- Attribution should **summarize which levels were used** in the value.
 - Use the same parenthetical format as other tiers.
 
-Examples:
+Examples for single-level responses:
 
 - Model knowledge (family-level pattern)
+- Model knowledge (genus-level pattern)
 - Model knowledge (general restoration heuristic)
+
+Examples for multi-level responses:
+
+- Model knowledge (family and genus patterns)
+- Model knowledge (genus patterns + general practice)
+- Model knowledge (species, genus, and family patterns)
+
+Examples for uncertain or variable knowledge:
+
 - Model knowledge (variable across species)
 - Model knowledge (weak or inconsistent patterns)
+- Model knowledge (limited genus-level inference)
 
-Maximum one sentence in attribution.
+Maximum one sentence in attribution. The attribution should reflect all levels that appear in the value.
 
 ## Output Expectations
 
