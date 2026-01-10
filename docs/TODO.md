@@ -17,9 +17,10 @@ The LLM's default behavior assumes commercial seed processing standards, even th
 
 **What's actually true for this project:**
 - Pappus/fluff does NOT need removal — doesn't affect germination
-- Only remove sharp/bulky debris (sticks, stems) that could puncture storage bags
-- For home processing, even debris removal is optional
-- "Good enough for direct sowing" is the standard, not commercial-grade cleaning
+- Fluff needs to be removed from Milkweed type species (seeds separate easily and fluff is bulky and problematic.)
+- Fluff does not need to be removed from aster-like species (where seeds separatation is less easily performed manually and fluff is less bulky.)
+- The objective is to support artificial stratification objective storage in plastic bags. Remove sharp/bulky debris (sticks, stems, flower parts) that could puncture storage bags
+- "Good enough for thousands of seeds in plastic bags" is the standard, not commercial-grade cleaning
 
 ### Example Output Showing the Bias
 
